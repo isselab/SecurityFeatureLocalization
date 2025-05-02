@@ -1,0 +1,21 @@
+{
+  "name": "bcrypt",
+  "version": "0.10.2",
+  "namespace": "at.favre.lib",
+  "categories": [],
+  "children": [
+    {
+      "namespace": "crypto",
+      "categories": [],
+      "children": [
+        {
+          "namespace": "bcrypt",
+          "categories": [
+            "CryptograhicHashing"
+          ],
+          "children": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "name": "OWASP espi",
+  "version": "2.5.5.0",
+  "namespace": "org.owasp.esapi",
+  "categories": [],
+  "children": [
+    {
+      "namespace": "AccessController",
+      "categories": ["AccessControl"],
+      "children": []
+    },
+    {
+      "namespace": "AccessControlRule",
+      "categories": ["AccessControl"],
+      "children": []
+    },
+    {
+      "namespace": "AccessReferenceMap",
+      "categories": ["AccessControl"],
+      "children": []
+    },
+    {
+      "namespace": "Authenticator",
+      "categories": ["Authentication"],
+      "children": []
+    },
+    {
+      "namespace": "Encryptor",
+      "categories": ["Cryptography"],
+      "children": []
+    },
+    {
+      "namespace": "LogFactory",
+      "categories": ["Logging"],
+      "children": []
+    },
+    {
+      "namespace": "Logger",
+      "categories": ["Logging"],
+      "children": []
+    },
+    {
+      "namespace": "Randomizer",
+      "categories": ["Cryptography", "SourceOfRandomness"],
+      "children": []
+    },
+    {
+      "namespace": "ValidationRule",
+      "categories": ["DataValidation"],
+      "children": []
+    },
+    {
+      "namespace": "Validator",
+      "categories": ["DataValidation"],
+      "children": []
+    },
+    {
+      "namespace": "logging",
+      "categories": ["Logging"],
+      "children": []
+    },
+    {
+      "namespace": "reference",
+      "categories": [],
+      "children": [
+        {
+          "namespace": "accesscontrol",
+          "categories": ["AccessControl"],
+          "children": []
+        }
+      ]
+    }
+  ]
+}

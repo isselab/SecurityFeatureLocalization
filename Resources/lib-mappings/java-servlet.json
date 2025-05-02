@@ -1,0 +1,24 @@
+{
+  "name": "Jakarta Servlet",
+  "version": "6.1.0",
+  "namespace": "jakarta.servlet",
+  "categories": [],
+  "children": [
+    {
+      "namespace": "http",
+      "categories": [],
+      "children": [
+        {
+          "namespace": "HttpSession",
+          "categories": ["SessionManagement"],
+          "children": []
+        },
+        {
+          "namespace": "HttpServletRequest",
+          "categories": ["SessionManagement"],
+          "children": []
+        }
+      ]
+    }
+  ]
+}

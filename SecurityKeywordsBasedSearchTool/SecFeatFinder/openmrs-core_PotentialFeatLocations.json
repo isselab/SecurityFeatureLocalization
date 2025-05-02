@@ -1,0 +1,1833 @@
+[
+    {
+        "File Name": "CohortMembership.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\CohortMembership.java",
+        "Matches": [
+            {
+                "Source Code": "return Objects.hash(patientId, endDate, startDate);",
+                "Location": "line 197",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "Role.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\Role.java",
+        "Matches": [
+            {
+                "Source Code": "public class Role extends BaseChangeableOpenmrsMetadata {",
+                "Location": "line 30",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "private static final Logger log = LoggerFactory.getLogger(Role.class);",
+                "Location": "line 34",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "private Set<Role> inheritedRoles;",
+                "Location": "line 42",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "private Set<Role> childRoles;",
+                "Location": "line 44",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Role() {",
+                "Location": "line 49",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Role(String role) {",
+                "Location": "line 53",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Role(String role, String description) {",
+                "Location": "line 58",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Set<Role> getInheritedRoles() {",
+                "Location": "line 169",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public void setInheritedRoles(Set<Role> inheritedRoles) {",
+                "Location": "line 179",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Set<Role> getAllParentRoles() {",
+                "Location": "line 198",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "Set<Role> parents = new HashSet<>();",
+                "Location": "line 199",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Set<Role> recurseOverParents(final Set<Role> total) {",
+                "Location": "line 212",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "Set<Role> allRoles = new HashSet<>(total);",
+                "Location": "line 217",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "Set<Role> myRoles = new HashSet<>(this.getInheritedRoles());",
+                "Location": "line 218",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "for (Role r : myRoles) {",
+                "Location": "line 224",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Set<Role> getChildRoles() {",
+                "Location": "line 257",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public void setChildRoles(Set<Role> childRoles) {",
+                "Location": "line 268",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Set<Role> getAllChildRoles() {",
+                "Location": "line 289",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "Set<Role> children = new HashSet<>();",
+                "Location": "line 290",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Set<Role> recurseOverChildren(final Set<Role> total) {",
+                "Location": "line 304",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "Set<Role> allRoles = new HashSet<>(total);",
+                "Location": "line 309",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "Set<Role> myRoles = new HashSet<>(this.getChildRoles());",
+                "Location": "line 311",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "for (Role r : myRoles) {",
+                "Location": "line 317",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            }
+        ]
+    },
+    {
+        "File Name": "User.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\User.java",
+        "Matches": [
+            {
+                "Source Code": "private Set<Role> roles;",
+                "Location": "line 105",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "Set<Role> tmproles = getAllRoles();",
+                "Location": "line 192",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "for (Role tmprole : tmproles) {",
+                "Location": "line 195",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "Set<Role> tmproles = getAllRoles();",
+                "Location": "line 232",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "for (Role role : getAllRoles()) {",
+                "Location": "line 249",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "Set<Role> tmproles = getAllRoles();",
+                "Location": "line 265",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "Role role;",
+                "Location": "line 267",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "for (Role tmprole : tmproles) {",
+                "Location": "line 268",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Set<Role> getAllRoles() {",
+                "Location": "line 287",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "Set<Role> baseRoles = new HashSet<>();",
+                "Location": "line 289",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "Set<Role> totalRoles = new HashSet<>();",
+                "Location": "line 293",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "for (Role r : baseRoles) {",
+                "Location": "line 302",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "for (Role baseRole : baseRoles) {",
+                "Location": "line 310",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Set<Role> getRoles() {",
+                "Location": "line 320",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public void setRoles(Set<Role> roles) {",
+                "Location": "line 327",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public User addRole(Role role) {",
+                "Location": "line 337",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public User removeRole(Role role) {",
+                "Location": "line 354",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            }
+        ]
+    },
+    {
+        "File Name": "UserService.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\api\\UserService.java",
+        "Matches": [
+            {
+                "Source Code": "public List<User> getUsersByRole(Role role) throws APIException;",
+                "Location": "line 145",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public List<Role> getAllRoles() throws APIException;",
+                "Location": "line 224",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Role saveRole(Role role) throws APIException;",
+                "Location": "line 236",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public void purgeRole(Role role) throws APIException;",
+                "Location": "line 248",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Role getRole(String r) throws APIException;",
+                "Location": "line 280",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Role getRoleByUuid(String uuid) throws APIException;",
+                "Location": "line 291",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public List<User> getUsers(String nameSearch, List<Role> roles, boolean includeVoided) throws APIException;",
+                "Location": "line 439",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public List<User> getUsers(String name, List<Role> roles, boolean includeRetired, Integer start, Integer length)",
+                "Location": "line 527",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Integer getCountOfUsers(String name, List<Role> roles, boolean includeRetired);",
+                "Location": "line 541",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            }
+        ]
+    },
+    {
+        "File Name": "Context.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\api\\context\\Context.java",
+        "Matches": [
+            {
+                "Source Code": "public static AlertService getAlertService() {",
+                "Location": "line 552",
+                "Keywords Found": "Security Monitoring : Automated Response : [AlertService]"
+            },
+            {
+                "Source Code": "public static Set<Role> getAllRoles(User user) throws Exception {",
+                "Location": "line 723",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "for (Role role : Context.getUserService().getAllRoles()) {",
+                "Location": "line 1104",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "Role role = new Role();",
+                "Location": "line 1111",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            }
+        ]
+    },
+    {
+        "File Name": "Daemon.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\api\\context\\Daemon.java",
+        "Matches": [
+            {
+                "Source Code": "List<Role> roles = roleNames.stream().map(roleName -> Context.getUserService().getRole(roleName)).collect(Collectors.toList());",
+                "Location": "line 130",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            }
+        ]
+    },
+    {
+        "File Name": "ServiceContext.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\api\\context\\ServiceContext.java",
+        "Matches": [
+            {
+                "Source Code": "public AlertService getAlertService() {",
+                "Location": "line 341",
+                "Keywords Found": "Security Monitoring : Automated Response : [AlertService]"
+            },
+            {
+                "Source Code": "return getService(AlertService.class);",
+                "Location": "line 342",
+                "Keywords Found": "Security Monitoring : Automated Response : [AlertService]"
+            },
+            {
+                "Source Code": "public void setAlertService(AlertService alertService) {",
+                "Location": "line 348",
+                "Keywords Found": "Security Monitoring : Automated Response : [AlertService]"
+            },
+            {
+                "Source Code": "setService(AlertService.class, alertService);",
+                "Location": "line 349",
+                "Keywords Found": "Security Monitoring : Automated Response : [AlertService]"
+            }
+        ]
+    },
+    {
+        "File Name": "UserContext.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\api\\context\\UserContext.java",
+        "Matches": [
+            {
+                "Source Code": "private Role authenticatedRole = null;",
+                "Location": "line 72",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "private Role anonymousRole = null;",
+                "Location": "line 77",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Set<Role> getAllRoles() throws Exception {",
+                "Location": "line 288",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Set<Role> getAllRoles(User user) throws Exception {",
+                "Location": "line 302",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "Set<Role> roles = new HashSet<>();",
+                "Location": "line 303",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "private Role getAnonymousRole() {",
+                "Location": "line 367",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "private Role getAuthenticatedRole() {",
+                "Location": "line 388",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            }
+        ]
+    },
+    {
+        "File Name": "UserDAO.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\api\\db\\UserDAO.java",
+        "Matches": [
+            {
+                "Source Code": "public Role saveRole(Role role) throws DAOException;",
+                "Location": "line 68",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public void deleteRole(Role role) throws DAOException;",
+                "Location": "line 73",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Role getRole(String r) throws DAOException;",
+                "Location": "line 78",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public List<Role> getAllRoles() throws DAOException;",
+                "Location": "line 83",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Role getRoleByUuid(String uuid);",
+                "Location": "line 153",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public List<User> getUsers(String name, List<Role> roles, boolean includeRetired, Integer start, Integer length)",
+                "Location": "line 202",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Integer getCountOfUsers(String name, List<Role> roles, boolean includeRetired);",
+                "Location": "line 208",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            }
+        ]
+    },
+    {
+        "File Name": "HibernateAdministrationDAO.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\api\\db\\hibernate\\HibernateAdministrationDAO.java",
+        "Matches": [
+            {
+                "Source Code": "for (Validator validator : getValidators(object)) {",
+                "Location": "line 301",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            },
+            {
+                "Source Code": "protected List<Validator> getValidators(Object obj) {",
+                "Location": "line 319",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            },
+            {
+                "Source Code": "List<Validator> matchingValidators = new ArrayList<>();",
+                "Location": "line 320",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            },
+            {
+                "Source Code": "List<Validator> validators = HandlerUtil.getHandlersForType(Validator.class, obj.getClass());",
+                "Location": "line 322",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            },
+            {
+                "Source Code": "for (Validator validator : validators) {",
+                "Location": "line 324",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "HibernateUserDAO.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\api\\db\\hibernate\\HibernateUserDAO.java",
+        "Matches": [
+            {
+                "Source Code": "public List<User> getUsersByRole(Role role) {",
+                "Location": "line 231",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "Join<User, Role> roles = root.join(\"roles\");",
+                "Location": "line 236",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public void deleteRole(Role role) throws DAOException {",
+                "Location": "line 284",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Role saveRole(Role role) throws DAOException {",
+                "Location": "line 292",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public List<Role> getAllRoles() throws DAOException {",
+                "Location": "line 302",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Role getRole(String r) throws DAOException {",
+                "Location": "line 310",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "return sessionFactory.getCurrentSession().get(Role.class, r);",
+                "Location": "line 311",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public List<User> getUsers(String name, List<Role> roles, boolean includeRetired, Integer start, Integer length) {",
+                "Location": "line 450",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Role getRoleByUuid(String uuid) {",
+                "Location": "line 535",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "return HibernateUtil.getUniqueEntityByUUID(sessionFactory, Role.class, uuid);",
+                "Location": "line 536",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Integer getCountOfUsers(String name, List<Role> roles, boolean includeRetired) {",
+                "Location": "line 610",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "private Query createUserSearchQuery(String name, List<Role> roles, boolean includeRetired, String hqlSelectStart) {",
+                "Location": "line 627",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            }
+        ]
+    },
+    {
+        "File Name": "LuceneQuery.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\api\\db\\hibernate\\search\\LuceneQuery.java",
+        "Matches": [
+            {
+                "Source Code": "return QueryParser.escape(query);",
+                "Location": "line 111",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [escape]"
+            }
+        ]
+    },
+    {
+        "File Name": "UserServiceImpl.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\api\\impl\\UserServiceImpl.java",
+        "Matches": [
+            {
+                "Source Code": "public List<User> getUsersByRole(Role role) throws APIException {",
+                "Location": "line 152",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "List<Role> roles = new ArrayList<>();",
+                "Location": "line 153",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public List<Role> getAllRoles() throws APIException {",
+                "Location": "line 267",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Role getRole(String r) throws APIException {",
+                "Location": "line 276",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public void purgeRole(Role role) throws APIException {",
+                "Location": "line 284",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Role saveRole(Role role) throws APIException {",
+                "Location": "line 304",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public List<User> getUsers(String nameSearch, List<Role> roles, boolean includeVoided) throws APIException {",
+                "Location": "line 382",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": ".map(Role::getPrivileges).filter(Objects::nonNull).flatMap(Collection::stream)",
+                "Location": "line 393",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "private void checkSuperUserPrivilege(Role r) {",
+                "Location": "line 402",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "private void checkPrivileges(Role role) {",
+                "Location": "line 520",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Role getRoleByUuid(String uuid) throws APIException {",
+                "Location": "line 545",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public Integer getCountOfUsers(String name, List<Role> roles, boolean includeRetired) {",
+                "Location": "line 563",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "Role authRole = getRole(RoleConstants.AUTHENTICATED);",
+                "Location": "line 570",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public List<User> getUsers(String name, List<Role> roles, boolean includeRetired, Integer start, Integer length)",
+                "Location": "line 583",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "Role authRole = getRole(RoleConstants.AUTHENTICATED);",
+                "Location": "line 595",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "Set<Role> allRoles = new HashSet<>();",
+                "Location": "line 601",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "for (Role r : roles) {",
+                "Location": "line 602",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            }
+        ]
+    },
+    {
+        "File Name": "LocalStorageService.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\api\\storage\\LocalStorageService.java",
+        "Matches": [
+            {
+                "Source Code": "return URLDecoder.decode(key, \"UTF-8\");",
+                "Location": "line 157",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "return URLEncoder.encode(key, \"UTF-8\").replace(\".\", \"%2E\")",
+                "Location": "line 165",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "ORUR01Handler.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\hl7\\handler\\ORUR01Handler.java",
+        "Matches": [
+            {
+                "Source Code": "new Object[] { PipeParser.encode(obx, new EncodingCharacters('|', \"^~\\\\&\")) }, null),",
+                "Location": "line 354",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "AddressSupport.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\layout\\address\\AddressSupport.java",
+        "Matches": [
+            {
+                "Source Code": "setAddressTemplate(StringEscapeUtils.unescapeXml(layoutTemplateXml));",
+                "Location": "line 60",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [StringEscapeUtils]"
+            },
+            {
+                "Source Code": "addressTemplate = Context.getSerializationService().getDefaultSerializer().deserialize(StringEscapeUtils.unescapeXml(xml),",
+                "Location": "line 148",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [StringEscapeUtils]"
+            }
+        ]
+    },
+    {
+        "File Name": "NameSupport.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\layout\\name\\NameSupport.java",
+        "Matches": [
+            {
+                "Source Code": "nameTemplate = Context.getSerializationService().getDefaultSerializer().deserialize(StringEscapeUtils.unescapeXml(xml),",
+                "Location": "line 96",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [StringEscapeUtils]"
+            }
+        ]
+    },
+    {
+        "File Name": "MigrationHelper.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\migration\\MigrationHelper.java",
+        "Matches": [
+            {
+                "Source Code": "Role role = us.getRole(relationshipType);",
+                "Location": "line 271",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            }
+        ]
+    },
+    {
+        "File Name": "AlertService.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\notification\\AlertService.java",
+        "Matches": [
+            {
+                "Source Code": "public interface AlertService extends OpenmrsService {",
+                "Location": "line 31",
+                "Keywords Found": "Security Monitoring : Automated Response : [AlertService]"
+            }
+        ]
+    },
+    {
+        "File Name": "MessageService.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\notification\\MessageService.java",
+        "Matches": [
+            {
+                "Source Code": "public void sendMessage(Message message, Role role) throws MessageException;",
+                "Location": "line 52",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            }
+        ]
+    },
+    {
+        "File Name": "AlertServiceImpl.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\notification\\impl\\AlertServiceImpl.java",
+        "Matches": [
+            {
+                "Source Code": "public class AlertServiceImpl extends BaseOpenmrsService implements Serializable, AlertService {",
+                "Location": "line 37",
+                "Keywords Found": "Security Monitoring : Automated Response : [AlertService]"
+            },
+            {
+                "Source Code": "Alert alert = new Alert(message, Context.getUserService().getUsersByRole(new Role(RoleConstants.SUPERUSER)));",
+                "Location": "line 194",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            }
+        ]
+    },
+    {
+        "File Name": "MessageServiceImpl.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\notification\\impl\\MessageServiceImpl.java",
+        "Matches": [
+            {
+                "Source Code": "Role role = Context.getUserService().getRole(roleName);",
+                "Location": "line 217",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public void sendMessage(Message message, Role role) throws MessageException {",
+                "Location": "line 225",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "List<Role> roles = new ArrayList<>();",
+                "Location": "line 229",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            }
+        ]
+    },
+    {
+        "File Name": "RoleEditor.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\propertyeditor\\RoleEditor.java",
+        "Matches": [
+            {
+                "Source Code": "Role r = es.getRole(text);",
+                "Location": "line 45",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "Role r = es.getRoleByUuid(text);",
+                "Location": "line 53",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "Role r = (Role) getValue();",
+                "Location": "line 67",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            }
+        ]
+    },
+    {
+        "File Name": "CheckInternetConnectivityTask.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\scheduler\\tasks\\CheckInternetConnectivityTask.java",
+        "Matches": [
+            {
+                "Source Code": "Role role = Context.getUserService().getRole(\"System Developer\");",
+                "Location": "line 52",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            }
+        ]
+    },
+    {
+        "File Name": "TaskThreadedInitializationWrapper.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\scheduler\\tasks\\TaskThreadedInitializationWrapper.java",
+        "Matches": [
+            {
+                "Source Code": "private final Lock lock = new ReentrantLock();",
+                "Location": "line 37",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            }
+        ]
+    },
+    {
+        "File Name": "HttpClient.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\util\\HttpClient.java",
+        "Matches": [
+            {
+                "Source Code": "data.append(URLEncoder.encode(entry.getKey(), \"UTF-8\"));",
+                "Location": "line 138",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            },
+            {
+                "Source Code": "data.append(URLEncoder.encode(entry.getValue(), \"UTF-8\"));",
+                "Location": "line 140",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "OpenmrsSecurityManager.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\util\\OpenmrsSecurityManager.java",
+        "Matches": [
+            {
+                "Source Code": "public class OpenmrsSecurityManager extends SecurityManager {",
+                "Location": "line 19",
+                "Keywords Found": "Access Control : Authorization : [SecurityManager]"
+            },
+            {
+                "Source Code": "if (SecurityManager.class.isAssignableFrom(clazz)) {",
+                "Location": "line 41",
+                "Keywords Found": "Access Control : Authorization : [SecurityManager]"
+            }
+        ]
+    },
+    {
+        "File Name": "Security.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\util\\Security.java",
+        "Matches": [
+            {
+                "Source Code": "return hexString(digest(strToEncode.getBytes(StandardCharsets.UTF_8), algorithm));",
+                "Location": "line 96",
+                "Keywords Found": "Cryptography : Hashing : [digest(]"
+            },
+            {
+                "Source Code": "private static byte[] digest(byte[] input, String algorithm) {",
+                "Location": "line 99",
+                "Keywords Found": "Cryptography : Hashing : [digest(]"
+            },
+            {
+                "Source Code": "MessageDigest md;",
+                "Location": "line 100",
+                "Keywords Found": "Cryptography : Hashing : [MessageDigest]"
+            },
+            {
+                "Source Code": "return incorrectHexString(digest(strToEncode.getBytes(StandardCharsets.UTF_8), \"SHA-1\"));",
+                "Location": "line 142",
+                "Keywords Found": "Cryptography : Hashing : [digest(]"
+            },
+            {
+                "Source Code": "return hexString(digest(token, \"SHA-512\"));",
+                "Location": "line 174",
+                "Keywords Found": "Cryptography : Hashing : [digest(]"
+            },
+            {
+                "Source Code": "public static String encrypt(String text, byte[] initVector, byte[] secretKey) {",
+                "Location": "line 189",
+                "Keywords Found": "Cryptography : Encryption : [encrypt]"
+            },
+            {
+                "Source Code": "SecretKeySpec secret = new SecretKeySpec(secretKey, OpenmrsConstants.ENCRYPTION_KEY_SPEC);",
+                "Location": "line 191",
+                "Keywords Found": "Cryptography : Encryption : [SecretKeySpec]"
+            },
+            {
+                "Source Code": "Cipher cipher = Cipher.getInstance(OpenmrsConstants.ENCRYPTION_CIPHER_CONFIGURATION);",
+                "Location": "line 196",
+                "Keywords Found": "Cryptography : Encryption : [Cipher]"
+            },
+            {
+                "Source Code": "cipher.init(Cipher.ENCRYPT_MODE, secret, initVectorSpec);",
+                "Location": "line 197",
+                "Keywords Found": "Cryptography : Encryption : [Cipher]"
+            },
+            {
+                "Source Code": "result = new String(Base64.getEncoder().encode(encrypted), StandardCharsets.UTF_8);",
+                "Location": "line 199",
+                "Keywords Found": "Cryptography : Steganography : [encode(, Base64.]"
+            },
+            {
+                "Source Code": "public static String encrypt(String text) {",
+                "Location": "line 220",
+                "Keywords Found": "Cryptography : Encryption : [encrypt]"
+            },
+            {
+                "Source Code": "return Security.encrypt(text, Security.getSavedInitVector(), Security.getSavedSecretKey());",
+                "Location": "line 221",
+                "Keywords Found": "Cryptography : Encryption : [encrypt]"
+            },
+            {
+                "Source Code": "public static String decrypt(String text, byte[] initVector, byte[] secretKey) {",
+                "Location": "line 236",
+                "Keywords Found": "Cryptography : Encryption : [decrypt]"
+            },
+            {
+                "Source Code": "SecretKeySpec secret = new SecretKeySpec(secretKey, OpenmrsConstants.ENCRYPTION_KEY_SPEC);",
+                "Location": "line 238",
+                "Keywords Found": "Cryptography : Encryption : [SecretKeySpec]"
+            },
+            {
+                "Source Code": "Cipher cipher = Cipher.getInstance(OpenmrsConstants.ENCRYPTION_CIPHER_CONFIGURATION);",
+                "Location": "line 242",
+                "Keywords Found": "Cryptography : Encryption : [Cipher]"
+            },
+            {
+                "Source Code": "cipher.init(Cipher.DECRYPT_MODE, secret, initVectorSpec);",
+                "Location": "line 243",
+                "Keywords Found": "Cryptography : Encryption : [Cipher]"
+            },
+            {
+                "Source Code": "byte[] original = cipher.doFinal(Base64.getDecoder().decode(text));",
+                "Location": "line 244",
+                "Keywords Found": "Cryptography : Steganography : [decode(, Base64.]"
+            },
+            {
+                "Source Code": "public static String decrypt(String text) {",
+                "Location": "line 266",
+                "Keywords Found": "Cryptography : Encryption : [decrypt]"
+            },
+            {
+                "Source Code": "return Security.decrypt(text, Security.getSavedInitVector(), Security.getSavedSecretKey());",
+                "Location": "line 267",
+                "Keywords Found": "Cryptography : Encryption : [decrypt]"
+            },
+            {
+                "Source Code": "return Base64.getDecoder().decode(initVectorText);",
+                "Location": "line 281",
+                "Keywords Found": "Cryptography : Steganography : [decode(, Base64.]"
+            },
+            {
+                "Source Code": "return Base64.getDecoder().decode(keyText);",
+                "Location": "line 313",
+                "Keywords Found": "Cryptography : Steganography : [decode(, Base64.]"
+            },
+            {
+                "Source Code": "KeyGenerator kgen;",
+                "Location": "line 328",
+                "Keywords Found": "Cryptography : Encryption : [KeyGenerator]"
+            },
+            {
+                "Source Code": "kgen = KeyGenerator.getInstance(OpenmrsConstants.ENCRYPTION_KEY_SPEC);",
+                "Location": "line 330",
+                "Keywords Found": "Cryptography : Encryption : [KeyGenerator]"
+            }
+        ]
+    },
+    {
+        "File Name": "ThreadSafeCircularFifoQueue.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\util\\ThreadSafeCircularFifoQueue.java",
+        "Matches": [
+            {
+                "Source Code": "private transient ReentrantLock lock = new ReentrantLock();",
+                "Location": "line 49",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "final ReentrantLock lock = this.lock;",
+                "Location": "line 89",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "final ReentrantLock lock = this.lock;",
+                "Location": "line 105",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "final ReentrantLock lock = this.lock;",
+                "Location": "line 123",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "final ReentrantLock lock = this.lock;",
+                "Location": "line 148",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "final ReentrantLock lock = this.lock;",
+                "Location": "line 164",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "final ReentrantLock lock = this.lock;",
+                "Location": "line 182",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "final ReentrantLock lock = this.lock;",
+                "Location": "line 204",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "final ReentrantLock lock = this.lock;",
+                "Location": "line 221",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "final ReentrantLock lock = this.lock;",
+                "Location": "line 233",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "final ReentrantLock lock = this.lock;",
+                "Location": "line 245",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "final ReentrantLock lock = this.lock;",
+                "Location": "line 265",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "final ReentrantLock lock = this.lock;",
+                "Location": "line 293",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "final ReentrantLock lock = this.lock;",
+                "Location": "line 307",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "final ReentrantLock lock = this.lock;",
+                "Location": "line 319",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "final ReentrantLock lock = this.lock;",
+                "Location": "line 339",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "final ReentrantLock lock = this.lock;",
+                "Location": "line 367",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "lock = new ReentrantLock();",
+                "Location": "line 477",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "final ReentrantLock lock = ThreadSafeCircularFifoQueue.this.lock;",
+                "Location": "line 665",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "final ReentrantLock lock = ThreadSafeCircularFifoQueue.this.lock;",
+                "Location": "line 698",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "final ReentrantLock lock = ThreadSafeCircularFifoQueue.this.lock;",
+                "Location": "line 723",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "final ReentrantLock lock = ThreadSafeCircularFifoQueue.this.lock;",
+                "Location": "line 750",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            }
+        ]
+    },
+    {
+        "File Name": "AlertValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\AlertValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class AlertValidator implements Validator {",
+                "Location": "line 28",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "AllergyValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\AllergyValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class AllergyValidator implements Validator {",
+                "Location": "line 28",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "BaseAttributeTypeValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\BaseAttributeTypeValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public abstract class BaseAttributeTypeValidator<T extends AttributeType<?>> implements Validator {",
+                "Location": "line 27",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "BaseAttributeValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\BaseAttributeValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class BaseAttributeValidator implements Validator {",
+                "Location": "line 24",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "BaseCustomizableValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\BaseCustomizableValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public abstract class BaseCustomizableValidator implements Validator {",
+                "Location": "line 25",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "CohortValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\CohortValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class CohortValidator implements Validator {",
+                "Location": "line 29",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "ConceptClassValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\ConceptClassValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class ConceptClassValidator implements Validator {",
+                "Location": "line 26",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "ConceptDatatypeValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\ConceptDatatypeValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class ConceptDatatypeValidator implements Validator {",
+                "Location": "line 24",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "ConceptDrugValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\ConceptDrugValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class ConceptDrugValidator implements Validator {",
+                "Location": "line 26",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "ConceptMapTypeValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\ConceptMapTypeValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class ConceptMapTypeValidator implements Validator {",
+                "Location": "line 26",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "ConceptNameTagValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\ConceptNameTagValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class ConceptNameTagValidator implements Validator {",
+                "Location": "line 26",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "ConceptReferenceTermValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\ConceptReferenceTermValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class ConceptReferenceTermValidator implements Validator {",
+                "Location": "line 32",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "ConceptSourceValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\ConceptSourceValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class ConceptSourceValidator implements Validator {",
+                "Location": "line 21",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "ConceptValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\ConceptValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class ConceptValidator extends BaseCustomizableValidator implements Validator {",
+                "Location": "line 40",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "ConditionValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\ConditionValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class ConditionValidator implements Validator {",
+                "Location": "line 24",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "DiagnosisValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\DiagnosisValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class DiagnosisValidator implements Validator {",
+                "Location": "line 25",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "DrugOrderValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\DrugOrderValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class DrugOrderValidator extends OrderValidator implements Validator {",
+                "Location": "line 35",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "DrugValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\DrugValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class DrugValidator implements Validator {",
+                "Location": "line 30",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "EncounterTypeValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\EncounterTypeValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class EncounterTypeValidator implements Validator {",
+                "Location": "line 26",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "EncounterValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\EncounterValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class EncounterValidator implements Validator {",
+                "Location": "line 31",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "FieldTypeValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\FieldTypeValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class FieldTypeValidator implements Validator {",
+                "Location": "line 26",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "FieldValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\FieldValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class FieldValidator implements Validator {",
+                "Location": "line 27",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "FormValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\FormValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class FormValidator implements Validator {",
+                "Location": "line 24",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "HL7SourceValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\HL7SourceValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class HL7SourceValidator implements Validator {",
+                "Location": "line 24",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "ImplementationIdValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\ImplementationIdValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class ImplementationIdValidator implements Validator {",
+                "Location": "line 25",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "LocationTagValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\LocationTagValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class LocationTagValidator implements Validator {",
+                "Location": "line 24",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "LocationValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\LocationValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class LocationValidator extends BaseCustomizableValidator implements Validator {",
+                "Location": "line 27",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "ObsValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\ObsValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class ObsValidator implements Validator {",
+                "Location": "line 42",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "OrderFrequencyValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\OrderFrequencyValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class OrderFrequencyValidator implements Validator {",
+                "Location": "line 27",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "OrderTypeValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\OrderTypeValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class OrderTypeValidator implements Validator {",
+                "Location": "line 27",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "OrderValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\OrderValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class OrderValidator implements Validator {",
+                "Location": "line 29",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "PatientIdentifierTypeValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\PatientIdentifierTypeValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class PatientIdentifierTypeValidator implements Validator {",
+                "Location": "line 26",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "PatientIdentifierValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\PatientIdentifierValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class PatientIdentifierValidator implements Validator {",
+                "Location": "line 35",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "PatientProgramValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\PatientProgramValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class PatientProgramValidator implements Validator {",
+                "Location": "line 35",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "PersonAddressValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\PersonAddressValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class PersonAddressValidator implements Validator {",
+                "Location": "line 34",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            },
+            {
+                "Source Code": "AddressTemplate addressTemplate = Context.getSerializationService().getDefaultSerializer().deserialize(StringEscapeUtils.unescapeXml(xml),",
+                "Location": "line 98",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [StringEscapeUtils]"
+            }
+        ]
+    },
+    {
+        "File Name": "PersonAttributeTypeValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\PersonAttributeTypeValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class PersonAttributeTypeValidator implements Validator {",
+                "Location": "line 26",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "PersonMergeLogValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\PersonMergeLogValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class PersonMergeLogValidator implements Validator {",
+                "Location": "line 24",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "PersonNameValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\PersonNameValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class PersonNameValidator implements Validator {",
+                "Location": "line 28",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "PersonValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\PersonValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class PersonValidator implements Validator {",
+                "Location": "line 33",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "PrivilegeValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\PrivilegeValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class PrivilegeValidator implements Validator {",
+                "Location": "line 24",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "ProgramValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\ProgramValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class ProgramValidator implements Validator {",
+                "Location": "line 25",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "ProviderValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\ProviderValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class ProviderValidator extends BaseCustomizableValidator implements Validator {",
+                "Location": "line 29",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "RelationshipTypeValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\RelationshipTypeValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class RelationshipTypeValidator implements Validator {",
+                "Location": "line 26",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "RelationshipValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\RelationshipValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class RelationshipValidator implements Validator {",
+                "Location": "line 25",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "RequireNameValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\RequireNameValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class RequireNameValidator implements Validator {",
+                "Location": "line 24",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "RoleValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\RoleValidator.java",
+        "Matches": [
+            {
+                "Source Code": "@Handler(supports = { Role.class }, order = 50)",
+                "Location": "line 23",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "public class RoleValidator implements Validator {",
+                "Location": "line 24",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            },
+            {
+                "Source Code": "return c.equals(Role.class);",
+                "Location": "line 33",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            },
+            {
+                "Source Code": "Role role = (Role) obj;",
+                "Location": "line 51",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            }
+        ]
+    },
+    {
+        "File Name": "SchedulerFormValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\SchedulerFormValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class SchedulerFormValidator implements Validator {",
+                "Location": "line 21",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "ServiceOrderValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\ServiceOrderValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class ServiceOrderValidator extends OrderValidator implements Validator {",
+                "Location": "line 29",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "StateConversionValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\StateConversionValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class StateConversionValidator implements Validator {",
+                "Location": "line 26",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "UserValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\UserValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class UserValidator implements Validator {",
+                "Location": "line 37",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "VisitTypeValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\VisitTypeValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class VisitTypeValidator implements Validator {",
+                "Location": "line 24",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "VisitValidator.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\validator\\VisitValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public class VisitValidator extends BaseCustomizableValidator implements Validator {",
+                "Location": "line 35",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "StorageServiceTest.java",
+        "File Path": "src\\test\\java\\org\\openmrs\\api\\StorageServiceTest.java",
+        "Matches": [
+            {
+                "Source Code": "void saveTestData(String moduleId, String keySuffix, Consumer<String> verify) throws IOException {",
+                "Location": "line 117",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "saveTestData(moduleId, keySuffix, null, verify);",
+                "Location": "line 118",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "void saveTestData(String moduleId, String keySuffix, InputStream testData, Consumer<String> verify) throws IOException {",
+                "Location": "line 121",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify.accept(key);",
+                "Location": "line 132",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            }
+        ]
+    },
+    {
+        "File Name": "ContextMockHelper.java",
+        "File Path": "src\\test\\java\\org\\openmrs\\api\\context\\ContextMockHelper.java",
+        "Matches": [
+            {
+                "Source Code": "user.addRole(new Role(RoleConstants.SUPERUSER));",
+                "Location": "line 119",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            }
+        ]
+    },
+    {
+        "File Name": "CreateCoreUuids.java",
+        "File Path": "src\\test\\java\\org\\openmrs\\test\\CreateCoreUuids.java",
+        "Matches": [
+            {
+                "Source Code": "for (Role role : Context.getUserService().getAllRoles()) {",
+                "Location": "line 78",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            }
+        ]
+    },
+    {
+        "File Name": "SchemaOnlyTunerTest.java",
+        "File Path": "src\\test\\java\\org\\openmrs\\liquibase\\SchemaOnlyTunerTest.java",
+        "Matches": [
+            {
+                "Source Code": "Mockito.verify(schemaOnlyTunerSpy).assertLongtextNodes(any());",
+                "Location": "line 135",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            }
+        ]
+    },
+    {
+        "File Name": "WebModuleUtil.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\module\\web\\WebModuleUtil.java",
+        "Matches": [
+            {
+                "Source Code": "private static final Lock SERVLET_LOCK = new ReentrantLock();",
+                "Location": "line 89",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "private static final Lock FILTERS_LOCK = new ReentrantLock();",
+                "Location": "line 91",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            }
+        ]
+    },
+    {
+        "File Name": "OpenmrsBindingInitializer.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\web\\OpenmrsBindingInitializer.java",
+        "Matches": [
+            {
+                "Source Code": "wdb.registerCustomEditor(Role.class, new RoleEditor());",
+                "Location": "line 122",
+                "Keywords Found": "Access Control : Authorization : [Role]"
+            }
+        ]
+    },
+    {
+        "File Name": "CookieClearingFilter.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\web\\filter\\CookieClearingFilter.java",
+        "Matches": [
+            {
+                "Source Code": "HttpSession session = request.getSession(false);",
+                "Location": "line 81",
+                "Keywords Found": "System State Protection : Session Management : [getSession(]"
+            },
+            {
+                "Source Code": "for (Cookie cookie : request.getCookies()) {",
+                "Location": "line 84",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "Cookie clearedCookie = new Cookie(cookie.getName(), null);",
+                "Location": "line 87",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            }
+        ]
+    },
+    {
+        "File Name": "InitializationFilter.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\web\\filter\\initialization\\InitializationFilter.java",
+        "Matches": [
+            {
+                "Source Code": "final Encoder base64 = Base64.getEncoder();",
+                "Location": "line 1531",
+                "Keywords Found": "Cryptography : Steganography : [Base64.]"
+            },
+            {
+                "Source Code": "new String(base64.encode(Security.generateNewInitVector()), StandardCharsets.UTF_8));",
+                "Location": "line 1533",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            },
+            {
+                "Source Code": "new String(base64.encode(Security.generateNewSecretKey()), StandardCharsets.UTF_8));",
+                "Location": "line 1535",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "TestInstallUtil.java",
+        "File Path": "src\\main\\java\\org\\openmrs\\web\\filter\\initialization\\TestInstallUtil.java",
+        "Matches": [
+            {
+                "Source Code": "final Encoder encoder = Base64.getEncoder();",
+                "Location": "line 286",
+                "Keywords Found": "Cryptography : Steganography : [Base64.]"
+            },
+            {
+                "Source Code": "result.append(new String(encoder.encode(openmrsUsername.getBytes(utf8)), utf8));",
+                "Location": "line 288",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            },
+            {
+                "Source Code": "result.append(new String(encoder.encode(openmrsPassword.getBytes(utf8)), utf8));",
+                "Location": "line 290",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "CookieClearingFilterTest.java",
+        "File Path": "src\\test\\java\\org\\openmrs\\web\\filter\\CookieClearingFilterTest.java",
+        "Matches": [
+            {
+                "Source Code": "Cookie[] cookies = response.getCookies();",
+                "Location": "line 144",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "for (Cookie cookie : cookies) {",
+                "Location": "line 146",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "Cookie[] cookies = response.getCookies();",
+                "Location": "line 171",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "for (Cookie cookie : cookies) {",
+                "Location": "line 173",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "Cookie sessionCookie = new Cookie(\"JSESSIONID\", \"1234\");",
+                "Location": "line 197",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "Cookie sessionCookie = new Cookie(\"JSESSIONID\", \"1234\");",
+                "Location": "line 201",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            }
+        ]
+    }
+]

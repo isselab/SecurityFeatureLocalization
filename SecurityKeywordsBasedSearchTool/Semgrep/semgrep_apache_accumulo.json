@@ -1,0 +1,53 @@
+[
+    {
+        "File Path": "/src/minicluster/src/main/java/org/apache/accumulo/minicluster/MiniAccumuloRunner.java",
+        "Location": "line 253",
+        "Code": "    try (ServerSocket shutdownServer = new ServerSocket(shutdownPort)) {",
+        "Description": "Detected use of a Java socket that is not encrypted. As a result, the traffic could be read by an attacker intercepting the network traffic. Use an SSLSocket created by 'SSLSocketFactory' or 'SSLServerSocketFactory' instead.",
+        "Severity": "MEDIUM",
+        "Category": "security",
+        "Technology": [
+            "java"
+        ],
+        "CWE": [
+            "CWE-319: Cleartext Transmission of Sensitive Information"
+        ],
+        "References": [
+            "https://owasp.org/Top10/A02_2021-Cryptographic_Failures"
+        ]
+    },
+    {
+        "File Path": "/src/minicluster/src/main/java/org/apache/accumulo/miniclusterImpl/MiniAccumuloClusterImpl.java",
+        "Location": "line 574 to line 574",
+        "Code": "            try (Socket s = new Socket(\"localhost\", config.getZooKeeperPort())) {",
+        "Description": "Detected use of a Java socket that is not encrypted. As a result, the traffic could be read by an attacker intercepting the network traffic. Use an SSLSocket created by 'SSLSocketFactory' or 'SSLServerSocketFactory' instead.",
+        "Severity": "MEDIUM",
+        "Category": "security",
+        "Technology": [
+            "java"
+        ],
+        "CWE": [
+            "CWE-319: Cleartext Transmission of Sensitive Information"
+        ],
+        "References": [
+            "https://owasp.org/Top10/A02_2021-Cryptographic_Failures"
+        ]
+    },
+    {
+        "File Path": "/src/server/base/src/main/java/org/apache/accumulo/server/util/PortUtils.java",
+        "Location": "line 36 to line 36",
+        "Code": "        so = new ServerSocket(0);",
+        "Description": "Detected use of a Java socket that is not encrypted. As a result, the traffic could be read by an attacker intercepting the network traffic. Use an SSLSocket created by 'SSLSocketFactory' or 'SSLServerSocketFactory' instead.",
+        "Severity": "MEDIUM",
+        "Category": "security",
+        "Technology": [
+            "java"
+        ],
+        "CWE": [
+            "CWE-319: Cleartext Transmission of Sensitive Information"
+        ],
+        "References": [
+            "https://owasp.org/Top10/A02_2021-Cryptographic_Failures"
+        ]
+    }
+]

@@ -1,0 +1,76 @@
+{
+  "name": "Pac4j",
+  "version": "6.0.1",
+  "namespace": "org.pac4j.core",
+  "categories": [],
+  "children": [
+    {
+      "namespace": "authorization",
+      "categories": [
+        "Authorization"
+      ],
+      "children": []
+    },
+    {
+      "namespace": "context",
+      "categories": [],
+      "children": [
+        {
+          "namespace": "session",
+          "categories": [
+            "SessionManagement"
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "namespace": "credentials",
+      "categories": [
+        "Credentials"
+      ],
+      "children": [
+        {
+          "namespace": "authenticator",
+          "categories": [
+            "Credentials",
+            "Authentication"
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "namespace": "profile",
+      "categories": [],
+      "children": [
+        {
+          "namespace": "jwt",
+          "categories": [
+            "JWT"
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "namespace": "util",
+      "categories": [],
+      "children": [
+        {
+          "namespace": "generator",
+          "categories": [],
+          "children": [
+            {
+              "namespace": "RandomValueGenerator",
+              "categories": [
+                "SourceOfRandomness"
+              ],
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

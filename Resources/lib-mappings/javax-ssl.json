@@ -1,0 +1,13 @@
+{
+  "name": "Java Secure Socket Extension (JSSE)",
+  "version": "1.8",
+  "namespace": "javax.net.ssl",
+  "categories": [],
+  "children": [
+    {
+      "namespace": "SSLContext",
+      "categories": ["Miscellaneous"],
+      "children": []
+    }
+  ]
+}

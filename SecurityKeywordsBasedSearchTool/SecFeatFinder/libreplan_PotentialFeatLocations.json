@@ -1,0 +1,185 @@
+[
+    {
+        "File Name": "BaseEntity.java",
+        "File Path": "src\\main\\java\\org\\libreplan\\business\\common\\BaseEntity.java",
+        "Matches": [
+            {
+                "Source Code": "private static final Validator validator = validatorFactory.getValidator();",
+                "Location": "line 76",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "NotBlockingAutoUpdatedSnapshot.java",
+        "File Path": "src\\main\\java\\org\\libreplan\\business\\hibernate\\notification\\NotBlockingAutoUpdatedSnapshot.java",
+        "Matches": [
+            {
+                "Source Code": "private final AtomicReference<State> currentState;",
+                "Location": "line 43",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            },
+            {
+                "Source Code": "this.currentState = new AtomicReference<State>(new NotLaunchState());",
+                "Location": "line 175",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            },
+            {
+                "Source Code": "private AtomicReference<Data> data = new AtomicReference<Data>(",
+                "Location": "line 269",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            }
+        ]
+    },
+    {
+        "File Name": "EffortDurationType.java",
+        "File Path": "src\\main\\java\\org\\libreplan\\business\\workingday\\hibernate\\EffortDurationType.java",
+        "Matches": [
+            {
+                "Source Code": "public void nullSafeSet(PreparedStatement st, Object value, int index,",
+                "Location": "line 74",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [PreparedStatement]"
+            }
+        ]
+    },
+    {
+        "File Name": "ResourcesPerDayType.java",
+        "File Path": "src\\main\\java\\org\\libreplan\\business\\workingday\\hibernate\\ResourcesPerDayType.java",
+        "Matches": [
+            {
+                "Source Code": "public void nullSafeSet(PreparedStatement st, Object value, int index,",
+                "Location": "line 101",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [PreparedStatement]"
+            }
+        ]
+    },
+    {
+        "File Name": "OrderElementTest.java",
+        "File Path": "src\\test\\java\\org\\libreplan\\business\\test\\orders\\entities\\OrderElementTest.java",
+        "Matches": [
+            {
+                "Source Code": "private Validator orderElementValidator = Validation.buildDefaultValidatorFactory().getValidator();",
+                "Location": "line 141",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "I18nHelper.java",
+        "File Path": "src\\main\\java\\org\\libreplan\\web\\I18nHelper.java",
+        "Matches": [
+            {
+                "Source Code": "Charsets.setPreferredLocale((HttpSession) execution.getSession().getNativeSession(), userLocale);",
+                "Location": "line 73",
+                "Keywords Found": "System State Protection : Session Management : [HttpSession]"
+            }
+        ]
+    },
+    {
+        "File Name": "GatheredUsageStats.java",
+        "File Path": "src\\main\\java\\org\\libreplan\\web\\common\\GatheredUsageStats.java",
+        "Matches": [
+            {
+                "Source Code": "MessageDigest md5 = MessageDigest.getInstance(\"MD5\");",
+                "Location": "line 199",
+                "Keywords Found": "Cryptography : Hashing : [MessageDigest, MD5]"
+            }
+        ]
+    },
+    {
+        "File Name": "CutyPrint.java",
+        "File Path": "src\\main\\java\\org\\libreplan\\web\\print\\CutyPrint.java",
+        "Matches": [
+            {
+                "Source Code": "final SecurityContext originalContext = SecurityContextHolder.getContext();",
+                "Location": "line 308",
+                "Keywords Found": "Access Control : Authentication : [SecurityContext]"
+            }
+        ]
+    },
+    {
+        "File Name": "TreeController.java",
+        "File Path": "src\\main\\java\\org\\libreplan\\web\\tree\\TreeController.java",
+        "Matches": [
+            {
+                "Source Code": "private static final Validator validator = validatorFactory.getValidator();",
+                "Location": "line 94",
+                "Keywords Found": "Secure Data Handling : Data Validation : [Validator]"
+            }
+        ]
+    },
+    {
+        "File Name": "DBPasswordEncoderService.java",
+        "File Path": "src\\main\\java\\org\\libreplan\\web\\users\\services\\DBPasswordEncoderService.java",
+        "Matches": [
+            {
+                "Source Code": "private PasswordEncoder passwordEncoder;",
+                "Location": "line 46",
+                "Keywords Found": "Access Control : Authentication : [PasswordEncoder]"
+            },
+            {
+                "Source Code": "public void setPasswordEncoder(PasswordEncoder passwordEncoder) {",
+                "Location": "line 53",
+                "Keywords Found": "Access Control : Authentication : [PasswordEncoder]"
+            }
+        ]
+    },
+    {
+        "File Name": "NaiveTrustManager.java",
+        "File Path": "src\\main\\java\\org\\libreplan\\ws\\cert\\NaiveTrustManager.java",
+        "Matches": [
+            {
+                "Source Code": "public void checkClientTrusted(X509Certificate[] cert, String authType)",
+                "Location": "line 40",
+                "Keywords Found": "Access Control : Authentication : [X509Certificate]"
+            },
+            {
+                "Source Code": "public void checkServerTrusted(X509Certificate[] cert, String authType)",
+                "Location": "line 50",
+                "Keywords Found": "Access Control : Authentication : [X509Certificate]"
+            },
+            {
+                "Source Code": "public X509Certificate[] getAcceptedIssuers() {",
+                "Location": "line 57",
+                "Keywords Found": "Access Control : Authentication : [X509Certificate]"
+            },
+            {
+                "Source Code": "return null; // I've seen someone return new X509Certificate[ 0 ];",
+                "Location": "line 58",
+                "Keywords Found": "Access Control : Authentication : [X509Certificate]"
+            }
+        ]
+    },
+    {
+        "File Name": "NaiveTrustProvider.java",
+        "File Path": "src\\main\\java\\org\\libreplan\\ws\\cert\\NaiveTrustProvider.java",
+        "Matches": [
+            {
+                "Source Code": "protected void engineInit(KeyStore keystore) {",
+                "Location": "line 108",
+                "Keywords Found": "Cryptography : Key Management : [KeyStore]"
+            },
+            {
+                "Source Code": "protected TrustManager[] engineGetTrustManagers() {",
+                "Location": "line 116",
+                "Keywords Found": "Cryptography : Key Management : [TrustManager]"
+            },
+            {
+                "Source Code": "return new TrustManager[] { new NaiveTrustManager() };",
+                "Location": "line 118",
+                "Keywords Found": "Cryptography : Key Management : [TrustManager]"
+            }
+        ]
+    },
+    {
+        "File Name": "CurrentUserScenarioAwareManagerTest.java",
+        "File Path": "src\\test\\java\\org\\libreplan\\web\\scenarios\\CurrentUserScenarioAwareManagerTest.java",
+        "Matches": [
+            {
+                "Source Code": "SecurityContext context = SecurityContextHolder.getContext();",
+                "Location": "line 100",
+                "Keywords Found": "Access Control : Authentication : [SecurityContext]"
+            }
+        ]
+    }
+]

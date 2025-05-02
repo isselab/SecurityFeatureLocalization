@@ -1,0 +1,74 @@
+[
+    {
+        "File Path": "/src/activemq-client/src/main/java/org/apache/activemq/transport/tcp/QualityOfServiceUtils.java",
+        "Location": "line 128 to line 128",
+        "Code": "        Socket socket = new Socket();",
+        "Description": "Detected use of a Java socket that is not encrypted. As a result, the traffic could be read by an attacker intercepting the network traffic. Use an SSLSocket created by 'SSLSocketFactory' or 'SSLServerSocketFactory' instead.",
+        "Severity": "MEDIUM",
+        "Category": "security",
+        "Technology": [
+            "java"
+        ],
+        "CWE": [
+            "CWE-319: Cleartext Transmission of Sensitive Information"
+        ],
+        "References": [
+            "https://owasp.org/Top10/A02_2021-Cryptographic_Failures"
+        ]
+    },
+    {
+        "File Path": "/src/activemq-client/src/main/java/org/apache/activemq/util/IdGenerator.java",
+        "Location": "line 57 to line 57",
+        "Code": "                ss = new ServerSocket(idGeneratorPort);",
+        "Description": "Detected use of a Java socket that is not encrypted. As a result, the traffic could be read by an attacker intercepting the network traffic. Use an SSLSocket created by 'SSLSocketFactory' or 'SSLServerSocketFactory' instead.",
+        "Severity": "MEDIUM",
+        "Category": "security",
+        "Technology": [
+            "java"
+        ],
+        "CWE": [
+            "CWE-319: Cleartext Transmission of Sensitive Information"
+        ],
+        "References": [
+            "https://owasp.org/Top10/A02_2021-Cryptographic_Failures"
+        ]
+    },
+    {
+        "File Path": "/src/activemq-console/src/main/java/org/apache/activemq/console/command/CreateCommand.java",
+        "Location": "line 214 to line 214",
+        "Code": "        Transformer fileTransformer = tFactory.newTransformer();",
+        "Description": "DOCTYPE declarations are enabled for this TransformerFactory. This is vulnerable to XML external entity attacks. Disable this by setting the attributes \"accessExternalDTD\" and \"accessExternalStylesheet\" to \"\".",
+        "Severity": "HIGH",
+        "Category": "security",
+        "Technology": [
+            "java",
+            "xml"
+        ],
+        "CWE": [
+            "CWE-611: Improper Restriction of XML External Entity Reference"
+        ],
+        "References": [
+            "https://semgrep.dev/blog/2022/xml-security-in-java",
+            "https://semgrep.dev/docs/cheat-sheets/java-xxe/",
+            "https://blog.sonarsource.com/secure-xml-processor",
+            "https://xerces.apache.org/xerces2-j/features.html"
+        ]
+    },
+    {
+        "File Path": "/src/activemq-stomp/src/main/java/org/apache/activemq/transport/stomp/StompConnection.java",
+        "Location": "line 38 to line 38",
+        "Code": "        open(new Socket(host, port));",
+        "Description": "Detected use of a Java socket that is not encrypted. As a result, the traffic could be read by an attacker intercepting the network traffic. Use an SSLSocket created by 'SSLSocketFactory' or 'SSLServerSocketFactory' instead.",
+        "Severity": "MEDIUM",
+        "Category": "security",
+        "Technology": [
+            "java"
+        ],
+        "CWE": [
+            "CWE-319: Cleartext Transmission of Sensitive Information"
+        ],
+        "References": [
+            "https://owasp.org/Top10/A02_2021-Cryptographic_Failures"
+        ]
+    }
+]

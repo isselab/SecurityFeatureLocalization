@@ -1,0 +1,2596 @@
+[
+    {
+        "File Name": "SkuMetadataCacheServiceImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\admin\\server\\service\\SkuMetadataCacheServiceImpl.java",
+        "Matches": [
+            {
+                "Source Code": "LOG.debug(\"Invalidating Sku metadata cache for: \" + StringUtil.sanitize(cacheKey));",
+                "Location": "line 87",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "CustomerCustomPersistenceHandler.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\admin\\server\\service\\handler\\CustomerCustomPersistenceHandler.java",
+        "Matches": [
+            {
+                "Source Code": "adminInstance.setPassword(null);",
+                "Location": "line 126",
+                "Keywords Found": "Access Control : Authentication : [setPassword]"
+            },
+            {
+                "Source Code": "adminInstance.setPassword(passwordBefore);",
+                "Location": "line 128",
+                "Keywords Found": "Access Control : Authentication : [setPassword]"
+            }
+        ]
+    },
+    {
+        "File Name": "PageTemplateCustomPersistenceHandler.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\cms\\admin\\server\\handler\\PageTemplateCustomPersistenceHandler.java",
+        "Matches": [
+            {
+                "Source Code": "boolean validated = helper.validate(persistencePackage.getEntity(), new PageTemplateImpl(), md);",
+                "Location": "line 332",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "StructuredContentTypeCustomPersistenceHandler.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\cms\\admin\\server\\handler\\StructuredContentTypeCustomPersistenceHandler.java",
+        "Matches": [
+            {
+                "Source Code": "boolean validated = helper.validate(persistencePackage.getEntity(), new StructuredContentTypeImpl(), md);",
+                "Location": "line 256",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "StaticAssetServiceImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\cms\\file\\service\\StaticAssetServiceImpl.java",
+        "Matches": [
+            {
+                "Source Code": "LOG.warn(\"No extension provided for asset : \" + StringUtil.sanitize(fileName));",
+                "Location": "line 146",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "LOG.trace(\"Removing protocol from URL name\" + StringUtil.sanitize(fileName));",
+                "Location": "line 196",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "fullUrl = URLDecoder.decode(fullUrl, \"UTF-8\");",
+                "Location": "line 373",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "StaticAssetStorageServiceImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\cms\\file\\service\\StaticAssetStorageServiceImpl.java",
+        "Matches": [
+            {
+                "Source Code": "sb.append(pad(digest, 32, '0'));",
+                "Location": "line 407",
+                "Keywords Found": "Cryptography : Steganography : [pad(]"
+            },
+            {
+                "Source Code": "protected String pad(String s, int length, char pad) {",
+                "Location": "line 413",
+                "Keywords Found": "Cryptography : Steganography : [pad(]"
+            }
+        ]
+    },
+    {
+        "File Name": "PageDefaultRuleProcessor.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\cms\\page\\service\\PageDefaultRuleProcessor.java",
+        "Matches": [
+            {
+                "Source Code": "+ StringUtil.sanitize(ruleExpression));",
+                "Location": "line 59",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "+ \".   Value = \" + StringUtil.sanitize(ruleExpression));",
+                "Location": "line 65",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "PageHandlerMapping.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\cms\\web\\PageHandlerMapping.java",
+        "Matches": [
+            {
+                "Source Code": "String requestUri = URLDecoder.decode(context.getRequestURIWithoutContext(), charEncoding);",
+                "Location": "line 67",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "URLHandlerFilter.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\cms\\web\\URLHandlerFilter.java",
+        "Matches": [
+            {
+                "Source Code": "requestURIWithoutContext = URLDecoder.decode(requestURIWithoutContext, charEncoding);",
+                "Location": "line 104",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "String param = URLEncoder.encode(key, \"UTF-8\");",
+                "Location": "line 147",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            },
+            {
+                "Source Code": "String value = URLEncoder.encode(request.getParameter(key), \"UTF-8\");",
+                "Location": "line 148",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "OpenAdminSecurityConfig.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\config\\OpenAdminSecurityConfig.java",
+        "Matches": [
+            {
+                "Source Code": "protected PasswordEncoder adminPasswordEncoder;",
+                "Location": "line 49",
+                "Keywords Found": "Access Control : Authentication : [PasswordEncoder]"
+            }
+        ]
+    },
+    {
+        "File Name": "BroadleafAdminAuthenticationSuccessHandler.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\security\\BroadleafAdminAuthenticationSuccessHandler.java",
+        "Matches": [
+            {
+                "Source Code": "logger.error(\"SECURITY FAILURE Bad redirect location: \" + StringUtil.sanitize(targetUrl), e);",
+                "Location": "line 83",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "logger.debug(\"Redirecting to DefaultSavedRequest Url: \" + StringUtil.sanitize(targetUrl));",
+                "Location": "line 107",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "DynamicEntityDaoImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\server\\dao\\DynamicEntityDaoImpl.java",
+        "Matches": [
+            {
+                "Source Code": "protected String pad(String s, int length, char pad) {",
+                "Location": "line 736",
+                "Keywords Found": "Cryptography : Steganography : [pad(]"
+            },
+            {
+                "Source Code": "byte[] messageDigest = md.digest(sb.toString().getBytes());",
+                "Location": "line 778",
+                "Keywords Found": "Cryptography : Hashing : [digest(]"
+            },
+            {
+                "Source Code": "String key = pad(digest, 32, '0');",
+                "Location": "line 785",
+                "Keywords Found": "Cryptography : Steganography : [pad(]"
+            }
+        ]
+    },
+    {
+        "File Name": "AdminUser.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\server\\security\\domain\\AdminUser.java",
+        "Matches": [
+            {
+                "Source Code": "public void setPassword(String password);",
+                "Location": "line 43",
+                "Keywords Found": "Access Control : Authentication : [setPassword]"
+            }
+        ]
+    },
+    {
+        "File Name": "AdminUserImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\server\\security\\domain\\AdminUserImpl.java",
+        "Matches": [
+            {
+                "Source Code": "public void setPassword(String password) {",
+                "Location": "line 251",
+                "Keywords Found": "Access Control : Authentication : [setPassword]"
+            }
+        ]
+    },
+    {
+        "File Name": "AdminUserCustomPersistenceHandler.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\server\\security\\handler\\AdminUserCustomPersistenceHandler.java",
+        "Matches": [
+            {
+                "Source Code": "adminInstance.setPassword(null);",
+                "Location": "line 116",
+                "Keywords Found": "Access Control : Authentication : [setPassword]"
+            },
+            {
+                "Source Code": "adminInstance.setPassword(null);",
+                "Location": "line 153",
+                "Keywords Found": "Access Control : Authentication : [setPassword]"
+            },
+            {
+                "Source Code": "adminInstance.setPassword(null);",
+                "Location": "line 161",
+                "Keywords Found": "Access Control : Authentication : [setPassword]"
+            },
+            {
+                "Source Code": "adminInstance.setPassword(passwordBefore);",
+                "Location": "line 163",
+                "Keywords Found": "Access Control : Authentication : [setPassword]"
+            }
+        ]
+    },
+    {
+        "File Name": "AdminSecurityServiceRemote.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\server\\security\\remote\\AdminSecurityServiceRemote.java",
+        "Matches": [
+            {
+                "Source Code": "LOG.warn(\"Detected security request for an unregistered ceiling entity (\" + StringUtil.sanitize(ceilingNames[0]) + \"). \" +",
+                "Location": "line 252",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "AdminSecurityServiceImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\server\\security\\service\\AdminSecurityServiceImpl.java",
+        "Matches": [
+            {
+                "Source Code": "protected PasswordEncoder passwordEncoderBean;",
+                "Location": "line 100",
+                "Keywords Found": "Access Control : Authentication : [PasswordEncoder]"
+            },
+            {
+                "Source Code": "protected String generateSecurePassword() {",
+                "Location": "line 238",
+                "Keywords Found": "Access Control : Authentication : [generateSecurePassword]"
+            },
+            {
+                "Source Code": "return PasswordUtils.generateSecurePassword(FULL_PASSWORD_LENGTH);",
+                "Location": "line 239",
+                "Keywords Found": "Access Control : Authentication : [generateSecurePassword]"
+            },
+            {
+                "Source Code": "return passwordEncoderBean.encode(rawPassword);",
+                "Location": "line 618",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "JSCompatibilityHelper.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\server\\service\\JSCompatibilityHelper.java",
+        "Matches": [
+            {
+                "Source Code": "public static String encode(String name) {",
+                "Location": "line 27",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "BasicPersistenceModule.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\server\\service\\persistence\\module\\BasicPersistenceModule.java",
+        "Matches": [
+            {
+                "Source Code": "LOG.debug(\"Unable to find a bean property for the reported property: \" + StringUtil.sanitize(property.getName()) + \". Ignoring property.\");",
+                "Location": "line 354",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "LOG.debug(\"Unable to find a metadata property for the reported property: \" + StringUtil.sanitize(property.getName()) + \". Ignoring property.\");",
+                "Location": "line 360",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "PropertyValidationResult validationResult = validator.validate(request, instance);",
+                "Location": "line 392",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "validate(entity, instance, mergedProperties, validateUnsubmittedProperties);",
+                "Location": "line 435",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "LOG.debug(\"Unable to find a specified property in the entity: \" + StringUtil.sanitize(property));",
+                "Location": "line 768",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "public boolean validate(Entity entity, Serializable populatedInstance, Map<String, FieldMetadata> mergedProperties) {",
+                "Location": "line 1445",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "return validate(entity, populatedInstance, mergedProperties, true);",
+                "Location": "line 1446",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "public boolean validate(Entity entity, Serializable populatedInstance, Map<String, FieldMetadata> mergedProperties,",
+                "Location": "line 1450",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "entityValidatorService.validate(entity, populatedInstance, mergedProperties, this, validateUnsubmittedProperties);",
+                "Location": "line 1452",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "StringUtil.sanitize(expression),",
+                "Location": "line 1587",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "StringUtil.sanitize(mappingProperty)));",
+                "Location": "line 1588",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "RecordHelper.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\server\\service\\persistence\\module\\RecordHelper.java",
+        "Matches": [
+            {
+                "Source Code": "boolean validate(Entity entity, Serializable populatedInstance, Map<String, FieldMetadata> mergedProperties, boolean validateUnsubmittedProperties);",
+                "Location": "line 168",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "boolean validate(Entity entity, Serializable populatedInstance, Map<String, FieldMetadata> mergedProperties);",
+                "Location": "line 175",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "BasicFieldTypeValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\server\\service\\persistence\\validation\\BasicFieldTypeValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public PropertyValidationResult validate(PopulateValueRequest populateValueRequest, Serializable instance) {",
+                "Location": "line 45",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "BeanValidationEntityValidatorServiceImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\server\\service\\persistence\\validation\\BeanValidationEntityValidatorServiceImpl.java",
+        "Matches": [
+            {
+                "Source Code": "public void validate(Entity entity, Serializable instance, Map<String, FieldMetadata> mergedProperties,",
+                "Location": "line 75",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "super.validate(entity, instance, mergedProperties, recordHelper, validateUnsubmittedProperties);",
+                "Location": "line 78",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "Set<ConstraintViolation<Serializable>> violations = getValidator().validate(instance);",
+                "Location": "line 81",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "BroadleafEntityValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\server\\service\\persistence\\validation\\BroadleafEntityValidator.java",
+        "Matches": [
+            {
+                "Source Code": "validate(submittedEntity, (T) instance, propertiesMetadata, recordHelper, validateUnsubmittedProperties);",
+                "Location": "line 64",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "EntityValidatorService.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\server\\service\\persistence\\validation\\EntityValidatorService.java",
+        "Matches": [
+            {
+                "Source Code": "void validate(Entity submittedEntity, @Nonnull Serializable instance, Map<String, FieldMetadata> propertiesMetadata,",
+                "Location": "line 56",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "PopulateValueRequestValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\server\\service\\persistence\\validation\\PopulateValueRequestValidator.java",
+        "Matches": [
+            {
+                "Source Code": "PropertyValidationResult validate(PopulateValueRequest populateValueRequest, Serializable instance);",
+                "Location": "line 55",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "PropertyValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\server\\service\\persistence\\validation\\PropertyValidator.java",
+        "Matches": [
+            {
+                "Source Code": "PropertyValidationResult validate(Entity entity,",
+                "Location": "line 66",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "RegexPropertyValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\server\\service\\persistence\\validation\\RegexPropertyValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public PropertyValidationResult validate(Entity entity,",
+                "Location": "line 67",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "String message = \"Invalid regular expression pattern '\" + StringUtil.sanitize(expression) + \"' for \"",
+                "Location": "line 98",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "+ StringUtil.sanitize(propertyName);",
+                "Location": "line 99",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "RuleFieldValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\server\\service\\persistence\\validation\\RuleFieldValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public PropertyValidationResult validate(PopulateValueRequest populateValueRequest, Serializable instance) {",
+                "Location": "line 57",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "JSFieldNameCompatibilityInterceptor.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\web\\compatibility\\JSFieldNameCompatibilityInterceptor.java",
+        "Matches": [
+            {
+                "Source Code": "property.setName(JSCompatibilityHelper.encode(property.getName()));",
+                "Location": "line 54",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            },
+            {
+                "Source Code": "field.getValue().setName(JSCompatibilityHelper.encode(field.getValue().getName()));",
+                "Location": "line 64",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            },
+            {
+                "Source Code": "JSCompatibilityHelper.encode(field.getValue().getAssociatedFieldName())",
+                "Location": "line 66",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "AdminAbstractController.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\web\\controller\\AdminAbstractController.java",
+        "Matches": [
+            {
+                "Source Code": "decoded = eps.cleanString(URLDecoder.decode(value, \"UTF-8\"));",
+                "Location": "line 502",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "AdminTranslationController.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\web\\controller\\AdminTranslationController.java",
+        "Matches": [
+            {
+                "Source Code": "entityFormValidator.validate(entityForm, entity, result);",
+                "Location": "line 196",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "AdminBasicEntityController.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\web\\controller\\entity\\AdminBasicEntityController.java",
+        "Matches": [
+            {
+                "Source Code": "entityType = URLDecoder.decode(entityType, \"UTF-8\");",
+                "Location": "line 387",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "entityFormValidator.validate(entityForm, entity, result);",
+                "Location": "line 427",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "if (duplicator.validate(entityClass, identifier)) {",
+                "Location": "line 464",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "entityFormValidator.validate(entityForm, entity, result);",
+                "Location": "line 749",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "entityFormValidator.validate(entityForm, entity, result);",
+                "Location": "line 837",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "entityFormValidator.validate(entityForm, savedEntity, result);",
+                "Location": "line 1360",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "entityFormValidator.validate(entityForm, savedEntity, result);",
+                "Location": "line 1432",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "entityFormValidator.validate(entityForm, savedEntity, result);",
+                "Location": "line 2227",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "AdminBasicOperationsController.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\web\\controller\\entity\\AdminBasicOperationsController.java",
+        "Matches": [
+            {
+                "Source Code": "LOG.error(\"[JS] - (\" + StringUtil.sanitize(url) + \":\" + StringUtil.sanitize(lineNumber) + \") - \"",
+                "Location": "line 257",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "+ StringUtil.sanitize(message));",
+                "Location": "line 258",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "ResetPasswordForm.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\web\\form\\ResetPasswordForm.java",
+        "Matches": [
+            {
+                "Source Code": "public void setPassword(String password) {",
+                "Location": "line 64",
+                "Keywords Found": "Access Control : Authentication : [setPassword]"
+            }
+        ]
+    },
+    {
+        "File Name": "EntityForm.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\web\\form\\entity\\EntityForm.java",
+        "Matches": [
+            {
+                "Source Code": "LOG.debug(\"Excluding dynamic field \" + StringUtil.sanitize(dynamicField.getKey()) +",
+                "Location": "line 140",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "EntityFormValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\web\\form\\entity\\EntityFormValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public boolean validate(EntityForm form, Map<String, List<String>> propertyErrors, Errors errors) {",
+                "Location": "line 52",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "return validate(form, propertyErrors, null, errors);",
+                "Location": "line 53",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "String serializedFieldName = JSCompatibilityHelper.encode(unserializedFieldName);",
+                "Location": "line 80",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            },
+            {
+                "Source Code": "public boolean validate(EntityForm form, Entity entity, Errors errors) {",
+                "Location": "line 141",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "return validate(form, entity.getPropertyValidationErrors(), entity.getGlobalValidationErrors(), errors);",
+                "Location": "line 143",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "MVELToDataWrapperTranslator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\web\\rulebuilder\\MVELToDataWrapperTranslator.java",
+        "Matches": [
+            {
+                "Source Code": "StringUtil.sanitize(prev.getValue()), StringUtil.sanitize(temp.getValue())));",
+                "Location": "line 312",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "StringUtil.sanitize(prev.getValue()), StringUtil.sanitize(temp.getValue())));",
+                "Location": "line 336",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "FormBuilderServiceImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\web\\service\\FormBuilderServiceImpl.java",
+        "Matches": [
+            {
+                "Source Code": "StringUtil.sanitize(field.getName()) + \"'.\";",
+                "Location": "line 652",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "return StringUtil.sanitize(fmd.getTargetClass()) + \" : \" + StringUtil.sanitize(fmd.getName()) + \" - Failed to parse \"",
+                "Location": "line 1408",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "+ StringUtil.sanitize(type) + \" from DefaultValue [ \" + StringUtil.sanitize(defaultValue) + \" ]\";",
+                "Location": "line 1409",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "LOG.warn(\"Could not find displayProp [\" + StringUtil.sanitize(displayProp) + \"] on entity [\" +",
+                "Location": "line 1658",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "return duplicator.validate(entityClass, Long.valueOf(entityForm.getId()))",
+                "Location": "line 1830",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "MediaBuilderServiceImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\openadmin\\web\\service\\MediaBuilderServiceImpl.java",
+        "Matches": [
+            {
+                "Source Code": "LOG.warn(\"Error parsing json to media \" + StringUtil.sanitize(json), e);",
+                "Location": "line 53",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "LOG.warn(\"Error initializing media field \" + StringUtil.sanitize(field.getName())",
+                "Location": "line 69",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "EncryptionModule.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\encryption\\EncryptionModule.java",
+        "Matches": [
+            {
+                "Source Code": "String encrypt(String plainText);",
+                "Location": "line 31",
+                "Keywords Found": "Cryptography : Encryption : [encrypt]"
+            },
+            {
+                "Source Code": "String decrypt(String cipherText);",
+                "Location": "line 39",
+                "Keywords Found": "Cryptography : Encryption : [decrypt]"
+            }
+        ]
+    },
+    {
+        "File Name": "PassthroughEncryptionModule.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\encryption\\PassthroughEncryptionModule.java",
+        "Matches": [
+            {
+                "Source Code": "public String decrypt(String cipherText) {",
+                "Location": "line 52",
+                "Keywords Found": "Cryptography : Encryption : [decrypt]"
+            },
+            {
+                "Source Code": "public String encrypt(String plainText) {",
+                "Location": "line 57",
+                "Keywords Found": "Cryptography : Encryption : [encrypt]"
+            },
+            {
+                "Source Code": "return encrypted.equals(encrypt(raw));",
+                "Location": "line 63",
+                "Keywords Found": "Cryptography : Encryption : [encrypt]"
+            }
+        ]
+    },
+    {
+        "File Name": "FrameworkXmlBeanDefinitionReader.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\extensibility\\FrameworkXmlBeanDefinitionReader.java",
+        "Matches": [
+            {
+                "Source Code": "((GenericBeanDefinition) beanDefinition).setRole(BeanDefinition.ROLE_SUPPORT);",
+                "Location": "line 70",
+                "Keywords Found": "Access Control : Authorization : [setRole]"
+            }
+        ]
+    },
+    {
+        "File Name": "MergeXmlConfigResource.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\extensibility\\context\\merge\\MergeXmlConfigResource.java",
+        "Matches": [
+            {
+                "Source Code": "LOG.debug(\"Merged config: \\n\" + StringUtil.sanitize(serialize(configResource)));",
+                "Location": "line 62",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "MergeJPAPersistenceResource.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\extensibility\\jpa\\MergeJPAPersistenceResource.java",
+        "Matches": [
+            {
+                "Source Code": "LOG.debug(\"Merged config: \\n\" + StringUtil.sanitize(serialize(configResource)));",
+                "Location": "line 85",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "LocaleDaoImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\locale\\dao\\LocaleDaoImpl.java",
+        "Matches": [
+            {
+                "Source Code": "LOG.warn(\"Locale code \" + StringUtil.sanitize(localeCode) + \" exists for more than one locale\");",
+                "Location": "line 59",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "SLF4JSupportLoggerAdapter.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\logging\\SLF4JSupportLoggerAdapter.java",
+        "Matches": [
+            {
+                "Source Code": "mapSupportLevel(StringUtil.sanitize(message), null);",
+                "Location": "line 40",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "mapSupportLevel(StringUtil.sanitize(message), t);",
+                "Location": "line 45",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "mapSupportLevel(StringUtil.sanitize(message), null);",
+                "Location": "line 50",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "LOGGER.debug(StringUtil.sanitize(message));",
+                "Location": "line 55",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "LOGGER.debug(StringUtil.sanitize(message), t);",
+                "Location": "line 60",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "LOGGER.error(StringUtil.sanitize(message));",
+                "Location": "line 65",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "LOGGER.error(StringUtil.sanitize(message), t);",
+                "Location": "line 70",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "LOGGER.error(StringUtil.sanitize(message));",
+                "Location": "line 80",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "LOGGER.error(StringUtil.sanitize(message), t);",
+                "Location": "line 91",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "LOGGER.info(StringUtil.sanitize(message));",
+                "Location": "line 96",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "LOGGER.info(StringUtil.sanitize(message), t);",
+                "Location": "line 101",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "LOGGER.warn(StringUtil.sanitize(message));",
+                "Location": "line 106",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "LOGGER.warn(StringUtil.sanitize(message), t);",
+                "Location": "line 111",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "EntityConfiguration.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\persistence\\EntityConfiguration.java",
+        "Matches": [
+            {
+                "Source Code": "LOG.debug(\"Returning class (\" + clazz.getName() + \") configured with bean id (\" + StringUtil.sanitize(beanId) + ')');",
+                "Location": "line 78",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "EntityDuplicator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\persistence\\EntityDuplicator.java",
+        "Matches": [
+            {
+                "Source Code": "boolean validate(Class<?> entityClass, Long id);",
+                "Location": "line 59",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "boolean validate(Object entity);",
+                "Location": "line 68",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "EntityDuplicatorImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\persistence\\EntityDuplicatorImpl.java",
+        "Matches": [
+            {
+                "Source Code": "public boolean validate(final Class<?> entityClass, final Long id) {",
+                "Location": "line 70",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "return validate(entity);",
+                "Location": "line 77",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "public boolean validate(final Object entity) {",
+                "Location": "line 81",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "if (!validate(entity)) {",
+                "Location": "line 148",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "if (!validate(entity)) {",
+                "Location": "line 206",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "CompressedItem.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\persistence\\transaction\\CompressedItem.java",
+        "Matches": [
+            {
+                "Source Code": "response = compressed != null ? new String(Base64.encode(compressed)) : \"\" + \"\\n\";",
+                "Location": "line 101",
+                "Keywords Found": "Cryptography : Steganography : [encode(, Base64.]"
+            }
+        ]
+    },
+    {
+        "File Name": "TransactionLifecycleMonitor.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\persistence\\transaction\\TransactionLifecycleMonitor.java",
+        "Matches": [
+            {
+                "Source Code": "return CompressedItem.decompress(Base64.decode(fixed.getBytes()));",
+                "Location": "line 310",
+                "Keywords Found": "Cryptography : Steganography : [decode(, Base64.]"
+            }
+        ]
+    },
+    {
+        "File Name": "MvelHelper.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\rule\\MvelHelper.java",
+        "Matches": [
+            {
+                "Source Code": "LOG.info(\"Unable to parse and/or execute the mvel expression (\" + StringUtil.sanitize(rule)",
+                "Location": "line 211",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "RandomGenerator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\security\\RandomGenerator.java",
+        "Matches": [
+            {
+                "Source Code": "public static String generateRandomId(SecureRandom sr, int len) {",
+                "Location": "line 71",
+                "Keywords Found": "Secure Data Handling : Trusted Sources : [SecureRandom]"
+            }
+        ]
+    },
+    {
+        "File Name": "AntisamyServiceImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\security\\service\\AntisamyServiceImpl.java",
+        "Matches": [
+            {
+                "Source Code": "public AntiSamy getAntiSamy() {",
+                "Location": "line 65",
+                "Keywords Found": "Secure Data Handling : Data Validation : [AntiSamy]"
+            }
+        ]
+    },
+    {
+        "File Name": "ExploitProtectionServiceImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\security\\service\\ExploitProtectionServiceImpl.java",
+        "Matches": [
+            {
+                "Source Code": "public String getCSRFToken() throws ServiceException {",
+                "Location": "line 119",
+                "Keywords Found": "Access Control : Authentication : [getCSRFToken]"
+            }
+        ]
+    },
+    {
+        "File Name": "StaleStateProtectionServiceImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\security\\service\\StaleStateProtectionServiceImpl.java",
+        "Matches": [
+            {
+                "Source Code": "LOG.error(\"SECURITY FAILURE Bad redirect location: \" + StringUtil.sanitize(encoded), e);",
+                "Location": "line 146",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "CookieUtils.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\security\\util\\CookieUtils.java",
+        "Matches": [
+            {
+                "Source Code": "void setCookieValue(HttpServletResponse response, String cookieName, String cookieValue, String path, Integer maxAge, Boolean isSecure);",
+                "Location": "line 45",
+                "Keywords Found": "Access Control : Authentication : [setCookieValue]"
+            },
+            {
+                "Source Code": "void setCookieValue(HttpServletResponse response, String cookieName, String cookieValue);",
+                "Location": "line 47",
+                "Keywords Found": "Access Control : Authentication : [setCookieValue]"
+            }
+        ]
+    },
+    {
+        "File Name": "GenericCookieUtilsImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\security\\util\\GenericCookieUtilsImpl.java",
+        "Matches": [
+            {
+                "Source Code": "Cookie[] cookies = request.getCookies();",
+                "Location": "line 53",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "for (Cookie cookie : cookies) {",
+                "Location": "line 56",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "public void setCookieValue(",
+                "Location": "line 69",
+                "Keywords Found": "Access Control : Authentication : [setCookieValue]"
+            },
+            {
+                "Source Code": "Cookie cookie = new Cookie(cookieName, cookieValue);",
+                "Location": "line 82",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "public void setCookieValue(HttpServletResponse response, String cookieName, String cookieValue) {",
+                "Location": "line 126",
+                "Keywords Found": "Access Control : Authentication : [setCookieValue]"
+            },
+            {
+                "Source Code": "setCookieValue(response, cookieName, cookieValue, \"/\", null, false);",
+                "Location": "line 127",
+                "Keywords Found": "Access Control : Authentication : [setCookieValue]"
+            },
+            {
+                "Source Code": "setCookieValue(response, cookieName, \"\", \"/\", 0, false);",
+                "Location": "line 134",
+                "Keywords Found": "Access Control : Authentication : [setCookieValue]"
+            }
+        ]
+    },
+    {
+        "File Name": "PasswordUtils.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\security\\util\\PasswordUtils.java",
+        "Matches": [
+            {
+                "Source Code": "public static String generateSecurePassword(int requiredLength) {",
+                "Location": "line 31",
+                "Keywords Found": "Access Control : Authentication : [generateSecurePassword]"
+            }
+        ]
+    },
+    {
+        "File Name": "BLCFieldUtils.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\util\\BLCFieldUtils.java",
+        "Matches": [
+            {
+                "Source Code": "StringUtil.sanitize(propertyName), StringUtil.sanitize(clazz.getName()));",
+                "Location": "line 135",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "EntityManagerAwareRunnable.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\util\\EntityManagerAwareRunnable.java",
+        "Matches": [
+            {
+                "Source Code": "public EntityManagerAwareRunnable(Semaphore sem) {",
+                "Location": "line 69",
+                "Keywords Found": "System State Protection : Resource Management : [Semaphore]"
+            }
+        ]
+    },
+    {
+        "File Name": "StringUtil.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\util\\StringUtil.java",
+        "Matches": [
+            {
+                "Source Code": "return encodedUrl == null ? null : URLDecoder.decode(encodedUrl, \"UTF-8\");",
+                "Location": "line 110",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "public static String sanitize(String string) {",
+                "Location": "line 184",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "AbstractVendorService.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\vendor\\service\\AbstractVendorService.java",
+        "Matches": [
+            {
+                "Source Code": "osw.write(URLEncoder.encode(key, encodeCharset));",
+                "Location": "line 53",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            },
+            {
+                "Source Code": "osw.write(URLEncoder.encode(value, encodeCharset));",
+                "Location": "line 55",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "BroadleafRequestProcessor.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\web\\BroadleafRequestProcessor.java",
+        "Matches": [
+            {
+                "Source Code": "LOG.error(\"SECURITY FAILURE Bad redirect location: \" + StringUtil.sanitize(url.toString()));",
+                "Location": "line 158",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "BroadleafSandBoxResolverImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\web\\BroadleafSandBoxResolverImpl.java",
+        "Matches": [
+            {
+                "Source Code": "LOG.debug(\"Setting date/time using \" + StringUtil.sanitize(sandboxDateTimeParam));",
+                "Location": "line 244",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "+ StringUtil.sanitize(sandboxDateTimeParam));",
+                "Location": "line 270",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "LOG.debug(\"Setting date/time using \" + StringUtil.sanitize(dateString));",
+                "Location": "line 301",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "SessionlessHttpServletRequestWrapper.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\web\\filter\\SessionlessHttpServletRequestWrapper.java",
+        "Matches": [
+            {
+                "Source Code": "public HttpSession getSession(boolean create) {",
+                "Location": "line 37",
+                "Keywords Found": "System State Protection : Session Management : [getSession(]"
+            }
+        ]
+    },
+    {
+        "File Name": "BroadleafContextUtil.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\web\\resource\\BroadleafContextUtil.java",
+        "Matches": [
+            {
+                "Source Code": "protected SecurityContext readSecurityContextFromSession(HttpSession httpSession) {",
+                "Location": "line 169",
+                "Keywords Found": "Access Control : Authentication : [SecurityContext]"
+            },
+            {
+                "Source Code": "if (!(ctxFromSession instanceof SecurityContext)) {",
+                "Location": "line 179",
+                "Keywords Found": "Access Control : Authentication : [SecurityContext]"
+            },
+            {
+                "Source Code": "return (SecurityContext) ctxFromSession;",
+                "Location": "line 183",
+                "Keywords Found": "Access Control : Authentication : [SecurityContext]"
+            }
+        ]
+    },
+    {
+        "File Name": "ImportOverrideChildConfiguration.java",
+        "File Path": "src\\test\\java\\org\\broadleafcommerce\\test\\common\\context\\override\\config\\ImportOverrideChildConfiguration.java",
+        "Matches": [
+            {
+                "Source Code": "public PasswordEncoder blPasswordEncoder() {",
+                "Location": "line 33",
+                "Keywords Found": "Access Control : Authentication : [PasswordEncoder]"
+            }
+        ]
+    },
+    {
+        "File Name": "ImportOverrideConfiguration.java",
+        "File Path": "src\\test\\java\\org\\broadleafcommerce\\test\\common\\context\\override\\config\\ImportOverrideConfiguration.java",
+        "Matches": [
+            {
+                "Source Code": "public PasswordEncoder blPasswordEncoder() {",
+                "Location": "line 35",
+                "Keywords Found": "Access Control : Authentication : [PasswordEncoder]"
+            }
+        ]
+    },
+    {
+        "File Name": "InnerStaticImportChildConfiguration.java",
+        "File Path": "src\\test\\java\\org\\broadleafcommerce\\test\\common\\context\\override\\config\\InnerStaticImportChildConfiguration.java",
+        "Matches": [
+            {
+                "Source Code": "public PasswordEncoder blPasswordEncoder() {",
+                "Location": "line 33",
+                "Keywords Found": "Access Control : Authentication : [PasswordEncoder]"
+            }
+        ]
+    },
+    {
+        "File Name": "InnerStaticImportConfiguration.java",
+        "File Path": "src\\test\\java\\org\\broadleafcommerce\\test\\common\\context\\override\\config\\InnerStaticImportConfiguration.java",
+        "Matches": [
+            {
+                "Source Code": "public PasswordEncoder blPasswordEncoder() {",
+                "Location": "line 38",
+                "Keywords Found": "Access Control : Authentication : [PasswordEncoder]"
+            }
+        ]
+    },
+    {
+        "File Name": "InnerStaticOverrideConfiguration.java",
+        "File Path": "src\\test\\java\\org\\broadleafcommerce\\test\\common\\context\\override\\config\\InnerStaticOverrideConfiguration.java",
+        "Matches": [
+            {
+                "Source Code": "public PasswordEncoder blPasswordEncoder() {]",
+                "Location": "line 37",
+                "Keywords Found": "Access Control : Authentication : [PasswordEncoder]"
+            },
+            {
+                "Source Code": "public PasswordEncoder blPasswordEncoder() {",
+                "Location": "line 45",
+                "Keywords Found": "Access Control : Authentication : [PasswordEncoder]"
+            }
+        ]
+    },
+    {
+        "File Name": "XMLImportOverrideConfiguration.java",
+        "File Path": "src\\test\\java\\org\\broadleafcommerce\\test\\common\\context\\override\\config\\XMLImportOverrideConfiguration.java",
+        "Matches": [
+            {
+                "Source Code": "public PasswordEncoder blPasswordEncoder() {",
+                "Location": "line 38",
+                "Keywords Found": "Access Control : Authentication : [PasswordEncoder]"
+            }
+        ]
+    },
+    {
+        "File Name": "XMLImportOverrideConfiguration2.java",
+        "File Path": "src\\test\\java\\org\\broadleafcommerce\\test\\common\\context\\override\\config\\XMLImportOverrideConfiguration2.java",
+        "Matches": [
+            {
+                "Source Code": "public PasswordEncoder blPasswordEncoder() {",
+                "Location": "line 36",
+                "Keywords Found": "Access Control : Authentication : [PasswordEncoder]"
+            }
+        ]
+    },
+    {
+        "File Name": "CrossModuleConfigurationOnlyOverrideTest.java",
+        "File Path": "src\\test\\java\\org\\broadleafcommerce\\test\\common\\context\\override\\crossmodule\\CrossModuleConfigurationOnlyOverrideTest.java",
+        "Matches": [
+            {
+                "Source Code": "protected PasswordEncoder passwordEncoder;",
+                "Location": "line 46",
+                "Keywords Found": "Access Control : Authentication : [PasswordEncoder]"
+            }
+        ]
+    },
+    {
+        "File Name": "CrossModuleConfigurationXMLOverrideTest.java",
+        "File Path": "src\\test\\java\\org\\broadleafcommerce\\test\\common\\context\\override\\crossmodule\\CrossModuleConfigurationXMLOverrideTest.java",
+        "Matches": [
+            {
+                "Source Code": "protected PasswordEncoder passwordEncoder;",
+                "Location": "line 48",
+                "Keywords Found": "Access Control : Authentication : [PasswordEncoder]"
+            }
+        ]
+    },
+    {
+        "File Name": "EarlyModuleConfiguration.java",
+        "File Path": "src\\test\\java\\org\\broadleafcommerce\\test\\common\\context\\override\\crossmodule\\early\\EarlyModuleConfiguration.java",
+        "Matches": [
+            {
+                "Source Code": "public PasswordEncoder blPasswordEncoder() {",
+                "Location": "line 33",
+                "Keywords Found": "Access Control : Authentication : [PasswordEncoder]"
+            }
+        ]
+    },
+    {
+        "File Name": "LateModuleConfiguration.java",
+        "File Path": "src\\test\\java\\org\\broadleafcommerce\\test\\common\\context\\override\\crossmodule\\late\\LateModuleConfiguration.java",
+        "Matches": [
+            {
+                "Source Code": "public PasswordEncoder blPasswordEncoder() {",
+                "Location": "line 33",
+                "Keywords Found": "Access Control : Authentication : [PasswordEncoder]"
+            }
+        ]
+    },
+    {
+        "File Name": "DuplicateImportConfigurationTest.java",
+        "File Path": "src\\test\\java\\org\\broadleafcommerce\\test\\common\\context\\override\\importer\\DuplicateImportConfigurationTest.java",
+        "Matches": [
+            {
+                "Source Code": "protected PasswordEncoder passwordEncoder;",
+                "Location": "line 66",
+                "Keywords Found": "Access Control : Authentication : [PasswordEncoder]"
+            }
+        ]
+    },
+    {
+        "File Name": "ImportBeanOverrideConfigurationTest.java",
+        "File Path": "src\\test\\java\\org\\broadleafcommerce\\test\\common\\context\\override\\importer\\ImportBeanOverrideConfigurationTest.java",
+        "Matches": [
+            {
+                "Source Code": "protected PasswordEncoder passwordEncoder;",
+                "Location": "line 56",
+                "Keywords Found": "Access Control : Authentication : [PasswordEncoder]"
+            }
+        ]
+    },
+    {
+        "File Name": "ProductImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\catalog\\domain\\ProductImpl.java",
+        "Matches": [
+            {
+                "Source Code": "return Objects.hash(id, additionalSkus);",
+                "Location": "line 1094",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "ProductOptionValueImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\catalog\\domain\\ProductOptionValueImpl.java",
+        "Matches": [
+            {
+                "Source Code": "return Objects.hash(id, attributeValue);",
+                "Location": "line 211",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "SkuProductOptionValueXrefImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\catalog\\domain\\SkuProductOptionValueXrefImpl.java",
+        "Matches": [
+            {
+                "Source Code": "return Objects.hash(id, getSku(), getProductOptionValue());",
+                "Location": "line 159",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "DecrementInventoryRollbackHandler.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\checkout\\service\\workflow\\DecrementInventoryRollbackHandler.java",
+        "Matches": [
+            {
+                "Source Code": "StringUtil.sanitize(orderId) + \". This should be corrected manually!\", ex);",
+                "Location": "line 100",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "ValidateProductOptionsActivity.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\checkout\\service\\workflow\\ValidateProductOptionsActivity.java",
+        "Matches": [
+            {
+                "Source Code": "productOptionValidationService.validate(productOption, attributeValue);",
+                "Location": "line 93",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "ProductOptionValidationService.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\order\\service\\ProductOptionValidationService.java",
+        "Matches": [
+            {
+                "Source Code": "Boolean validate(ProductOption productOption, String value);",
+                "Location": "line 27",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "ProductOptionValidationServiceImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\order\\service\\ProductOptionValidationServiceImpl.java",
+        "Matches": [
+            {
+                "Source Code": "public Boolean validate(ProductOption productOption, String value) {",
+                "Location": "line 66",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "String message = \"Required attribute, \" + StringUtil.sanitize(attributeName) + \", not provided\";",
+                "Location": "line 70",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "errorMessage = \"Value [\" + StringUtil.sanitize(value) + \"] does not match regex string [\" + validationString + \"]\";",
+                "Location": "line 84",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "validate(productOption, attributeValue);",
+                "Location": "line 142",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "AddWorkflowVerifyFulfillmentGroupItemsActivity.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\order\\service\\workflow\\AddWorkflowVerifyFulfillmentGroupItemsActivity.java",
+        "Matches": [
+            {
+                "Source Code": "request = fgItemStrategy.verify(request);",
+                "Location": "line 43",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            }
+        ]
+    },
+    {
+        "File Name": "RemoveWorkflowVerifyFulfillmentGroupItemsActivity.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\order\\service\\workflow\\RemoveWorkflowVerifyFulfillmentGroupItemsActivity.java",
+        "Matches": [
+            {
+                "Source Code": "request = fgItemStrategy.verify(request);",
+                "Location": "line 46",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            }
+        ]
+    },
+    {
+        "File Name": "UpdateWorkflowVerifyFulfillmentGroupItemsActivity.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\order\\service\\workflow\\UpdateWorkflowVerifyFulfillmentGroupItemsActivity.java",
+        "Matches": [
+            {
+                "Source Code": "request = fgItemStrategy.verify(request);",
+                "Location": "line 46",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            }
+        ]
+    },
+    {
+        "File Name": "ValidateAddRequestActivity.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\order\\service\\workflow\\add\\ValidateAddRequestActivity.java",
+        "Matches": [
+            {
+                "Source Code": "ExtensionResultStatusType result = extensionManager.getProxy().validate(context.getSeedData(), resultHolder);",
+                "Location": "line 93",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "return validate(context);",
+                "Location": "line 102",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "protected ProcessContext<CartOperationRequest> validate(ProcessContext<CartOperationRequest> context) {",
+                "Location": "line 105",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "productOptionValidationService.validate(productOption, attributeValue);",
+                "Location": "line 225",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "AbstractValidateAddRequestActivityExtensionHandler.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\order\\service\\workflow\\add\\extension\\AbstractValidateAddRequestActivityExtensionHandler.java",
+        "Matches": [
+            {
+                "Source Code": "public ExtensionResultStatusType validate(CartOperationRequest request, ExtensionResultHolder<Exception> resultHolder) {",
+                "Location": "line 32",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "ValidateAddRequestActivityExtensionHandler.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\order\\service\\workflow\\add\\extension\\ValidateAddRequestActivityExtensionHandler.java",
+        "Matches": [
+            {
+                "Source Code": "ExtensionResultStatusType validate(CartOperationRequest request, ExtensionResultHolder<Exception> resultHolder);",
+                "Location": "line 38",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "OrderItemRequestValidationServiceImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\order\\service\\workflow\\service\\OrderItemRequestValidationServiceImpl.java",
+        "Matches": [
+            {
+                "Source Code": "productOptionValidationService.validate(productOption, attributeValue);",
+                "Location": "line 175",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "FulfillmentGroupItemStrategy.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\order\\strategy\\FulfillmentGroupItemStrategy.java",
+        "Matches": [
+            {
+                "Source Code": "CartOperationRequest verify(CartOperationRequest request) throws PricingException;",
+                "Location": "line 47",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            }
+        ]
+    },
+    {
+        "File Name": "FulfillmentGroupItemStrategyImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\order\\strategy\\FulfillmentGroupItemStrategyImpl.java",
+        "Matches": [
+            {
+                "Source Code": "public CartOperationRequest verify(CartOperationRequest request) throws PricingException {",
+                "Location": "line 333",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            }
+        ]
+    },
+    {
+        "File Name": "NullFulfillmentGroupItemStrategyImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\order\\strategy\\NullFulfillmentGroupItemStrategyImpl.java",
+        "Matches": [
+            {
+                "Source Code": "public CartOperationRequest verify(CartOperationRequest request) {",
+                "Location": "line 55",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            }
+        ]
+    },
+    {
+        "File Name": "BankAccountPaymentImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\payment\\domain\\secure\\BankAccountPaymentImpl.java",
+        "Matches": [
+            {
+                "Source Code": "return encryptionModule.decrypt(accountNumber);",
+                "Location": "line 105",
+                "Keywords Found": "Cryptography : Encryption : [decrypt]"
+            },
+            {
+                "Source Code": "this.accountNumber = encryptionModule.encrypt(accountNumber);",
+                "Location": "line 110",
+                "Keywords Found": "Cryptography : Encryption : [encrypt]"
+            },
+            {
+                "Source Code": "return encryptionModule.decrypt(routingNumber);",
+                "Location": "line 115",
+                "Keywords Found": "Cryptography : Encryption : [decrypt]"
+            },
+            {
+                "Source Code": "this.routingNumber = encryptionModule.encrypt(routingNumber);",
+                "Location": "line 120",
+                "Keywords Found": "Cryptography : Encryption : [encrypt]"
+            }
+        ]
+    },
+    {
+        "File Name": "CreditCardPaymentInfoImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\payment\\domain\\secure\\CreditCardPaymentInfoImpl.java",
+        "Matches": [
+            {
+                "Source Code": "return encryptionModule.decrypt(pan);",
+                "Location": "line 122",
+                "Keywords Found": "Cryptography : Encryption : [decrypt]"
+            },
+            {
+                "Source Code": "this.pan = encryptionModule.encrypt(pan);",
+                "Location": "line 130",
+                "Keywords Found": "Cryptography : Encryption : [encrypt]"
+            }
+        ]
+    },
+    {
+        "File Name": "GiftCardPaymentImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\payment\\domain\\secure\\GiftCardPaymentImpl.java",
+        "Matches": [
+            {
+                "Source Code": "return encryptionModule.decrypt(pan);",
+                "Location": "line 90",
+                "Keywords Found": "Cryptography : Encryption : [decrypt]"
+            },
+            {
+                "Source Code": "this.pan = encryptionModule.encrypt(pan);",
+                "Location": "line 95",
+                "Keywords Found": "Cryptography : Encryption : [encrypt]"
+            },
+            {
+                "Source Code": "return encryptionModule.decrypt(pin);",
+                "Location": "line 100",
+                "Keywords Found": "Cryptography : Encryption : [decrypt]"
+            },
+            {
+                "Source Code": "this.pin = encryptionModule.encrypt(pin);",
+                "Location": "line 105",
+                "Keywords Found": "Cryptography : Encryption : [encrypt]"
+            }
+        ]
+    },
+    {
+        "File Name": "PaymentResponseDTOToEntityServiceImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\payment\\service\\PaymentResponseDTOToEntityServiceImpl.java",
+        "Matches": [
+            {
+                "Source Code": "LOG.warn(\"The given country from the response: \" + StringUtil.sanitize(dto.getAddressCountryCode())",
+                "Location": "line 138",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "LOG.error(\"The given country from the response: \" + StringUtil.sanitize(dto.getAddressCountryCode())",
+                "Location": "line 141",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "SearchFacetResultDTO.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\search\\domain\\SearchFacetResultDTO.java",
+        "Matches": [
+            {
+                "Source Code": "return URLEncoder.encode(value, \"UTF-8\");",
+                "Location": "line 92",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "SolrHelperServiceImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\search\\service\\solr\\SolrHelperServiceImpl.java",
+        "Matches": [
+            {
+                "Source Code": "StringBuilder msg = new StringBuilder().append(\"Solr sortquery received was \" + StringUtil.sanitize(sortQuery)",
+                "Location": "line 863",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "StringUtil.sanitize(components[currentPosition]), object.getClass().getName()));",
+                "Location": "line 980",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "SolrSearchServiceImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\search\\service\\solr\\SolrSearchServiceImpl.java",
+        "Matches": [
+            {
+                "Source Code": "LOG.trace(URLDecoder.decode(solrQuery.toString(), \"UTF-8\"));",
+                "Location": "line 263",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "SolrIndexServiceImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\search\\service\\solr\\index\\SolrIndexServiceImpl.java",
+        "Matches": [
+            {
+                "Source Code": "String deleteQuery = StringUtil.sanitize(shs.getNamespaceFieldName()) + \":(\\\"\"",
+                "Location": "line 333",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "+ StringUtil.sanitize(solrConfiguration.getNamespace()) + \"\\\")\";",
+                "Location": "line 334",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "DefaultSolrIndexQueueProvider.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\search\\service\\solr\\indexer\\DefaultSolrIndexQueueProvider.java",
+        "Matches": [
+            {
+                "Source Code": "lock = createLocalLock(lockName);",
+                "Location": "line 104",
+                "Keywords Found": "System State Protection : State Synchronization : [createLocalLock]"
+            },
+            {
+                "Source Code": "protected Lock createLocalLock(String lockName) {",
+                "Location": "line 152",
+                "Keywords Found": "System State Protection : State Synchronization : [createLocalLock]"
+            }
+        ]
+    },
+    {
+        "File Name": "OfferServiceTest.java",
+        "File Path": "src\\test\\java\\org\\broadleafcommerce\\core\\offer\\service\\OfferServiceTest.java",
+        "Matches": [
+            {
+                "Source Code": "EasyMock.verify(customerOfferDaoMock);",
+                "Location": "line 163",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            },
+            {
+                "Source Code": "EasyMock.verify(offerCodeDaoMock);",
+                "Location": "line 164",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            },
+            {
+                "Source Code": "EasyMock.verify(offerDaoMock);",
+                "Location": "line 165",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            },
+            {
+                "Source Code": "EasyMock.verify(orderItemDaoMock);",
+                "Location": "line 166",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            },
+            {
+                "Source Code": "EasyMock.verify(orderServiceMock);",
+                "Location": "line 167",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            },
+            {
+                "Source Code": "EasyMock.verify(orderItemServiceMock);",
+                "Location": "line 168",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            },
+            {
+                "Source Code": "EasyMock.verify(fgItemDaoMock);",
+                "Location": "line 169",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            },
+            {
+                "Source Code": "EasyMock.verify(fgServiceMock);",
+                "Location": "line 171",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            },
+            {
+                "Source Code": "EasyMock.verify(multishipOptionServiceMock);",
+                "Location": "line 172",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            },
+            {
+                "Source Code": "EasyMock.verify(offerTimeZoneProcessorMock);",
+                "Location": "line 173",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            }
+        ]
+    },
+    {
+        "File Name": "FulfillmentGroupOfferProcessorTest.java",
+        "File Path": "src\\test\\java\\org\\broadleafcommerce\\core\\offer\\service\\processor\\FulfillmentGroupOfferProcessorTest.java",
+        "Matches": [
+            {
+                "Source Code": "EasyMock.verify(offerDaoMock);",
+                "Location": "line 180",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            },
+            {
+                "Source Code": "EasyMock.verify(orderItemDaoMock);",
+                "Location": "line 181",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            },
+            {
+                "Source Code": "EasyMock.verify(orderServiceMock);",
+                "Location": "line 182",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            },
+            {
+                "Source Code": "EasyMock.verify(orderItemServiceMock);",
+                "Location": "line 183",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            },
+            {
+                "Source Code": "EasyMock.verify(fgItemDaoMock);",
+                "Location": "line 184",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            },
+            {
+                "Source Code": "EasyMock.verify(fgServiceMock);",
+                "Location": "line 185",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            },
+            {
+                "Source Code": "EasyMock.verify(multishipOptionServiceMock);",
+                "Location": "line 186",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            },
+            {
+                "Source Code": "EasyMock.verify(offerTimeZoneProcessorMock);",
+                "Location": "line 187",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            },
+            {
+                "Source Code": "EasyMock.verify(offerServiceUtilitiesMock);",
+                "Location": "line 188",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            }
+        ]
+    },
+    {
+        "File Name": "ItemOfferProcessorTest.java",
+        "File Path": "src\\test\\java\\org\\broadleafcommerce\\core\\offer\\service\\processor\\ItemOfferProcessorTest.java",
+        "Matches": [
+            {
+                "Source Code": "EasyMock.verify(offerDaoMock);",
+                "Location": "line 177",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            },
+            {
+                "Source Code": "EasyMock.verify(orderItemDaoMock);",
+                "Location": "line 178",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            },
+            {
+                "Source Code": "EasyMock.verify(orderServiceMock);",
+                "Location": "line 179",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            },
+            {
+                "Source Code": "EasyMock.verify(orderItemServiceMock);",
+                "Location": "line 180",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            },
+            {
+                "Source Code": "EasyMock.verify(fgItemDaoMock);",
+                "Location": "line 181",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            },
+            {
+                "Source Code": "EasyMock.verify(fgServiceMock);",
+                "Location": "line 182",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            },
+            {
+                "Source Code": "EasyMock.verify(multishipOptionServiceMock);",
+                "Location": "line 183",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            },
+            {
+                "Source Code": "EasyMock.verify(offerTimeZoneProcessorMock);",
+                "Location": "line 184",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            }
+        ]
+    },
+    {
+        "File Name": "OrderOfferProcessorTest.java",
+        "File Path": "src\\test\\java\\org\\broadleafcommerce\\core\\offer\\service\\processor\\OrderOfferProcessorTest.java",
+        "Matches": [
+            {
+                "Source Code": "EasyMock.verify(offerDaoMock);",
+                "Location": "line 77",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            },
+            {
+                "Source Code": "EasyMock.verify(offerTimeZoneProcessorMock);",
+                "Location": "line 78",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            }
+        ]
+    },
+    {
+        "File Name": "AbstractCommonAddressValidatorExtensionHandler.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\web\\validator\\AbstractCommonAddressValidatorExtensionHandler.java",
+        "Matches": [
+            {
+                "Source Code": "public ExtensionResultStatusType validate(BroadleafFormType formType, Address address, Errors errors) {",
+                "Location": "line 33",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "BroadleafCommonAddressValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\web\\validator\\BroadleafCommonAddressValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public void validate(BroadleafFormType formType, Address address, Errors errors) {",
+                "Location": "line 52",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "validatorExtensionManager.getProxy().validate(formType, address, errors);",
+                "Location": "line 54",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "BroadleafCommonAddressValidatorExtensionHandler.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\common\\web\\validator\\BroadleafCommonAddressValidatorExtensionHandler.java",
+        "Matches": [
+            {
+                "Source Code": "ExtensionResultStatusType validate(BroadleafFormType formType, Address address, Errors errors);",
+                "Location": "line 31",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "CategoryHandlerMapping.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\catalog\\CategoryHandlerMapping.java",
+        "Matches": [
+            {
+                "Source Code": "String requestUri = URLDecoder.decode(BLCRequestUtils.getRequestURIWithoutContext(request), charEncoding);",
+                "Location": "line 93",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "ProductHandlerMapping.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\catalog\\ProductHandlerMapping.java",
+        "Matches": [
+            {
+                "Source Code": "String requestUri = URLDecoder.decode(BLCRequestUtils.getRequestURIWithoutContext(request), charEncoding);",
+                "Location": "line 106",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "BillingInfoFormValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\checkout\\validator\\BillingInfoFormValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public void validate(Object obj, Errors errors) {",
+                "Location": "line 36",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "super.validate(BroadleafFormType.BILLING_FORM, billingInfoForm.getAddress(), errors);",
+                "Location": "line 38",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "CheckoutFormValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\checkout\\validator\\CheckoutFormValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public void validate(Object obj, Errors errors) {",
+                "Location": "line 36",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "CheckoutPaymentInfoFormValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\checkout\\validator\\CheckoutPaymentInfoFormValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public void validate(Object obj, Errors errors) {",
+                "Location": "line 41",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "super.validate(obj, errors);",
+                "Location": "line 49",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "CreditCardInfoFormValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\checkout\\validator\\CreditCardInfoFormValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public void validate(Object obj, Errors errors) {",
+                "Location": "line 38",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "GiftCardInfoFormValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\checkout\\validator\\GiftCardInfoFormValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public void validate(Object target, Errors errors) {",
+                "Location": "line 40",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "MultishipAddAddressFormValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\checkout\\validator\\MultishipAddAddressFormValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public void validate(Object obj, Errors errors) {",
+                "Location": "line 36",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "super.validate(BroadleafFormType.SHIPPING_FORM, shippingInfoForm.getAddress(), errors);",
+                "Location": "line 38",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "OrderInfoFormValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\checkout\\validator\\OrderInfoFormValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public void validate(Object obj, Errors errors) {",
+                "Location": "line 36",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "PaymentInfoFormValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\checkout\\validator\\PaymentInfoFormValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public void validate(Object obj, Errors errors) {",
+                "Location": "line 35",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "super.validate(BroadleafFormType.PAYMENT_FORM, paymentInfoForm.getAddress(), errors);",
+                "Location": "line 37",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "ShippingInfoFormValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\checkout\\validator\\ShippingInfoFormValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public void validate(Object obj, Errors errors) {",
+                "Location": "line 36",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "super.validate(BroadleafFormType.SHIPPING_FORM, shippingInfoForm.getAddress(), errors);",
+                "Location": "line 38",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "USBillingInfoFormValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\checkout\\validator\\USBillingInfoFormValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public void validate(Object obj, Errors errors) {",
+                "Location": "line 33",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "super.validate(obj, errors);",
+                "Location": "line 34",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "USMultishipAddAddressFormValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\checkout\\validator\\USMultishipAddAddressFormValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public void validate(Object obj, Errors errors) {",
+                "Location": "line 33",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "super.validate(obj, errors);",
+                "Location": "line 34",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "USShippingInfoFormValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\checkout\\validator\\USShippingInfoFormValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public void validate(Object obj, Errors errors) {",
+                "Location": "line 33",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "super.validate(obj, errors);",
+                "Location": "line 34",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "BroadleafChangePasswordController.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\controller\\account\\BroadleafChangePasswordController.java",
+        "Matches": [
+            {
+                "Source Code": "changePasswordValidator.validate(passwordChange, result);",
+                "Location": "line 61",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "BroadleafManageCustomerAddressesController.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\controller\\account\\BroadleafManageCustomerAddressesController.java",
+        "Matches": [
+            {
+                "Source Code": "customerAddressValidator.validate(form, result);",
+                "Location": "line 75",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "customerAddressValidator.validate(form, result);",
+                "Location": "line 109",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "BroadleafManageCustomerPaymentsController.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\controller\\account\\BroadleafManageCustomerPaymentsController.java",
+        "Matches": [
+            {
+                "Source Code": "paymentInfoFormValidator.validate(paymentInfoForm, bindingResult);",
+                "Location": "line 88",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "BroadleafOauthRegisterController.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\controller\\account\\BroadleafOauthRegisterController.java",
+        "Matches": [
+            {
+                "Source Code": "registerCustomerValidator.validate(registerCustomerForm, errors, isUseEmailForLogin());",
+                "Location": "line 110",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "BroadleafRegisterController.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\controller\\account\\BroadleafRegisterController.java",
+        "Matches": [
+            {
+                "Source Code": "registerCustomerValidator.validate(registerCustomerForm, errors, useEmailForLogin);",
+                "Location": "line 99",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "BroadleafUpdateAccountController.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\controller\\account\\BroadleafUpdateAccountController.java",
+        "Matches": [
+            {
+                "Source Code": "updateAccountValidator.validate(form, result);",
+                "Location": "line 69",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "ResetPasswordForm.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\controller\\account\\ResetPasswordForm.java",
+        "Matches": [
+            {
+                "Source Code": "public void setPassword(String password) {",
+                "Location": "line 63",
+                "Keywords Found": "Access Control : Authentication : [setPassword]"
+            }
+        ]
+    },
+    {
+        "File Name": "AccountPaymentInfoFormValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\controller\\account\\validator\\AccountPaymentInfoFormValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public void validate(Object obj, Errors errors) {",
+                "Location": "line 32",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "super.validate(obj, errors);",
+                "Location": "line 33",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "ChangePasswordValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\controller\\account\\validator\\ChangePasswordValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public void validate(PasswordChange passwordChange, Errors errors) {",
+                "Location": "line 49",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "public void validate(Object target, Errors errors) {",
+                "Location": "line 86",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "CustomerAddressValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\controller\\account\\validator\\CustomerAddressValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public void validate(Object obj, Errors errors) {",
+                "Location": "line 35",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "super.validate(BroadleafFormType.CUSTOMER_ADDRESS_FORM, form.getAddress(), errors);",
+                "Location": "line 37",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "UpdateAccountValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\controller\\account\\validator\\UpdateAccountValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public void validate(UpdateAccountForm form, Errors errors) {",
+                "Location": "line 38",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "public void validate(Object target, Errors errors) {",
+                "Location": "line 71",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "USCustomerAddressValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\controller\\account\\validator\\USCustomerAddressValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public void validate(Object obj, Errors errors) {",
+                "Location": "line 32",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "super.validate(obj, errors);",
+                "Location": "line 33",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "BroadleafBillingInfoController.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\controller\\checkout\\BroadleafBillingInfoController.java",
+        "Matches": [
+            {
+                "Source Code": "billingInfoFormValidator.validate(billingForm, result);",
+                "Location": "line 82",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "BroadleafCheckoutController.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\controller\\checkout\\BroadleafCheckoutController.java",
+        "Matches": [
+            {
+                "Source Code": "orderInfoFormValidator.validate(orderInfoForm, result);",
+                "Location": "line 134",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "BroadleafPaymentInfoController.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\controller\\checkout\\BroadleafPaymentInfoController.java",
+        "Matches": [
+            {
+                "Source Code": "paymentInfoFormValidator.validate(paymentForm, result);",
+                "Location": "line 77",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "paymentInfoFormValidator.validate(paymentForm, result);",
+                "Location": "line 137",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "BroadleafShippingInfoController.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\controller\\checkout\\BroadleafShippingInfoController.java",
+        "Matches": [
+            {
+                "Source Code": "shippingInfoFormValidator.validate(shippingForm, result);",
+                "Location": "line 120",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "multishipAddAddressFormValidator.validate(addressForm, result);",
+                "Location": "line 285",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "i18nUpdateCartServiceExtensionHandler.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\service\\i18nUpdateCartServiceExtensionHandler.java",
+        "Matches": [
+            {
+                "Source Code": "String message = \"The cart Locale [\" + StringUtil.sanitize(cart.getLocale().getLocaleCode()) +",
+                "Location": "line 85",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            },
+            {
+                "Source Code": "\"] does not match the current locale [\" + StringUtil.sanitize(brc.getLocale().getLocaleCode()) + \"]\";",
+                "Location": "line 86",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "ProcessorUtils.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\core\\web\\util\\ProcessorUtils.java",
+        "Matches": [
+            {
+                "Source Code": "parameter.append(URLEncoder.encode(key, \"UTF-8\"));",
+                "Location": "line 69",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            },
+            {
+                "Source Code": "parameter.append(URLEncoder.encode(value, \"UTF-8\"));",
+                "Location": "line 71",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "Customer.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\profile\\core\\domain\\Customer.java",
+        "Matches": [
+            {
+                "Source Code": "void setPassword(String password);",
+                "Location": "line 40",
+                "Keywords Found": "Access Control : Authentication : [setPassword]"
+            }
+        ]
+    },
+    {
+        "File Name": "CustomerImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\profile\\core\\domain\\CustomerImpl.java",
+        "Matches": [
+            {
+                "Source Code": "public void setPassword(String password) {",
+                "Location": "line 303",
+                "Keywords Found": "Access Control : Authentication : [setPassword]"
+            },
+            {
+                "Source Code": "cloned.setPassword(password);",
+                "Location": "line 629",
+                "Keywords Found": "Access Control : Authentication : [setPassword]"
+            }
+        ]
+    },
+    {
+        "File Name": "CustomerRoleImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\profile\\core\\domain\\CustomerRoleImpl.java",
+        "Matches": [
+            {
+                "Source Code": "public Role getRole() {",
+                "Location": "line 95",
+                "Keywords Found": "Access Control : Authorization : [getRole]"
+            },
+            {
+                "Source Code": "public void setRole(Role role) {",
+                "Location": "line 102",
+                "Keywords Found": "Access Control : Authorization : [setRole]"
+            }
+        ]
+    },
+    {
+        "File Name": "CustomerServiceImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\profile\\core\\service\\CustomerServiceImpl.java",
+        "Matches": [
+            {
+                "Source Code": "protected PasswordEncoder passwordEncoderBean;",
+                "Location": "line 83",
+                "Keywords Found": "Access Control : Authentication : [PasswordEncoder]"
+            },
+            {
+                "Source Code": "customer.setPassword(encodePassword(customer.getUnencodedPassword()));",
+                "Location": "line 120",
+                "Keywords Found": "Access Control : Authentication : [setPassword]"
+            },
+            {
+                "Source Code": "protected String generateSecurePassword() {",
+                "Location": "line 133",
+                "Keywords Found": "Access Control : Authentication : [generateSecurePassword]"
+            },
+            {
+                "Source Code": "return PasswordUtils.generateSecurePassword(PASSWORD_LENGTH);",
+                "Location": "line 134",
+                "Keywords Found": "Access Control : Authentication : [generateSecurePassword]"
+            },
+            {
+                "Source Code": "return passwordEncoderBean.encode(rawPassword);",
+                "Location": "line 293",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "RegistrationValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\profile\\core\\service\\validator\\RegistrationValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public void validate(Customer customer, String password, String passwordConfirm, Errors errors) {",
+                "Location": "line 49",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "public void validate(Object target, Errors errors) {",
+                "Location": "line 92",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "ResetPasswordValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\profile\\core\\service\\validator\\ResetPasswordValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public void validate(String username, String password, String confirmPassword, Errors errors) {",
+                "Location": "line 30",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "public void validate(Object target, Errors errors) {",
+                "Location": "line 57",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "BatchRetrieveDaoTest.java",
+        "File Path": "src\\test\\java\\org\\broadleafcommerce\\profile\\util\\dao\\BatchRetrieveDaoTest.java",
+        "Matches": [
+            {
+                "Source Code": "EasyMock.verify(queryMock);",
+                "Location": "line 59",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            }
+        ]
+    },
+    {
+        "File Name": "CustomerPhoneController.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\profile\\web\\controller\\CustomerPhoneController.java",
+        "Matches": [
+            {
+                "Source Code": "phoneValidator.validate(phoneNameForm.getPhone(), errors);",
+                "Location": "line 167",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "customerPhoneValidator.validate(customerPhone, errors);",
+                "Location": "line 182",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "RegisterCustomerController.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\profile\\web\\controller\\RegisterCustomerController.java",
+        "Matches": [
+            {
+                "Source Code": "registerCustomerValidator.validate(registerCustomerForm, errors);",
+                "Location": "line 82",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "CustomerPhoneValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\profile\\web\\controller\\validator\\CustomerPhoneValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public void validate(Object obj, Errors errors) {",
+                "Location": "line 48",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "PhoneValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\profile\\web\\controller\\validator\\PhoneValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public void validate(Object obj, Errors errors) {",
+                "Location": "line 35",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "RegisterCustomerValidator.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\profile\\web\\controller\\validator\\RegisterCustomerValidator.java",
+        "Matches": [
+            {
+                "Source Code": "public void validate(Object obj, Errors errors) {",
+                "Location": "line 52",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "validate(obj, errors, false);",
+                "Location": "line 53",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            },
+            {
+                "Source Code": "public void validate(Object obj, Errors errors, boolean useEmailForUsername) {",
+                "Location": "line 57",
+                "Keywords Found": "Secure Data Handling : Data Validation : [validate(]"
+            }
+        ]
+    },
+    {
+        "File Name": "RegisterCustomerForm.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\profile\\web\\core\\form\\RegisterCustomerForm.java",
+        "Matches": [
+            {
+                "Source Code": "public void setPassword(String password) {",
+                "Location": "line 50",
+                "Keywords Found": "Access Control : Authentication : [setPassword]"
+            }
+        ]
+    },
+    {
+        "File Name": "RestApiCustomerStateFilter.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\profile\\web\\core\\security\\RestApiCustomerStateFilter.java",
+        "Matches": [
+            {
+                "Source Code": "LOG.warn(String.format(\"The customer id passed in '%s' was not a number\", StringUtil.sanitize(customerId)));",
+                "Location": "line 109",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [sanitize]"
+            }
+        ]
+    },
+    {
+        "File Name": "LoginServiceImpl.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\profile\\web\\core\\service\\login\\LoginServiceImpl.java",
+        "Matches": [
+            {
+                "Source Code": "private AuthenticationManager authenticationManager;",
+                "Location": "line 40",
+                "Keywords Found": "Access Control : Authorization : [AuthenticationManager]"
+            }
+        ]
+    },
+    {
+        "File Name": "SessionFixationProtectionFilter.java",
+        "File Path": "src\\main\\java\\org\\broadleafcommerce\\profile\\web\\site\\security\\SessionFixationProtectionFilter.java",
+        "Matches": [
+            {
+                "Source Code": "String decryptedActiveIdValue = encryptionModule.decrypt(activeIdCookieValue);",
+                "Location": "line 91",
+                "Keywords Found": "Cryptography : Encryption : [decrypt]"
+            }
+        ]
+    },
+    {
+        "File Name": "CustomerDataProvider.java",
+        "File Path": "src\\test\\java\\org\\broadleafcommerce\\profile\\dataprovider\\CustomerDataProvider.java",
+        "Matches": [
+            {
+                "Source Code": "customer1.setPassword(\"customer1Password\");",
+                "Location": "line 29",
+                "Keywords Found": "Access Control : Authentication : [setPassword]"
+            },
+            {
+                "Source Code": "customer2.setPassword(\"customer2Password\");",
+                "Location": "line 33",
+                "Keywords Found": "Access Control : Authentication : [setPassword]"
+            }
+        ]
+    },
+    {
+        "File Name": "RegisterCustomerDataProvider.java",
+        "File Path": "src\\test\\java\\org\\broadleafcommerce\\profile\\web\\core\\controller\\dataprovider\\RegisterCustomerDataProvider.java",
+        "Matches": [
+            {
+                "Source Code": "registerCustomer.setPassword(\"TestPassword\");",
+                "Location": "line 42",
+                "Keywords Found": "Access Control : Authentication : [setPassword]"
+            }
+        ]
+    },
+    {
+        "File Name": "AdminUserDataProvider.java",
+        "File Path": "src\\test\\java\\org\\broadleafcommerce\\security\\service\\dataprovider\\AdminUserDataProvider.java",
+        "Matches": [
+            {
+                "Source Code": "adminUser.setPassword(\"TestAdminUserPassword\");",
+                "Location": "line 31",
+                "Keywords Found": "Access Control : Authentication : [setPassword]"
+            }
+        ]
+    }
+]

@@ -1,0 +1,1572 @@
+{
+  "javaVersion": null,
+  "buildSuccess": true,
+  "sources": [
+    {
+      "path": "src\\main\\java",
+      "files": [
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\AccountLimits.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\AccountStatistics.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\AccountTier.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\AckPolicy.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\ApiResponse.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\ApiStats.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\ClusterInfo.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\CompressionOption.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\ConsumerConfiguration.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\ConsumerCreateRequest.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\ConsumerInfo.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\ConsumerLimits.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\ConsumerPauseRequest.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\ConsumerPauseResponse.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\DeliverPolicy.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\DiscardPolicy.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\Error.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\External.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\FeatureConfiguration.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\KeyResult.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\KeyValueConfiguration.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\KeyValueEntry.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\KeyValueOperation.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\KeyValuePurgeOptions.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\KeyValueStatus.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\KeyValueWatcher.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\KeyValueWatchOption.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\LostStreamData.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\MessageDeleteRequest.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\MessageGetRequest.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\MessageInfo.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\Mirror.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\MirrorInfo.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\ObjectInfo.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\ObjectLink.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\ObjectMeta.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\ObjectMetaOptions.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\ObjectStoreConfiguration.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\ObjectStoreStatus.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\ObjectStoreWatcher.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\ObjectStoreWatchOption.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\OrderedConsumerConfiguration.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\PeerInfo.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\Placement.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\PublishAck.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\PurgeResponse.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\ReplayPolicy.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\Replica.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\Republish.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\RetentionPolicy.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\SequenceInfo.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\SequencePair.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\ServerInfo.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\Source.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\SourceBase.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\SourceInfo.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\SourceInfoBase.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\StorageType.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\StreamConfiguration.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\StreamInfo.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\StreamInfoOptions.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\StreamState.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\Subject.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\SubjectTransform.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\SuccessApiResponse.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\api\\Watcher.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\AuthenticationException.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\AuthHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\BaseConsumeOptions.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\BaseConsumerContext.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\BaseMessageConsumer.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\Connection.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\ConnectionListener.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\ConsumeOptions.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\Consumer.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\ConsumerContext.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\Dispatcher.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\ErrorListener.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\FeatureOptions.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\FetchConsumeOptions.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\FetchConsumer.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\ForceReconnectOptions.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\AbstractListReader.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\AckType.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\ConsumerListReader.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\ConsumerNamesReader.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\DataPort.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\DispatcherFactory.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\ErrorListenerConsoleImpl.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\ErrorListenerLoggerImpl.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\FileAuthHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\Headers.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\IncomingMessage.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\IncomingMessageFactory.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\ListRequestEngine.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\MemoryAuthHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\MessageManager.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\MessageQueue.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsConnection.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsConnectionReader.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsConnectionWriter.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsConsumer.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsConsumerContext.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsDispatcher.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsDispatcherWithExecutor.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsFeatureBase.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsFetchConsumer.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsImpl.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsIterableConsumer.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsJetStream.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsJetStreamImpl.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsJetStreamManagement.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsJetStreamMessage.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsJetStreamMetaData.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsJetStreamPullSubscription.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsJetStreamSubscription.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsKeyValue.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsKeyValueManagement.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsKeyValueWatchSubscription.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsMessage.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsMessageConsumer.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsMessageConsumerBase.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsObjectStore.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsObjectStoreManagement.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsObjectStoreWatchSubscription.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsOrderedConsumerContext.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsPublishableMessage.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsServerPool.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsStatistics.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsStreamContext.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsSubscription.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsSubscriptionFactory.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\NatsWatchSubscription.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\OrderedMessageManager.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\ProtocolMessage.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\PullManagerObserver.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\PullMessageManager.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\PullOrderedMessageManager.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\PushMessageManager.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\ServerPoolEntry.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\SimplifiedSubscriptionMaker.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\SocketDataPort.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\SocketDataPortWithWriteTimeout.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\SSLContextFactory.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\SSLContextFactoryProperties.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\StatusMessage.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\StreamInfoReader.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\StreamListReader.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\StreamNamesReader.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\StringAuthHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\impl\\StringListReader.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\IterableConsumer.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\JetStream.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\JetStreamApiException.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\JetStreamManagement.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\JetStreamOptions.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\JetStreamReader.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\JetStreamStatusCheckedException.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\JetStreamStatusException.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\JetStreamSubscription.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\KeyValue.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\KeyValueManagement.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\KeyValueOptions.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\Message.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\MessageConsumer.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\MessageHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\MessageInfoHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\Nats.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\NKey.java",
+          "apiCalls": [
+            {
+              "line": 333,
+              "api": "java.security.SecureRandom.nextBytes",
+              "features": [
+                "SourceOfRandomness"
+              ]
+            },
+            {
+              "line": 336,
+              "api": "java.security.SecureRandom.nextBytes",
+              "features": [
+                "SourceOfRandomness"
+              ]
+            },
+            {
+              "line": 342,
+              "api": "org.bouncycastle.crypto.params.Ed25519PrivateKeyParameters",
+              "features": [
+                "Cryptography"
+              ]
+            },
+            {
+              "line": 343,
+              "api": "org.bouncycastle.crypto.params.Ed25519PrivateKeyParameters.generatePublicKey",
+              "features": [
+                "Cryptography"
+              ]
+            },
+            {
+              "line": 345,
+              "api": "org.bouncycastle.crypto.params.Ed25519PublicKeyParameters.getEncoded",
+              "features": [
+                "Cryptography"
+              ]
+            },
+            {
+              "line": 570,
+              "api": "java.security.Key.getEncoded",
+              "features": [
+                "KeyGeneration"
+              ]
+            },
+            {
+              "line": 570,
+              "api": "java.security.KeyPair.getPublic",
+              "features": [
+                "KeyGeneration"
+              ]
+            },
+            {
+              "line": 607,
+              "api": "org.bouncycastle.crypto.params.Ed25519PrivateKeyParameters",
+              "features": [
+                "Cryptography"
+              ]
+            },
+            {
+              "line": 608,
+              "api": "org.bouncycastle.crypto.params.Ed25519PublicKeyParameters",
+              "features": [
+                "Cryptography"
+              ]
+            },
+            {
+              "line": 610,
+              "api": "java.security.KeyPair",
+              "features": [
+                "KeyGeneration"
+              ]
+            },
+            {
+              "line": 630,
+              "api": "org.bouncycastle.crypto.params.Ed25519PrivateKeyParameters",
+              "features": [
+                "Cryptography"
+              ]
+            },
+            {
+              "line": 630,
+              "api": "java.security.Key.getEncoded",
+              "features": [
+                "KeyGeneration"
+              ]
+            },
+            {
+              "line": 630,
+              "api": "java.security.KeyPair.getPrivate",
+              "features": [
+                "KeyGeneration"
+              ]
+            },
+            {
+              "line": 631,
+              "api": "org.bouncycastle.crypto.signers.Ed25519Signer",
+              "features": [
+                "Signature"
+              ]
+            },
+            {
+              "line": 632,
+              "api": "org.bouncycastle.crypto.signers.Ed25519Signer.init",
+              "features": [
+                "Signature"
+              ]
+            },
+            {
+              "line": 633,
+              "api": "org.bouncycastle.crypto.signers.Ed25519Signer.update",
+              "features": [
+                "Signature"
+              ]
+            },
+            {
+              "line": 634,
+              "api": "org.bouncycastle.crypto.signers.Ed25519Signer.generateSignature",
+              "features": [
+                "Signature"
+              ]
+            },
+            {
+              "line": 650,
+              "api": "org.bouncycastle.crypto.params.Ed25519PublicKeyParameters",
+              "features": [
+                "Cryptography"
+              ]
+            },
+            {
+              "line": 650,
+              "api": "java.security.Key.getEncoded",
+              "features": [
+                "KeyGeneration"
+              ]
+            },
+            {
+              "line": 650,
+              "api": "java.security.KeyPair.getPublic",
+              "features": [
+                "KeyGeneration"
+              ]
+            },
+            {
+              "line": 655,
+              "api": "org.bouncycastle.crypto.params.Ed25519PublicKeyParameters",
+              "features": [
+                "Cryptography"
+              ]
+            },
+            {
+              "line": 658,
+              "api": "org.bouncycastle.crypto.signers.Ed25519Signer",
+              "features": [
+                "Signature"
+              ]
+            },
+            {
+              "line": 659,
+              "api": "org.bouncycastle.crypto.signers.Ed25519Signer.init",
+              "features": [
+                "Signature"
+              ]
+            },
+            {
+              "line": 660,
+              "api": "org.bouncycastle.crypto.signers.Ed25519Signer.update",
+              "features": [
+                "Signature"
+              ]
+            },
+            {
+              "line": 661,
+              "api": "org.bouncycastle.crypto.signers.Ed25519Signer.verifySignature",
+              "features": [
+                "Signature"
+              ]
+            },
+            {
+              "line": 720,
+              "api": "org.bouncycastle.crypto.params.Ed25519PublicKeyParameters.getEncoded",
+              "features": [
+                "Cryptography"
+              ]
+            },
+            {
+              "line": 733,
+              "api": "org.bouncycastle.crypto.params.Ed25519PrivateKeyParameters.getEncoded",
+              "features": [
+                "Cryptography"
+              ]
+            }
+          ],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\NUID.java",
+          "apiCalls": [
+            {
+              "line": 172,
+              "api": "java.security.SecureRandom.nextBytes",
+              "features": [
+                "SourceOfRandomness"
+              ]
+            }
+          ],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\ObjectStore.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\ObjectStoreManagement.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\ObjectStoreOptions.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\Options.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\OrderedConsumerContext.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\package-info.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\PublishOptions.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\PullRequestOptions.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\PullSubscribeOptions.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\PurgeOptions.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\PushSubscribeOptions.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\ReadListener.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\ReconnectDelayHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\ServerPool.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\Statistics.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\StatisticsCollector.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\StreamContext.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\SubscribeOptions.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\Subscription.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\ApiConstants.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\BuilderBase.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\ByteArrayBuilder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\ByteArrayPrimitiveBuilder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\DateTimeUtils.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\Digester.java",
+          "apiCalls": [
+            {
+              "line": 47,
+              "api": "java.security.MessageDigest.getInstance",
+              "features": [
+                "CryptographicHashing"
+              ]
+            },
+            {
+              "line": 52,
+              "api": "java.security.MessageDigest.update",
+              "features": [
+                "CryptographicHashing"
+              ]
+            },
+            {
+              "line": 58,
+              "api": "java.security.MessageDigest.update",
+              "features": [
+                "CryptographicHashing"
+              ]
+            },
+            {
+              "line": 64,
+              "api": "java.security.MessageDigest.update",
+              "features": [
+                "CryptographicHashing"
+              ]
+            },
+            {
+              "line": 70,
+              "api": "java.security.MessageDigest.reset",
+              "features": [
+                "CryptographicHashing"
+              ]
+            },
+            {
+              "line": 89,
+              "api": "java.security.MessageDigest.digest",
+              "features": [
+                "CryptographicHashing"
+              ]
+            },
+            {
+              "line": 95,
+              "api": "java.security.MessageDigest.getAlgorithm",
+              "features": [
+                "CryptographicHashing"
+              ]
+            },
+            {
+              "line": 99,
+              "api": "java.security.MessageDigest.getAlgorithm",
+              "features": [
+                "CryptographicHashing"
+              ]
+            }
+          ],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\Encoding.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\HttpRequest.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\IncomingHeadersProcessor.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\JsonParseException.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\JsonParser.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\JsonSerializable.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\JsonUtils.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\JsonValue.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\JsonValueUtils.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\JwtUtils.java",
+          "apiCalls": [
+            {
+              "line": 246,
+              "api": "java.security.MessageDigest.getInstance",
+              "features": [
+                "CryptographicHashing"
+              ]
+            },
+            {
+              "line": 247,
+              "api": "java.security.MessageDigest.digest",
+              "features": [
+                "CryptographicHashing"
+              ]
+            }
+          ],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\NatsConstants.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\NatsJetStreamClientError.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\NatsJetStreamConstants.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\NatsKeyValueUtil.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\NatsObjectStoreUtil.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\NatsRequestCompletableFuture.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\NatsUri.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\RandomUtils.java",
+          "apiCalls": [
+            {
+              "line": 22,
+              "api": "java.security.SecureRandom",
+              "features": [
+                "SourceOfRandomness"
+              ]
+            },
+            {
+              "line": 23,
+              "api": "java.security.SecureRandom.generateSeed",
+              "features": [
+                "SourceOfRandomness"
+              ]
+            }
+          ],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\SerializableConsumeOptions.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\SerializableConsumerConfiguration.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\SerializableFetchConsumeOptions.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\SerializableOrderedConsumerConfiguration.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\ServerVersion.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\SSLUtils.java",
+          "apiCalls": [
+            {
+              "line": 81,
+              "api": "java.security.KeyStore.getInstance",
+              "features": [
+                "KeyGeneration"
+              ]
+            },
+            {
+              "line": 83,
+              "api": "java.security.KeyStore.load",
+              "features": [
+                "KeyGeneration"
+              ]
+            }
+          ],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\Status.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\Token.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\TokenType.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\Validator.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\WebSocket.java",
+          "apiCalls": [
+            {
+              "line": 64,
+              "api": "java.security.SecureRandom.nextBytes",
+              "features": [
+                "SourceOfRandomness"
+              ]
+            },
+            {
+              "line": 64,
+              "api": "java.security.SecureRandom",
+              "features": [
+                "SourceOfRandomness"
+              ]
+            },
+            {
+              "line": 126,
+              "api": "java.security.MessageDigest.getInstance",
+              "features": [
+                "CryptographicHashing"
+              ]
+            },
+            {
+              "line": 130,
+              "api": "java.security.MessageDigest.update",
+              "features": [
+                "CryptographicHashing"
+              ]
+            },
+            {
+              "line": 131,
+              "api": "java.security.MessageDigest.update",
+              "features": [
+                "CryptographicHashing"
+              ]
+            },
+            {
+              "line": 132,
+              "api": "java.security.MessageDigest.digest",
+              "features": [
+                "CryptographicHashing"
+              ]
+            }
+          ],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\WebsocketFrameHeader.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\WebsocketInputStream.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\support\\WebsocketOutputStream.java",
+          "apiCalls": [
+            {
+              "line": 47,
+              "api": "java.security.SecureRandom",
+              "features": [
+                "SourceOfRandomness"
+              ]
+            }
+          ],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\client\\TimeTraceLogger.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\service\\Discovery.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\service\\Endpoint.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\service\\EndpointContext.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\service\\EndpointStats.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\service\\Group.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\service\\InfoResponse.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\service\\PingResponse.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\service\\Service.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\service\\ServiceBuilder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\service\\ServiceEndpoint.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\service\\ServiceMessage.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\service\\ServiceMessageHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\service\\ServiceResponse.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\io\\nats\\service\\StatsResponse.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        }
+      ]
+    }
+  ]
+}

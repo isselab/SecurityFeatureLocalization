@@ -1,0 +1,99 @@
+Security_Features_Custom
+    Access_Control
+          Authentication
+          Authorization
+    Cryptography
+          Encryption
+          Key_Management
+          Signature
+          Hashing
+          Steganography
+    Security_Monitoring
+          Logging
+          Automated_Response
+          History_Maintenance
+    Secure_Data_Handling
+          Data_Validation
+          Data_Sanitization
+          Retention_Control
+          Secure_Storage
+          Trusted_Sources
+    System_State_Protection
+          Resource_Management
+          System_State_Validation
+          Session_Management
+          State_Synchronization
+          Miscellaneous
+
+Security_Features_Library
+    Access_Control
+          Authentication
+          Authorization
+    Cryptography
+          Encryption
+          Key_Management
+          Signature
+          Hashing
+          Steganography
+    Security_Monitoring
+          Logging
+          Automated_Response
+          History_Maintenance
+    Secure_Data_Handling
+          Data_Validation
+          Data_Sanitization
+          Retention_Control
+          Secure_Storage
+          Trusted_Sources
+    System_State_Protection
+          Resource_Management
+          System_State_Validation
+          Session_Management
+          State_Synchronization
+          Miscellaneous
+
+
+
+
+
+
+Libraries to list:
+
+apache.lucene.queryparser (escape)
+
+apache.commons.lang.RandomStringUtils(randomAlphanumeric)
+                           .StringEscapeUtils(unescapeXml) 
+apache.commons.codec.binary.(Base64)
+apache.commons.codec.digest (md5Hex)
+
+
+
+springframework.security.crypto.bcrypt.BCryptPasswordEncoder (BCryptPasswordEncoder)
+
+java.net (URLEncoder.encode,URLDecoder.decode)
+java.util.concurrent.locks.ReentrantLock
+java.util.Base6(decode)
+java.util.Objects(hash)
+
+
+jakarta.servlet.http.HttpServletRequest HttpSession (getSession)
+jakarta.ws.rs.core. SecurityContext
+
+owasp.validator.html.AntiSamy
+
+warrenstrange.googleauth.GoogleAuthenticatorKey (createCredentials, authorize)
+
+jasypt.encryption.pbe.StandardPBEStringEncryptor (setPassword, setAlgorithm, encrypt, decrypt)
+
+javax.mail.Authenticator;
+javax.mail.PasswordAuthentication;
+javax.crypto.spec.SecretKeySpec (SecretKeySpec)
+javax.crypto.Mac(getInstance)
+javax.crypto.Cipher (Cipher_getInstance, cipher_init, cipher_doFinal)
+javax.servlet.http(Cookie)
+javax.net.ssl.(SSLContext)
+javax.validation.Validation (buildDefaultValidatorFactory)
+
+// &begin[]
+// &end[]
+// &line[]

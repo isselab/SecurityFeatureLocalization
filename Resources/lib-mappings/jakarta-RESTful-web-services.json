@@ -1,0 +1,19 @@
+{
+  "name": "Jakarta RESTful Web Services",
+  "version": "3.1.9",
+  "namespace": "jakarta.ws.rs",
+  "categories": [],
+  "children": [
+    {
+      "namespace": "core",
+      "categories": [],
+      "children": [
+        {
+          "namespace": "SecurityContext",
+          "categories": ["Miscellaneous"],
+          "children": []
+        }
+      ]
+    }
+  ]
+}

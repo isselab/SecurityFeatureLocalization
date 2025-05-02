@@ -1,0 +1,1217 @@
+[
+    {
+        "File Name": "DatabaseUtils.java",
+        "File Path": "src\\com\\google\\refine\\extension\\database\\DatabaseUtils.java",
+        "Matches": [
+            {
+                "Source Code": "public static String encrypt(String plainPassword) {",
+                "Location": "line 135",
+                "Keywords Found": "Cryptography : Encryption : [encrypt]"
+            },
+            {
+                "Source Code": "return textEncryptor.encrypt(plainPassword);",
+                "Location": "line 136",
+                "Keywords Found": "Cryptography : Encryption : [encrypt]"
+            },
+            {
+                "Source Code": "public static String decrypt(String encodedPassword) {",
+                "Location": "line 139",
+                "Keywords Found": "Cryptography : Encryption : [decrypt]"
+            },
+            {
+                "Source Code": "return textEncryptor.decrypt(encodedPassword);",
+                "Location": "line 140",
+                "Keywords Found": "Cryptography : Encryption : [decrypt]"
+            },
+            {
+                "Source Code": "d.setDatabasePassword(decrypt(d.getDatabasePassword()));",
+                "Location": "line 147",
+                "Keywords Found": "Cryptography : Encryption : [decrypt]"
+            }
+        ]
+    },
+    {
+        "File Name": "SimpleTextEncryptor.java",
+        "File Path": "src\\com\\google\\refine\\extension\\database\\SimpleTextEncryptor.java",
+        "Matches": [
+            {
+                "Source Code": "public String decrypt(String encryptedMessage) {",
+                "Location": "line 40",
+                "Keywords Found": "Cryptography : Encryption : [decrypt]"
+            },
+            {
+                "Source Code": "return this.encryptor.decrypt(encryptedMessage);",
+                "Location": "line 41",
+                "Keywords Found": "Cryptography : Encryption : [decrypt]"
+            },
+            {
+                "Source Code": "public String encrypt(String message) {",
+                "Location": "line 45",
+                "Keywords Found": "Cryptography : Encryption : [encrypt]"
+            },
+            {
+                "Source Code": "return this.encryptor.encrypt(message);",
+                "Location": "line 46",
+                "Keywords Found": "Cryptography : Encryption : [encrypt]"
+            },
+            {
+                "Source Code": "public void setPassword(final String password) {",
+                "Location": "line 57",
+                "Keywords Found": "Access Control : Authentication : [setPassword]"
+            },
+            {
+                "Source Code": "this.encryptor.setPassword(password);",
+                "Location": "line 58",
+                "Keywords Found": "Access Control : Authentication : [setPassword]"
+            }
+        ]
+    },
+    {
+        "File Name": "SavedConnectionCommand.java",
+        "File Path": "src\\com\\google\\refine\\extension\\database\\cmd\\SavedConnectionCommand.java",
+        "Matches": [
+            {
+                "Source Code": "dbPasswd = DatabaseUtils.decrypt(savedConnection.getDatabasePassword());",
+                "Location": "line 140",
+                "Keywords Found": "Cryptography : Encryption : [decrypt]"
+            },
+            {
+                "Source Code": "dbPasswd = DatabaseUtils.decrypt(dbConfig.getDatabasePassword());",
+                "Location": "line 195",
+                "Keywords Found": "Cryptography : Encryption : [decrypt]"
+            },
+            {
+                "Source Code": "jdbcConfig.setDatabasePassword(DatabaseUtils.encrypt(jdbcConfig.getDatabasePassword()));",
+                "Location": "line 267",
+                "Keywords Found": "Cryptography : Encryption : [encrypt]"
+            },
+            {
+                "Source Code": "jdbcConfig.setDatabasePassword(DatabaseUtils.encrypt(jdbcConfig.getDatabasePassword()));",
+                "Location": "line 330",
+                "Keywords Found": "Cryptography : Encryption : [encrypt]"
+            }
+        ]
+    },
+    {
+        "File Name": "ConnectionManager.java",
+        "File Path": "src\\org\\openrefine\\wikibase\\commands\\ConnectionManager.java",
+        "Matches": [
+            {
+                "Source Code": "public boolean login(String mediaWikiApiEndpoint, String username, List<Cookie> cookies) {",
+                "Location": "line 158",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            }
+        ]
+    },
+    {
+        "File Name": "LoginCommand.java",
+        "File Path": "src\\org\\openrefine\\wikibase\\commands\\LoginCommand.java",
+        "Matches": [
+            {
+                "Source Code": "List<Cookie> cookieList = new ArrayList<>();",
+                "Location": "line 129",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "Cookie newCookie = new Cookie(name, entry.getValue());",
+                "Location": "line 133",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "private static Map<String, String> processCookiesWithPrefix(String prefix, Cookie[] cookies) throws UnsupportedEncodingException {",
+                "Location": "line 218",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "for (Cookie cookie : cookies) {",
+                "Location": "line 220",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "Cookie[] cookies = request.getCookies();",
+                "Location": "line 233",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "for (Cookie cookie : cookies) {",
+                "Location": "line 234",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "static String getCookieValue(Cookie cookie) throws UnsupportedEncodingException {",
+                "Location": "line 250",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "return URLDecoder.decode(cookie.getValue(), \"utf-8\");",
+                "Location": "line 251",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "String encodedValue = URLEncoder.encode(value, \"utf-8\");",
+                "Location": "line 255",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            },
+            {
+                "Source Code": "Cookie cookie = new Cookie(key, encodedValue);",
+                "Location": "line 256",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "Cookie cookie = new Cookie(key, \"\");",
+                "Location": "line 265",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            }
+        ]
+    },
+    {
+        "File Name": "NewEntityScrutinizer.java",
+        "File Path": "src\\org\\openrefine\\wikibase\\qa\\scrutinizers\\NewEntityScrutinizer.java",
+        "Matches": [
+            {
+                "Source Code": "return Objects.hash(label, description, language);",
+                "Location": "line 252",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "WbStatementExpr.java",
+        "File Path": "src\\org\\openrefine\\wikibase\\schema\\WbStatementExpr.java",
+        "Matches": [
+            {
+                "Source Code": "return Objects.hash(mainSnakValueExpr, qualifierExprs, referenceExprs);",
+                "Location": "line 266",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "QualifiersStatementMerger.java",
+        "File Path": "src\\org\\openrefine\\wikibase\\schema\\strategies\\QualifiersStatementMerger.java",
+        "Matches": [
+            {
+                "Source Code": "return Objects.hash(pids, valueMatcher);",
+                "Location": "line 208",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "SnakOnlyStatementMerger.java",
+        "File Path": "src\\org\\openrefine\\wikibase\\schema\\strategies\\SnakOnlyStatementMerger.java",
+        "Matches": [
+            {
+                "Source Code": "return Objects.hash(valueMatcher);",
+                "Location": "line 130",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "PathElement.java",
+        "File Path": "src\\org\\openrefine\\wikibase\\schema\\validation\\PathElement.java",
+        "Matches": [
+            {
+                "Source Code": "return Objects.hash(position, type);",
+                "Location": "line 92",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "ValidationError.java",
+        "File Path": "src\\org\\openrefine\\wikibase\\schema\\validation\\ValidationError.java",
+        "Matches": [
+            {
+                "Source Code": "return Objects.hash(message, path);",
+                "Location": "line 43",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "StatementEdit.java",
+        "File Path": "src\\org\\openrefine\\wikibase\\updates\\StatementEdit.java",
+        "Matches": [
+            {
+                "Source Code": "return Objects.hash(statement, merger, mode);",
+                "Location": "line 115",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "StatementGroupEdit.java",
+        "File Path": "src\\org\\openrefine\\wikibase\\updates\\StatementGroupEdit.java",
+        "Matches": [
+            {
+                "Source Code": "return Objects.hash(property, statementEdits);",
+                "Location": "line 106",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "LoginCommandTest.java",
+        "File Path": "src\\org\\openrefine\\wikibase\\commands\\LoginCommandTest.java",
+        "Matches": [
+            {
+                "Source Code": "private ArgumentCaptor<Cookie> cookieCaptor;",
+                "Location": "line 78",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "when(request.getCookies()).thenReturn(new Cookie[] {});",
+                "Location": "line 91",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "cookieCaptor = ArgumentCaptor.forClass(Cookie.class);",
+                "Location": "line 92",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "private static Cookie[] makeRequestCookies() {",
+                "Location": "line 499",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "List<Cookie> cookies = new ArrayList<>();",
+                "Location": "line 500",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "cookieMap.forEach((key, value) -> cookies.add(new Cookie(apiEndpointPrefix + WIKIBASE_COOKIE_PREFIX + key, value)));",
+                "Location": "line 501",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "cookies.add(new Cookie(apiEndpointPrefix + USERNAME, username));",
+                "Location": "line 502",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "return cookies.toArray(new Cookie[0]);",
+                "Location": "line 503",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "private static void assertCookieEquals(Cookie cookie, String expectedValue, int expectedMaxAge) {",
+                "Location": "line 512",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "private static Map<String, Cookie> getCookieMap(List<Cookie> cookies) {",
+                "Location": "line 522",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "Map<String, Cookie> map = new HashMap<>();",
+                "Location": "line 523",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            }
+        ]
+    },
+    {
+        "File Name": "EditBatchProcessorTest.java",
+        "File Path": "src\\org\\openrefine\\wikibase\\editing\\EditBatchProcessorTest.java",
+        "Matches": [
+            {
+                "Source Code": "verify(fetcher, times(1)).getEntityDocuments(toQids(firstBatch));",
+                "Location": "line 387",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(fetcher, times(1)).getEntityDocuments(toQids(secondBatch));",
+                "Location": "line 388",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(editor, times(1)).editEntityDocument(Datamodel.makeItemUpdate(doc.getEntityId(),",
+                "Location": "line 390",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(fetcher, times(1)).getEntityDocuments(toMids(firstBatch));",
+                "Location": "line 447",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(fetcher, times(1)).getEntityDocuments(toMids(secondBatch));",
+                "Location": "line 448",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(editor, times(1)).editEntityDocument(Datamodel.makeMediaInfoUpdate((MediaInfoIdValue) doc.getEntityId(),",
+                "Location": "line 452",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            }
+        ]
+    },
+    {
+        "File Name": "MediaFileUtilsTest.java",
+        "File Path": "src\\org\\openrefine\\wikibase\\editing\\MediaFileUtilsTest.java",
+        "Matches": [
+            {
+                "Source Code": "verify(connection, times(2)).sendJsonRequest(\"POST\", uploadParams);",
+                "Location": "line 486",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            }
+        ]
+    },
+    {
+        "File Name": "BeiderMorseKeyer.java",
+        "File Path": "src\\com\\google\\refine\\clustering\\binning\\BeiderMorseKeyer.java",
+        "Matches": [
+            {
+                "Source Code": "return encoder.encode(string).split(\"\\\\|\")[0];",
+                "Location": "line 22",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "DaitchMokotoffKeyer.java",
+        "File Path": "src\\com\\google\\refine\\clustering\\binning\\DaitchMokotoffKeyer.java",
+        "Matches": [
+            {
+                "Source Code": "return encoder.encode(string);",
+                "Location": "line 12",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "ExportRowsCommand.java",
+        "File Path": "src\\com\\google\\refine\\commands\\project\\ExportRowsCommand.java",
+        "Matches": [
+            {
+                "Source Code": "String asciiFilename = escaper.escape(StringUtils.stripAccents(filename).replaceAll(\"[^ -~]\", \" \"));",
+                "Location": "line 129",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [escape]"
+            },
+            {
+                "Source Code": "String rfc5987Filename = escaper.escape(filename);",
+                "Location": "line 130",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [escape]"
+            }
+        ]
+    },
+    {
+        "File Name": "HtmlTableExporter.java",
+        "File Path": "src\\com\\google\\refine\\exporters\\HtmlTableExporter.java",
+        "Matches": [
+            {
+                "Source Code": "writer.write(StringEscapeUtils.escapeHtml4(cellData.link));",
+                "Location": "line 107",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [StringEscapeUtils]"
+            },
+            {
+                "Source Code": "writer.write(StringEscapeUtils.escapeXml10(cellData.text));",
+                "Location": "line 110",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [StringEscapeUtils]"
+            }
+        ]
+    },
+    {
+        "File Name": "LineBasedImporter.java",
+        "File Path": "src\\com\\google\\refine\\importers\\LineBasedImporter.java",
+        "Matches": [
+            {
+                "Source Code": "sepStr = StringEscapeUtils.unescapeJava(sepStr);",
+                "Location": "line 84",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [StringEscapeUtils]"
+            }
+        ]
+    },
+    {
+        "File Name": "SeparatorBasedImporter.java",
+        "File Path": "src\\com\\google\\refine\\importers\\SeparatorBasedImporter.java",
+        "Matches": [
+            {
+                "Source Code": "sep = StringEscapeUtils.unescapeJava(sep);",
+                "Location": "line 114",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [StringEscapeUtils]"
+            },
+            {
+                "Source Code": "return StringEscapeUtils.escapeJava(Character.toString(separator.separator));",
+                "Location": "line 225",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [StringEscapeUtils]"
+            },
+            {
+                "Source Code": "return StringEscapeUtils.escapeJava(format.getDelimiterString());",
+                "Location": "line 228",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [StringEscapeUtils]"
+            },
+            {
+                "Source Code": "return StringEscapeUtils.escapeJava(Character.toString(separator.separator));",
+                "Location": "line 233",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [StringEscapeUtils]"
+            }
+        ]
+    },
+    {
+        "File Name": "HtmlExporterTests.java",
+        "File Path": "src\\com\\google\\refine\\exporters\\HtmlExporterTests.java",
+        "Matches": [
+            {
+                "Source Code": "verify(options, times(2)).getProperty(\"printColumnHeader\");",
+                "Location": "line 155",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            }
+        ]
+    },
+    {
+        "File Name": "XlsExporterTests.java",
+        "File Path": "src\\com\\google\\refine\\exporters\\XlsExporterTests.java",
+        "Matches": [
+            {
+                "Source Code": "verify(options, times(2)).getProperty(\"printColumnHeader\");",
+                "Location": "line 192",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            }
+        ]
+    },
+    {
+        "File Name": "ExcelImporterTests.java",
+        "File Path": "src\\com\\google\\refine\\importers\\ExcelImporterTests.java",
+        "Matches": [
+            {
+                "Source Code": "verify(options, times(1)).get(\"ignoreLines\");",
+                "Location": "line 159",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(1)).get(\"headerLines\");",
+                "Location": "line 160",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(1)).get(\"skipDataLines\");",
+                "Location": "line 161",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(1)).get(\"limit\");",
+                "Location": "line 162",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(1)).get(\"storeBlankCellsAsNulls\");",
+                "Location": "line 163",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(1)).get(\"ignoreLines\");",
+                "Location": "line 200",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(1)).get(\"headerLines\");",
+                "Location": "line 201",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(1)).get(\"skipDataLines\");",
+                "Location": "line 202",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(1)).get(\"limit\");",
+                "Location": "line 203",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(1)).get(\"storeBlankCellsAsNulls\");",
+                "Location": "line 204",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(1)).get(\"ignoreLines\");",
+                "Location": "line 249",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(1)).get(\"headerLines\");",
+                "Location": "line 250",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(1)).get(\"skipDataLines\");",
+                "Location": "line 251",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(1)).get(\"limit\");",
+                "Location": "line 252",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(1)).get(\"storeBlankCellsAsNulls\");",
+                "Location": "line 253",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(SHEETS)).get(\"ignoreLines\");",
+                "Location": "line 353",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(SHEETS)).get(\"headerLines\");",
+                "Location": "line 354",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(SHEETS)).get(\"skipDataLines\");",
+                "Location": "line 355",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(SHEETS)).get(\"limit\");",
+                "Location": "line 356",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(SHEETS)).get(\"storeBlankCellsAsNulls\");",
+                "Location": "line 357",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(SHEETS)).get(\"ignoreLines\");",
+                "Location": "line 415",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(SHEETS)).get(\"headerLines\");",
+                "Location": "line 416",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(SHEETS)).get(\"skipDataLines\");",
+                "Location": "line 417",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(SHEETS)).get(\"limit\");",
+                "Location": "line 418",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(SHEETS)).get(\"storeBlankCellsAsNulls\");",
+                "Location": "line 419",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            }
+        ]
+    },
+    {
+        "File Name": "OdsImporterTests.java",
+        "File Path": "src\\com\\google\\refine\\importers\\OdsImporterTests.java",
+        "Matches": [
+            {
+                "Source Code": "verify(options, times(1)).get(\"ignoreLines\");",
+                "Location": "line 158",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(1)).get(\"headerLines\");",
+                "Location": "line 159",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(1)).get(\"skipDataLines\");",
+                "Location": "line 160",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(1)).get(\"limit\");",
+                "Location": "line 161",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(1)).get(\"storeBlankCellsAsNulls\");",
+                "Location": "line 162",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            }
+        ]
+    },
+    {
+        "File Name": "ExtendDataOperationTests.java",
+        "File Path": "src\\com\\google\\refine\\operations\\recon\\ExtendDataOperationTests.java",
+        "Matches": [
+            {
+                "Source Code": "String json = URLDecoder.decode(request.getBody().readUtf8().split(\"=\")[1], StandardCharsets.UTF_8);",
+                "Location": "line 217",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "ProjectMetadata.java",
+        "File Path": "src\\main\\java\\com\\google\\refine\\ProjectMetadata.java",
+        "Matches": [
+            {
+                "Source Code": "public void setPassword(String password) {",
+                "Location": "line 227",
+                "Keywords Found": "Access Control : Authentication : [setPassword]"
+            }
+        ]
+    },
+    {
+        "File Name": "ScatterplotFacet.java",
+        "File Path": "src\\main\\java\\com\\google\\refine\\browsing\\facets\\ScatterplotFacet.java",
+        "Matches": [
+            {
+                "Source Code": "String encoded = Base64.encodeBase64String(output.toByteArray());",
+                "Location": "line 571",
+                "Keywords Found": "Cryptography : Steganography : [Base64.]"
+            }
+        ]
+    },
+    {
+        "File Name": "CSRFTokenFactory.java",
+        "File Path": "src\\main\\java\\com\\google\\refine\\commands\\CSRFTokenFactory.java",
+        "Matches": [
+            {
+                "Source Code": "protected final SecureRandom rng;",
+                "Location": "line 41",
+                "Keywords Found": "Secure Data Handling : Trusted Sources : [SecureRandom]"
+            },
+            {
+                "Source Code": "this.rng = new SecureRandom();",
+                "Location": "line 64",
+                "Keywords Found": "Secure Data Handling : Trusted Sources : [SecureRandom]"
+            }
+        ]
+    },
+    {
+        "File Name": "HttpUtilities.java",
+        "File Path": "src\\main\\java\\com\\google\\refine\\commands\\HttpUtilities.java",
+        "Matches": [
+            {
+                "Source Code": "context.put(\"stack\", e == null ? \"\" : escaper.escape(ExceptionUtils.getStackTrace(e)));",
+                "Location": "line 203",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [escape]"
+            }
+        ]
+    },
+    {
+        "File Name": "EvalError.java",
+        "File Path": "src\\main\\java\\com\\google\\refine\\expr\\EvalError.java",
+        "Matches": [
+            {
+                "Source Code": "return Objects.hash(message);",
+                "Location": "line 73",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "AddedColumn.java",
+        "File Path": "src\\main\\java\\com\\google\\refine\\model\\AddedColumn.java",
+        "Matches": [
+            {
+                "Source Code": "return Objects.hash(afterName, name);",
+                "Location": "line 50",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "Cell.java",
+        "File Path": "src\\main\\java\\com\\google\\refine\\model\\Cell.java",
+        "Matches": [
+            {
+                "Source Code": "return Objects.hash(recon, value);",
+                "Location": "line 208",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "ColumnsDiff.java",
+        "File Path": "src\\main\\java\\com\\google\\refine\\model\\ColumnsDiff.java",
+        "Matches": [
+            {
+                "Source Code": "return Objects.hash(addedColumns, deletedColumns, modifiedColumns);",
+                "Location": "line 156",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "Recon.java",
+        "File Path": "src\\main\\java\\com\\google\\refine\\model\\Recon.java",
+        "Matches": [
+            {
+                "Source Code": "result = prime * result + Objects.hash(candidates, error, id, identifierSpace, judgment, judgmentAction,",
+                "Location": "line 434",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "ReconCandidate.java",
+        "File Path": "src\\main\\java\\com\\google\\refine\\model\\ReconCandidate.java",
+        "Matches": [
+            {
+                "Source Code": "result = prime * result + Objects.hash(id, name, score);",
+                "Location": "line 152",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "CellAtRow.java",
+        "File Path": "src\\main\\java\\com\\google\\refine\\model\\changes\\CellAtRow.java",
+        "Matches": [
+            {
+                "Source Code": "return Objects.hash(cell, row);",
+                "Location": "line 72",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "Recipe.java",
+        "File Path": "src\\main\\java\\com\\google\\refine\\operations\\Recipe.java",
+        "Matches": [
+            {
+                "Source Code": "return Objects.hash(operations);",
+                "Location": "line 167",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "CookiesUtilities.java",
+        "File Path": "src\\main\\java\\com\\google\\refine\\util\\CookiesUtilities.java",
+        "Matches": [
+            {
+                "Source Code": "public static Cookie getCookie(HttpServletRequest request, String name) {",
+                "Location": "line 45",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "Cookie cookie = null;",
+                "Location": "line 49",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "Cookie[] cookies = request.getCookies();",
+                "Location": "line 50",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "for (Cookie c : cookies) {",
+                "Location": "line 52",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "Cookie c = new Cookie(name, value);",
+                "Location": "line 62",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            },
+            {
+                "Source Code": "Cookie c = new Cookie(name, \"\");",
+                "Location": "line 70",
+                "Keywords Found": "Access Control : Authentication : [Cookie]"
+            }
+        ]
+    },
+    {
+        "File Name": "ParsingUtilities.java",
+        "File Path": "src\\main\\java\\com\\google\\refine\\util\\ParsingUtilities.java",
+        "Matches": [
+            {
+                "Source Code": "String value = (equal >= 0) ? ParsingUtilities.decode(pairString.substring(equal + 1)) : \"\";",
+                "Location": "line 149",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "static public String encode(String s) {",
+                "Location": "line 183",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            },
+            {
+                "Source Code": "return codec.encode(s, \"UTF-8\");",
+                "Location": "line 185",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            },
+            {
+                "Source Code": "static public String decode(String s) {",
+                "Location": "line 194",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "return codec.decode(s, \"UTF-8\");",
+                "Location": "line 196",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "ProjectManagerTests.java",
+        "File Path": "src\\test\\java\\com\\google\\refine\\ProjectManagerTests.java",
+        "Matches": [
+            {
+                "Source Code": "verify(metadata, times(times)).getModified();",
+                "Location": "line 267",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(project, times(times)).getLastSave();",
+                "Location": "line 268",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(meta, times(1)).getModified();",
+                "Location": "line 272",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(proj, times(2)).getLastSave();",
+                "Location": "line 273",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(SUT, times(1)).saveProject(proj);",
+                "Location": "line 274",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(meta, times(1)).getTags();",
+                "Location": "line 275",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(meta).setRowCount(ROW_COUNT);",
+                "Location": "line 276",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            }
+        ]
+    },
+    {
+        "File Name": "RefineServletTests.java",
+        "File Path": "src\\test\\java\\com\\google\\refine\\RefineServletTests.java",
+        "Matches": [
+            {
+                "Source Code": "verify(command, times(1)).doDelete(request, response);",
+                "Location": "line 202",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(request, times(times)).getPathInfo();",
+                "Location": "line 249",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(response, times(1)).sendError(HttpStatus.SC_NOT_FOUND);",
+                "Location": "line 254",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            }
+        ]
+    },
+    {
+        "File Name": "RefineTest.java",
+        "File Path": "src\\test\\java\\com\\google\\refine\\RefineTest.java",
+        "Matches": [
+            {
+                "Source Code": "verify(options, times(1)).has(name);",
+                "Location": "line 372",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            },
+            {
+                "Source Code": "verify(options, times(1)).get(name);",
+                "Location": "line 373",
+                "Keywords Found": "Cryptography : Signature : [verify]"
+            }
+        ]
+    },
+    {
+        "File Name": "TestUtils.java",
+        "File Path": "src\\test\\java\\com\\google\\refine\\util\\TestUtils.java",
+        "Matches": [
+            {
+                "Source Code": "String actualResponse[] = URLDecoder.decode(actualQuery, \"UTF-8\").split(\"=\");",
+                "Location": "line 182",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "String expected[] = URLDecoder.decode(expectedQuery, \"UTF-8\").split(\"=\");",
+                "Location": "line 183",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "Decode.java",
+        "File Path": "src\\main\\java\\com\\google\\refine\\expr\\functions\\strings\\Decode.java",
+        "Matches": [
+            {
+                "Source Code": "return new String(BaseEncoding.base16().decode(string));",
+                "Location": "line 31",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "return new String(BaseEncoding.base32Hex().decode(string));",
+                "Location": "line 33",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "return new String(BaseEncoding.base32().decode(string));",
+                "Location": "line 35",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "return new String(BaseEncoding.base64().decode(string));",
+                "Location": "line 37",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "return new String(BaseEncoding.base64Url().decode(string));",
+                "Location": "line 39",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "Encode.java",
+        "File Path": "src\\main\\java\\com\\google\\refine\\expr\\functions\\strings\\Encode.java",
+        "Matches": [
+            {
+                "Source Code": "return BaseEncoding.base16().encode(string.getBytes());",
+                "Location": "line 34",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            },
+            {
+                "Source Code": "return BaseEncoding.base32Hex().encode(string.getBytes());",
+                "Location": "line 36",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            },
+            {
+                "Source Code": "return BaseEncoding.base32().encode(string.getBytes());",
+                "Location": "line 38",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            },
+            {
+                "Source Code": "return BaseEncoding.base64().encode(string.getBytes());",
+                "Location": "line 40",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            },
+            {
+                "Source Code": "return BaseEncoding.base64Url().encode(string.getBytes());",
+                "Location": "line 42",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "Escape.java",
+        "File Path": "src\\main\\java\\com\\google\\refine\\expr\\functions\\strings\\Escape.java",
+        "Matches": [
+            {
+                "Source Code": "return StringEscapeUtils.escapeHtml4(s);",
+                "Location": "line 69",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [StringEscapeUtils]"
+            },
+            {
+                "Source Code": "return StringEscapeUtils.escapeXml11(s);",
+                "Location": "line 71",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [StringEscapeUtils]"
+            },
+            {
+                "Source Code": "return StringEscapeUtils.escapeCsv(s);",
+                "Location": "line 73",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [StringEscapeUtils]"
+            },
+            {
+                "Source Code": "return StringEscapeUtils.escapeEcmaScript(s);",
+                "Location": "line 75",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [StringEscapeUtils]"
+            },
+            {
+                "Source Code": "return URLEncoder.encode(s, \"UTF-8\");",
+                "Location": "line 78",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            },
+            {
+                "Source Code": "return UrlEscapers.urlPathSegmentEscaper().escape(s).replace(\"%2F\", \"/\");",
+                "Location": "line 82",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [escape]"
+            },
+            {
+                "Source Code": "return UrlEscapers.urlFormParameterEscaper().escape(s);",
+                "Location": "line 84",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [escape]"
+            },
+            {
+                "Source Code": "return UrlEscapers.urlFragmentEscaper().escape(s);",
+                "Location": "line 86",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [escape]"
+            }
+        ]
+    },
+    {
+        "File Name": "MD5.java",
+        "File Path": "src\\main\\java\\com\\google\\refine\\expr\\functions\\strings\\MD5.java",
+        "Matches": [
+            {
+                "Source Code": "public class MD5 implements Function {",
+                "Location": "line 46",
+                "Keywords Found": "Cryptography : Hashing : [MD5]"
+            }
+        ]
+    },
+    {
+        "File Name": "Unescape.java",
+        "File Path": "src\\main\\java\\com\\google\\refine\\expr\\functions\\strings\\Unescape.java",
+        "Matches": [
+            {
+                "Source Code": "return StringEscapeUtils.unescapeHtml4(s);",
+                "Location": "line 59",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [StringEscapeUtils]"
+            },
+            {
+                "Source Code": "return StringEscapeUtils.unescapeXml(s);",
+                "Location": "line 61",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [StringEscapeUtils]"
+            },
+            {
+                "Source Code": "return StringEscapeUtils.unescapeCsv(s);",
+                "Location": "line 63",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [StringEscapeUtils]"
+            },
+            {
+                "Source Code": "return StringEscapeUtils.unescapeEcmaScript(s);",
+                "Location": "line 65",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [StringEscapeUtils]"
+            },
+            {
+                "Source Code": "return URLDecoder.decode(s, \"UTF-8\");",
+                "Location": "line 68",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "ControlFunctionRegistry.java",
+        "File Path": "src\\main\\java\\com\\google\\refine\\grel\\ControlFunctionRegistry.java",
+        "Matches": [
+            {
+                "Source Code": "registerFunction(\"md5\", new MD5());",
+                "Location": "line 257",
+                "Keywords Found": "Cryptography : Hashing : [MD5]"
+            }
+        ]
+    },
+    {
+        "File Name": "BracketedExpr.java",
+        "File Path": "src\\main\\java\\com\\google\\refine\\grel\\ast\\BracketedExpr.java",
+        "Matches": [
+            {
+                "Source Code": "return Objects.hash(inner);",
+                "Location": "line 50",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "ControlCallExpr.java",
+        "File Path": "src\\main\\java\\com\\google\\refine\\grel\\ast\\ControlCallExpr.java",
+        "Matches": [
+            {
+                "Source Code": "result = prime * result + Objects.hash(_control, _controlName);",
+                "Location": "line 131",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "FieldAccessorExpr.java",
+        "File Path": "src\\main\\java\\com\\google\\refine\\grel\\ast\\FieldAccessorExpr.java",
+        "Matches": [
+            {
+                "Source Code": "return Objects.hash(_fieldName, _inner);",
+                "Location": "line 116",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "FunctionCallExpr.java",
+        "File Path": "src\\main\\java\\com\\google\\refine\\grel\\ast\\FunctionCallExpr.java",
+        "Matches": [
+            {
+                "Source Code": "result = prime * result + Objects.hash(_function, _functionName);",
+                "Location": "line 189",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "LiteralExpr.java",
+        "File Path": "src\\main\\java\\com\\google\\refine\\grel\\ast\\LiteralExpr.java",
+        "Matches": [
+            {
+                "Source Code": "return Objects.hash(_source);",
+                "Location": "line 99",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "OperatorCallExpr.java",
+        "File Path": "src\\main\\java\\com\\google\\refine\\grel\\ast\\OperatorCallExpr.java",
+        "Matches": [
+            {
+                "Source Code": "result = prime * result + Objects.hash(_op);",
+                "Location": "line 257",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "Refine.java",
+        "File Path": "src\\com\\google\\refine\\Refine.java",
+        "Matches": [
+            {
+                "Source Code": "private static ThreadPool createThreadPool() {",
+                "Location": "line 165",
+                "Keywords Found": "System State Protection : Resource Management : [ThreadPool]"
+            }
+        ]
+    },
+    {
+        "File Name": "IndentingLayout.java",
+        "File Path": "src\\com\\google\\util\\logging\\IndentingLayout.java",
+        "Matches": [
+            {
+                "Source Code": "pad(buf, CONTEXT_SIZE - context.length(), ' ');",
+                "Location": "line 116",
+                "Keywords Found": "Cryptography : Steganography : [pad(]"
+            },
+            {
+                "Source Code": "pad(buf, indentation, ' ');",
+                "Location": "line 124",
+                "Keywords Found": "Cryptography : Steganography : [pad(]"
+            },
+            {
+                "Source Code": "private void pad(StringBuilder buffer, int pads, char padchar) {",
+                "Location": "line 143",
+                "Keywords Found": "Cryptography : Steganography : [pad(]"
+            }
+        ]
+    },
+    {
+        "File Name": "ThreadPoolExecutorAdapter.java",
+        "File Path": "src\\com\\google\\util\\threads\\ThreadPoolExecutorAdapter.java",
+        "Matches": [
+            {
+                "Source Code": "public class ThreadPoolExecutorAdapter implements ThreadPool, LifeCycle {",
+                "Location": "line 30",
+                "Keywords Found": "System State Protection : Resource Management : [ThreadPool]"
+            }
+        ]
+    }
+]

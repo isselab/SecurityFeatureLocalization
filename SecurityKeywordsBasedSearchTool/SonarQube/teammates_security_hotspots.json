@@ -1,0 +1,232 @@
+[
+    {
+        "projectName": "teammates",
+        "fileName": "GenerateUsageStatisticsObjects.java",
+        "filePath": "src/client/java/teammates/client/scripts/GenerateUsageStatisticsObjects.java",
+        "Security Category": "weak-cryptography",
+        "Description": "Using pseudorandom number generators (PRNGs) is security-sensitive",
+        "Location": "31 - 31",
+        "Severity": "MEDIUM",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a cryptographically strong random number generator (RNG) like \"java.security.SecureRandom\" in place of this PRNG.\nUse the generated random values only once.\nYou should not expose the generated random value. If you have to store it, make sure that the database or file is secure.\nCompliant Solution\nSecureRandom random = new SecureRandom(); // Compliant for security-sensitive use cases\nbyte bytes[] = new byte[20];\nrandom.nextBytes(bytes);\nSee\nOWASP -\nTop 10 2021 Category A2 - Cryptographic Failures\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nOWASP -\nMobile AppSec\nVerification Standard - Cryptography Requirements\nOWASP -\nMobile Top 10 2016 Category M5 -\nInsufficient Cryptography\nCWE -\nCWE-338 - Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)\nCWE -\nCWE-330 - Use of Insufficiently Random Values\nCWE -\nCWE-326 - Inadequate Encryption Strength\nCWE -\nCWE-1241 - Use of Predictable Algorithm in Random Number Generator\nCERT, MSC02-J.\n- Generate strong random numbers\nCERT, MSC30-C.\n- Do not use the rand() function for generating pseudorandom numbers\nCERT, MSC50-CPP.\n- Do not use std::rand() for generating pseudorandom numbers\nDerived from FindSecBugs rule\nPredictable Pseudo Random Number\nGenerator"
+    },
+    {
+        "projectName": "teammates",
+        "fileName": "SeedDb.java",
+        "filePath": "src/client/java/teammates/client/scripts/sql/SeedDb.java",
+        "Security Category": "weak-cryptography",
+        "Description": "Using pseudorandom number generators (PRNGs) is security-sensitive",
+        "Location": "117 - 117",
+        "Severity": "MEDIUM",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a cryptographically strong random number generator (RNG) like \"java.security.SecureRandom\" in place of this PRNG.\nUse the generated random values only once.\nYou should not expose the generated random value. If you have to store it, make sure that the database or file is secure.\nCompliant Solution\nSecureRandom random = new SecureRandom(); // Compliant for security-sensitive use cases\nbyte bytes[] = new byte[20];\nrandom.nextBytes(bytes);\nSee\nOWASP -\nTop 10 2021 Category A2 - Cryptographic Failures\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nOWASP -\nMobile AppSec\nVerification Standard - Cryptography Requirements\nOWASP -\nMobile Top 10 2016 Category M5 -\nInsufficient Cryptography\nCWE -\nCWE-338 - Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)\nCWE -\nCWE-330 - Use of Insufficiently Random Values\nCWE -\nCWE-326 - Inadequate Encryption Strength\nCWE -\nCWE-1241 - Use of Predictable Algorithm in Random Number Generator\nCERT, MSC02-J.\n- Generate strong random numbers\nCERT, MSC30-C.\n- Do not use the rand() function for generating pseudorandom numbers\nCERT, MSC50-CPP.\n- Do not use std::rand() for generating pseudorandom numbers\nDerived from FindSecBugs rule\nPredictable Pseudo Random Number\nGenerator"
+    },
+    {
+        "projectName": "teammates",
+        "fileName": "RequestTraceFilter.java",
+        "filePath": "src/main/java/teammates/ui/servlets/RequestTraceFilter.java",
+        "Security Category": "weak-cryptography",
+        "Description": "Using pseudorandom number generators (PRNGs) is security-sensitive",
+        "Location": "45 - 45",
+        "Severity": "MEDIUM",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a cryptographically strong random number generator (RNG) like \"java.security.SecureRandom\" in place of this PRNG.\nUse the generated random values only once.\nYou should not expose the generated random value. If you have to store it, make sure that the database or file is secure.\nCompliant Solution\nSecureRandom random = new SecureRandom(); // Compliant for security-sensitive use cases\nbyte bytes[] = new byte[20];\nrandom.nextBytes(bytes);\nSee\nOWASP -\nTop 10 2021 Category A2 - Cryptographic Failures\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nOWASP -\nMobile AppSec\nVerification Standard - Cryptography Requirements\nOWASP -\nMobile Top 10 2016 Category M5 -\nInsufficient Cryptography\nCWE -\nCWE-338 - Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)\nCWE -\nCWE-330 - Use of Insufficiently Random Values\nCWE -\nCWE-326 - Inadequate Encryption Strength\nCWE -\nCWE-1241 - Use of Predictable Algorithm in Random Number Generator\nCERT, MSC02-J.\n- Generate strong random numbers\nCERT, MSC30-C.\n- Do not use the rand() function for generating pseudorandom numbers\nCERT, MSC50-CPP.\n- Do not use std::rand() for generating pseudorandom numbers\nDerived from FindSecBugs rule\nPredictable Pseudo Random Number\nGenerator"
+    },
+    {
+        "projectName": "teammates",
+        "fileName": "GenerateUsageStatisticsObjects.java",
+        "filePath": "src/client/java/teammates/client/scripts/GenerateUsageStatisticsObjects.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "49 - 49",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "teammates",
+        "fileName": "UpdateAccountRequestIndexing.java",
+        "filePath": "src/client/java/teammates/client/scripts/UpdateAccountRequestIndexing.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "78 - 78",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "teammates",
+        "fileName": "SeedDb.java",
+        "filePath": "src/client/java/teammates/client/scripts/sql/SeedDb.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "203 - 203",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "teammates",
+        "fileName": "SeedDb.java",
+        "filePath": "src/client/java/teammates/client/scripts/sql/SeedDb.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "217 - 217",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "teammates",
+        "fileName": "StatisticsPerInstitute.java",
+        "filePath": "src/client/java/teammates/client/scripts/statistics/StatisticsPerInstitute.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "135 - 135",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "teammates",
+        "fileName": "BaseE2ETestCase.java",
+        "filePath": "src/e2e/java/teammates/e2e/cases/BaseE2ETestCase.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "358 - 358",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "teammates",
+        "fileName": "BaseE2ETestCase.java",
+        "filePath": "src/e2e/java/teammates/e2e/cases/BaseE2ETestCase.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "368 - 368",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "teammates",
+        "fileName": "BaseE2ETestCase.java",
+        "filePath": "src/e2e/java/teammates/e2e/cases/BaseE2ETestCase.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "379 - 379",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "teammates",
+        "fileName": "BaseE2ETestCase.java",
+        "filePath": "src/e2e/java/teammates/e2e/cases/BaseE2ETestCase.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "390 - 390",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "teammates",
+        "fileName": "BaseE2ETestCase.java",
+        "filePath": "src/e2e/java/teammates/e2e/cases/sql/BaseE2ETestCase.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "240 - 240",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "teammates",
+        "fileName": "BaseE2ETestCase.java",
+        "filePath": "src/e2e/java/teammates/e2e/cases/sql/BaseE2ETestCase.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "301 - 301",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "teammates",
+        "fileName": "GetRegKeyValidityActionIT.java",
+        "filePath": "src/it/java/teammates/it/ui/webapi/GetRegKeyValidityActionIT.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "133 - 133",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "teammates",
+        "fileName": "InstructorStudentCascadingUpdateLNPTest.java",
+        "filePath": "src/lnp/java/teammates/lnp/cases/InstructorStudentCascadingUpdateLNPTest.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "288 - 288",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "teammates",
+        "fileName": "BaseTestCaseWithLocalDatabaseAccess.java",
+        "filePath": "src/test/java/teammates/test/BaseTestCaseWithLocalDatabaseAccess.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "201 - 201",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "teammates",
+        "fileName": "BaseTestCaseWithLocalDatabaseAccess.java",
+        "filePath": "src/test/java/teammates/test/BaseTestCaseWithLocalDatabaseAccess.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "212 - 212",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "teammates",
+        "fileName": "BaseTestCaseWithLocalDatabaseAccess.java",
+        "filePath": "src/test/java/teammates/test/BaseTestCaseWithLocalDatabaseAccess.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "223 - 223",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "teammates",
+        "fileName": "BaseTestCaseWithLocalDatabaseAccess.java",
+        "filePath": "src/test/java/teammates/test/BaseTestCaseWithLocalDatabaseAccess.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "234 - 234",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "teammates",
+        "fileName": "ThreadHelper.java",
+        "filePath": "src/test/java/teammates/test/ThreadHelper.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "19 - 19",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "teammates",
+        "fileName": "StringHelper.java",
+        "filePath": "src/main/java/teammates/common/util/StringHelper.java",
+        "Security Category": "others",
+        "Description": "Using weak hashing algorithms is security-sensitive",
+        "Location": "90 - 90",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nSafer alternatives, such as\nSHA-256\n,\nSHA-512\n,\nSHA-3\nare recommended, and for password hashing, it\u2019s even\nbetter to use algorithms that do not compute too \"quickly\", like\nbcrypt\n,\nscrypt\n,\nargon2\nor\npbkdf2\nbecause it slows down\nbrute force attacks\n.\nCompliant Solution\nMessageDigest md1 = MessageDigest.getInstance(\"SHA-512\"); // Compliant\nSee\nOWASP -\nTop 10 2021 Category A2 - Cryptographic Failures\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nOWASP -\nTop 10 2017 Category A6 - Security\nMisconfiguration\nOWASP -\nMobile AppSec\nVerification Standard - Cryptography Requirements\nOWASP -\nMobile Top 10 2016 Category M5 -\nInsufficient Cryptography\nCWE -\nCWE-1240 - Use of a Risky Cryptographic Primitive"
+    },
+    {
+        "projectName": "teammates",
+        "fileName": "StringHelperTest.java",
+        "filePath": "src/test/java/teammates/common/util/StringHelperTest.java",
+        "Security Category": "others",
+        "Description": "Using weak hashing algorithms is security-sensitive",
+        "Location": "117 - 117",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nSafer alternatives, such as\nSHA-256\n,\nSHA-512\n,\nSHA-3\nare recommended, and for password hashing, it\u2019s even\nbetter to use algorithms that do not compute too \"quickly\", like\nbcrypt\n,\nscrypt\n,\nargon2\nor\npbkdf2\nbecause it slows down\nbrute force attacks\n.\nCompliant Solution\nMessageDigest md1 = MessageDigest.getInstance(\"SHA-512\"); // Compliant\nSee\nOWASP -\nTop 10 2021 Category A2 - Cryptographic Failures\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nOWASP -\nTop 10 2017 Category A6 - Security\nMisconfiguration\nOWASP -\nMobile AppSec\nVerification Standard - Cryptography Requirements\nOWASP -\nMobile Top 10 2016 Category M5 -\nInsufficient Cryptography\nCWE -\nCWE-1240 - Use of a Risky Cryptographic Primitive"
+    }
+]

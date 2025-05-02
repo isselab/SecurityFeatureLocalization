@@ -1,0 +1,983 @@
+[
+    {
+        "File Name": "ExampleAuthHandler.java",
+        "File Path": "src\\examples\\java\\io\\nats\\examples\\ExampleAuthHandler.java",
+        "Matches": [
+            {
+                "Source Code": "public byte[] sign(byte[] nonce) {",
+                "Location": "line 60",
+                "Keywords Found": "Cryptography : Signature : [sign(]"
+            },
+            {
+                "Source Code": "return this.nkey.sign(nonce);",
+                "Location": "line 62",
+                "Keywords Found": "Cryptography : Signature : [sign(]"
+            }
+        ]
+    },
+    {
+        "File Name": "NatsAutoBench.java",
+        "File Path": "src\\examples\\java\\io\\nats\\examples\\autobench\\NatsAutoBench.java",
+        "Matches": [
+            {
+                "Source Code": "System.out.println(\"Security Provider - \"+ SSLContext.getDefault().getProvider().getInfo());",
+                "Location": "line 80",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SSLContext]"
+            }
+        ]
+    },
+    {
+        "File Name": "Output.java",
+        "File Path": "src\\examples\\java\\io\\nats\\examples\\chaosTestApp\\Output.java",
+        "Matches": [
+            {
+                "Source Code": "static final ReentrantLock workLock = new ReentrantLock();",
+                "Location": "line 35",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "static final ReentrantLock controlLock = new ReentrantLock();",
+                "Location": "line 36",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "static final ReentrantLock debugLock = new ReentrantLock();",
+                "Location": "line 37",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            }
+        ]
+    },
+    {
+        "File Name": "Stan.java",
+        "File Path": "src\\examples\\java\\io\\nats\\examples\\stan\\Stan.java",
+        "Matches": [
+            {
+                "Source Code": "SecureRandom random = new SecureRandom();",
+                "Location": "line 53",
+                "Keywords Found": "Secure Data Handling : Trusted Sources : [SecureRandom]"
+            }
+        ]
+    },
+    {
+        "File Name": "AuthHandler.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\AuthHandler.java",
+        "Matches": [
+            {
+                "Source Code": "public byte[] sign(byte[] nonce);",
+                "Location": "line 62",
+                "Keywords Found": "Cryptography : Signature : [sign(]"
+            }
+        ]
+    },
+    {
+        "File Name": "NKey.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\NKey.java",
+        "Matches": [
+            {
+                "Source Code": "static char[] encode(Type type, byte[] src) throws IOException {",
+                "Location": "line 235",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            },
+            {
+                "Source Code": "static byte[] decode(char[] src) {",
+                "Location": "line 275",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "static byte[] decode(Type expectedType, char[] src, boolean safe) {",
+                "Location": "line 294",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "byte[] raw = decode(src);",
+                "Location": "line 295",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "byte[] raw = decode(seed);",
+                "Location": "line 310",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "private static NKey createPair(Type type, SecureRandom random) throws IOException {",
+                "Location": "line 331",
+                "Keywords Found": "Secure Data Handling : Trusted Sources : [SecureRandom]"
+            },
+            {
+                "Source Code": "public static NKey createAccount(SecureRandom random)",
+                "Location": "line 366",
+                "Keywords Found": "Secure Data Handling : Trusted Sources : [SecureRandom]"
+            },
+            {
+                "Source Code": "public static NKey createCluster(SecureRandom random)",
+                "Location": "line 381",
+                "Keywords Found": "Secure Data Handling : Trusted Sources : [SecureRandom]"
+            },
+            {
+                "Source Code": "public static NKey createOperator(SecureRandom random)",
+                "Location": "line 396",
+                "Keywords Found": "Secure Data Handling : Trusted Sources : [SecureRandom]"
+            },
+            {
+                "Source Code": "public static NKey createServer(SecureRandom random)",
+                "Location": "line 411",
+                "Keywords Found": "Secure Data Handling : Trusted Sources : [SecureRandom]"
+            },
+            {
+                "Source Code": "public static NKey createUser(SecureRandom random)",
+                "Location": "line 427",
+                "Keywords Found": "Secure Data Handling : Trusted Sources : [SecureRandom]"
+            },
+            {
+                "Source Code": "byte[] raw = decode(publicKey);",
+                "Location": "line 438",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "return decode(Type.ACCOUNT, src, true) != null;",
+                "Location": "line 473",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "return decode(Type.CLUSTER, src, true) != null;",
+                "Location": "line 481",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "return decode(Type.OPERATOR, src, true) != null;",
+                "Location": "line 489",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "return decode(Type.SERVER, src, true) != null;",
+                "Location": "line 497",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "return decode(Type.USER, src, true) != null;",
+                "Location": "line 505",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "return encode(Type.PRIVATE, decoded.bytes);",
+                "Location": "line 586",
+                "Keywords Found": "Cryptography : Steganography : [encode(]"
+            },
+            {
+                "Source Code": "public byte[] sign(byte[] input) throws GeneralSecurityException, IOException {",
+                "Location": "line 630",
+                "Keywords Found": "Cryptography : Signature : [sign(]"
+            },
+            {
+                "Source Code": "public boolean verify(byte[] input, byte[] signature) throws GeneralSecurityException, IOException {",
+                "Location": "line 648",
+                "Keywords Found": "Cryptography : Signature : [verify(]"
+            },
+            {
+                "Source Code": "byte[] decodedPublicKey = decode(this.type, encodedPublicKey, false);",
+                "Location": "line 654",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "NUID.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\NUID.java",
+        "Matches": [
+            {
+                "Source Code": "private final ReentrantLock nextLock;",
+                "Location": "line 55",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "nextLock = new ReentrantLock();",
+                "Location": "line 75",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            }
+        ]
+    },
+    {
+        "File Name": "Options.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\Options.java",
+        "Matches": [
+            {
+                "Source Code": "private final SSLContext sslContext;",
+                "Location": "line 627",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SSLContext]"
+            },
+            {
+                "Source Code": "private SSLContext sslContext = null;",
+                "Location": "line 744",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SSLContext]"
+            },
+            {
+                "Source Code": "public Builder sslContext(SSLContext ctx) {",
+                "Location": "line 1146",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SSLContext]"
+            },
+            {
+                "Source Code": "this.sslContext = SSLContext.getDefault();",
+                "Location": "line 1855",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SSLContext]"
+            },
+            {
+                "Source Code": "public SSLContext getSslContext() {",
+                "Location": "line 2325",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SSLContext]"
+            },
+            {
+                "Source Code": "byte[] sig = this.getAuthHandler().sign(nonce);",
+                "Location": "line 2589",
+                "Keywords Found": "Cryptography : Signature : [sign(]"
+            }
+        ]
+    },
+    {
+        "File Name": "ObjectInfo.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\api\\ObjectInfo.java",
+        "Matches": [
+            {
+                "Source Code": "public Builder digest(String digest) {",
+                "Location": "line 209",
+                "Keywords Found": "Cryptography : Hashing : [digest(]"
+            }
+        ]
+    },
+    {
+        "File Name": "FileAuthHandler.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\impl\\FileAuthHandler.java",
+        "Matches": [
+            {
+                "Source Code": "CharBuffer chars = StandardCharsets.UTF_8.decode(bb);",
+                "Location": "line 117",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "CharBuffer chars = StandardCharsets.UTF_8.decode(bb);",
+                "Location": "line 130",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "public byte[] sign(byte[] nonce) {",
+                "Location": "line 152",
+                "Keywords Found": "Cryptography : Signature : [sign(]"
+            },
+            {
+                "Source Code": "byte[] sig = nkey.sign(nonce);",
+                "Location": "line 156",
+                "Keywords Found": "Cryptography : Signature : [sign(]"
+            },
+            {
+                "Source Code": "CharBuffer chars = StandardCharsets.UTF_8.decode(bb);",
+                "Location": "line 206",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "Headers.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\impl\\Headers.java",
+        "Matches": [
+            {
+                "Source Code": "return Objects.hash(valuesMap);",
+                "Location": "line 592",
+                "Keywords Found": "Cryptography : Hashing : [hash(]"
+            }
+        ]
+    },
+    {
+        "File Name": "MemoryAuthHandler.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\impl\\MemoryAuthHandler.java",
+        "Matches": [
+            {
+                "Source Code": "CharBuffer chars = StandardCharsets.UTF_8.decode(bb);",
+                "Location": "line 28",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "public byte[] sign(byte[] nonce) {",
+                "Location": "line 112",
+                "Keywords Found": "Cryptography : Signature : [sign(]"
+            },
+            {
+                "Source Code": "return sah.sign(nonce);",
+                "Location": "line 113",
+                "Keywords Found": "Cryptography : Signature : [sign(]"
+            }
+        ]
+    },
+    {
+        "File Name": "MessageManager.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\impl\\MessageManager.java",
+        "Matches": [
+            {
+                "Source Code": "protected final ReentrantLock stateChangeLock;",
+                "Location": "line 32",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "stateChangeLock = new ReentrantLock();",
+                "Location": "line 51",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            }
+        ]
+    },
+    {
+        "File Name": "MessageQueue.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\impl\\MessageQueue.java",
+        "Matches": [
+            {
+                "Source Code": "editLock = new ReentrantLock();",
+                "Location": "line 87",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            }
+        ]
+    },
+    {
+        "File Name": "NatsConnection.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\impl\\NatsConnection.java",
+        "Matches": [
+            {
+                "Source Code": "private final ReentrantLock closeSocketLock;",
+                "Location": "line 58",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "private final ReentrantLock statusLock;",
+                "Location": "line 61",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "private final AtomicReference<ServerInfo> serverInfo;",
+                "Location": "line 73",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            },
+            {
+                "Source Code": "private final AtomicReference<NatsDispatcher> inboxDispatcher;",
+                "Location": "line 83",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            },
+            {
+                "Source Code": "private final ReentrantLock inboxDispatcherLock;",
+                "Location": "line 84",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "private final AtomicReference<String> connectError;",
+                "Location": "line 92",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            },
+            {
+                "Source Code": "private final AtomicReference<String> lastError;",
+                "Location": "line 93",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            },
+            {
+                "Source Code": "private final AtomicReference<CompletableFuture<Boolean>> draining;",
+                "Location": "line 94",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            },
+            {
+                "Source Code": "this.closeSocketLock = new ReentrantLock();",
+                "Location": "line 122",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "this.statusLock = new ReentrantLock();",
+                "Location": "line 124",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "this.lastError = new AtomicReference<>();",
+                "Location": "line 147",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            },
+            {
+                "Source Code": "this.connectError = new AtomicReference<>();",
+                "Location": "line 148",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            },
+            {
+                "Source Code": "this.serverInfo = new AtomicReference<>();",
+                "Location": "line 150",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            },
+            {
+                "Source Code": "this.inboxDispatcher = new AtomicReference<>();",
+                "Location": "line 151",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            },
+            {
+                "Source Code": "this.inboxDispatcherLock = new ReentrantLock();",
+                "Location": "line 152",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "this.draining = new AtomicReference<>();",
+                "Location": "line 154",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            },
+            {
+                "Source Code": "String infoJson = UTF_8.decode(protocolBuffer).toString();",
+                "Location": "line 1650",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "NatsConnectionReader.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\impl\\NatsConnectionReader.java",
+        "Matches": [
+            {
+                "Source Code": "CharBuffer buff = StandardCharsets.UTF_8.decode(protocolBuffer);",
+                "Location": "line 478",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "CharBuffer buff = StandardCharsets.UTF_8.decode(protocolBuffer);",
+                "Location": "line 515",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "String errorText = StandardCharsets.UTF_8.decode(protocolBuffer).toString().replace(\"'\", \"\");",
+                "Location": "line 561",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            },
+            {
+                "Source Code": "String info = StandardCharsets.UTF_8.decode(protocolBuffer).toString();",
+                "Location": "line 586",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "NatsConnectionWriter.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\impl\\NatsConnectionWriter.java",
+        "Matches": [
+            {
+                "Source Code": "private final ReentrantLock writerLock;",
+                "Location": "line 40",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "private final ReentrantLock startStopLock;",
+                "Location": "line 46",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "writerLock = new ReentrantLock();",
+                "Location": "line 57",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "this.startStopLock = new ReentrantLock();",
+                "Location": "line 61",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            }
+        ]
+    },
+    {
+        "File Name": "NatsConsumer.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\impl\\NatsConsumer.java",
+        "Matches": [
+            {
+                "Source Code": "private final AtomicReference<CompletableFuture<Boolean>> drainingFuture;",
+                "Location": "line 34",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            },
+            {
+                "Source Code": "this.drainingFuture = new AtomicReference<>();",
+                "Location": "line 43",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            }
+        ]
+    },
+    {
+        "File Name": "NatsConsumerContext.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\impl\\NatsConsumerContext.java",
+        "Matches": [
+            {
+                "Source Code": "private final ReentrantLock stateLock;",
+                "Location": "line 37",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "private final AtomicReference<ConsumerInfo> cachedConsumerInfo;",
+                "Location": "line 44",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            },
+            {
+                "Source Code": "private final AtomicReference<String> consumerName;",
+                "Location": "line 45",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            },
+            {
+                "Source Code": "private final AtomicReference<Dispatcher> defaultDispatcher;",
+                "Location": "line 47",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            },
+            {
+                "Source Code": "private final AtomicReference<NatsMessageConsumerBase> lastConsumer;",
+                "Location": "line 48",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            },
+            {
+                "Source Code": "stateLock = new ReentrantLock();",
+                "Location": "line 51",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "cachedConsumerInfo = new AtomicReference<>();",
+                "Location": "line 53",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            },
+            {
+                "Source Code": "consumerName = new AtomicReference<>();",
+                "Location": "line 54",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            },
+            {
+                "Source Code": "defaultDispatcher = new AtomicReference<>();",
+                "Location": "line 56",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            },
+            {
+                "Source Code": "lastConsumer = new AtomicReference<>();",
+                "Location": "line 57",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            }
+        ]
+    },
+    {
+        "File Name": "NatsObjectStore.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\impl\\NatsObjectStore.java",
+        "Matches": [
+            {
+                "Source Code": ".digest(digester.getDigestEntry())",
+                "Location": "line 151",
+                "Keywords Found": "Cryptography : Hashing : [digest(]"
+            },
+            {
+                "Source Code": ".digest(null)",
+                "Location": "line 355",
+                "Keywords Found": "Cryptography : Hashing : [digest(]"
+            }
+        ]
+    },
+    {
+        "File Name": "NatsServerPool.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\impl\\NatsServerPool.java",
+        "Matches": [
+            {
+                "Source Code": "protected final ReentrantLock listLock;",
+                "Location": "line 32",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "listLock = new ReentrantLock();",
+                "Location": "line 41",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            }
+        ]
+    },
+    {
+        "File Name": "NatsStatistics.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\impl\\NatsStatistics.java",
+        "Matches": [
+            {
+                "Source Code": "private final ReentrantLock readStatsLock;",
+                "Location": "line 25",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "private final ReentrantLock writeStatsLock;",
+                "Location": "line 26",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "this.readStatsLock = new ReentrantLock();",
+                "Location": "line 51",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "this.writeStatsLock = new ReentrantLock();",
+                "Location": "line 52",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            }
+        ]
+    },
+    {
+        "File Name": "OrderedMessageManager.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\impl\\OrderedMessageManager.java",
+        "Matches": [
+            {
+                "Source Code": "protected final AtomicReference<String> targetSid;",
+                "Location": "line 31",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            },
+            {
+                "Source Code": "targetSid = new AtomicReference<>();",
+                "Location": "line 44",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            }
+        ]
+    },
+    {
+        "File Name": "PullOrderedMessageManager.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\impl\\PullOrderedMessageManager.java",
+        "Matches": [
+            {
+                "Source Code": "protected final AtomicReference<String> targetSid;",
+                "Location": "line 31",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            },
+            {
+                "Source Code": "targetSid = new AtomicReference<>();",
+                "Location": "line 42",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            }
+        ]
+    },
+    {
+        "File Name": "SocketDataPort.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\impl\\SocketDataPort.java",
+        "Matches": [
+            {
+                "Source Code": "SSLContext context = options.getSslContext();",
+                "Location": "line 122",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SSLContext]"
+            }
+        ]
+    },
+    {
+        "File Name": "SSLContextFactory.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\impl\\SSLContextFactory.java",
+        "Matches": [
+            {
+                "Source Code": "SSLContext createSSLContext(SSLContextFactoryProperties properties);",
+                "Location": "line 19",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SSLContext]"
+            }
+        ]
+    },
+    {
+        "File Name": "StringAuthHandler.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\impl\\StringAuthHandler.java",
+        "Matches": [
+            {
+                "Source Code": "public byte[] sign(byte[] nonce) {",
+                "Location": "line 35",
+                "Keywords Found": "Cryptography : Signature : [sign(]"
+            },
+            {
+                "Source Code": "byte[] sig = nkey.sign(nonce);",
+                "Location": "line 38",
+                "Keywords Found": "Cryptography : Signature : [sign(]"
+            }
+        ]
+    },
+    {
+        "File Name": "Digester.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\support\\Digester.java",
+        "Matches": [
+            {
+                "Source Code": "private final Base64.Encoder encoder;",
+                "Location": "line 29",
+                "Keywords Found": "Cryptography : Steganography : [Base64.]"
+            },
+            {
+                "Source Code": "private final MessageDigest digest;",
+                "Location": "line 30",
+                "Keywords Found": "Cryptography : Hashing : [MessageDigest]"
+            },
+            {
+                "Source Code": "public Digester(Base64.Encoder encoder) throws NoSuchAlgorithmException {",
+                "Location": "line 37",
+                "Keywords Found": "Cryptography : Steganography : [Base64.]"
+            },
+            {
+                "Source Code": "public Digester(String digestAlgorithm, Charset stringCharset, Base64.Encoder encoder) throws NoSuchAlgorithmException {",
+                "Location": "line 45",
+                "Keywords Found": "Cryptography : Steganography : [Base64.]"
+            },
+            {
+                "Source Code": "this.encoder = encoder == null ? Base64.getUrlEncoder() : encoder;",
+                "Location": "line 47",
+                "Keywords Found": "Cryptography : Steganography : [Base64.]"
+            }
+        ]
+    },
+    {
+        "File Name": "Encoding.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\support\\Encoding.java",
+        "Matches": [
+            {
+                "Source Code": "return Base64.getEncoder().encode(input);",
+                "Location": "line 31",
+                "Keywords Found": "Cryptography : Steganography : [Base64., encode(]"
+            },
+            {
+                "Source Code": "return Base64.getEncoder().encodeToString(input);",
+                "Location": "line 40",
+                "Keywords Found": "Cryptography : Steganography : [Base64.]"
+            },
+            {
+                "Source Code": "return Base64.getEncoder()",
+                "Location": "line 49",
+                "Keywords Found": "Cryptography : Steganography : [Base64.]"
+            },
+            {
+                "Source Code": "return Base64.getUrlEncoder().withoutPadding().encode(input);",
+                "Location": "line 59",
+                "Keywords Found": "Cryptography : Steganography : [Base64., encode(]"
+            },
+            {
+                "Source Code": "return Base64.getUrlEncoder().withoutPadding().encodeToString(input);",
+                "Location": "line 68",
+                "Keywords Found": "Cryptography : Steganography : [Base64.]"
+            },
+            {
+                "Source Code": "return Base64.getUrlEncoder()",
+                "Location": "line 77",
+                "Keywords Found": "Cryptography : Steganography : [Base64.]"
+            },
+            {
+                "Source Code": "return Base64.getDecoder().decode(input);",
+                "Location": "line 88",
+                "Keywords Found": "Cryptography : Steganography : [Base64., decode(]"
+            },
+            {
+                "Source Code": "return Base64.getDecoder().decode(input);",
+                "Location": "line 97",
+                "Keywords Found": "Cryptography : Steganography : [Base64., decode(]"
+            },
+            {
+                "Source Code": "return new String(Base64.getDecoder().decode(input));",
+                "Location": "line 106",
+                "Keywords Found": "Cryptography : Steganography : [Base64., decode(]"
+            },
+            {
+                "Source Code": "return Base64.getUrlDecoder().decode(input);",
+                "Location": "line 115",
+                "Keywords Found": "Cryptography : Steganography : [Base64., decode(]"
+            },
+            {
+                "Source Code": "return Base64.getUrlDecoder().decode(input);",
+                "Location": "line 124",
+                "Keywords Found": "Cryptography : Steganography : [Base64., decode(]"
+            },
+            {
+                "Source Code": "return new String(Base64.getUrlDecoder().decode(input));",
+                "Location": "line 133",
+                "Keywords Found": "Cryptography : Steganography : [Base64., decode(]"
+            },
+            {
+                "Source Code": "return URLDecoder.decode(source.replace(\"+\", \"%2B\"), \"UTF-8\");",
+                "Location": "line 328",
+                "Keywords Found": "Cryptography : Steganography : [decode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "JsonUtils.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\support\\JsonUtils.java",
+        "Matches": [
+            {
+                "Source Code": "return b64 == null ? null : Base64.getDecoder().decode(b64);",
+                "Location": "line 913",
+                "Keywords Found": "Cryptography : Steganography : [Base64., decode(]"
+            }
+        ]
+    },
+    {
+        "File Name": "JwtUtils.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\support\\JwtUtils.java",
+        "Matches": [
+            {
+                "Source Code": "base64UrlEncodeToString(\"{\\\"typ\\\":\\\"JWT\\\", \\\"alg\\\":\\\"ed25519-nkey\\\"}\");",
+                "Location": "line 37",
+                "Keywords Found": "Access Control : Authentication : [JWT]"
+            },
+            {
+                "Source Code": "String encSig = base64UrlEncodeToString(signingKey.sign(sig));",
+                "Location": "line 258",
+                "Keywords Found": "Cryptography : Signature : [sign(]"
+            },
+            {
+                "Source Code": "public UserClaim pub(Permission pub) {",
+                "Location": "line 320",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "public UserClaim sub(Permission sub) {",
+                "Location": "line 325",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "public static class Permission implements JsonSerializable {",
+                "Location": "line 422",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "public Permission allow(String... allow) {",
+                "Location": "line 426",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "public Permission deny(String... deny) {",
+                "Location": "line 431",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            }
+        ]
+    },
+    {
+        "File Name": "SSLUtils.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\support\\SSLUtils.java",
+        "Matches": [
+            {
+                "Source Code": "java.security.cert.X509Certificate[] getAcceptedIssuers();",
+                "Location": "line 41",
+                "Keywords Found": "Access Control : Authentication : [X509Certificate]"
+            },
+            {
+                "Source Code": "void checkClientTrusted(X509Certificate[] certs, String authType);",
+                "Location": "line 42",
+                "Keywords Found": "Access Control : Authentication : [X509Certificate]"
+            },
+            {
+                "Source Code": "void checkServerTrusted(X509Certificate[] certs, String authType);",
+                "Location": "line 43",
+                "Keywords Found": "Access Control : Authentication : [X509Certificate]"
+            },
+            {
+                "Source Code": "private static final TrustManager[] DEFAULT_TRUST_MANAGERS = new TrustManager[] {",
+                "Location": "line 46",
+                "Keywords Found": "Cryptography : Key Management : [TrustManager]"
+            },
+            {
+                "Source Code": "public java.security.cert.X509Certificate[] getAcceptedIssuers() {",
+                "Location": "line 48",
+                "Keywords Found": "Access Control : Authentication : [X509Certificate]"
+            },
+            {
+                "Source Code": "public void checkClientTrusted(X509Certificate[] certs, String authType) {",
+                "Location": "line 52",
+                "Keywords Found": "Access Control : Authentication : [X509Certificate]"
+            },
+            {
+                "Source Code": "public void checkServerTrusted(X509Certificate[] certs, String authType) {",
+                "Location": "line 58",
+                "Keywords Found": "Access Control : Authentication : [X509Certificate]"
+            },
+            {
+                "Source Code": "public static SSLContext createOpenTLSContext() {",
+                "Location": "line 66",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SSLContext]"
+            },
+            {
+                "Source Code": "public static SSLContext createTrustAllTlsContext() throws GeneralSecurityException {",
+                "Location": "line 75",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SSLContext]"
+            },
+            {
+                "Source Code": "SSLContext context = SSLContext.getInstance(Options.DEFAULT_SSL_PROTOCOL);",
+                "Location": "line 76",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SSLContext]"
+            },
+            {
+                "Source Code": "public static TrustManager[] createTrustManagers(String truststorePath, char[] truststorePwd) throws GeneralSecurityException, IOException {",
+                "Location": "line 103",
+                "Keywords Found": "Cryptography : Key Management : [TrustManager]"
+            },
+            {
+                "Source Code": "public static TrustManager[] createTrustManagers(String truststorePath, char[] truststorePwd, String tlsAlgo) throws GeneralSecurityException, IOException {",
+                "Location": "line 107",
+                "Keywords Found": "Cryptography : Key Management : [TrustManager]"
+            },
+            {
+                "Source Code": "public static SSLContext createSSLContext(String keystorePath, char[] keystorePwd, String truststorePath, char[] truststorePwd) throws GeneralSecurityException, IOException {",
+                "Location": "line 117",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SSLContext]"
+            },
+            {
+                "Source Code": "public static SSLContext createSSLContext(String keystorePath, char[] keystorePwd, String truststorePath, char[] truststorePwd, String tlsAlgo) throws GeneralSecurityException, IOException {",
+                "Location": "line 120",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SSLContext]"
+            },
+            {
+                "Source Code": "SSLContext ctx = SSLContext.getInstance(Options.DEFAULT_SSL_PROTOCOL);",
+                "Location": "line 121",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SSLContext]"
+            }
+        ]
+    },
+    {
+        "File Name": "WebSocket.java",
+        "File Path": "src\\main\\java\\io\\nats\\client\\support\\WebSocket.java",
+        "Matches": [
+            {
+                "Source Code": "private final ReentrantLock closeLock;",
+                "Location": "line 46",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "closeLock = new ReentrantLock();",
+                "Location": "line 49",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "MessageDigest sha1;",
+                "Location": "line 125",
+                "Keywords Found": "Cryptography : Hashing : [MessageDigest]"
+            }
+        ]
+    },
+    {
+        "File Name": "Service.java",
+        "File Path": "src\\main\\java\\io\\nats\\service\\Service.java",
+        "Matches": [
+            {
+                "Source Code": "private final ReentrantLock startStopLock;",
+                "Location": "line 56",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            },
+            {
+                "Source Code": "startStopLock = new ReentrantLock();",
+                "Location": "line 65",
+                "Keywords Found": "System State Protection : State Synchronization : [ReentrantLock]"
+            }
+        ]
+    },
+    {
+        "File Name": "ServiceResponse.java",
+        "File Path": "src\\main\\java\\io\\nats\\service\\ServiceResponse.java",
+        "Matches": [
+            {
+                "Source Code": "protected final AtomicReference<byte[]> serialized;",
+                "Location": "line 38",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            },
+            {
+                "Source Code": "serialized = new AtomicReference<>();",
+                "Location": "line 46",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            },
+            {
+                "Source Code": "serialized = new AtomicReference<>();",
+                "Location": "line 66",
+                "Keywords Found": "System State Protection : State Synchronization : [AtomicReference]"
+            }
+        ]
+    },
+    {
+        "File Name": "RunProxy.java",
+        "File Path": "src\\test\\java\\io\\nats\\client\\utils\\RunProxy.java",
+        "Matches": [
+            {
+                "Source Code": "public RunProxy(InetSocketAddress hostPort, SSLContext sslContext, ExecutorService executor) throws IOException {",
+                "Location": "line 46",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SSLContext]"
+            }
+        ]
+    }
+]

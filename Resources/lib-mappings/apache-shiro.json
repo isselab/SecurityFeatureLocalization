@@ -1,0 +1,232 @@
+{
+  "name": "Apache Shiro",
+  "version": "2.0.1",
+  "namespace": "org.apache.shiro",
+  "categories": [],
+  "children": [
+    {
+      "namespace": "SecurityUtils",
+      "categories": ["Authentication", "Authorization", "SessionManagement"],
+      "children": []
+    },
+    {
+      "namespace": "authc",
+      "categories": ["Authentication"],
+      "children": [
+        {
+          "namespace": "credential",
+          "categories": ["Credentials"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "namespace": "authz",
+      "categories": ["Authorization"],
+      "children": []
+    },
+    {
+      "namespace": "mgt",
+      "categories": ["SessionManagement"],
+      "children": []
+    },
+    {
+      "namespace": "realm",
+      "categories": ["Authentication", "Authorization"],
+      "children": [
+        {
+          "namespace": "AuthenticatingRealm",
+          "categories": ["Authentication"],
+          "children": []
+        },
+        {
+          "namespace": "AuthorizingRealm",
+          "categories": ["Authorization"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "namespace": "session",
+      "categories": ["SessionManagement"],
+      "children": [
+        {
+          "namespace": "mgt",
+          "categories": [],
+          "children": [
+            {
+              "namespace": "quartz",
+              "categories": ["SessionManagement"],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "namespace": "aspectj",
+      "categories": ["Authorization"],
+      "children": []
+    },
+    {
+      "namespace": "cache",
+      "categories": ["SessionManagement"],
+      "children": []
+    },
+    {
+      "namespace": "cas",
+      "categories": ["Authentication"],
+      "children": []
+    },
+    {
+      "namespace": "crypto",
+      "categories": [],
+      "children": [
+        {
+          "namespace": "hash",
+          "categories": ["CryptographicHashing"],
+          "children": [
+            {
+              "namespace": "Sha256Hash",
+              "categories": ["SHA256"],
+              "children": []
+            },
+            {
+              "namespace": "Sha384Hash",
+              "categories": ["SHA384"],
+              "children": []
+            },
+            {
+              "namespace": "Sha512Hash",
+              "categories": ["SHA512"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "namespace": "cipher",
+          "categories": ["Cryptography"],
+          "children": [
+            {
+              "namespace": "AbstractSymmetricCipherService",
+              "categories": ["SymmetricKeyCryptography"],
+              "children": []
+            },
+            {
+              "namespace": "AesCipherService",
+              "categories": ["AES", "BlockCiphers"],
+              "children": []
+            },
+            {
+              "namespace": "BlowfishCipherService",
+              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "children": []
+            },
+            {
+              "namespace": "CipherService",
+              "categories": ["Cryptography"],
+              "children": []
+            },
+            {
+              "namespace": "DefaultBlockCipherService",
+              "categories": ["BlockCiphers"],
+              "children": []
+            },
+            {
+              "namespace": "JcaCipherService",
+              "categories": ["Cryptography"],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "namespace": "ee",
+      "categories": [],
+      "children": [
+        {
+          "namespace": "cdi",
+          "categories": ["SessionManagement"],
+          "children": []
+        },
+        {
+          "namespace": "faces",
+          "categories": [],
+          "children": [
+            {
+              "namespace": "tags",
+              "categories": ["Authentication"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "namespace": "filters",
+          "categories": ["Authentication"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "namespace": "spring",
+      "categories": [],
+      "children": [
+        {
+          "namespace": "security",
+          "categories": [],
+          "children": [
+            {
+              "namespace": "interceptor",
+              "categories": ["Authorization"],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "namespace": "web",
+      "categories": [],
+      "children": [
+        {
+          "namespace": "jaxrs",
+          "categories": [],
+          "children": [
+            {
+              "namespace": "AnnotationAuthorizationFilter",
+              "categories": ["Authorization"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "namespace": "filter",
+          "categories": [],
+          "children": [
+            {
+              "namespace": "authz",
+              "categories": ["Authorization"],
+              "children": []
+            },
+            {
+              "namespace": "authc",
+              "categories": ["Authentication"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "namespace": "mgt",
+          "categories": ["SessionManagement"],
+          "children": []
+        },
+        {
+          "namespace": "session",
+          "categories": ["SessionManagement"],
+          "children": []
+        }
+      ]
+    }
+  ]
+}

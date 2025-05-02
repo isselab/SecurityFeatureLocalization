@@ -1,0 +1,803 @@
+{
+  "name": "Spring Security",
+  "version": "6.3.3",
+  "namespace": "org.springframework.security",
+  "categories": [],
+  "children": [
+    {
+      "namespace": "access",
+      "categories": ["Authorization"],
+      "children": [
+        {
+          "namespace": "annotation",
+          "categories": ["Authorization"],
+          "children": []
+        },
+        {
+          "namespace": "event",
+          "categories": ["Authorization"],
+          "children": [
+            {
+              "namespace": "LoggerListener",
+              "categories": ["Authorization", "Logging"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "namespace": "expression",
+          "categories": ["Authorization"],
+          "children": [
+            {
+              "namespace": "method",
+              "categories": ["Authorization"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "namespace": "hierarchicalroles",
+          "categories": ["RoleBasedAccessControl"],
+          "children": []
+        },
+        {
+          "namespace": "intercept",
+          "categories": ["Authorization"],
+          "children": [
+            {
+              "namespace": "aopalliance",
+              "categories": ["Authorization"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "namespace": "method",
+          "categories": ["Authorization"],
+          "children": []
+        },
+        {
+          "namespace": "prepost",
+          "categories": ["Authorization"],
+          "children": []
+        },
+        {
+          "namespace": "vote",
+          "categories": ["Authorization"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "namespace": "acls",
+      "categories": ["DiscretionaryAccessControl"],
+      "children": [
+        {
+          "namespace": "afterinvocation",
+          "categories": ["DiscretionaryAccessControl"],
+          "children": []
+        },
+        {
+          "namespace": "domain",
+          "categories": ["DiscretionaryAccessControl"],
+          "children": [
+            {
+              "namespace": "AuditLogger",
+              "categories": ["DiscretionaryAccessControl", "Logging"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "namespace": "jdbc",
+          "categories": ["DiscretionaryAccessControl"],
+          "children": []
+        },
+        {
+          "namespace": "model",
+          "categories": ["DiscretionaryAccessControl"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "namespace": "authentication",
+      "categories": ["Authentication"],
+      "children": [
+        {
+          "namespace": "dao",
+          "categories": ["Authentication"],
+          "children": []
+        },
+        {
+          "namespace": "event",
+          "categories": ["Authentication"],
+          "children": [
+            {
+              "namespace": "LoggerListener",
+              "categories": ["Authentication", "Logging"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "namespace": "jaas",
+          "categories": ["Authentication"],
+          "children": [
+            {
+              "namespace": "event",
+              "categories": ["Authentication"],
+              "children": []
+            },
+            {
+              "namespace": "memory",
+              "categories": ["Authentication"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "namespace": "password",
+          "categories": ["Credentials"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "namespace": "authorization",
+      "categories": ["Authorization"],
+      "children": [
+        {
+          "namespace": "event",
+          "categories": ["Authorization"],
+          "children": []
+        },
+        {
+          "namespace": "method",
+          "categories": ["Authorization"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "namespace": "cas",
+      "categories": ["Authentication"],
+      "children": [
+        {
+          "namespace": "authentication",
+          "categories": ["Authentication"],
+          "children": []
+        },
+        {
+          "namespace": "jackson2",
+          "categories": ["Authentication"],
+          "children": []
+        },
+        {
+          "namespace": "userdetails",
+          "categories": ["Authentication"],
+          "children": []
+        },
+        {
+          "namespace": "web",
+          "categories": ["Authentication"],
+          "children": [
+            {
+              "namespace": "authentication",
+              "categories": ["Authentication"],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "namespace": "config",
+      "categories": [],
+      "children": [
+        {
+          "namespace": "annotation",
+          "categories": [],
+          "children": [
+            {
+              "namespace": "authentication",
+              "categories": ["Authentication"],
+              "children": [
+                {
+                  "namespace": "builders",
+                  "categories": ["Authentication"],
+                  "children": []
+                },
+                {
+                  "namespace": "configuration",
+                  "categories": ["Authentication"],
+                  "children": []
+                },
+                {
+                  "namespace": "configurers",
+                  "categories": [],
+                  "children": [
+                    {
+                      "namespace": "ldap",
+                      "categories": ["Authentication"],
+                      "children": []
+                    },
+                    {
+                      "namespace": "provisioning",
+                      "categories": ["Authentication"],
+                      "children": []
+                    },
+                    {
+                      "namespace": "userdetails",
+                      "categories": ["Authentication"],
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "namespace": "rsocket",
+              "categories": [
+                "Authenticationorg.springframework.security.config.annotation.web.configurers.oauth2.client.*",
+                "OAuth2"
+              ],
+              "children": []
+            },
+            {
+              "namespace": "web",
+              "categories": [],
+              "children": [
+                {
+                  "namespace": "configurers",
+                  "categories": ["Authentication"],
+                  "children": [
+                    {
+                      "namespace": "oauth2",
+                      "categories": ["OAuth2"],
+                      "children": []
+                    },
+                    {
+                      "namespace": "saml2",
+                      "categories": ["SAML"],
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "namespace": "socket",
+                  "categories": ["Authorization"],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "namespace": "authentication",
+          "categories": ["Authentication"],
+          "children": []
+        },
+        {
+          "namespace": "core",
+          "categories": [],
+          "children": [
+            {
+              "namespace": "userdetails",
+              "categories": ["SessionManagement"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "namespace": "crypto",
+          "categories": ["Cryptography"],
+          "children": []
+        },
+        {
+          "namespace": "ldap",
+          "categories": ["Authentication"],
+          "children": []
+        },
+        {
+          "namespace": "oauth2",
+          "categories": [],
+          "children": [
+            {
+              "namespace": "client",
+              "categories": ["OAuth2"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "namespace": "saml2",
+          "categories": ["SAML"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "namespace": "context",
+      "categories": ["SessionManagement"],
+      "children": []
+    },
+    {
+      "namespace": "converter",
+      "categories": ["Cryptography"],
+      "children": []
+    },
+    {
+      "namespace": "core",
+      "categories": ["Authentication"],
+      "children": [
+        {
+          "namespace": "annotation",
+          "categories": ["Authentication"],
+          "children": []
+        },
+        {
+          "namespace": "authority",
+          "categories": ["Authorization"],
+          "children": [
+            {
+              "namespace": "mapping",
+              "categories": ["Authorization"],
+              "children": [
+                {
+                  "namespace": "Attributes2GrantedAuthoritiesMapper",
+                  "categories": ["Authorization"],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "namespace": "context",
+          "categories": ["SessionManagement"],
+          "children": []
+        },
+        {
+          "namespace": "session",
+          "categories": ["SessionManagement"],
+          "children": []
+        },
+        {
+          "namespace": "token",
+          "categories": ["Cryptography"],
+          "children": [
+            {
+              "namespace": "Sha512DigestUtils",
+              "categories": ["CryptographicHashing"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "namespace": "userdetails",
+          "categories": ["SessionManagement"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "namespace": "crypto",
+      "categories": [],
+      "children": [
+        {
+          "namespace": "argon2",
+          "categories": ["CryptographicHashing"],
+          "children": []
+        },
+        {
+          "namespace": "bcrypt",
+          "categories": ["CryptographicHashing"],
+          "children": []
+        },
+        {
+          "namespace": "encrypt",
+          "categories": ["Encryption"],
+          "children": []
+        },
+        {
+          "namespace": "factory",
+          "categories": ["Cryptography"],
+          "children": []
+        },
+        {
+          "namespace": "keygen",
+          "categories": ["KeyGeneration"],
+          "children": []
+        },
+        {
+          "namespace": "password",
+          "categories": ["CryptographicHashing"],
+          "children": []
+        },
+        {
+          "namespace": "scrypt",
+          "categories": ["CryptographicHashing"],
+          "children": []
+        },
+        {
+          "namespace": "util",
+          "categories": ["Cryptography"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "namespace": "ldap",
+      "categories": ["Authentication"],
+      "children": [
+        {
+          "namespace": "authentication",
+          "categories": ["Authentication"],
+          "children": [
+            {
+              "namespace": "ad",
+              "categories": ["Authentication"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "namespace": "jackson2",
+          "categories": ["Authentication"],
+          "children": []
+        },
+        {
+          "namespace": "ppolicy",
+          "categories": ["Authentication"],
+          "children": []
+        },
+        {
+          "namespace": "search",
+          "categories": ["Authentication"],
+          "children": []
+        },
+        {
+          "namespace": "server",
+          "categories": ["Authentication"],
+          "children": []
+        },
+        {
+          "namespace": "userdetails",
+          "categories": ["Authentication"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "namespace": "messaging",
+      "categories": [],
+      "children": [
+        {
+          "namespace": "access",
+          "categories": [],
+          "children": [
+            {
+              "namespace": "expression",
+              "categories": ["Authorization"],
+              "children": []
+            },
+            {
+              "namespace": "intercept",
+              "categories": ["Authorization"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "namespace": "context",
+          "categories": ["Authentication"],
+          "children": []
+        },
+        {
+          "namespace": "handler",
+          "categories": [],
+          "children": [
+            {
+              "namespace": "invocation",
+              "categories": [],
+              "children": [
+                {
+                  "namespace": "reactive",
+                  "categories": ["Authentication"],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "namespace": "web",
+          "categories": [],
+          "children": [
+            {
+              "namespace": "csrf",
+              "categories": ["SessionFixationProtection"],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "namespace": "oauth2",
+      "categories": ["OAuth2"],
+      "children": []
+    },
+    {
+      "namespace": "rsocket",
+      "categories": [],
+      "children": [
+        {
+          "namespace": "api",
+          "categories": ["AccessControl"],
+          "children": []
+        },
+        {
+          "namespace": "authentication",
+          "categories": ["Authentication"],
+          "children": []
+        },
+        {
+          "namespace": "authorization",
+          "categories": ["Authorization"],
+          "children": []
+        },
+        {
+          "namespace": "core",
+          "categories": ["AccessControl"],
+          "children": []
+        },
+        {
+          "namespace": "metadata",
+          "categories": ["AccessControl"],
+          "children": []
+        },
+        {
+          "namespace": "util",
+          "categories": [],
+          "children": [
+            {
+              "namespace": "matcher",
+              "categories": ["AccessControl"],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "namespace": "saml2",
+      "categories": ["SAML"],
+      "children": []
+    },
+    {
+      "namespace": "taglibs",
+      "categories": [],
+      "children": [
+        {
+          "namespace": "authz",
+          "categories": ["AccessControl"],
+          "children": [
+            {
+              "namespace": "AbstractAuthorizeTag",
+              "categories": ["Authorization"],
+              "children": []
+            },
+            {
+              "namespace": "AccessControlListTag",
+              "categories": ["DiscretionaryAccessControl"],
+              "children": []
+            },
+            {
+              "namespace": "AuthenticationTag",
+              "categories": ["Authentication"],
+              "children": []
+            },
+            {
+              "namespace": "JspAuthorizeTag",
+              "categories": ["Authorization"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "namespace": "csrf",
+          "categories": ["SessionFixationProtection"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "namespace": "web",
+      "categories": [],
+      "children": [
+        {
+          "namespace": "AuthenticationEntryPoint",
+          "categories": ["Authentication"],
+          "children": []
+        },
+        {
+          "namespace": "access",
+          "categories": ["Authorization"],
+          "children": [
+            {
+              "namespace": "channel",
+              "categories": ["Authorization"],
+              "children": []
+            },
+            {
+              "namespace": "expression",
+              "categories": ["AccessControl"],
+              "children": []
+            },
+            {
+              "namespace": "intercept",
+              "categories": ["AccessControl"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "namespace": "authentication",
+          "categories": ["Authentication"],
+          "children": [
+            {
+              "namespace": "logout",
+              "categories": ["Authentication"],
+              "children": []
+            },
+            {
+              "namespace": "password",
+              "categories": ["Authentication"],
+              "children": []
+            },
+            {
+              "namespace": "preauth",
+              "categories": ["Authentication"],
+              "children": [
+                {
+                  "namespace": "j2ee",
+                  "categories": ["Authentication"],
+                  "children": []
+                },
+                {
+                  "namespace": "websphere",
+                  "categories": ["Authentication"],
+                  "children": []
+                },
+                {
+                  "namespace": "x509",
+                  "categories": ["Authentication"],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "namespace": "rememberme",
+              "categories": ["Authentication"],
+              "children": []
+            },
+            {
+              "namespace": "session",
+              "categories": ["Authentication"],
+              "children": []
+            },
+            {
+              "namespace": "switchuser",
+              "categories": ["Authentication"],
+              "children": []
+            },
+            {
+              "namespace": "ui",
+              "categories": ["Authentication"],
+              "children": []
+            },
+            {
+              "namespace": "www",
+              "categories": ["Authentication"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "namespace": "bind",
+          "categories": [],
+          "children": [
+            {
+              "namespace": "annotation",
+              "categories": ["Authentication"],
+              "children": []
+            },
+            {
+              "namespace": "support",
+              "categories": ["Authentication"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "namespace": "context",
+          "categories": ["SessionManagement"],
+          "children": []
+        },
+        {
+          "namespace": "csrf",
+          "categories": ["SessionFixationProtection"],
+          "children": []
+        },
+        {
+          "namespace": "method",
+          "categories": [],
+          "children": [
+            {
+              "namespace": "annotation",
+              "categories": ["Authentication"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "namespace": "reactive",
+          "categories": [],
+          "children": [
+            {
+              "namespace": "result",
+              "categories": [],
+              "children": [
+                {
+                  "namespace": "method",
+                  "categories": [],
+                  "children": [
+                    {
+                      "namespace": "annotation",
+                      "categories": ["Authentication"],
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "namespace": "savedrequest",
+          "categories": ["Authentication", "SessionManagement"],
+          "children": []
+        },
+        {
+          "namespace": "server",
+          "categories": [],
+          "children": [
+            {
+              "namespace": "authentication",
+              "categories": ["Authentication"],
+              "children": [
+                {
+                  "namespace": "logout",
+                  "categories": ["Authentication"],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "namespace": "authorization",
+              "categories": ["Authorization"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "namespace": "session",
+          "categories": ["SessionManagement"],
+          "children": []
+        }
+      ]
+    }
+  ]
+}

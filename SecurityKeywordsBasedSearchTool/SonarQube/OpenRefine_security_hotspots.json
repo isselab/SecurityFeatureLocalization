@@ -1,0 +1,1002 @@
+[
+    {
+        "projectName": "OpenRefine",
+        "fileName": "DBExtensionTestUtils.java",
+        "filePath": "extensions/database/tests/src/com/google/refine/extension/database/DBExtensionTestUtils.java",
+        "Security Category": "auth",
+        "Description": "Hard-coded passwords are security-sensitive",
+        "Location": "29 - 29",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nStore the credentials in a configuration file that is not pushed to the code repository.\nStore the credentials in a database.\nUse your cloud provider\u2019s service for managing secrets.\nIf a password has been disclosed through the source code: change it.\nCompliant Solution\nString username = getEncryptedUser();\nString password = getEncryptedPassword();\nConnection conn = DriverManager.getConnection(\"jdbc:mysql://localhost/test?\" +\n\"user=\" + username + \"&password=\" + password);\nSee\nOWASP -\nTop 10 2021 Category A7 - Identification and\nAuthentication Failures\nOWASP -\nTop 10 2017 Category A2 - Broken Authentication\nCWE -\nCWE-798 - Use of Hard-coded Credentials\nCWE -\nCWE-259 - Use of Hard-coded Password\nCERT, MSC03-J.\n- Never hard code sensitive information\nDerived from FindSecBugs rule\nHard Coded Password"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "DBExtensionTests.java",
+        "filePath": "extensions/database/tests/src/com/google/refine/extension/database/DBExtensionTests.java",
+        "Security Category": "auth",
+        "Description": "Hard-coded passwords are security-sensitive",
+        "Location": "46 - 46",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nStore the credentials in a configuration file that is not pushed to the code repository.\nStore the credentials in a database.\nUse your cloud provider\u2019s service for managing secrets.\nIf a password has been disclosed through the source code: change it.\nCompliant Solution\nString username = getEncryptedUser();\nString password = getEncryptedPassword();\nConnection conn = DriverManager.getConnection(\"jdbc:mysql://localhost/test?\" +\n\"user=\" + username + \"&password=\" + password);\nSee\nOWASP -\nTop 10 2021 Category A7 - Identification and\nAuthentication Failures\nOWASP -\nTop 10 2017 Category A2 - Broken Authentication\nCWE -\nCWE-798 - Use of Hard-coded Credentials\nCWE -\nCWE-259 - Use of Hard-coded Password\nCERT, MSC03-J.\n- Never hard code sensitive information\nDerived from FindSecBugs rule\nHard Coded Password"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "DBExtensionTests.java",
+        "filePath": "extensions/database/tests/src/com/google/refine/extension/database/DBExtensionTests.java",
+        "Security Category": "auth",
+        "Description": "Hard-coded passwords are security-sensitive",
+        "Location": "60 - 60",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nStore the credentials in a configuration file that is not pushed to the code repository.\nStore the credentials in a database.\nUse your cloud provider\u2019s service for managing secrets.\nIf a password has been disclosed through the source code: change it.\nCompliant Solution\nString username = getEncryptedUser();\nString password = getEncryptedPassword();\nConnection conn = DriverManager.getConnection(\"jdbc:mysql://localhost/test?\" +\n\"user=\" + username + \"&password=\" + password);\nSee\nOWASP -\nTop 10 2021 Category A7 - Identification and\nAuthentication Failures\nOWASP -\nTop 10 2017 Category A2 - Broken Authentication\nCWE -\nCWE-798 - Use of Hard-coded Credentials\nCWE -\nCWE-259 - Use of Hard-coded Password\nCERT, MSC03-J.\n- Never hard code sensitive information\nDerived from FindSecBugs rule\nHard Coded Password"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "SimpleTextEncryptorTest.java",
+        "filePath": "extensions/database/tests/src/com/google/refine/extension/database/SimpleTextEncryptorTest.java",
+        "Security Category": "auth",
+        "Description": "Hard-coded passwords are security-sensitive",
+        "Location": "12 - 12",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nStore the credentials in a configuration file that is not pushed to the code repository.\nStore the credentials in a database.\nUse your cloud provider\u2019s service for managing secrets.\nIf a password has been disclosed through the source code: change it.\nCompliant Solution\nString username = getEncryptedUser();\nString password = getEncryptedPassword();\nConnection conn = DriverManager.getConnection(\"jdbc:mysql://localhost/test?\" +\n\"user=\" + username + \"&password=\" + password);\nSee\nOWASP -\nTop 10 2021 Category A7 - Identification and\nAuthentication Failures\nOWASP -\nTop 10 2017 Category A2 - Broken Authentication\nCWE -\nCWE-798 - Use of Hard-coded Credentials\nCWE -\nCWE-259 - Use of Hard-coded Password\nCERT, MSC03-J.\n- Never hard code sensitive information\nDerived from FindSecBugs rule\nHard Coded Password"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "SimpleTextEncryptorTest.java",
+        "filePath": "extensions/database/tests/src/com/google/refine/extension/database/SimpleTextEncryptorTest.java",
+        "Security Category": "auth",
+        "Description": "Hard-coded passwords are security-sensitive",
+        "Location": "22 - 22",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nStore the credentials in a configuration file that is not pushed to the code repository.\nStore the credentials in a database.\nUse your cloud provider\u2019s service for managing secrets.\nIf a password has been disclosed through the source code: change it.\nCompliant Solution\nString username = getEncryptedUser();\nString password = getEncryptedPassword();\nConnection conn = DriverManager.getConnection(\"jdbc:mysql://localhost/test?\" +\n\"user=\" + username + \"&password=\" + password);\nSee\nOWASP -\nTop 10 2021 Category A7 - Identification and\nAuthentication Failures\nOWASP -\nTop 10 2017 Category A2 - Broken Authentication\nCWE -\nCWE-798 - Use of Hard-coded Credentials\nCWE -\nCWE-259 - Use of Hard-coded Password\nCERT, MSC03-J.\n- Never hard code sensitive information\nDerived from FindSecBugs rule\nHard Coded Password"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "DBExtensionTestUtils.java",
+        "filePath": "extensions/database/tests/src/com/google/refine/extension/database/DBExtensionTestUtils.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "78 - 78",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "DBExtensionTestUtils.java",
+        "filePath": "extensions/database/tests/src/com/google/refine/extension/database/DBExtensionTestUtils.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "87 - 87",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "DBExtensionTestUtils.java",
+        "filePath": "extensions/database/tests/src/com/google/refine/extension/database/DBExtensionTestUtils.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "94 - 94",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "PerformWikibaseEditsOperation.java",
+        "filePath": "extensions/wikibase/src/org/openrefine/wikibase/operations/PerformWikibaseEditsOperation.java",
+        "Security Category": "dos",
+        "Description": "Using slow regular expressions is security-sensitive",
+        "Location": "165 - 165",
+        "Severity": "MEDIUM",
+        "Best Practices": "Recommended Secure Coding Practices\nTo avoid\ncatastrophic backtracking\nsituations, make sure that none of the following conditions apply to your regular expression.\nIn all of the following cases, catastrophic backtracking can only happen if the problematic part of the regex is followed by a pattern that can\nfail, causing the backtracking to actually happen. Note that when performing a full match (e.g. using\nString.matches\n), the end of the\nregex counts as a pattern that can fail because it will only succeed when the end of the string is reached.\nIf you have a non-possessive repetition\nr*\nor\nr*?\n, such that the regex\nr\ncould produce different\npossible matches (of possibly different lengths) on the same input, the worst case matching time can be exponential. This can be the case if\nr\ncontains optional parts, alternations or additional repetitions (but not if the repetition is written in such a way that there\u2019s only\none way to match it).\nWhen using JDK 9 or later an optimization applies when the repetition is greedy and the entire regex does not contain any back references.\nIn that case the runtime will only be polynomial (in case of nested repetitions) or even linear (in case of alternations or optional parts).\nIf you have multiple non-possessive repetitions that can match the same contents and are consecutive or are only separated by an optional\nseparator or a separator that can be matched by both of the repetitions, the worst case matching time can be polynomial (O(n^c) where c is the\nnumber of problematic repetitions). For example\na*b*\nis not a problem because\na*\nand\nb*\nmatch different\nthings and\na*_a*\nis not a problem because the repetitions are separated by a\n'_'\nand can\u2019t match that\n'_'\n.\nHowever,\na*a*\nand\n.*_.*\nhave quadratic runtime.\nIf you\u2019re performing a partial match (such as by using\nMatcher.find\n,\nString.split\n,\nString.replaceAll\netc.) and the regex is not anchored to the beginning of the string, quadratic runtime is especially hard to avoid because whenever a match fails,\nthe regex engine will try again starting at the next index. This means that any unbounded repetition (even a possessive one), if it\u2019s followed by a\npattern that can fail, can cause quadratic runtime on some inputs. For example\nstr.split(\"\\\\s*,\")\nwill run in quadratic time on strings\nthat consist entirely of spaces (or at least contain large sequences of spaces, not followed by a comma).\nIn order to rewrite your regular expression without these patterns, consider the following strategies:\nIf applicable, define a maximum number of expected repetitions using the bounded quantifiers, like\n{1,5}\ninstead of\n+\nfor instance.\nRefactor\nnested quantifiers\nto limit the number of way the inner group can be matched by the outer quantifier, for instance this\nnested quantifier situation\n(ba+)+\ndoesn\u2019t cause performance issues, indeed, the inner group can be matched only if there exists\nexactly one\nb\nchar per repetition of the group.\nOptimize regular expressions with\npossessive quantifiers\nand\natomic grouping\n.\nUse negated character classes instead of\n.\nto exclude separators where applicable. For example the quadratic regex\n.*_.*\ncan be made linear by changing it to\n[^_]*_.*\nSometimes it\u2019s not possible to rewrite the regex to be linear while still matching what you want it to match. Especially when using partial\nmatches, for which it is quite hard to avoid quadratic runtimes. In those cases consider the following approaches:\nSolve the problem without regular expressions\nUse an alternative non-backtracking regex implementations such as Google\u2019s\nRE2\nor\nRE2/J\n.\nUse multiple passes. This could mean pre- and/or post-processing the string manually before/after applying the regular expression to it or\nusing multiple regular expressions. One example of this would be to replace\nstr.split(\"\\\\s*,\\\\s*\")\nwith\nstr.split(\",\")\nand\nthen trimming the spaces from the strings as a second step.\nWhen using\nMatcher.find()\n, it is often possible to make the regex infallible by making all the parts that could fail optional,\nwhich will prevent backtracking. Of course this means that you\u2019ll accept more strings than intended, but this can be handled by using capturing\ngroups to check whether the optional parts were matched or not and then ignoring the match if they weren\u2019t. For example the regex\nx*y\ncould be replaced with\nx*(y)?\nand then the call to\nmatcher.find()\ncould be replaced with\nmatcher.find() &&\nmatcher.group(1) != null\n.\nCompliant Solution\nPossessive quantifiers do not keep backtracking positions, thus can be used, if possible, to avoid performance issues:\njava.util.regex.Pattern.compile(\"(a+)++\").matcher(\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"+\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"+\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"+\n\"aaaaaaaaaaaaaaa!\").matches(); // Compliant\njava.util.regex.Pattern.compile(\"(h|h|ih(((i|a|c|c|a|i|i|j|b|a|i|b|a|a|j))+h)ahbfhba|c|i)*+\").matcher(\n\"hchcchicihcchciiicichhcichcihcchiihichiciiiihhcchi\"+\n\"cchhcihchcihiihciichhccciccichcichiihcchcihhicchcciicchcccihiiihhihihihi\"+\n\"chicihhcciccchihhhcchichchciihiicihciihcccciciccicciiiiiiiiicihhhiiiihchccch\"+\n\"chhhhiiihchihcccchhhiiiiiiiicicichicihcciciihichhhhchihciiihhiccccccciciihh\"+\n\"ichiccchhicchicihihccichicciihcichccihhiciccccccccichhhhihihhcchchihih\"+\n\"iihhihihihicichihiiiihhhhihhhchhichiicihhiiiiihchccccchichci\").matches(); // Compliant\nSee\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-400 - Uncontrolled Resource Consumption\nCWE -\nCWE-1333 - Inefficient Regular Expression Complexity\nowasp.org\n- OWASP Regular expression Denial\nof Service - ReDoS\nstackstatus.net(archived)\n- Outage Postmortem - July 20, 2016\nregular-expressions.info\n- Runaway Regular Expressions: Catastrophic\nBacktracking\ndocs.microsoft.com\n- Backtracking with Nested Optional Quantifiers"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "ToNumberBenchmark.java",
+        "filePath": "benchmark/src/main/java/org/openrefine/benchmark/ToNumberBenchmark.java",
+        "Security Category": "weak-cryptography",
+        "Description": "Using pseudorandom number generators (PRNGs) is security-sensitive",
+        "Location": "64 - 64",
+        "Severity": "MEDIUM",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a cryptographically strong random number generator (RNG) like \"java.security.SecureRandom\" in place of this PRNG.\nUse the generated random values only once.\nYou should not expose the generated random value. If you have to store it, make sure that the database or file is secure.\nCompliant Solution\nSecureRandom random = new SecureRandom(); // Compliant for security-sensitive use cases\nbyte bytes[] = new byte[20];\nrandom.nextBytes(bytes);\nSee\nOWASP -\nTop 10 2021 Category A2 - Cryptographic Failures\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nOWASP -\nMobile AppSec\nVerification Standard - Cryptography Requirements\nOWASP -\nMobile Top 10 2016 Category M5 -\nInsufficient Cryptography\nCWE -\nCWE-338 - Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)\nCWE -\nCWE-330 - Use of Insufficiently Random Values\nCWE -\nCWE-326 - Inadequate Encryption Strength\nCWE -\nCWE-1241 - Use of Predictable Algorithm in Random Number Generator\nCERT, MSC02-J.\n- Generate strong random numbers\nCERT, MSC30-C.\n- Do not use the rand() function for generating pseudorandom numbers\nCERT, MSC50-CPP.\n- Do not use std::rand() for generating pseudorandom numbers\nDerived from FindSecBugs rule\nPredictable Pseudo Random Number\nGenerator"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "DBExtensionTestUtils.java",
+        "filePath": "extensions/database/tests/src/com/google/refine/extension/database/DBExtensionTestUtils.java",
+        "Security Category": "weak-cryptography",
+        "Description": "Using pseudorandom number generators (PRNGs) is security-sensitive",
+        "Location": "44 - 44",
+        "Severity": "MEDIUM",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a cryptographically strong random number generator (RNG) like \"java.security.SecureRandom\" in place of this PRNG.\nUse the generated random values only once.\nYou should not expose the generated random value. If you have to store it, make sure that the database or file is secure.\nCompliant Solution\nSecureRandom random = new SecureRandom(); // Compliant for security-sensitive use cases\nbyte bytes[] = new byte[20];\nrandom.nextBytes(bytes);\nSee\nOWASP -\nTop 10 2021 Category A2 - Cryptographic Failures\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nOWASP -\nMobile AppSec\nVerification Standard - Cryptography Requirements\nOWASP -\nMobile Top 10 2016 Category M5 -\nInsufficient Cryptography\nCWE -\nCWE-338 - Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)\nCWE -\nCWE-330 - Use of Insufficiently Random Values\nCWE -\nCWE-326 - Inadequate Encryption Strength\nCWE -\nCWE-1241 - Use of Predictable Algorithm in Random Number Generator\nCERT, MSC02-J.\n- Generate strong random numbers\nCERT, MSC30-C.\n- Do not use the rand() function for generating pseudorandom numbers\nCERT, MSC50-CPP.\n- Do not use std::rand() for generating pseudorandom numbers\nDerived from FindSecBugs rule\nPredictable Pseudo Random Number\nGenerator"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "PerformWikibaseEditsOperation.java",
+        "filePath": "extensions/wikibase/src/org/openrefine/wikibase/operations/PerformWikibaseEditsOperation.java",
+        "Security Category": "weak-cryptography",
+        "Description": "Using pseudorandom number generators (PRNGs) is security-sensitive",
+        "Location": "310 - 310",
+        "Severity": "MEDIUM",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a cryptographically strong random number generator (RNG) like \"java.security.SecureRandom\" in place of this PRNG.\nUse the generated random values only once.\nYou should not expose the generated random value. If you have to store it, make sure that the database or file is secure.\nCompliant Solution\nSecureRandom random = new SecureRandom(); // Compliant for security-sensitive use cases\nbyte bytes[] = new byte[20];\nrandom.nextBytes(bytes);\nSee\nOWASP -\nTop 10 2021 Category A2 - Cryptographic Failures\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nOWASP -\nMobile AppSec\nVerification Standard - Cryptography Requirements\nOWASP -\nMobile Top 10 2016 Category M5 -\nInsufficient Cryptography\nCWE -\nCWE-338 - Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)\nCWE -\nCWE-330 - Use of Insufficiently Random Values\nCWE -\nCWE-326 - Inadequate Encryption Strength\nCWE -\nCWE-1241 - Use of Predictable Algorithm in Random Number Generator\nCERT, MSC02-J.\n- Generate strong random numbers\nCERT, MSC30-C.\n- Do not use the rand() function for generating pseudorandom numbers\nCERT, MSC50-CPP.\n- Do not use std::rand() for generating pseudorandom numbers\nDerived from FindSecBugs rule\nPredictable Pseudo Random Number\nGenerator"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "SqlExporterTests.java",
+        "filePath": "main/tests/server/src/com/google/refine/exporters/sql/SqlExporterTests.java",
+        "Security Category": "weak-cryptography",
+        "Description": "Using pseudorandom number generators (PRNGs) is security-sensitive",
+        "Location": "577 - 577",
+        "Severity": "MEDIUM",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a cryptographically strong random number generator (RNG) like \"java.security.SecureRandom\" in place of this PRNG.\nUse the generated random values only once.\nYou should not expose the generated random value. If you have to store it, make sure that the database or file is secure.\nCompliant Solution\nSecureRandom random = new SecureRandom(); // Compliant for security-sensitive use cases\nbyte bytes[] = new byte[20];\nrandom.nextBytes(bytes);\nSee\nOWASP -\nTop 10 2021 Category A2 - Cryptographic Failures\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nOWASP -\nMobile AppSec\nVerification Standard - Cryptography Requirements\nOWASP -\nMobile Top 10 2016 Category M5 -\nInsufficient Cryptography\nCWE -\nCWE-338 - Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)\nCWE -\nCWE-330 - Use of Insufficiently Random Values\nCWE -\nCWE-326 - Inadequate Encryption Strength\nCWE -\nCWE-1241 - Use of Predictable Algorithm in Random Number Generator\nCERT, MSC02-J.\n- Generate strong random numbers\nCERT, MSC30-C.\n- Do not use the rand() function for generating pseudorandom numbers\nCERT, MSC50-CPP.\n- Do not use std::rand() for generating pseudorandom numbers\nDerived from FindSecBugs rule\nPredictable Pseudo Random Number\nGenerator"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "ColumnAdditionByFetchingURLsOperationTests.java",
+        "filePath": "main/tests/server/src/com/google/refine/operations/column/ColumnAdditionByFetchingURLsOperationTests.java",
+        "Security Category": "weak-cryptography",
+        "Description": "Using pseudorandom number generators (PRNGs) is security-sensitive",
+        "Location": "154 - 154",
+        "Severity": "MEDIUM",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a cryptographically strong random number generator (RNG) like \"java.security.SecureRandom\" in place of this PRNG.\nUse the generated random values only once.\nYou should not expose the generated random value. If you have to store it, make sure that the database or file is secure.\nCompliant Solution\nSecureRandom random = new SecureRandom(); // Compliant for security-sensitive use cases\nbyte bytes[] = new byte[20];\nrandom.nextBytes(bytes);\nSee\nOWASP -\nTop 10 2021 Category A2 - Cryptographic Failures\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nOWASP -\nMobile AppSec\nVerification Standard - Cryptography Requirements\nOWASP -\nMobile Top 10 2016 Category M5 -\nInsufficient Cryptography\nCWE -\nCWE-338 - Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)\nCWE -\nCWE-330 - Use of Insufficiently Random Values\nCWE -\nCWE-326 - Inadequate Encryption Strength\nCWE -\nCWE-1241 - Use of Predictable Algorithm in Random Number Generator\nCERT, MSC02-J.\n- Generate strong random numbers\nCERT, MSC30-C.\n- Do not use the rand() function for generating pseudorandom numbers\nCERT, MSC50-CPP.\n- Do not use std::rand() for generating pseudorandom numbers\nDerived from FindSecBugs rule\nPredictable Pseudo Random Number\nGenerator"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "HistoryEntry.java",
+        "filePath": "modules/core/src/main/java/com/google/refine/history/HistoryEntry.java",
+        "Security Category": "weak-cryptography",
+        "Description": "Using pseudorandom number generators (PRNGs) is security-sensitive",
+        "Location": "99 - 99",
+        "Severity": "MEDIUM",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a cryptographically strong random number generator (RNG) like \"java.security.SecureRandom\" in place of this PRNG.\nUse the generated random values only once.\nYou should not expose the generated random value. If you have to store it, make sure that the database or file is secure.\nCompliant Solution\nSecureRandom random = new SecureRandom(); // Compliant for security-sensitive use cases\nbyte bytes[] = new byte[20];\nrandom.nextBytes(bytes);\nSee\nOWASP -\nTop 10 2021 Category A2 - Cryptographic Failures\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nOWASP -\nMobile AppSec\nVerification Standard - Cryptography Requirements\nOWASP -\nMobile Top 10 2016 Category M5 -\nInsufficient Cryptography\nCWE -\nCWE-338 - Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)\nCWE -\nCWE-330 - Use of Insufficiently Random Values\nCWE -\nCWE-326 - Inadequate Encryption Strength\nCWE -\nCWE-1241 - Use of Predictable Algorithm in Random Number Generator\nCERT, MSC02-J.\n- Generate strong random numbers\nCERT, MSC30-C.\n- Do not use the rand() function for generating pseudorandom numbers\nCERT, MSC50-CPP.\n- Do not use std::rand() for generating pseudorandom numbers\nDerived from FindSecBugs rule\nPredictable Pseudo Random Number\nGenerator"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "Project.java",
+        "filePath": "modules/core/src/main/java/com/google/refine/model/Project.java",
+        "Security Category": "weak-cryptography",
+        "Description": "Using pseudorandom number generators (PRNGs) is security-sensitive",
+        "Location": "84 - 84",
+        "Severity": "MEDIUM",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a cryptographically strong random number generator (RNG) like \"java.security.SecureRandom\" in place of this PRNG.\nUse the generated random values only once.\nYou should not expose the generated random value. If you have to store it, make sure that the database or file is secure.\nCompliant Solution\nSecureRandom random = new SecureRandom(); // Compliant for security-sensitive use cases\nbyte bytes[] = new byte[20];\nrandom.nextBytes(bytes);\nSee\nOWASP -\nTop 10 2021 Category A2 - Cryptographic Failures\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nOWASP -\nMobile AppSec\nVerification Standard - Cryptography Requirements\nOWASP -\nMobile Top 10 2016 Category M5 -\nInsufficient Cryptography\nCWE -\nCWE-338 - Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)\nCWE -\nCWE-330 - Use of Insufficiently Random Values\nCWE -\nCWE-326 - Inadequate Encryption Strength\nCWE -\nCWE-1241 - Use of Predictable Algorithm in Random Number Generator\nCERT, MSC02-J.\n- Generate strong random numbers\nCERT, MSC30-C.\n- Do not use the rand() function for generating pseudorandom numbers\nCERT, MSC50-CPP.\n- Do not use std::rand() for generating pseudorandom numbers\nDerived from FindSecBugs rule\nPredictable Pseudo Random Number\nGenerator"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "Recon.java",
+        "filePath": "modules/core/src/main/java/com/google/refine/model/Recon.java",
+        "Security Category": "weak-cryptography",
+        "Description": "Using pseudorandom number generators (PRNGs) is security-sensitive",
+        "Location": "69 - 69",
+        "Severity": "MEDIUM",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a cryptographically strong random number generator (RNG) like \"java.security.SecureRandom\" in place of this PRNG.\nUse the generated random values only once.\nYou should not expose the generated random value. If you have to store it, make sure that the database or file is secure.\nCompliant Solution\nSecureRandom random = new SecureRandom(); // Compliant for security-sensitive use cases\nbyte bytes[] = new byte[20];\nrandom.nextBytes(bytes);\nSee\nOWASP -\nTop 10 2021 Category A2 - Cryptographic Failures\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nOWASP -\nMobile AppSec\nVerification Standard - Cryptography Requirements\nOWASP -\nMobile Top 10 2016 Category M5 -\nInsufficient Cryptography\nCWE -\nCWE-338 - Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)\nCWE -\nCWE-330 - Use of Insufficiently Random Values\nCWE -\nCWE-326 - Inadequate Encryption Strength\nCWE -\nCWE-1241 - Use of Predictable Algorithm in Random Number Generator\nCERT, MSC02-J.\n- Generate strong random numbers\nCERT, MSC30-C.\n- Do not use the rand() function for generating pseudorandom numbers\nCERT, MSC50-CPP.\n- Do not use std::rand() for generating pseudorandom numbers\nDerived from FindSecBugs rule\nPredictable Pseudo Random Number\nGenerator"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "RandomNumber.java",
+        "filePath": "modules/grel/src/main/java/com/google/refine/expr/functions/math/RandomNumber.java",
+        "Security Category": "weak-cryptography",
+        "Description": "Using pseudorandom number generators (PRNGs) is security-sensitive",
+        "Location": "51 - 51",
+        "Severity": "MEDIUM",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a cryptographically strong random number generator (RNG) like \"java.security.SecureRandom\" in place of this PRNG.\nUse the generated random values only once.\nYou should not expose the generated random value. If you have to store it, make sure that the database or file is secure.\nCompliant Solution\nSecureRandom random = new SecureRandom(); // Compliant for security-sensitive use cases\nbyte bytes[] = new byte[20];\nrandom.nextBytes(bytes);\nSee\nOWASP -\nTop 10 2021 Category A2 - Cryptographic Failures\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nOWASP -\nMobile AppSec\nVerification Standard - Cryptography Requirements\nOWASP -\nMobile Top 10 2016 Category M5 -\nInsufficient Cryptography\nCWE -\nCWE-338 - Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)\nCWE -\nCWE-330 - Use of Insufficiently Random Values\nCWE -\nCWE-326 - Inadequate Encryption Strength\nCWE -\nCWE-1241 - Use of Predictable Algorithm in Random Number Generator\nCERT, MSC02-J.\n- Generate strong random numbers\nCERT, MSC30-C.\n- Do not use the rand() function for generating pseudorandom numbers\nCERT, MSC50-CPP.\n- Do not use std::rand() for generating pseudorandom numbers\nDerived from FindSecBugs rule\nPredictable Pseudo Random Number\nGenerator"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "RandomNumber.java",
+        "filePath": "modules/grel/src/main/java/com/google/refine/expr/functions/math/RandomNumber.java",
+        "Security Category": "weak-cryptography",
+        "Description": "Using pseudorandom number generators (PRNGs) is security-sensitive",
+        "Location": "60 - 60",
+        "Severity": "MEDIUM",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a cryptographically strong random number generator (RNG) like \"java.security.SecureRandom\" in place of this PRNG.\nUse the generated random values only once.\nYou should not expose the generated random value. If you have to store it, make sure that the database or file is secure.\nCompliant Solution\nSecureRandom random = new SecureRandom(); // Compliant for security-sensitive use cases\nbyte bytes[] = new byte[20];\nrandom.nextBytes(bytes);\nSee\nOWASP -\nTop 10 2021 Category A2 - Cryptographic Failures\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nOWASP -\nMobile AppSec\nVerification Standard - Cryptography Requirements\nOWASP -\nMobile Top 10 2016 Category M5 -\nInsufficient Cryptography\nCWE -\nCWE-338 - Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)\nCWE -\nCWE-330 - Use of Insufficiently Random Values\nCWE -\nCWE-326 - Inadequate Encryption Strength\nCWE -\nCWE-1241 - Use of Predictable Algorithm in Random Number Generator\nCERT, MSC02-J.\n- Generate strong random numbers\nCERT, MSC30-C.\n- Do not use the rand() function for generating pseudorandom numbers\nCERT, MSC50-CPP.\n- Do not use std::rand() for generating pseudorandom numbers\nDerived from FindSecBugs rule\nPredictable Pseudo Random Number\nGenerator"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "RandomNumber.java",
+        "filePath": "modules/grel/src/main/java/com/google/refine/expr/functions/math/RandomNumber.java",
+        "Security Category": "weak-cryptography",
+        "Description": "Using pseudorandom number generators (PRNGs) is security-sensitive",
+        "Location": "63 - 63",
+        "Severity": "MEDIUM",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a cryptographically strong random number generator (RNG) like \"java.security.SecureRandom\" in place of this PRNG.\nUse the generated random values only once.\nYou should not expose the generated random value. If you have to store it, make sure that the database or file is secure.\nCompliant Solution\nSecureRandom random = new SecureRandom(); // Compliant for security-sensitive use cases\nbyte bytes[] = new byte[20];\nrandom.nextBytes(bytes);\nSee\nOWASP -\nTop 10 2021 Category A2 - Cryptographic Failures\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nOWASP -\nMobile AppSec\nVerification Standard - Cryptography Requirements\nOWASP -\nMobile Top 10 2016 Category M5 -\nInsufficient Cryptography\nCWE -\nCWE-338 - Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)\nCWE -\nCWE-330 - Use of Insufficiently Random Values\nCWE -\nCWE-326 - Inadequate Encryption Strength\nCWE -\nCWE-1241 - Use of Predictable Algorithm in Random Number Generator\nCERT, MSC02-J.\n- Generate strong random numbers\nCERT, MSC30-C.\n- Do not use the rand() function for generating pseudorandom numbers\nCERT, MSC50-CPP.\n- Do not use std::rand() for generating pseudorandom numbers\nDerived from FindSecBugs rule\nPredictable Pseudo Random Number\nGenerator"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "LoginCommandTest.java",
+        "filePath": "extensions/wikibase/tests/src/org/openrefine/wikibase/commands/LoginCommandTest.java",
+        "Security Category": "insecure-conf",
+        "Description": "Creating cookies without the \"secure\" flag is security-sensitive",
+        "Location": "508 - 508",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nIt is recommended to use\nHTTPs\neverywhere so setting the\nsecure\nflag to\ntrue\nshould be the default behaviour\nwhen creating cookies.\nSet the\nsecure\nflag to\ntrue\nfor session-cookies.\nCompliant Solution\nCookie c = new Cookie(COOKIENAME, sensitivedata);\nc.setSecure(true); // Compliant: the sensitive cookie will not be send during an unencrypted HTTP request thanks to the secure flag set to true\nSee\nOWASP -\nTop 10 2021 Category A4 - Insecure Design\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-311 - Missing Encryption of Sensitive Data\nCWE -\nCWE-315 - Cleartext Storage of Sensitive Information in a Cookie\nCWE -\nCWE-614 - Sensitive Cookie in HTTPS Session Without 'Secure' Attribute\nSTIG Viewer -\nApplication Security and\nDevelopment: V-222576\n- The application must set the secure flag on session cookies."
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "DatabaseUtils.java",
+        "filePath": "extensions/database/src/com/google/refine/extension/database/DatabaseUtils.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "311 - 311",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "MariaDBDatabaseService.java",
+        "filePath": "extensions/database/src/com/google/refine/extension/database/mariadb/MariaDBDatabaseService.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "239 - 239",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "MySQLDatabaseService.java",
+        "filePath": "extensions/database/src/com/google/refine/extension/database/mysql/MySQLDatabaseService.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "216 - 216",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "MySQLDatabaseService.java",
+        "filePath": "extensions/database/src/com/google/refine/extension/database/mysql/MySQLDatabaseService.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "259 - 259",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "PgSQLDatabaseService.java",
+        "filePath": "extensions/database/src/com/google/refine/extension/database/pgsql/PgSQLDatabaseService.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "212 - 212",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "PgSQLDatabaseService.java",
+        "filePath": "extensions/database/src/com/google/refine/extension/database/pgsql/PgSQLDatabaseService.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "254 - 254",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "DBExtensionTestUtils.java",
+        "filePath": "extensions/database/tests/src/com/google/refine/extension/database/DBExtensionTestUtils.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "104 - 104",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "DBExtensionTestUtils.java",
+        "filePath": "extensions/database/tests/src/com/google/refine/extension/database/DBExtensionTestUtils.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "111 - 111",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "DBExtensionTestUtils.java",
+        "filePath": "extensions/database/tests/src/com/google/refine/extension/database/DBExtensionTestUtils.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "166 - 166",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "DBExtensionTestUtils.java",
+        "filePath": "extensions/database/tests/src/com/google/refine/extension/database/DBExtensionTestUtils.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "174 - 174",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "DBExtensionTestUtils.java",
+        "filePath": "extensions/database/tests/src/com/google/refine/extension/database/DBExtensionTestUtils.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "397 - 397",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "DBExtensionTestUtils.java",
+        "filePath": "extensions/database/tests/src/com/google/refine/extension/database/DBExtensionTestUtils.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "404 - 404",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "DBExtensionTestUtils.java",
+        "filePath": "extensions/database/tests/src/com/google/refine/extension/database/DBExtensionTestUtils.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "412 - 412",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "DatabaseImportControllerTest.java",
+        "filePath": "extensions/database/tests/src/com/google/refine/extension/database/DatabaseImportControllerTest.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "113 - 113",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "SavedConnectionCommandTest.java",
+        "filePath": "extensions/database/tests/src/com/google/refine/extension/database/cmd/SavedConnectionCommandTest.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "138 - 138",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "SavedConnectionCommandTest.java",
+        "filePath": "extensions/database/tests/src/com/google/refine/extension/database/cmd/SavedConnectionCommandTest.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "266 - 266",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "SavedConnectionCommandTest.java",
+        "filePath": "extensions/database/tests/src/com/google/refine/extension/database/cmd/SavedConnectionCommandTest.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "291 - 291",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "FileNameScrutinizer.java",
+        "filePath": "extensions/wikibase/src/org/openrefine/wikibase/qa/scrutinizers/FileNameScrutinizer.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "169 - 169",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "LoginCommandTest.java",
+        "filePath": "extensions/wikibase/tests/src/org/openrefine/wikibase/commands/LoginCommandTest.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "516 - 516",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "JacksonSerializationTest.java",
+        "filePath": "extensions/wikibase/tests/src/org/openrefine/wikibase/testing/JacksonSerializationTest.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "61 - 61",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "EntityCacheStub.java",
+        "filePath": "extensions/wikibase/tests/src/org/openrefine/wikibase/utils/EntityCacheStub.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "37 - 37",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "GetScatterplotCommand.java",
+        "filePath": "main/src/com/google/refine/commands/browsing/GetScatterplotCommand.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "100 - 100",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "GetColumnsInfoCommand.java",
+        "filePath": "main/src/com/google/refine/commands/column/GetColumnsInfoCommand.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "79 - 79",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "CsvExporter.java",
+        "filePath": "main/src/com/google/refine/exporters/CsvExporter.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "97 - 97",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "SqlExporter.java",
+        "filePath": "main/src/com/google/refine/exporters/sql/SqlExporter.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "133 - 133",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "FixedWidthImporter.java",
+        "filePath": "main/src/com/google/refine/importers/FixedWidthImporter.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "252 - 252",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "FixedWidthImporter.java",
+        "filePath": "main/src/com/google/refine/importers/FixedWidthImporter.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "254 - 254",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "JsonImporter.java",
+        "filePath": "main/src/com/google/refine/importers/JsonImporter.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "228 - 228",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "SeparatorBasedImporter.java",
+        "filePath": "main/src/com/google/refine/importers/SeparatorBasedImporter.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "265 - 265",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "SeparatorBasedImporter.java",
+        "filePath": "main/src/com/google/refine/importers/SeparatorBasedImporter.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "346 - 346",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "SeparatorBasedImporter.java",
+        "filePath": "main/src/com/google/refine/importers/SeparatorBasedImporter.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "348 - 348",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "WikitextImporter.java",
+        "filePath": "main/src/com/google/refine/importers/WikitextImporter.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "762 - 762",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "ExtendDataOperation.java",
+        "filePath": "main/src/com/google/refine/operations/recon/ExtendDataOperation.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "237 - 237",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "ReconCopyAcrossColumnsOperation.java",
+        "filePath": "main/src/com/google/refine/operations/recon/ReconCopyAcrossColumnsOperation.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "186 - 186",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "ReconOperation.java",
+        "filePath": "main/src/com/google/refine/operations/recon/ReconOperation.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "179 - 179",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "ReconOperation.java",
+        "filePath": "main/src/com/google/refine/operations/recon/ReconOperation.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "242 - 242",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "EngineConfig.java",
+        "filePath": "modules/core/src/main/java/com/google/refine/browsing/EngineConfig.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "94 - 94",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "History.java",
+        "filePath": "modules/core/src/main/java/com/google/refine/history/History.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "153 - 153",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "HistoryEntry.java",
+        "filePath": "modules/core/src/main/java/com/google/refine/history/HistoryEntry.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "162 - 162",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "TextFormatGuesser.java",
+        "filePath": "modules/core/src/main/java/com/google/refine/importers/TextFormatGuesser.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "125 - 125",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "TextFormatGuesser.java",
+        "filePath": "modules/core/src/main/java/com/google/refine/importers/TextFormatGuesser.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "127 - 127",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "ImportingUtilities.java",
+        "filePath": "modules/core/src/main/java/com/google/refine/importing/ImportingUtilities.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "684 - 684",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "ImportingUtilities.java",
+        "filePath": "modules/core/src/main/java/com/google/refine/importing/ImportingUtilities.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "799 - 799",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "FileHistoryEntryManager.java",
+        "filePath": "modules/core/src/main/java/com/google/refine/io/FileHistoryEntryManager.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "74 - 74",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "FileHistoryEntryManager.java",
+        "filePath": "modules/core/src/main/java/com/google/refine/io/FileHistoryEntryManager.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "123 - 123",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "Column.java",
+        "filePath": "modules/core/src/main/java/com/google/refine/model/Column.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "152 - 152",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "ColumnGroup.java",
+        "filePath": "modules/core/src/main/java/com/google/refine/model/ColumnGroup.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "101 - 101",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "ReconStats.java",
+        "filePath": "modules/core/src/main/java/com/google/refine/model/ReconStats.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "99 - 99",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "Row.java",
+        "filePath": "modules/core/src/main/java/com/google/refine/model/Row.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "202 - 202",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "ColumnAdditionChange.java",
+        "filePath": "modules/core/src/main/java/com/google/refine/model/changes/ColumnAdditionChange.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "104 - 104",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "ReconConfig.java",
+        "filePath": "modules/core/src/main/java/com/google/refine/model/recon/ReconConfig.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "125 - 125",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "EngineDependentMassCellOperation.java",
+        "filePath": "modules/core/src/main/java/com/google/refine/operations/EngineDependentMassCellOperation.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "89 - 89",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "PreferenceStore.java",
+        "filePath": "modules/core/src/main/java/com/google/refine/preference/PreferenceStore.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "134 - 134",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "ProcessManager.java",
+        "filePath": "modules/core/src/main/java/com/google/refine/process/ProcessManager.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "145 - 145",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "ParsingUtilities.java",
+        "filePath": "modules/core/src/main/java/com/google/refine/util/ParsingUtilities.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "303 - 303",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "ParsingUtilities.java",
+        "filePath": "modules/core/src/main/java/com/google/refine/util/ParsingUtilities.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "315 - 315",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "RefineTest.java",
+        "filePath": "modules/core/src/test/java/com/google/refine/RefineTest.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "119 - 119",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "ImporterTest.java",
+        "filePath": "modules/core/src/test/java/com/google/refine/importers/ImporterTest.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "205 - 205",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "TestUtils.java",
+        "filePath": "modules/core/src/test/java/com/google/refine/util/TestUtils.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "177 - 177",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "DetectLanguage.java",
+        "filePath": "modules/grel/src/main/java/com/google/refine/expr/functions/strings/DetectLanguage.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "43 - 43",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "Refine.java",
+        "filePath": "server/src/com/google/refine/Refine.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "311 - 311",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "Refine.java",
+        "filePath": "server/src/com/google/refine/Refine.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "553 - 553",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "ImportingUtilities.java",
+        "filePath": "modules/core/src/main/java/com/google/refine/importing/ImportingUtilities.java",
+        "Security Category": "others",
+        "Description": "Expanding archive files without controlling resource consumption is security-sensitive",
+        "Location": "732 - 732",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDefine and control the ratio between compressed and uncompressed data, in general the data compression ratio for most of the legit archives is\n1 to 3.\nDefine and control the threshold for maximum total size of the uncompressed data.\nCount the number of file entries extracted from the archive and abort the extraction if their number is greater than a predefined threshold, in\nparticular it\u2019s not recommended to recursively expand archives (an entry of an archive could be also an archive).\nCompliant Solution\nDo not rely on\ngetsize\nto retrieve the size of an\nuncompressed entry because this method returns what is defined in the archive headers which can be forged by attackers, instead calculate the actual\nentry size when unzipping it:\nFile f = new File(\"ZipBomb.zip\");\nZipFile zipFile = new ZipFile(f);\nEnumeration<? extends ZipEntry> entries = zipFile.entries();\nint THRESHOLD_ENTRIES = 10000;\nint THRESHOLD_SIZE = 1000000000; // 1 GB\ndouble THRESHOLD_RATIO = 10;\nint totalSizeArchive = 0;\nint totalEntryArchive = 0;\nwhile(entries.hasMoreElements()) {\nZipEntry ze = entries.nextElement();\nInputStream in = new BufferedInputStream(zipFile.getInputStream(ze));\nOutputStream out = new BufferedOutputStream(new FileOutputStream(\"./output_onlyfortesting.txt\"));\ntotalEntryArchive ++;\nint nBytes = -1;\nbyte[] buffer = new byte[2048];\nint totalSizeEntry = 0;\nwhile((nBytes = in.read(buffer)) > 0) { // Compliant\nout.write(buffer, 0, nBytes);\ntotalSizeEntry += nBytes;\ntotalSizeArchive += nBytes;\ndouble compressionRatio = totalSizeEntry / ze.getCompressedSize();\nif(compressionRatio > THRESHOLD_RATIO) {\n// ratio between compressed and uncompressed data is highly suspicious, looks like a Zip Bomb Attack\nbreak;\n}\n}\nif(totalSizeArchive > THRESHOLD_SIZE) {\n// the uncompressed data size is too much for the application resource capacity\nbreak;\n}\nif(totalEntryArchive > THRESHOLD_ENTRIES) {\n// too much entries in this archive, can lead to inodes exhaustion of the system\nbreak;\n}\n}\nSee\nOWASP -\nTop 10 2021 Category A1 - Broken Access Control\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A5 - Broken Access Control\nOWASP -\nTop 10 2017 Category A6 - Security\nMisconfiguration\nCWE -\nCWE-409 - Improper Handling of Highly Compressed Data (Data Amplification)\nCERT, IDS04-J.\n- Safely\nextract files from ZipInputStream\nbamsoftware.com\n- A better Zip Bomb"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "ImportingUtilities.java",
+        "filePath": "modules/core/src/main/java/com/google/refine/importing/ImportingUtilities.java",
+        "Security Category": "others",
+        "Description": "Expanding archive files without controlling resource consumption is security-sensitive",
+        "Location": "805 - 805",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDefine and control the ratio between compressed and uncompressed data, in general the data compression ratio for most of the legit archives is\n1 to 3.\nDefine and control the threshold for maximum total size of the uncompressed data.\nCount the number of file entries extracted from the archive and abort the extraction if their number is greater than a predefined threshold, in\nparticular it\u2019s not recommended to recursively expand archives (an entry of an archive could be also an archive).\nCompliant Solution\nDo not rely on\ngetsize\nto retrieve the size of an\nuncompressed entry because this method returns what is defined in the archive headers which can be forged by attackers, instead calculate the actual\nentry size when unzipping it:\nFile f = new File(\"ZipBomb.zip\");\nZipFile zipFile = new ZipFile(f);\nEnumeration<? extends ZipEntry> entries = zipFile.entries();\nint THRESHOLD_ENTRIES = 10000;\nint THRESHOLD_SIZE = 1000000000; // 1 GB\ndouble THRESHOLD_RATIO = 10;\nint totalSizeArchive = 0;\nint totalEntryArchive = 0;\nwhile(entries.hasMoreElements()) {\nZipEntry ze = entries.nextElement();\nInputStream in = new BufferedInputStream(zipFile.getInputStream(ze));\nOutputStream out = new BufferedOutputStream(new FileOutputStream(\"./output_onlyfortesting.txt\"));\ntotalEntryArchive ++;\nint nBytes = -1;\nbyte[] buffer = new byte[2048];\nint totalSizeEntry = 0;\nwhile((nBytes = in.read(buffer)) > 0) { // Compliant\nout.write(buffer, 0, nBytes);\ntotalSizeEntry += nBytes;\ntotalSizeArchive += nBytes;\ndouble compressionRatio = totalSizeEntry / ze.getCompressedSize();\nif(compressionRatio > THRESHOLD_RATIO) {\n// ratio between compressed and uncompressed data is highly suspicious, looks like a Zip Bomb Attack\nbreak;\n}\n}\nif(totalSizeArchive > THRESHOLD_SIZE) {\n// the uncompressed data size is too much for the application resource capacity\nbreak;\n}\nif(totalEntryArchive > THRESHOLD_ENTRIES) {\n// too much entries in this archive, can lead to inodes exhaustion of the system\nbreak;\n}\n}\nSee\nOWASP -\nTop 10 2021 Category A1 - Broken Access Control\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A5 - Broken Access Control\nOWASP -\nTop 10 2017 Category A6 - Security\nMisconfiguration\nCWE -\nCWE-409 - Improper Handling of Highly Compressed Data (Data Amplification)\nCERT, IDS04-J.\n- Safely\nextract files from ZipInputStream\nbamsoftware.com\n- A better Zip Bomb"
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "DBExtensionTestUtils.java",
+        "filePath": "extensions/database/tests/src/com/google/refine/extension/database/DBExtensionTestUtils.java",
+        "Security Category": "others",
+        "Description": "Using publicly writable directories is security-sensitive",
+        "Location": "421 - 421",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a dedicated sub-folder with tightly controlled permissions\nUse secure-by-design APIs to create temporary files. Such API will make sure:\nThe generated filename is unpredictable\nThe file is readable and writable only by the creating user ID\nThe file descriptor is not inherited by child processes\nThe file will be destroyed as soon as it is closed\nCompliant Solution\nnew File(\"/myDirectory/myfile.txt\");  // Compliant\nFile.createTempFile(\"prefix\", \"suffix\", new File(\"/mySecureDirectory\"));  // Compliant\nif(SystemUtils.IS_OS_UNIX) {\nFileAttribute<Set<PosixFilePermission>> attr = PosixFilePermissions.asFileAttribute(PosixFilePermissions.fromString(\"rwx------\"));\nFiles.createTempFile(\"prefix\", \"suffix\", attr); // Compliant\n}\nelse {\nFile f = Files.createTempFile(\"prefix\", \"suffix\").toFile();  // Compliant\nf.setReadable(true, true);\nf.setWritable(true, true);\nf.setExecutable(true, true);\n}\nSee\nOWASP -\nTop 10 2021 Category A1 - Broken Access Control\nOWASP -\nTop 10 2017 Category A5 - Broken Access Control\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-377 - Insecure Temporary File\nCWE -\nCWE-379 - Creation of Temporary File in Directory with Incorrect Permissions\nOWASP, Insecure Temporary File\nSTIG Viewer -\nApplication Security and\nDevelopment: V-222567\n- The application must not be vulnerable to race conditions."
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "RefineDbServletStub.java",
+        "filePath": "extensions/database/tests/src/com/google/refine/extension/database/stub/RefineDbServletStub.java",
+        "Security Category": "others",
+        "Description": "Using publicly writable directories is security-sensitive",
+        "Location": "69 - 69",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a dedicated sub-folder with tightly controlled permissions\nUse secure-by-design APIs to create temporary files. Such API will make sure:\nThe generated filename is unpredictable\nThe file is readable and writable only by the creating user ID\nThe file descriptor is not inherited by child processes\nThe file will be destroyed as soon as it is closed\nCompliant Solution\nnew File(\"/myDirectory/myfile.txt\");  // Compliant\nFile.createTempFile(\"prefix\", \"suffix\", new File(\"/mySecureDirectory\"));  // Compliant\nif(SystemUtils.IS_OS_UNIX) {\nFileAttribute<Set<PosixFilePermission>> attr = PosixFilePermissions.asFileAttribute(PosixFilePermissions.fromString(\"rwx------\"));\nFiles.createTempFile(\"prefix\", \"suffix\", attr); // Compliant\n}\nelse {\nFile f = Files.createTempFile(\"prefix\", \"suffix\").toFile();  // Compliant\nf.setReadable(true, true);\nf.setWritable(true, true);\nf.setExecutable(true, true);\n}\nSee\nOWASP -\nTop 10 2021 Category A1 - Broken Access Control\nOWASP -\nTop 10 2017 Category A5 - Broken Access Control\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-377 - Insecure Temporary File\nCWE -\nCWE-379 - Creation of Temporary File in Directory with Incorrect Permissions\nOWASP, Insecure Temporary File\nSTIG Viewer -\nApplication Security and\nDevelopment: V-222567\n- The application must not be vulnerable to race conditions."
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "MediaFileUtils.java",
+        "filePath": "extensions/wikibase/src/org/openrefine/wikibase/editing/MediaFileUtils.java",
+        "Security Category": "others",
+        "Description": "Using publicly writable directories is security-sensitive",
+        "Location": "525 - 525",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a dedicated sub-folder with tightly controlled permissions\nUse secure-by-design APIs to create temporary files. Such API will make sure:\nThe generated filename is unpredictable\nThe file is readable and writable only by the creating user ID\nThe file descriptor is not inherited by child processes\nThe file will be destroyed as soon as it is closed\nCompliant Solution\nnew File(\"/myDirectory/myfile.txt\");  // Compliant\nFile.createTempFile(\"prefix\", \"suffix\", new File(\"/mySecureDirectory\"));  // Compliant\nif(SystemUtils.IS_OS_UNIX) {\nFileAttribute<Set<PosixFilePermission>> attr = PosixFilePermissions.asFileAttribute(PosixFilePermissions.fromString(\"rwx------\"));\nFiles.createTempFile(\"prefix\", \"suffix\", attr); // Compliant\n}\nelse {\nFile f = Files.createTempFile(\"prefix\", \"suffix\").toFile();  // Compliant\nf.setReadable(true, true);\nf.setWritable(true, true);\nf.setExecutable(true, true);\n}\nSee\nOWASP -\nTop 10 2021 Category A1 - Broken Access Control\nOWASP -\nTop 10 2017 Category A5 - Broken Access Control\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-377 - Insecure Temporary File\nCWE -\nCWE-379 - Creation of Temporary File in Directory with Incorrect Permissions\nOWASP, Insecure Temporary File\nSTIG Viewer -\nApplication Security and\nDevelopment: V-222567\n- The application must not be vulnerable to race conditions."
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "MediaFileUtilsTest.java",
+        "filePath": "extensions/wikibase/tests/src/org/openrefine/wikibase/editing/MediaFileUtilsTest.java",
+        "Security Category": "others",
+        "Description": "Using publicly writable directories is security-sensitive",
+        "Location": "116 - 116",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a dedicated sub-folder with tightly controlled permissions\nUse secure-by-design APIs to create temporary files. Such API will make sure:\nThe generated filename is unpredictable\nThe file is readable and writable only by the creating user ID\nThe file descriptor is not inherited by child processes\nThe file will be destroyed as soon as it is closed\nCompliant Solution\nnew File(\"/myDirectory/myfile.txt\");  // Compliant\nFile.createTempFile(\"prefix\", \"suffix\", new File(\"/mySecureDirectory\"));  // Compliant\nif(SystemUtils.IS_OS_UNIX) {\nFileAttribute<Set<PosixFilePermission>> attr = PosixFilePermissions.asFileAttribute(PosixFilePermissions.fromString(\"rwx------\"));\nFiles.createTempFile(\"prefix\", \"suffix\", attr); // Compliant\n}\nelse {\nFile f = Files.createTempFile(\"prefix\", \"suffix\").toFile();  // Compliant\nf.setReadable(true, true);\nf.setWritable(true, true);\nf.setExecutable(true, true);\n}\nSee\nOWASP -\nTop 10 2021 Category A1 - Broken Access Control\nOWASP -\nTop 10 2017 Category A5 - Broken Access Control\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-377 - Insecure Temporary File\nCWE -\nCWE-379 - Creation of Temporary File in Directory with Incorrect Permissions\nOWASP, Insecure Temporary File\nSTIG Viewer -\nApplication Security and\nDevelopment: V-222567\n- The application must not be vulnerable to race conditions."
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "MediaFileUtilsTest.java",
+        "filePath": "extensions/wikibase/tests/src/org/openrefine/wikibase/editing/MediaFileUtilsTest.java",
+        "Security Category": "others",
+        "Description": "Using publicly writable directories is security-sensitive",
+        "Location": "340 - 340",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a dedicated sub-folder with tightly controlled permissions\nUse secure-by-design APIs to create temporary files. Such API will make sure:\nThe generated filename is unpredictable\nThe file is readable and writable only by the creating user ID\nThe file descriptor is not inherited by child processes\nThe file will be destroyed as soon as it is closed\nCompliant Solution\nnew File(\"/myDirectory/myfile.txt\");  // Compliant\nFile.createTempFile(\"prefix\", \"suffix\", new File(\"/mySecureDirectory\"));  // Compliant\nif(SystemUtils.IS_OS_UNIX) {\nFileAttribute<Set<PosixFilePermission>> attr = PosixFilePermissions.asFileAttribute(PosixFilePermissions.fromString(\"rwx------\"));\nFiles.createTempFile(\"prefix\", \"suffix\", attr); // Compliant\n}\nelse {\nFile f = Files.createTempFile(\"prefix\", \"suffix\").toFile();  // Compliant\nf.setReadable(true, true);\nf.setWritable(true, true);\nf.setExecutable(true, true);\n}\nSee\nOWASP -\nTop 10 2021 Category A1 - Broken Access Control\nOWASP -\nTop 10 2017 Category A5 - Broken Access Control\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-377 - Insecure Temporary File\nCWE -\nCWE-379 - Creation of Temporary File in Directory with Incorrect Permissions\nOWASP, Insecure Temporary File\nSTIG Viewer -\nApplication Security and\nDevelopment: V-222567\n- The application must not be vulnerable to race conditions."
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "MediaFileUtilsTest.java",
+        "filePath": "extensions/wikibase/tests/src/org/openrefine/wikibase/editing/MediaFileUtilsTest.java",
+        "Security Category": "others",
+        "Description": "Using publicly writable directories is security-sensitive",
+        "Location": "341 - 341",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a dedicated sub-folder with tightly controlled permissions\nUse secure-by-design APIs to create temporary files. Such API will make sure:\nThe generated filename is unpredictable\nThe file is readable and writable only by the creating user ID\nThe file descriptor is not inherited by child processes\nThe file will be destroyed as soon as it is closed\nCompliant Solution\nnew File(\"/myDirectory/myfile.txt\");  // Compliant\nFile.createTempFile(\"prefix\", \"suffix\", new File(\"/mySecureDirectory\"));  // Compliant\nif(SystemUtils.IS_OS_UNIX) {\nFileAttribute<Set<PosixFilePermission>> attr = PosixFilePermissions.asFileAttribute(PosixFilePermissions.fromString(\"rwx------\"));\nFiles.createTempFile(\"prefix\", \"suffix\", attr); // Compliant\n}\nelse {\nFile f = Files.createTempFile(\"prefix\", \"suffix\").toFile();  // Compliant\nf.setReadable(true, true);\nf.setWritable(true, true);\nf.setExecutable(true, true);\n}\nSee\nOWASP -\nTop 10 2021 Category A1 - Broken Access Control\nOWASP -\nTop 10 2017 Category A5 - Broken Access Control\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-377 - Insecure Temporary File\nCWE -\nCWE-379 - Creation of Temporary File in Directory with Incorrect Permissions\nOWASP, Insecure Temporary File\nSTIG Viewer -\nApplication Security and\nDevelopment: V-222567\n- The application must not be vulnerable to race conditions."
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "MediaFileUtilsTest.java",
+        "filePath": "extensions/wikibase/tests/src/org/openrefine/wikibase/editing/MediaFileUtilsTest.java",
+        "Security Category": "others",
+        "Description": "Using publicly writable directories is security-sensitive",
+        "Location": "342 - 342",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a dedicated sub-folder with tightly controlled permissions\nUse secure-by-design APIs to create temporary files. Such API will make sure:\nThe generated filename is unpredictable\nThe file is readable and writable only by the creating user ID\nThe file descriptor is not inherited by child processes\nThe file will be destroyed as soon as it is closed\nCompliant Solution\nnew File(\"/myDirectory/myfile.txt\");  // Compliant\nFile.createTempFile(\"prefix\", \"suffix\", new File(\"/mySecureDirectory\"));  // Compliant\nif(SystemUtils.IS_OS_UNIX) {\nFileAttribute<Set<PosixFilePermission>> attr = PosixFilePermissions.asFileAttribute(PosixFilePermissions.fromString(\"rwx------\"));\nFiles.createTempFile(\"prefix\", \"suffix\", attr); // Compliant\n}\nelse {\nFile f = Files.createTempFile(\"prefix\", \"suffix\").toFile();  // Compliant\nf.setReadable(true, true);\nf.setWritable(true, true);\nf.setExecutable(true, true);\n}\nSee\nOWASP -\nTop 10 2021 Category A1 - Broken Access Control\nOWASP -\nTop 10 2017 Category A5 - Broken Access Control\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-377 - Insecure Temporary File\nCWE -\nCWE-379 - Creation of Temporary File in Directory with Incorrect Permissions\nOWASP, Insecure Temporary File\nSTIG Viewer -\nApplication Security and\nDevelopment: V-222567\n- The application must not be vulnerable to race conditions."
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "NewEntityScrutinizerTest.java",
+        "filePath": "extensions/wikibase/tests/src/org/openrefine/wikibase/qa/scrutinizers/NewEntityScrutinizerTest.java",
+        "Security Category": "others",
+        "Description": "Using publicly writable directories is security-sensitive",
+        "Location": "180 - 180",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a dedicated sub-folder with tightly controlled permissions\nUse secure-by-design APIs to create temporary files. Such API will make sure:\nThe generated filename is unpredictable\nThe file is readable and writable only by the creating user ID\nThe file descriptor is not inherited by child processes\nThe file will be destroyed as soon as it is closed\nCompliant Solution\nnew File(\"/myDirectory/myfile.txt\");  // Compliant\nFile.createTempFile(\"prefix\", \"suffix\", new File(\"/mySecureDirectory\"));  // Compliant\nif(SystemUtils.IS_OS_UNIX) {\nFileAttribute<Set<PosixFilePermission>> attr = PosixFilePermissions.asFileAttribute(PosixFilePermissions.fromString(\"rwx------\"));\nFiles.createTempFile(\"prefix\", \"suffix\", attr); // Compliant\n}\nelse {\nFile f = Files.createTempFile(\"prefix\", \"suffix\").toFile();  // Compliant\nf.setReadable(true, true);\nf.setWritable(true, true);\nf.setExecutable(true, true);\n}\nSee\nOWASP -\nTop 10 2021 Category A1 - Broken Access Control\nOWASP -\nTop 10 2017 Category A5 - Broken Access Control\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-377 - Insecure Temporary File\nCWE -\nCWE-379 - Creation of Temporary File in Directory with Incorrect Permissions\nOWASP, Insecure Temporary File\nSTIG Viewer -\nApplication Security and\nDevelopment: V-222567\n- The application must not be vulnerable to race conditions."
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "ExcelImporterTests.java",
+        "filePath": "main/tests/server/src/com/google/refine/importers/ExcelImporterTests.java",
+        "Security Category": "others",
+        "Description": "Using publicly writable directories is security-sensitive",
+        "Location": "491 - 491",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a dedicated sub-folder with tightly controlled permissions\nUse secure-by-design APIs to create temporary files. Such API will make sure:\nThe generated filename is unpredictable\nThe file is readable and writable only by the creating user ID\nThe file descriptor is not inherited by child processes\nThe file will be destroyed as soon as it is closed\nCompliant Solution\nnew File(\"/myDirectory/myfile.txt\");  // Compliant\nFile.createTempFile(\"prefix\", \"suffix\", new File(\"/mySecureDirectory\"));  // Compliant\nif(SystemUtils.IS_OS_UNIX) {\nFileAttribute<Set<PosixFilePermission>> attr = PosixFilePermissions.asFileAttribute(PosixFilePermissions.fromString(\"rwx------\"));\nFiles.createTempFile(\"prefix\", \"suffix\", attr); // Compliant\n}\nelse {\nFile f = Files.createTempFile(\"prefix\", \"suffix\").toFile();  // Compliant\nf.setReadable(true, true);\nf.setWritable(true, true);\nf.setExecutable(true, true);\n}\nSee\nOWASP -\nTop 10 2021 Category A1 - Broken Access Control\nOWASP -\nTop 10 2017 Category A5 - Broken Access Control\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-377 - Insecure Temporary File\nCWE -\nCWE-379 - Creation of Temporary File in Directory with Incorrect Permissions\nOWASP, Insecure Temporary File\nSTIG Viewer -\nApplication Security and\nDevelopment: V-222567\n- The application must not be vulnerable to race conditions."
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "ExcelImporterTests.java",
+        "filePath": "main/tests/server/src/com/google/refine/importers/ExcelImporterTests.java",
+        "Security Category": "others",
+        "Description": "Using publicly writable directories is security-sensitive",
+        "Location": "539 - 539",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a dedicated sub-folder with tightly controlled permissions\nUse secure-by-design APIs to create temporary files. Such API will make sure:\nThe generated filename is unpredictable\nThe file is readable and writable only by the creating user ID\nThe file descriptor is not inherited by child processes\nThe file will be destroyed as soon as it is closed\nCompliant Solution\nnew File(\"/myDirectory/myfile.txt\");  // Compliant\nFile.createTempFile(\"prefix\", \"suffix\", new File(\"/mySecureDirectory\"));  // Compliant\nif(SystemUtils.IS_OS_UNIX) {\nFileAttribute<Set<PosixFilePermission>> attr = PosixFilePermissions.asFileAttribute(PosixFilePermissions.fromString(\"rwx------\"));\nFiles.createTempFile(\"prefix\", \"suffix\", attr); // Compliant\n}\nelse {\nFile f = Files.createTempFile(\"prefix\", \"suffix\").toFile();  // Compliant\nf.setReadable(true, true);\nf.setWritable(true, true);\nf.setExecutable(true, true);\n}\nSee\nOWASP -\nTop 10 2021 Category A1 - Broken Access Control\nOWASP -\nTop 10 2017 Category A5 - Broken Access Control\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-377 - Insecure Temporary File\nCWE -\nCWE-379 - Creation of Temporary File in Directory with Incorrect Permissions\nOWASP, Insecure Temporary File\nSTIG Viewer -\nApplication Security and\nDevelopment: V-222567\n- The application must not be vulnerable to race conditions."
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "TextFormatGuesserTests.java",
+        "filePath": "main/tests/server/src/com/google/refine/importers/TextFormatGuesserTests.java",
+        "Security Category": "others",
+        "Description": "Using publicly writable directories is security-sensitive",
+        "Location": "88 - 88",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a dedicated sub-folder with tightly controlled permissions\nUse secure-by-design APIs to create temporary files. Such API will make sure:\nThe generated filename is unpredictable\nThe file is readable and writable only by the creating user ID\nThe file descriptor is not inherited by child processes\nThe file will be destroyed as soon as it is closed\nCompliant Solution\nnew File(\"/myDirectory/myfile.txt\");  // Compliant\nFile.createTempFile(\"prefix\", \"suffix\", new File(\"/mySecureDirectory\"));  // Compliant\nif(SystemUtils.IS_OS_UNIX) {\nFileAttribute<Set<PosixFilePermission>> attr = PosixFilePermissions.asFileAttribute(PosixFilePermissions.fromString(\"rwx------\"));\nFiles.createTempFile(\"prefix\", \"suffix\", attr); // Compliant\n}\nelse {\nFile f = Files.createTempFile(\"prefix\", \"suffix\").toFile();  // Compliant\nf.setReadable(true, true);\nf.setWritable(true, true);\nf.setExecutable(true, true);\n}\nSee\nOWASP -\nTop 10 2021 Category A1 - Broken Access Control\nOWASP -\nTop 10 2017 Category A5 - Broken Access Control\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-377 - Insecure Temporary File\nCWE -\nCWE-379 - Creation of Temporary File in Directory with Incorrect Permissions\nOWASP, Insecure Temporary File\nSTIG Viewer -\nApplication Security and\nDevelopment: V-222567\n- The application must not be vulnerable to race conditions."
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "TextFormatGuesserTests.java",
+        "filePath": "main/tests/server/src/com/google/refine/importers/TextFormatGuesserTests.java",
+        "Security Category": "others",
+        "Description": "Using publicly writable directories is security-sensitive",
+        "Location": "139 - 139",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a dedicated sub-folder with tightly controlled permissions\nUse secure-by-design APIs to create temporary files. Such API will make sure:\nThe generated filename is unpredictable\nThe file is readable and writable only by the creating user ID\nThe file descriptor is not inherited by child processes\nThe file will be destroyed as soon as it is closed\nCompliant Solution\nnew File(\"/myDirectory/myfile.txt\");  // Compliant\nFile.createTempFile(\"prefix\", \"suffix\", new File(\"/mySecureDirectory\"));  // Compliant\nif(SystemUtils.IS_OS_UNIX) {\nFileAttribute<Set<PosixFilePermission>> attr = PosixFilePermissions.asFileAttribute(PosixFilePermissions.fromString(\"rwx------\"));\nFiles.createTempFile(\"prefix\", \"suffix\", attr); // Compliant\n}\nelse {\nFile f = Files.createTempFile(\"prefix\", \"suffix\").toFile();  // Compliant\nf.setReadable(true, true);\nf.setWritable(true, true);\nf.setExecutable(true, true);\n}\nSee\nOWASP -\nTop 10 2021 Category A1 - Broken Access Control\nOWASP -\nTop 10 2017 Category A5 - Broken Access Control\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-377 - Insecure Temporary File\nCWE -\nCWE-379 - Creation of Temporary File in Directory with Incorrect Permissions\nOWASP, Insecure Temporary File\nSTIG Viewer -\nApplication Security and\nDevelopment: V-222567\n- The application must not be vulnerable to race conditions."
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "RefineServletStub.java",
+        "filePath": "modules/core/src/test/java/com/google/refine/RefineServletStub.java",
+        "Security Category": "others",
+        "Description": "Using publicly writable directories is security-sensitive",
+        "Location": "71 - 71",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a dedicated sub-folder with tightly controlled permissions\nUse secure-by-design APIs to create temporary files. Such API will make sure:\nThe generated filename is unpredictable\nThe file is readable and writable only by the creating user ID\nThe file descriptor is not inherited by child processes\nThe file will be destroyed as soon as it is closed\nCompliant Solution\nnew File(\"/myDirectory/myfile.txt\");  // Compliant\nFile.createTempFile(\"prefix\", \"suffix\", new File(\"/mySecureDirectory\"));  // Compliant\nif(SystemUtils.IS_OS_UNIX) {\nFileAttribute<Set<PosixFilePermission>> attr = PosixFilePermissions.asFileAttribute(PosixFilePermissions.fromString(\"rwx------\"));\nFiles.createTempFile(\"prefix\", \"suffix\", attr); // Compliant\n}\nelse {\nFile f = Files.createTempFile(\"prefix\", \"suffix\").toFile();  // Compliant\nf.setReadable(true, true);\nf.setWritable(true, true);\nf.setExecutable(true, true);\n}\nSee\nOWASP -\nTop 10 2021 Category A1 - Broken Access Control\nOWASP -\nTop 10 2017 Category A5 - Broken Access Control\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-377 - Insecure Temporary File\nCWE -\nCWE-379 - Creation of Temporary File in Directory with Incorrect Permissions\nOWASP, Insecure Temporary File\nSTIG Viewer -\nApplication Security and\nDevelopment: V-222567\n- The application must not be vulnerable to race conditions."
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "ProjectMetadataUtilitiesTest.java",
+        "filePath": "modules/core/src/test/java/com/google/refine/io/ProjectMetadataUtilitiesTest.java",
+        "Security Category": "others",
+        "Description": "Using publicly writable directories is security-sensitive",
+        "Location": "49 - 49",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a dedicated sub-folder with tightly controlled permissions\nUse secure-by-design APIs to create temporary files. Such API will make sure:\nThe generated filename is unpredictable\nThe file is readable and writable only by the creating user ID\nThe file descriptor is not inherited by child processes\nThe file will be destroyed as soon as it is closed\nCompliant Solution\nnew File(\"/myDirectory/myfile.txt\");  // Compliant\nFile.createTempFile(\"prefix\", \"suffix\", new File(\"/mySecureDirectory\"));  // Compliant\nif(SystemUtils.IS_OS_UNIX) {\nFileAttribute<Set<PosixFilePermission>> attr = PosixFilePermissions.asFileAttribute(PosixFilePermissions.fromString(\"rwx------\"));\nFiles.createTempFile(\"prefix\", \"suffix\", attr); // Compliant\n}\nelse {\nFile f = Files.createTempFile(\"prefix\", \"suffix\").toFile();  // Compliant\nf.setReadable(true, true);\nf.setWritable(true, true);\nf.setExecutable(true, true);\n}\nSee\nOWASP -\nTop 10 2021 Category A1 - Broken Access Control\nOWASP -\nTop 10 2017 Category A5 - Broken Access Control\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-377 - Insecure Temporary File\nCWE -\nCWE-379 - Creation of Temporary File in Directory with Incorrect Permissions\nOWASP, Insecure Temporary File\nSTIG Viewer -\nApplication Security and\nDevelopment: V-222567\n- The application must not be vulnerable to race conditions."
+    },
+    {
+        "projectName": "OpenRefine",
+        "fileName": "TestUtils.java",
+        "filePath": "modules/core/src/test/java/com/google/refine/util/TestUtils.java",
+        "Security Category": "others",
+        "Description": "Using publicly writable directories is security-sensitive",
+        "Location": "73 - 73",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a dedicated sub-folder with tightly controlled permissions\nUse secure-by-design APIs to create temporary files. Such API will make sure:\nThe generated filename is unpredictable\nThe file is readable and writable only by the creating user ID\nThe file descriptor is not inherited by child processes\nThe file will be destroyed as soon as it is closed\nCompliant Solution\nnew File(\"/myDirectory/myfile.txt\");  // Compliant\nFile.createTempFile(\"prefix\", \"suffix\", new File(\"/mySecureDirectory\"));  // Compliant\nif(SystemUtils.IS_OS_UNIX) {\nFileAttribute<Set<PosixFilePermission>> attr = PosixFilePermissions.asFileAttribute(PosixFilePermissions.fromString(\"rwx------\"));\nFiles.createTempFile(\"prefix\", \"suffix\", attr); // Compliant\n}\nelse {\nFile f = Files.createTempFile(\"prefix\", \"suffix\").toFile();  // Compliant\nf.setReadable(true, true);\nf.setWritable(true, true);\nf.setExecutable(true, true);\n}\nSee\nOWASP -\nTop 10 2021 Category A1 - Broken Access Control\nOWASP -\nTop 10 2017 Category A5 - Broken Access Control\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-377 - Insecure Temporary File\nCWE -\nCWE-379 - Creation of Temporary File in Directory with Incorrect Permissions\nOWASP, Insecure Temporary File\nSTIG Viewer -\nApplication Security and\nDevelopment: V-222567\n- The application must not be vulnerable to race conditions."
+    }
+]

@@ -1,0 +1,142 @@
+[
+    {
+        "File Path": "/src/src/client/java/teammates/client/scripts/statistics/FileStore.java",
+        "Location": "line 102 to line 102",
+        "Code": "        Cipher cipher = Cipher.getInstance(\"AES/ECB/PKCS5Padding\");",
+        "Description": "Cipher in ECB mode is detected. ECB mode produces the same output for the same input each time which allows an attacker to intercept and replay the data. Further, ECB mode does not provide any integrity checking. See https://find-sec-bugs.github.io/bugs.htm#CIPHER_INTEGRITY.",
+        "Severity": "MEDIUM",
+        "Category": "security",
+        "Technology": [
+            "java"
+        ],
+        "CWE": [
+            "CWE-327: Use of a Broken or Risky Cryptographic Algorithm"
+        ],
+        "References": [
+            "https://owasp.org/Top10/A02_2021-Cryptographic_Failures"
+        ]
+    },
+    {
+        "File Path": "/src/src/client/java/teammates/client/scripts/statistics/FileStore.java",
+        "Location": "line 102 to line 102",
+        "Code": "        Cipher cipher = Cipher.getInstance(\"AES/ECB/PKCS5Padding\");",
+        "Description": "Use of AES with ECB mode detected. ECB doesn't provide message confidentiality and  is not semantically secure so should not be used. Instead, use a strong, secure cipher: Cipher.getInstance(\"AES/CBC/PKCS7PADDING\"). See https://owasp.org/www-community/Using_the_Java_Cryptographic_Extensions for more information.",
+        "Severity": "MEDIUM",
+        "Category": "security",
+        "Technology": [
+            "java"
+        ],
+        "CWE": [
+            "CWE-327: Use of a Broken or Risky Cryptographic Algorithm"
+        ],
+        "References": [
+            "https://owasp.org/Top10/A02_2021-Cryptographic_Failures",
+            "https://googleprojectzero.blogspot.com/2022/10/rc4-is-still-considered-harmful.html"
+        ]
+    },
+    {
+        "File Path": "/src/src/client/java/teammates/client/scripts/statistics/FileStore.java",
+        "Location": "line 116 to line 116",
+        "Code": "        Cipher cipher = Cipher.getInstance(\"AES/ECB/PKCS5Padding\");",
+        "Description": "Cipher in ECB mode is detected. ECB mode produces the same output for the same input each time which allows an attacker to intercept and replay the data. Further, ECB mode does not provide any integrity checking. See https://find-sec-bugs.github.io/bugs.htm#CIPHER_INTEGRITY.",
+        "Severity": "MEDIUM",
+        "Category": "security",
+        "Technology": [
+            "java"
+        ],
+        "CWE": [
+            "CWE-327: Use of a Broken or Risky Cryptographic Algorithm"
+        ],
+        "References": [
+            "https://owasp.org/Top10/A02_2021-Cryptographic_Failures"
+        ]
+    },
+    {
+        "File Path": "/src/src/client/java/teammates/client/scripts/statistics/FileStore.java",
+        "Location": "line 116 to line 116",
+        "Code": "        Cipher cipher = Cipher.getInstance(\"AES/ECB/PKCS5Padding\");",
+        "Description": "Use of AES with ECB mode detected. ECB doesn't provide message confidentiality and  is not semantically secure so should not be used. Instead, use a strong, secure cipher: Cipher.getInstance(\"AES/CBC/PKCS7PADDING\"). See https://owasp.org/www-community/Using_the_Java_Cryptographic_Extensions for more information.",
+        "Severity": "MEDIUM",
+        "Category": "security",
+        "Technology": [
+            "java"
+        ],
+        "CWE": [
+            "CWE-327: Use of a Broken or Risky Cryptographic Algorithm"
+        ],
+        "References": [
+            "https://owasp.org/Top10/A02_2021-Cryptographic_Failures",
+            "https://googleprojectzero.blogspot.com/2022/10/rc4-is-still-considered-harmful.html"
+        ]
+    },
+    {
+        "File Path": "/src/src/main/java/teammates/common/util/StringHelper.java",
+        "Location": "line 124 to line 124",
+        "Code": "            Cipher cipher = Cipher.getInstance(\"AES/ECB/PKCS5Padding\");",
+        "Description": "Cipher in ECB mode is detected. ECB mode produces the same output for the same input each time which allows an attacker to intercept and replay the data. Further, ECB mode does not provide any integrity checking. See https://find-sec-bugs.github.io/bugs.htm#CIPHER_INTEGRITY.",
+        "Severity": "MEDIUM",
+        "Category": "security",
+        "Technology": [
+            "java"
+        ],
+        "CWE": [
+            "CWE-327: Use of a Broken or Risky Cryptographic Algorithm"
+        ],
+        "References": [
+            "https://owasp.org/Top10/A02_2021-Cryptographic_Failures"
+        ]
+    },
+    {
+        "File Path": "/src/src/main/java/teammates/common/util/StringHelper.java",
+        "Location": "line 124 to line 124",
+        "Code": "            Cipher cipher = Cipher.getInstance(\"AES/ECB/PKCS5Padding\");",
+        "Description": "Use of AES with ECB mode detected. ECB doesn't provide message confidentiality and  is not semantically secure so should not be used. Instead, use a strong, secure cipher: Cipher.getInstance(\"AES/CBC/PKCS7PADDING\"). See https://owasp.org/www-community/Using_the_Java_Cryptographic_Extensions for more information.",
+        "Severity": "MEDIUM",
+        "Category": "security",
+        "Technology": [
+            "java"
+        ],
+        "CWE": [
+            "CWE-327: Use of a Broken or Risky Cryptographic Algorithm"
+        ],
+        "References": [
+            "https://owasp.org/Top10/A02_2021-Cryptographic_Failures",
+            "https://googleprojectzero.blogspot.com/2022/10/rc4-is-still-considered-harmful.html"
+        ]
+    },
+    {
+        "File Path": "/src/src/main/java/teammates/common/util/StringHelper.java",
+        "Location": "line 145 to line 145",
+        "Code": "            Cipher cipher = Cipher.getInstance(\"AES/ECB/PKCS5Padding\");",
+        "Description": "Cipher in ECB mode is detected. ECB mode produces the same output for the same input each time which allows an attacker to intercept and replay the data. Further, ECB mode does not provide any integrity checking. See https://find-sec-bugs.github.io/bugs.htm#CIPHER_INTEGRITY.",
+        "Severity": "MEDIUM",
+        "Category": "security",
+        "Technology": [
+            "java"
+        ],
+        "CWE": [
+            "CWE-327: Use of a Broken or Risky Cryptographic Algorithm"
+        ],
+        "References": [
+            "https://owasp.org/Top10/A02_2021-Cryptographic_Failures"
+        ]
+    },
+    {
+        "File Path": "/src/src/main/java/teammates/common/util/StringHelper.java",
+        "Location": "line 145 to line 145",
+        "Code": "            Cipher cipher = Cipher.getInstance(\"AES/ECB/PKCS5Padding\");",
+        "Description": "Use of AES with ECB mode detected. ECB doesn't provide message confidentiality and  is not semantically secure so should not be used. Instead, use a strong, secure cipher: Cipher.getInstance(\"AES/CBC/PKCS7PADDING\"). See https://owasp.org/www-community/Using_the_Java_Cryptographic_Extensions for more information.",
+        "Severity": "MEDIUM",
+        "Category": "security",
+        "Technology": [
+            "java"
+        ],
+        "CWE": [
+            "CWE-327: Use of a Broken or Risky Cryptographic Algorithm"
+        ],
+        "References": [
+            "https://owasp.org/Top10/A02_2021-Cryptographic_Failures",
+            "https://googleprojectzero.blogspot.com/2022/10/rc4-is-still-considered-harmful.html"
+        ]
+    }
+]

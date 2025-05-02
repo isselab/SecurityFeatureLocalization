@@ -1,0 +1,177 @@
+{
+    "Access Control": {
+      "Authentication": [
+        "PasswordEncoder",
+        "Credential",
+        "OTP",
+        "X509Certificate",
+        "MFA",
+        "SSO",
+        "OAuth",
+        "JWT",
+        "getToken()",
+        "getCSRFToken",
+        "Cookie",
+        "setCookieValue",
+        "Keycloak",
+        "IdP",
+        "SecurityContext",
+        "getAuthentication",
+        "setPassword",
+        "generateSecurePassword"
+      ],
+      "Authorization": [
+        "AccessManager",
+        "getRole",
+        "setRole",
+        "getPrivilege",
+        "Permission",
+        "getACL",
+        "RBAC",
+        "ABAC",
+        "MAC",
+        "DAC",
+        "AuthenticationManager",
+        "SecurityManager",
+        "PermissionEvaluator",
+        "TimeRestrictedAccess"
+      ]
+    },
+    "Cryptography": {
+      "Encryption": [
+        "Cipher",
+        "KeyGenerator",
+        "SecretKeySpec",
+        "AES",
+        "RSA",
+        "Blowfish",
+        "StreamCipher",
+        "BlockCipher",
+        "HybridEncryption",
+        "encrypt",
+        "decrypt",
+        "Mac"
+      ],
+      "Key Management": [
+        "keyStore",
+        "keyPair",
+        "keyFactory",
+        "keyAgreement",
+        "keyRevocation",
+        "Certificate",
+        "TrustManager",
+        "generateKeyPair"
+      ],
+      "Signature": [
+        "Signature",
+        "Signer",
+        "PKCS12",
+        "DigitalSignature",
+        "CertificateFactory",
+        "sign(",
+        "verify(",
+        "initSign",
+        "initVerify"
+      ],
+      "Hashing": [
+        "MessageDigest",
+        "DigestInputStream",
+        "SHA-256",
+        "SHA-512",
+        "MD5",
+        "hash(",
+        "digest("
+      ],
+      "Steganography": [
+        "ImageProcessor",
+        "Stego",
+        "encode(",
+        "decode(",
+        "pad(",
+        "Base64(",
+        "Base64."
+      ]
+    },
+    "Security Monitoring": {
+      "Logging": [
+        "login_success",
+        "login_failure",
+        "unauthorized_access",
+        "privilege_escalation",
+        "audit_log_entry",
+        "compliance_check"
+      ],
+      "Automated Response": [
+        "ResponseHandler",
+        "AlertService"
+      ],
+      "History Maintenance": [
+        "AuditTrail",
+        "TransactionLogger"
+      ]
+    },
+    "Secure Data Handling": {
+      "Data Validation": [
+        "validate(",
+        "Whitelist",
+        "Blacklist",
+        "AntiSamy",
+        "Commons Validator"
+      ],
+      "Data Sanitization": [
+        "StringEscapeUtils",
+        "HTMLSanitizer",
+        "sanitize",
+        "unescape",
+        "escape"
+      ],
+      "Retention Control": [
+        "DataRetentionPolicy",
+        "RetentionManager"
+      ],
+      "Secure Storage": [
+        "EncryptedFileSystem",
+        "SecureStore",
+        "KeyVault"
+      ],
+      "Trusted Sources": [
+        "SecureRandom",
+        "TimeSync",
+        "setSalt"
+      ]
+    },
+    "System State Protection": {
+      "Resource Management": [
+        "Semaphore",
+        "ThreadPool",
+        "ResourceAllocator"
+      ],
+      "System State Validation": [
+        "StateVerifier",
+        "Checksum",
+        "HashValidator"
+      ],
+      "Session Management": [
+        "SessionToken",
+        "SessionManager",
+        "CSRFProtection",
+        "SessionTimeout",
+        "getSession(",
+        "openSession("
+      ],
+      "State Synchronization": [
+        "Synchronized",
+        "ReentrantLock",
+        "createLocalLock",
+        "AtomicReference"
+      ]
+    },
+    "Miscellaneous": [
+      "SecurityPolicy",
+      "SecureChannel",
+      "TLSContext",
+      "SSLContext",
+      "AccessDeniedException"
+    ]
+  }
+  

@@ -1,0 +1,18 @@
+{
+  "name": "JavaMail API",
+  "version": "1.6.2",
+  "namespace": "javax.mail",
+  "categories": [],
+  "children": [
+    {
+      "namespace": "Authenticator",
+      "categories": ["Authentication"],
+      "children": []
+    },
+    {
+      "namespace": "PasswordAuthentication",
+      "categories": ["Authentication"],
+      "children": []
+    }
+  ]
+}

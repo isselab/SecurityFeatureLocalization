@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/repos/BroadleafCommerce" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/BroadleafCommerce_Done" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/BroadleafCommerce_new" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/OpenRefine" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/OpenRefine(right)" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/SORMAS-Project" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/accumulo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/briar" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/graylog2-server" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/graylog2-server_[CANCELD]" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/jitsi-meet" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/libreplan" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/metasfresh" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/nats.java" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/nats.java(done)" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/nuxeo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/openmrs-core" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/openmrs-core_old" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/orientdb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/sakai" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/traccar" vcs="Git" />
+  </component>
+</project>

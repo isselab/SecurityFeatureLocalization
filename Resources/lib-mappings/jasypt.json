@@ -1,0 +1,25 @@
+{
+  "name": "Jasypt",
+  "version": "1.9.3",
+  "namespace": "org.jasypt",
+  "categories": [],
+  "children": [
+    {
+      "namespace": "encryption",
+      "categories": [],
+      "children": [
+        {
+          "namespace": "pbe",
+          "categories": [],
+          "children": [
+            {
+              "namespace": "StandardPBEStringEncryptor",
+              "categories": ["Encryption"],
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

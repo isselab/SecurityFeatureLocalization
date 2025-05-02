@@ -1,0 +1,19 @@
+{
+  "name": "Apache Lucene",
+  "version": "10.2.0",
+  "namespace": "org.apache.lucene",
+  "categories": [],
+  "children": [
+    {
+      "namespace": "queryparser",
+      "categories": [],
+      "children": [
+        {
+          "namespace": "escape",
+          "categories": ["DataSanitization"],
+          "children": []
+        }
+      ]
+    }
+  ]
+}

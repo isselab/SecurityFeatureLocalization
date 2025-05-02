@@ -1,0 +1,13 @@
+{
+  "name": "OWASP AntiSamy",
+  "version": "1.7.7",
+  "namespace": "org.owasp.validator.html",
+  "categories": [],
+  "children": [
+    {
+      "namespace": "AntiSamy",
+      "categories": ["DataValidation"],
+      "children": []
+    }
+  ]
+}

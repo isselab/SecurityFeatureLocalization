@@ -1,0 +1,29 @@
+{
+  "name": "Java Cryptography Extension (JCE)",
+  "version": "1.8",
+  "namespace": "javax.crypto",
+  "categories": [],
+  "children": [
+    {
+      "namespace": "spec",
+      "categories": [],
+      "children": [
+        {
+          "namespace": "SecretKeySpec",
+          "categories": ["KeyManagement"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "namespace": "Mac",
+      "categories": ["Encryption"],
+      "children": []
+    },
+    {
+      "namespace": "Cipher",
+      "categories": ["Encryption"],
+      "children": []
+    }
+  ]
+}

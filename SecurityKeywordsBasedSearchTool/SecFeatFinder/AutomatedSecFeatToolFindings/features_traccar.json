@@ -1,0 +1,5160 @@
+{
+  "javaVersion": "17",
+  "buildSuccess": true,
+  "sources": [
+    {
+      "path": "src\\main\\java",
+      "files": [
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\AsyncSocket.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\AsyncSocketServlet.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\BaseObjectResource.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\BaseResource.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\CorsResponseFilter.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\DateParameterConverterProvider.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\ExtendedObjectResource.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\MediaFilter.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\resource\\AttributeResource.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\resource\\CalendarResource.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\resource\\CommandResource.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\resource\\DeviceResource.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\resource\\DriverResource.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\resource\\EventResource.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\resource\\GeofenceResource.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\resource\\GroupResource.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\resource\\MaintenanceResource.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\resource\\NotificationResource.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\resource\\OrderResource.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\resource\\PasswordResource.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\resource\\PermissionsResource.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\resource\\PositionResource.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\resource\\ReportResource.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\resource\\ServerResource.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\resource\\SessionResource.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\resource\\StatisticsResource.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\resource\\UserResource.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\ResourceErrorHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\security\\CodeRequiredException.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\security\\LoginResult.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\security\\LoginService.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\security\\PermissionsService.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\security\\SecurityRequestFilter.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\security\\ServiceAccountUser.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\security\\UserPrincipal.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\security\\UserSecurityContext.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\signature\\CryptoManager.java",
+          "apiCalls": [
+            {
+              "line": 53,
+              "api": "java.security.Signature.getInstance",
+              "features": [
+                "Signature"
+              ]
+            },
+            {
+              "line": 54,
+              "api": "java.security.Signature.initSign",
+              "features": [
+                "Signature"
+              ]
+            },
+            {
+              "line": 55,
+              "api": "java.security.Signature.update",
+              "features": [
+                "Signature"
+              ]
+            },
+            {
+              "line": 56,
+              "api": "java.security.Signature.sign",
+              "features": [
+                "Signature"
+              ]
+            },
+            {
+              "line": 68,
+              "api": "java.security.Signature.getInstance",
+              "features": [
+                "Signature"
+              ]
+            },
+            {
+              "line": 69,
+              "api": "java.security.Signature.initVerify",
+              "features": [
+                "Signature"
+              ]
+            },
+            {
+              "line": 73,
+              "api": "java.security.Signature.update",
+              "features": [
+                "Signature"
+              ]
+            },
+            {
+              "line": 74,
+              "api": "java.security.Signature.verify",
+              "features": [
+                "Signature"
+              ]
+            },
+            {
+              "line": 83,
+              "api": "java.security.KeyFactory.generatePublic",
+              "features": [
+                "KeyGeneration"
+              ]
+            },
+            {
+              "line": 83,
+              "api": "java.security.KeyFactory.getInstance",
+              "features": [
+                "KeyGeneration"
+              ]
+            },
+            {
+              "line": 84,
+              "api": "java.security.spec.X509EncodedKeySpec",
+              "features": [
+                "KeyGeneration"
+              ]
+            },
+            {
+              "line": 85,
+              "api": "java.security.KeyFactory.generatePrivate",
+              "features": [
+                "KeyGeneration"
+              ]
+            },
+            {
+              "line": 85,
+              "api": "java.security.KeyFactory.getInstance",
+              "features": [
+                "KeyGeneration"
+              ]
+            },
+            {
+              "line": 86,
+              "api": "java.security.spec.PKCS8EncodedKeySpec",
+              "features": [
+                "KeyGeneration"
+              ]
+            },
+            {
+              "line": 88,
+              "api": "java.security.KeyPairGenerator.getInstance",
+              "features": [
+                "KeyGeneration"
+              ]
+            },
+            {
+              "line": 89,
+              "api": "java.security.KeyPairGenerator.initialize",
+              "features": [
+                "KeyGeneration"
+              ]
+            },
+            {
+              "line": 89,
+              "api": "java.security.spec.ECGenParameterSpec",
+              "features": [
+                "KeyGeneration"
+              ]
+            },
+            {
+              "line": 89,
+              "api": "java.security.SecureRandom",
+              "features": [
+                "SourceOfRandomness"
+              ]
+            },
+            {
+              "line": 90,
+              "api": "java.security.KeyPairGenerator.generateKeyPair",
+              "features": [
+                "KeyGeneration"
+              ]
+            },
+            {
+              "line": 92,
+              "api": "java.security.KeyPair.getPublic",
+              "features": [
+                "KeyGeneration"
+              ]
+            },
+            {
+              "line": 93,
+              "api": "java.security.KeyPair.getPrivate",
+              "features": [
+                "KeyGeneration"
+              ]
+            },
+            {
+              "line": 96,
+              "api": "java.security.Key.getEncoded",
+              "features": [
+                "KeyGeneration"
+              ]
+            },
+            {
+              "line": 97,
+              "api": "java.security.Key.getEncoded",
+              "features": [
+                "KeyGeneration"
+              ]
+            }
+          ],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\signature\\KeystoreModel.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\signature\\TokenManager.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\api\\SimpleObjectResource.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\BaseFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\BaseHttpProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\BaseMqttProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\BasePipelineFactory.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\BaseProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\BaseProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\BaseProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\BaseProtocolPoller.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\broadcast\\BaseBroadcastService.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\broadcast\\BroadcastInterface.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\broadcast\\BroadcastMessage.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\broadcast\\BroadcastService.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\broadcast\\MulticastBroadcastService.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\broadcast\\NullBroadcastService.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\broadcast\\RedisBroadcastService.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\CharacterDelimiterFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\config\\Config.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\config\\ConfigKey.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\config\\ConfigSuffix.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\config\\Keys.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\config\\KeyType.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\config\\LookupContext.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\config\\PortConfigSuffix.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\database\\BufferingManager.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\database\\CommandsManager.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\database\\DeviceLookupService.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\database\\LdapProvider.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\database\\MediaManager.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\database\\NotificationManager.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\database\\OpenIdProvider.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\database\\StatisticsManager.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\EventLoopGroupFactory.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\ExtendedObjectDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\forward\\AmqpClient.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\forward\\EventData.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\forward\\EventForwarder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\forward\\EventForwarderAmqp.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\forward\\EventForwarderJson.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\forward\\EventForwarderKafka.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\forward\\EventForwarderMqtt.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\forward\\MqttClient.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\forward\\NetworkForwarder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\forward\\PositionData.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\forward\\PositionForwarder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\forward\\PositionForwarderAmqp.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\forward\\PositionForwarderJson.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\forward\\PositionForwarderKafka.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\forward\\PositionForwarderMqtt.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\forward\\PositionForwarderRedis.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\forward\\PositionForwarderUrl.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\forward\\PositionForwarderWialon.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\forward\\ResultHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geocoder\\Address.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geocoder\\AddressFormat.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geocoder\\BanGeocoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geocoder\\BingMapsGeocoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geocoder\\FactualGeocoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geocoder\\GeoapifyGeocoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geocoder\\GeocodeFarmGeocoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geocoder\\GeocodeJsonGeocoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geocoder\\Geocoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geocoder\\GeocoderException.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geocoder\\GeocodeXyzGeocoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geocoder\\GisgraphyGeocoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geocoder\\GoogleGeocoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geocoder\\HereGeocoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geocoder\\JsonGeocoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geocoder\\LocationIqGeocoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geocoder\\MapboxGeocoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geocoder\\MapmyIndiaGeocoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geocoder\\MapQuestGeocoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geocoder\\MapTilerGeocoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geocoder\\NominatimGeocoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geocoder\\OpenCageGeocoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geocoder\\PlusCodesGeocoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geocoder\\PositionStackGeocoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geocoder\\TomTomGeocoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geofence\\GeofenceCircle.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geofence\\GeofenceGeometry.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geofence\\GeofencePolygon.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geofence\\GeofencePolyline.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geolocation\\GeolocationException.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geolocation\\GeolocationProvider.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geolocation\\GoogleGeolocationProvider.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geolocation\\OpenCellIdGeolocationProvider.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geolocation\\UniversalGeolocationProvider.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\geolocation\\UnwiredGeolocationProvider.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\BasePositionHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\ComputedAttributesHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\CopyAttributesHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\DatabaseHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\DistanceHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\DriverHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\EngineHoursHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\events\\AlarmEventHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\events\\BaseEventHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\events\\BehaviorEventHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\events\\CommandResultEventHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\events\\DriverEventHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\events\\FuelEventHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\events\\GeofenceEventHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\events\\IgnitionEventHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\events\\MaintenanceEventHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\events\\MediaEventHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\events\\MotionEventHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\events\\OverspeedEventHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\FilterHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\GeocoderHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\GeofenceHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\GeolocationHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\HemisphereHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\MotionHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\network\\AcknowledgementHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\network\\MainEventHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\network\\NetworkForwarderHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\network\\NetworkMessageHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\network\\OpenChannelHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\network\\RemoteAddressHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\network\\StandardLoggingHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\OutdatedHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\PositionForwardingHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\PostProcessHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\SpeedLimitHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\handler\\TimeHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\BcdUtil.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\BitBuffer.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\BitUtil.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\BufferUtil.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\Checksum.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\ClassScanner.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\DataConverter.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\DateBuilder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\DateUtil.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\DistanceCalculator.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\Hashing.java",
+          "apiCalls": [
+            {
+              "line": 63,
+              "api": "java.security.Key.getEncoded",
+              "features": [
+                "KeyGeneration"
+              ]
+            },
+            {
+              "line": 69,
+              "api": "java.security.SecureRandom",
+              "features": [
+                "SourceOfRandomness"
+              ]
+            },
+            {
+              "line": 73,
+              "api": "java.security.SecureRandom.nextBytes",
+              "features": [
+                "SourceOfRandomness"
+              ]
+            }
+          ],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\Log.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\LogAction.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\model\\AttributeUtil.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\model\\DeviceUtil.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\model\\GeofenceUtil.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\model\\PositionUtil.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\model\\UserUtil.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\NetworkUtil.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\ObdDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\ObjectMapperContextResolver.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\Parser.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\PatternBuilder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\PatternUtil.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\PositionLogger.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\SessionHelper.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\StringUtil.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\UnitsConverter.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\helper\\WebHelper.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\LifecycleObject.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\mail\\LogMailManager.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\mail\\MailManager.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\mail\\SmtpMailManager.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\Main.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\MainModule.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\Attribute.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\BaseCommand.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\BaseModel.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\Calendar.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\CellTower.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\Command.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\Device.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\DeviceAccumulators.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\Disableable.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\Driver.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\Event.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\ExtendedModel.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\Geofence.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\Group.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\GroupedModel.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\LogRecord.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\Maintenance.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\ManagedUser.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\Message.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\Network.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\Notification.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\ObjectOperation.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\Order.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\Pair.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\Permission.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\Position.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\QueuedCommand.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\Report.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\Schedulable.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\Server.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\Statistics.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\Typed.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\User.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\UserRestrictions.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\model\\WifiAccessPoint.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\NetworkMessage.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\notification\\MessageException.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\notification\\NotificationFormatter.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\notification\\NotificationMessage.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\notification\\NotificatorManager.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\notification\\PropertiesProvider.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\notification\\TextTemplateFormatter.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\notificators\\Notificator.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\notificators\\NotificatorCommand.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\notificators\\NotificatorFirebase.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\notificators\\NotificatorMail.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\notificators\\NotificatorPushover.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\notificators\\NotificatorSms.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\notificators\\NotificatorTelegram.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\notificators\\NotificatorTraccar.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\notificators\\NotificatorWeb.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\PipelineBuilder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\ProcessingHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AdmFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AdmProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AdmProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AdmProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AisProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AisProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AlematicsFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AlematicsProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AlematicsProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AnytrekProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AnytrekProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ApelProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ApelProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AplicomFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AplicomProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AplicomProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AppelloProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AppelloProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AquilaProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AquilaProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Ardi01Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Ardi01ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ArknavProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ArknavProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ArknavX8Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ArknavX8ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ArmoliProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ArmoliProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ArmoliProtocolPoller.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ArnaviBinaryProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ArnaviFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ArnaviProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ArnaviProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ArnaviTextProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AstraProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AstraProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\At2000FrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\At2000Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\At2000ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AtrackFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AtrackProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AtrackProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AtrackProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AuroProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AuroProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AustinNbProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AustinNbProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AutoFonFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AutoFonProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AutoFonProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AutoGradeProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AutoGradeProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AutoTrackProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AutoTrackProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AvemaProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\AvemaProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Avl301Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Avl301ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\B2316Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\B2316ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\BceFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\BceProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\BceProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\BceProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\BlackKiteProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\BlackKiteProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\BlueProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\BlueProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\BoxProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\BoxProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\BstplProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\BstplProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\C2stekProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\C2stekProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\CalAmpProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\CalAmpProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\CarcellProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\CarcellProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\CarcellProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\CarscopProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\CarscopProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\CarTrackProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\CarTrackProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\CastelProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\CastelProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\CastelProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\CautelaProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\CautelaProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\CellocatorFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\CellocatorProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\CellocatorProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\CellocatorProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\CguardProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\CguardProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\CityeasyProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\CityeasyProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\CityeasyProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ContinentalProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ContinentalProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\CradlepointProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\CradlepointProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\DingtekFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\DingtekProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\DingtekProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\DishaProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\DishaProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\DmtHttpProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\DmtHttpProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\DmtProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\DmtProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\DolphinProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\DolphinProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\DraginoProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\DraginoProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Dsf22FrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Dsf22Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Dsf22ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\DualcamFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\DualcamProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\DualcamProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\DwayProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\DwayProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\EasyTrackProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\EasyTrackProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\EasyTrackProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\EelinkProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\EelinkProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\EelinkProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\EgtsFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\EgtsProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\EgtsProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\EnforaProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\EnforaProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\EnforaProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\EnnfuProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\EnnfuProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\EnvotechProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\EnvotechProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\EsealProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\EsealProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\EsealProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\EskyFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\EskyProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\EskyProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ExtremTracProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ExtremTracProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\FifotrackFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\FifotrackProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\FifotrackProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\FifotrackProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\FleetGuideProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\FleetGuideProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\FlespiProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\FlespiProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\FlexApiProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\FlexApiProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\FlexCommProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\FlexCommProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\FlexibleReportProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\FlexibleReportProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\FlextrackProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\FlextrackProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\FoxProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\FoxProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\FreedomProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\FreedomProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\FreematicsProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\FreematicsProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\FutureWayFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\FutureWayProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\FutureWayProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\G1rusFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\G1rusProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\G1rusProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GalileoFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GalileoProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GalileoProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GalileoProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GatorProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GatorProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GatorProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GenxProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GenxProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Gl100Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Gl100ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Gl200BinaryProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Gl200FrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Gl200Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Gl200ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Gl200ProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Gl200TextProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Gl601Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Gl601ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GlobalSatProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GlobalSatProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GlobalSatProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GlobalstarProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GlobalstarProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GnxProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GnxProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GoSafeFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GoSafeProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GoSafeProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GotopProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GotopProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Gps056FrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Gps056Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Gps056ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Gps103Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Gps103ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Gps103ProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GpsGateProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GpsGateProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GpsMarkerProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GpsMarkerProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GpsmtaProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GpsmtaProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GranitFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GranitProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GranitProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GranitProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\GranitProtocolSmsEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Gs100Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Gs100ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Gt02Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Gt02ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Gt06FrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Gt06Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Gt06ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Gt06ProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Gt30Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Gt30ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\H02FrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\H02Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\H02ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\H02ProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\HaicomProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\HaicomProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\HomtecsProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\HomtecsProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\HoopoProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\HoopoProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\HuabaoFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\HuabaoFrameEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\HuabaoProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\HuabaoProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\HuabaoProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\HuaShengFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\HuaShengProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\HuaShengProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\HuaShengProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\HunterProProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\HunterProProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\IdplProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\IdplProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\IntellitracFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\IntellitracProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\IntellitracProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\IotmProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\IotmProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ItsFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ItsProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ItsProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ItsProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Ivt401Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Ivt401ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\JidoProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\JidoProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\JpKorjarFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\JpKorjarProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\JpKorjarProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\JsonFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Jt600FrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Jt600Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Jt600ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Jt600ProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\KenjiProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\KenjiProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\KhdProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\KhdProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\KhdProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\L100FrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\L100Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\L100ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\LacakProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\LacakProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\LaipacProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\LaipacProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\LaipacProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\LeafSpyProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\LeafSpyProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\M2cProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\M2cProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\M2mProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\M2mProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MaestroProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MaestroProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ManPowerProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ManPowerProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Mavlink2Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Mavlink2ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MegastekFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MegastekProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MegastekProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MeiligaoFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MeiligaoProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MeiligaoProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MeiligaoProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MeitrackFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MeitrackProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MeitrackProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MeitrackProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MictrackProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MictrackProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MilesmateProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MilesmateProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Minifinder2Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Minifinder2ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Minifinder2ProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MiniFinderProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MiniFinderProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MiniFinderProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MobilogixProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MobilogixProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MobilogixProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MoovboxProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MoovboxProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MotorProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MotorProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Mta6Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Mta6ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MtxProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MtxProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MxtFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MxtProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\MxtProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NavigilFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NavigilProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NavigilProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NavisetFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NavisetProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NavisetProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NavisFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NavisProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NavisProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NavtelecomFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NavtelecomProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NavtelecomProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NavtelecomProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NdtpV6Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NdtpV6ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NdtpV6ProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NeosProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NeosProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NetProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NetProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NiotProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NiotProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NoranProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NoranProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NoranProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NtoProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NtoProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NvsFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NvsProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NvsProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NyitechProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\NyitechProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ObdDongleProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ObdDongleProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\OigoProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\OigoProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\OkoProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\OkoProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\OmnicommFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\OmnicommProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\OmnicommProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\OpenGtsProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\OpenGtsProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\OrbcommProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\OrbcommProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\OrbcommProtocolPoller.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\OrionFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\OrionProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\OrionProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\OsmAndProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\OsmAndProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\OutsafeProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\OutsafeProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\OwnTracksProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\OwnTracksProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PacificTrackProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PacificTrackProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PathAwayProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PathAwayProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PiligrimProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PiligrimProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PluginProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PluginProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PolteProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PolteProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PortmanProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PortmanProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PortmanProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PositrexProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PositrexProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PretraceProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PretraceProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PretraceProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PricolProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PricolProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ProgressProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ProgressProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PstFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PstFrameEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PstProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PstProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PstProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Pt215Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Pt215ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Pt3000Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Pt3000ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Pt502FrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Pt502Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Pt502ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Pt502ProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Pt60Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Pt60ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PuiProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\PuiProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\R12wProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\R12wProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\RaceDynamicsProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\RaceDynamicsProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\RadarProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\RadarProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\RamacProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\RamacProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\RaveonProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\RaveonProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\RecodaProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\RecodaProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\RetranslatorFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\RetranslatorProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\RetranslatorProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\RfTrackProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\RfTrackProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\RitiProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\RitiProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\RoboTrackFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\RoboTrackProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\RoboTrackProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\RstProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\RstProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\RuptelaProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\RuptelaProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\RuptelaProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\S168Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\S168ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SabertekFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SabertekProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SabertekProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SanavProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SanavProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SanulProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SanulProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SatsolProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SatsolProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SigfoxProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SigfoxProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SiwiProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SiwiProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SkypatrolProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SkypatrolProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SmartSoleProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SmartSoleProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SmokeyProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SmokeyProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SnapperFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SnapperProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SnapperProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SolarPoweredProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SolarPoweredProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SpotProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SpotProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\StarcomProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\StarcomProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\StarLinkProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\StarLinkProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\StartekFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\StartekProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\StartekProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\StartekProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\StbProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\StbProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Stl060FrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Stl060Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Stl060ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SuntechFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SuntechProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SuntechProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SuntechProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SupermateProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SupermateProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SviasProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SviasProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SviasProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SwiftechProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\SwiftechProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\T55Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\T55ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\T57FrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\T57Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\T57ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\T622IridiumProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\T622IridiumProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\T800xProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\T800xProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\T800xProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TaipPrefixEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TaipProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TaipProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TechTltProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TechTltProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TechtoCruzFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TechtoCruzProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TechtoCruzProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TekFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TekProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TekProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TelemaxProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TelemaxProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TelicFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TelicProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TelicProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TeltonikaFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TeltonikaProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TeltonikaProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TeltonikaProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TeraTrackProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TeraTrackProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ThinkPowerProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ThinkPowerProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ThinkRaceProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ThinkRaceProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ThurayaProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ThurayaProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Tk102Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Tk102ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Tk103FrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Tk103Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Tk103ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Tk103ProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Tlt2hProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Tlt2hProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TlvProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TlvProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TmgFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TmgProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TmgProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TopflytechProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TopflytechProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TopinProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TopinProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TopinProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TotemFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TotemProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TotemProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TotemProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TotemProtocolSmsEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Tr20Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Tr20ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Tr900Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Tr900ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TrackboxProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TrackboxProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TrakMateProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TrakMateProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TramigoFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TramigoProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TramigoProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TranSyncProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TranSyncProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TrvProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TrvProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Tt8850Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Tt8850ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TytanProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TytanProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TzoneProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\TzoneProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\UlbotechFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\UlbotechProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\UlbotechProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\UlbotechProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\UproProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\UproProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\UuxProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\UuxProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\V680Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\V680ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ValtrackProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\ValtrackProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\VisiontekProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\VisiontekProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\VltProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\VltProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\VnetProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\VnetProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Vt200FrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Vt200Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Vt200ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\VtfmsFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\VtfmsProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\VtfmsProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\WatchFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\WatchProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\WatchProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\WatchProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\WialonProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\WialonProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\WialonProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\WliFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\WliProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\WliProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\WondexFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\WondexProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\WondexProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\WondexProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\WristbandProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\WristbandProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Xexun2FrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Xexun2FrameEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Xexun2Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Xexun2ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Xexun2ProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\XexunFrameDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\XexunProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\XexunProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\XexunProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\XirgoProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\XirgoProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\XirgoProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Xrb28Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Xrb28ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Xrb28ProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Xt013Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Xt013ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Xt2400Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\Xt2400ProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\YwtProtocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\protocol\\YwtProtocolDecoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\Protocol.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\reports\\CombinedReportProvider.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\reports\\common\\ExpressionEvaluatorFactory.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\reports\\common\\ReportExecutor.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\reports\\common\\ReportMailer.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\reports\\common\\ReportUtils.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\reports\\common\\TripsConfig.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\reports\\CsvExportProvider.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\reports\\DevicesReportProvider.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\reports\\EventsReportProvider.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\reports\\GpxExportProvider.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\reports\\KmlExportProvider.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\reports\\model\\BaseReportItem.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\reports\\model\\CombinedReportItem.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\reports\\model\\DeviceReportItem.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\reports\\model\\DeviceReportSection.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\reports\\model\\StopReportItem.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\reports\\model\\SummaryReportItem.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\reports\\model\\TripReportItem.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\reports\\RouteReportProvider.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\reports\\StopsReportProvider.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\reports\\SummaryReportProvider.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\reports\\TripsReportProvider.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\schedule\\ScheduleManager.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\schedule\\ScheduleTask.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\schedule\\SingleScheduleTask.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\schedule\\TaskClearStatus.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\schedule\\TaskDeleteTemporary.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\schedule\\TaskDeviceInactivityCheck.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\schedule\\TaskExpirations.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\schedule\\TaskHealthCheck.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\schedule\\TaskReports.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\schedule\\TaskWebSocketKeepalive.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\ServerManager.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\session\\cache\\CacheGraph.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\session\\cache\\CacheKey.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\session\\cache\\CacheManager.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\session\\cache\\CacheNode.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\session\\cache\\WeakValueMap.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\session\\ConnectionKey.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\session\\ConnectionManager.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\session\\DeviceSession.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\session\\state\\MotionProcessor.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\session\\state\\MotionState.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\session\\state\\OverspeedProcessor.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\session\\state\\OverspeedState.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\sms\\HttpSmsClient.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\sms\\SmsManager.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\sms\\SnsSmsClient.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\speedlimit\\OverpassSpeedLimitProvider.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\speedlimit\\SpeedLimitException.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\speedlimit\\SpeedLimitProvider.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\storage\\DatabaseModule.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\storage\\DatabaseStorage.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\storage\\MemoryStorage.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\storage\\query\\Columns.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\storage\\query\\Condition.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\storage\\query\\Limit.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\storage\\query\\Order.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\storage\\query\\Request.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\storage\\QueryBuilder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\storage\\QueryIgnore.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\storage\\Storage.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\storage\\StorageException.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\storage\\StorageName.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\StringProtocolEncoder.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\TrackerClient.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\TrackerConnector.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\TrackerServer.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\web\\ConsoleServlet.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\web\\DefaultOverrideServlet.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\web\\OverrideFilter.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\web\\ResponseWrapper.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\web\\ThrottlingFilter.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\web\\WebInjectionManagerFactory.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\web\\WebModule.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\web\\WebRequestLog.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\web\\WebServer.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\WindowsService.java",
+          "apiCalls": [
+            {
+              "line": 54,
+              "api": "java.security.CodeSource.getLocation",
+              "features": [
+                "Certification"
+              ]
+            },
+            {
+              "line": 143,
+              "api": "java.security.CodeSource.getLocation",
+              "features": [
+                "Certification"
+              ]
+            }
+          ],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\WrapperContext.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\WrapperInboundHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "src\\main\\java\\org\\traccar\\WrapperOutboundHandler.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "build\\generated\\source\\proto\\main\\java\\org\\traccar\\protobuf\\dolphin\\Config\\DolphinConfig.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "build\\generated\\source\\proto\\main\\java\\org\\traccar\\protobuf\\dolphin\\Messages\\DolphinMessages.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "build\\generated\\source\\proto\\main\\java\\org\\traccar\\protobuf\\omnicomm\\OmnicommMessageOuterClass.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        },
+        {
+          "path": "build\\generated\\source\\proto\\main\\java\\org\\traccar\\protobuf\\starlink\\StarLinkMessage.java",
+          "apiCalls": [],
+          "missingBindings": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,476 @@
+{
+  "name": "Java SE",
+  "version": "17.0.0",
+  "namespace": "",
+  "categories": [],
+  "children": [
+    {
+      "namespace": "java",
+      "categories": [],
+      "children": [
+        {
+          "namespace": "net",
+          "categories": [],
+          "children": [
+            {
+              "namespace": "Authenticator",
+              "categories": ["Authentication"],
+              "children": [
+                {
+                  "namespace": "getPasswordAuthentication",
+                  "categories": ["Credentials"],
+                  "children": []
+                },
+                {
+                  "namespace": "requestPasswordAuthentication",
+                  "categories": ["Credentials"],
+                  "children": []
+                },
+                {
+                  "namespace": "requestPasswordAuthenticationInstance",
+                  "categories": ["Credentials"],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "namespace": "CookieHandler",
+              "categories": ["SessionManagement"],
+              "children": []
+            },
+            {
+              "namespace": "CookieManager",
+              "categories": ["SessionManagement"],
+              "children": []
+            },
+            {
+              "namespace": "CookiePolicy",
+              "categories": ["SessionManagement"],
+              "children": []
+            },
+            {
+              "namespace": "CookieStore",
+              "categories": ["SessionManagement", "SecureStorage"],
+              "children": []
+            },
+            {
+              "namespace": "HttpCookie",
+              "categories": ["SessionManagement"],
+              "children": []
+            },
+            {
+              "namespace": "PasswordAuthenticator",
+              "categories": ["Credentials"],
+              "children": []
+            },
+            {
+              "namespace": "SecureCacheResponse",
+              "categories": ["SecureStorage"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "namespace": "security",
+          "categories": [],
+          "children": [
+            {
+              "namespace": "AccessControlContext",
+              "categories": ["AccessControl"],
+              "children": []
+            },
+            {
+              "namespace": "AccessController",
+              "categories": ["AccessControl"],
+              "children": []
+            },
+            {
+              "namespace": "AlgorithmConstraints",
+              "categories": ["Cryptography"],
+              "children": []
+            },
+            {
+              "namespace": "AlgorithmParameterGenerator",
+              "categories": ["Cryptography"],
+              "children": []
+            },
+            {
+              "namespace": "AlgorithmParameterGeneratorSpi",
+              "categories": ["Cryptography"],
+              "children": []
+            },
+            {
+              "namespace": "AlgorithmParameters",
+              "categories": ["Cryptography"],
+              "children": []
+            },
+            {
+              "namespace": "AlgorithmParametersSpi",
+              "categories": ["Cryptography"],
+              "children": []
+            },
+            {
+              "namespace": "AuthProvider",
+              "categories": ["Authentication"],
+              "children": []
+            },
+            {
+              "namespace": "Certificate",
+              "categories": ["Certification"],
+              "children": []
+            },
+            {
+              "namespace": "CodeSigner",
+              "categories": ["Certification"],
+              "children": []
+            },
+            {
+              "namespace": "CodeSource",
+              "categories": ["Certification"],
+              "children": []
+            },
+            {
+              "namespace": "DigestInputStream",
+              "categories": ["CryptographicHashing"],
+              "children": []
+            },
+            {
+              "namespace": "DigestOutputStream",
+              "categories": ["CryptographicHashing"],
+              "children": []
+            },
+            {
+              "namespace": "DrbgParameters",
+              "categories": ["KeyGeneration"],
+              "children": []
+            },
+            {
+              "namespace": "Identity",
+              "categories": ["Certification"],
+              "children": []
+            },
+            {
+              "namespace": "Key",
+              "categories": ["KeyGeneration"],
+              "children": []
+            },
+            {
+              "namespace": "KeyFactory",
+              "categories": ["KeyGeneration"],
+              "children": []
+            },
+            {
+              "namespace": "KeyFactorySpi",
+              "categories": ["KeyGeneration"],
+              "children": []
+            },
+            {
+              "namespace": "KeyManagementException",
+              "categories": ["KeyGeneration"],
+              "children": []
+            },
+            {
+              "namespace": "KeyPair",
+              "categories": ["KeyGeneration"],
+              "children": []
+            },
+            {
+              "namespace": "KeyPairGenerator",
+              "categories": ["KeyGeneration"],
+              "children": []
+            },
+            {
+              "namespace": "KeyPairGeneratorSpi",
+              "categories": ["KeyGeneration"],
+              "children": []
+            },
+            {
+              "namespace": "KeyStore",
+              "categories": ["KeyStorage"],
+              "children": []
+            },
+            {
+              "namespace": "KeyStoreSpi",
+              "categories": ["KeyStorage"],
+              "children": []
+            },
+            {
+              "namespace": "MessageDigest",
+              "categories": ["CryptographicHashing"],
+              "children": []
+            },
+            {
+              "namespace": "MessageDigestSpi",
+              "categories": ["CryptographicHashing"],
+              "children": []
+            },
+            {
+              "namespace": "PrivateKey",
+              "categories": ["KeyGeneration"],
+              "children": []
+            },
+            {
+              "namespace": "PublicKey",
+              "categories": ["KeyGeneration"],
+              "children": []
+            },
+            {
+              "namespace": "SecureRandom",
+              "categories": ["SourceOfRandomness"],
+              "children": []
+            },
+            {
+              "namespace": "SecureRandomSpi",
+              "categories": ["SourceOfRandomness"],
+              "children": []
+            },
+            {
+              "namespace": "Signature",
+              "categories": ["Signature"],
+              "children": []
+            },
+            {
+              "namespace": "SignatureSpi",
+              "categories": ["Signature"],
+              "children": []
+            },
+            {
+              "namespace": "SignedObject",
+              "categories": ["Signature"],
+              "children": []
+            },
+            {
+              "namespace": "Signer",
+              "categories": ["Signature"],
+              "children": []
+            },
+            {
+              "namespace": "Timestamp",
+              "categories": ["TimeSource"],
+              "children": []
+            },
+            {
+              "namespace": "interfaces",
+              "categories": ["KeyGeneration"],
+              "children": []
+            },
+            {
+              "namespace": "spec",
+              "categories": ["KeyGeneration"],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "namespace": "javax",
+      "categories": [],
+      "children": [
+        {
+          "namespace": "cryptop",
+          "categories": ["Cryptography"],
+          "children": []
+        },
+        {
+          "namespace": "crypto",
+          "categories": [],
+          "children": [
+            {
+              "namespace": "Cipher",
+              "categories": ["Encryption"],
+              "children": []
+            },
+            {
+              "namespace": "CipherInputStream",
+              "categories": ["Encryption"],
+              "children": []
+            },
+            {
+              "namespace": "CipherOutputStream",
+              "categories": ["Encryption"],
+              "children": []
+            },
+            {
+              "namespace": "CipherSpi",
+              "categories": ["Encryption"],
+              "children": []
+            },
+            {
+              "namespace": "EncryptedPrivateKeyInfo",
+              "categories": ["KeyManagement"],
+              "children": []
+            },
+            {
+              "namespace": "ExemptionMechanism",
+              "categories": ["KeyManagement"],
+              "children": []
+            },
+            {
+              "namespace": "ExemptionMechanismSpi",
+              "categories": ["KeyManagement"],
+              "children": []
+            },
+            {
+              "namespace": "KeyAgreement",
+              "categories": ["KeyGeneration"],
+              "children": []
+            },
+            {
+              "namespace": "KeyAgreementSpi",
+              "categories": ["KeyGeneration"],
+              "children": []
+            },
+            {
+              "namespace": "KeyGenerator",
+              "categories": ["KeyGeneration"],
+              "children": []
+            },
+            {
+              "namespace": "KeyGeneratorSpi",
+              "categories": ["KeyGeneration"],
+              "children": []
+            },
+            {
+              "namespace": "Mac",
+              "categories": ["MessageAuthentication"],
+              "children": []
+            },
+            {
+              "namespace": "MacSpi",
+              "categories": ["MessageAuthentication"],
+              "children": []
+            },
+            {
+              "namespace": "SealedObject",
+              "categories": ["SecureStorage"],
+              "children": []
+            },
+            {
+              "namespace": "SecretKey",
+              "categories": ["KeyGeneration"],
+              "children": []
+            },
+            {
+              "namespace": "SecretKeyFactory",
+              "categories": ["KeyGeneration"],
+              "children": []
+            },
+            {
+              "namespace": "SecretKeyFactorySpi",
+              "categories": ["KeyGeneration"],
+              "children": []
+            },
+            {
+              "namespace": "interfaces",
+              "categories": ["KeyGeneration"],
+              "children": []
+            },
+            {
+              "namespace": "spec",
+              "categories": ["KeyGeneration"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "namespace": "net",
+          "categories": [],
+          "children": [
+            {
+              "namespace": "ssl",
+              "categories": ["Certification", "Encryption"],
+              "children": [
+                {
+                  "namespace": "CertPathTrustManagerParameters",
+                  "categories": ["Certification"],
+                  "children": []
+                },
+                {
+                  "namespace": "KeyManager",
+                  "categories": ["SecureStorage"],
+                  "children": []
+                },
+                {
+                  "namespace": "KeyManagerFactory",
+                  "categories": ["SecureStorage"],
+                  "children": []
+                },
+                {
+                  "namespace": "KeyManagerFactorySpi",
+                  "categories": ["SecureStorage"],
+                  "children": []
+                },
+                {
+                  "namespace": "KeyStoreBuilderParameters",
+                  "categories": ["SecureStorage"],
+                  "children": []
+                },
+                {
+                  "namespace": "ManagerFactoryParameters",
+                  "categories": ["KeyGeneration"],
+                  "children": []
+                },
+                {
+                  "namespace": "SSLContext",
+                  "categories": ["Certification", "Encryption"],
+                  "children": []
+                },
+                {
+                  "namespace": "SSLContextSpi",
+                  "categories": ["Certification", "Encryption"],
+                  "children": []
+                },
+                {
+                  "namespace": "SSLEngine",
+                  "categories": ["Certification", "Encryption"],
+                  "children": []
+                },
+                {
+                  "namespace": "SSLServerSocket",
+                  "categories": ["Certification", "Encryption"],
+                  "children": []
+                },
+                {
+                  "namespace": "SSLServerSocketFactory",
+                  "categories": ["Certification", "Encryption"],
+                  "children": []
+                },
+                {
+                  "namespace": "SSLSession",
+                  "categories": ["Certification", "Encryption"],
+                  "children": []
+                },
+                {
+                  "namespace": "SSLSessionContext",
+                  "categories": ["Certification", "Encryption"],
+                  "children": []
+                },
+                {
+                  "namespace": "SSLSocket",
+                  "categories": ["Certification", "Encryption"],
+                  "children": []
+                },
+                {
+                  "namespace": "SSLSocketFactory",
+                  "categories": ["Certification", "Encryption"],
+                  "children": []
+                },
+                {
+                  "namespace": "X509ExtendedKeyManager",
+                  "categories": ["KeyGeneration"],
+                  "children": []
+                },
+                {
+                  "namespace": "X509KeyManager",
+                  "categories": ["KeyGeneration"],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Apache Commons",
+  "version": "3.17.0",
+  "namespace": "org.apache.commons",
+  "categories": [],
+  "children": [
+    {
+      "namespace": "lang",
+      "categories": [],
+      "children": [
+        {
+          "namespace": "RandomStringUtils",
+          "categories": ["TrustedSources"],
+          "children": []
+        },
+        {
+          "namespace": "StringEscapeUtils",
+          "categories": ["DataSanitization"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "namespace": "codec",
+      "categories": [],
+      "children": [
+        {
+          "namespace": "binary",
+          "categories": ["Steganography"],
+          "children": []
+        },
+        {
+          "namespace": "digest",
+          "categories": ["Steganography"],
+          "children": []
+        }
+      ]
+    }
+  ]
+}

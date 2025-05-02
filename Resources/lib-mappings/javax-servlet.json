@@ -1,0 +1,13 @@
+{
+  "name": "Java Servlet API",
+  "version": "3.1",
+  "namespace": "javax.servlet.http",
+  "categories": [],
+  "children": [
+    {
+      "namespace": "Cookie",
+      "categories": ["SessionManagement"],
+      "children": []
+    }
+  ]
+}

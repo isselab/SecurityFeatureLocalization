@@ -1,0 +1,94 @@
+{
+  "name": "Google Tink",
+  "version": "1.15.0",
+  "namespace": "com.google.crypto.tink",
+  "categories": ["Cryptography"],
+  "children": [
+    {
+      "namespace": "Aead",
+      "categories": ["Cryptography"],
+      "children": []
+    },
+    {
+      "namespace": "DeterministicAead",
+      "categories": ["Cryptography"],
+      "children": []
+    },
+    {
+      "namespace": "HybridDecrypt",
+      "categories": ["Encryption"],
+      "children": []
+    },
+    {
+      "namespace": "HybridEncrypt",
+      "categories": ["Encryption"],
+      "children": []
+    },
+    {
+      "namespace": "KeyManager",
+      "categories": ["KeyManagement"],
+      "children": []
+    },
+    {
+      "namespace": "Mac",
+      "categories": ["MessageAuthentication"],
+      "children": []
+    },
+    {
+      "namespace": "StreamingAead",
+      "categories": ["Cryptography"],
+      "children": []
+    },
+    {
+      "namespace": "KeysetManager",
+      "categories": ["KeyManagement"],
+      "children": []
+    },
+    {
+      "namespace": "aead",
+      "categories": ["Cryptography"],
+      "children": []
+    },
+    {
+      "namespace": "daead",
+      "categories": ["Cryptography"],
+      "children": []
+    },
+    {
+      "namespace": "jwt",
+      "categories": ["JWT"],
+      "children": []
+    },
+    {
+      "namespace": "mac",
+      "categories": ["MessageAuthentication"],
+      "children": []
+    },
+    {
+      "namespace": "prf",
+      "categories": ["SourceOfRandomness"],
+      "children": []
+    },
+    {
+      "namespace": "signature",
+      "categories": ["Signature"],
+      "children": []
+    },
+    {
+      "namespace": "streamingaead",
+      "categories": ["Cryptography"],
+      "children": []
+    },
+    {
+      "namespace": "subtle",
+      "categories": ["Cryptography"],
+      "children": [
+        {
+          "namespace": "prf",
+          "categories": ["SourceOfRandomness"],
+          "children": []
+        }
+      ]
+    }
+  ]
+}

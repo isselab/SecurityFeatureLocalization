@@ -1,0 +1,1943 @@
+[
+    {
+        "File Name": "TrackerClient.java",
+        "File Path": "src\\main\\java\\org\\traccar\\TrackerClient.java",
+        "Matches": [
+            {
+                "Source Code": "SSLEngine engine = SSLContext.getDefault().createSSLEngine();",
+                "Location": "line 68",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SSLContext]"
+            }
+        ]
+    },
+    {
+        "File Name": "TrackerServer.java",
+        "File Path": "src\\main\\java\\org\\traccar\\TrackerServer.java",
+        "Matches": [
+            {
+                "Source Code": "SSLEngine engine = SSLContext.getDefault().createSSLEngine();",
+                "Location": "line 68",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SSLContext]"
+            }
+        ]
+    },
+    {
+        "File Name": "AsyncSocketServlet.java",
+        "File Path": "src\\main\\java\\org\\traccar\\api\\AsyncSocketServlet.java",
+        "Matches": [
+            {
+                "Source Code": "List<String> tokens = req.getParameterMap().get(\"token\");",
+                "Location": "line 63",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            },
+            {
+                "Source Code": "String token = tokens.iterator().next();",
+                "Location": "line 65",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            },
+            {
+                "Source Code": "userId = loginService.login(token).getUser().getId();",
+                "Location": "line 67",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            },
+            {
+                "Source Code": "userId = (Long) ((HttpSession) req.getSession()).getAttribute(SessionHelper.USER_ID_KEY);",
+                "Location": "line 72",
+                "Keywords Found": "System State Protection : Session Management : [HttpSession]"
+            }
+        ]
+    },
+    {
+        "File Name": "BaseObjectResource.java",
+        "File Path": "src\\main\\java\\org\\traccar\\api\\BaseObjectResource.java",
+        "Matches": [
+            {
+                "Source Code": "storage.addPermission(new Permission(User.class, getUserId(), baseClass, entity.getId()));",
+                "Location": "line 77",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            }
+        ]
+    },
+    {
+        "File Name": "BaseResource.java",
+        "File Path": "src\\main\\java\\org\\traccar\\api\\BaseResource.java",
+        "Matches": [
+            {
+                "Source Code": "private SecurityContext securityContext;",
+                "Location": "line 29",
+                "Keywords Found": "Access Control : Authentication : [SecurityContext]"
+            }
+        ]
+    },
+    {
+        "File Name": "ExtendedObjectResource.java",
+        "File Path": "src\\main\\java\\org\\traccar\\api\\ExtendedObjectResource.java",
+        "Matches": [
+            {
+                "Source Code": "conditions.add(new Condition.Permission(User.class, getUserId(), baseClass));",
+                "Location": "line 52",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "conditions.add(new Condition.Permission(User.class, getUserId(), baseClass));",
+                "Location": "line 56",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "conditions.add(new Condition.Permission(User.class, userId, baseClass).excludeGroups());",
+                "Location": "line 59",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "conditions.add(new Condition.Permission(Group.class, groupId, baseClass).excludeGroups());",
+                "Location": "line 65",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "conditions.add(new Condition.Permission(Device.class, deviceId, baseClass).excludeGroups());",
+                "Location": "line 69",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            }
+        ]
+    },
+    {
+        "File Name": "MediaFilter.java",
+        "File Path": "src\\main\\java\\org\\traccar\\api\\MediaFilter.java",
+        "Matches": [
+            {
+                "Source Code": "HttpSession session = ((HttpServletRequest) request).getSession(false);",
+                "Location": "line 64",
+                "Keywords Found": "System State Protection : Session Management : [HttpSession]"
+            },
+            {
+                "Source Code": "} catch (SecurityException | StorageException e) {",
+                "Location": "line 90",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            }
+        ]
+    },
+    {
+        "File Name": "SimpleObjectResource.java",
+        "File Path": "src\\main\\java\\org\\traccar\\api\\SimpleObjectResource.java",
+        "Matches": [
+            {
+                "Source Code": "conditions.add(new Condition.Permission(User.class, getUserId(), baseClass));",
+                "Location": "line 50",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "conditions.add(new Condition.Permission(User.class, userId, baseClass));",
+                "Location": "line 58",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            }
+        ]
+    },
+    {
+        "File Name": "CommandResource.java",
+        "File Path": "src\\main\\java\\org\\traccar\\api\\resource\\CommandResource.java",
+        "Matches": [
+            {
+                "Source Code": "new Condition.Permission(User.class, getUserId(), baseClass),",
+                "Location": "line 94",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "new Condition.Permission(Device.class, deviceId, baseClass)",
+                "Location": "line 95",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            }
+        ]
+    },
+    {
+        "File Name": "DeviceResource.java",
+        "File Path": "src\\main\\java\\org\\traccar\\api\\resource\\DeviceResource.java",
+        "Matches": [
+            {
+                "Source Code": "new Condition.Permission(User.class, getUserId(), Device.class)))));",
+                "Location": "line 105",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "new Condition.Permission(User.class, getUserId(), Device.class)))));",
+                "Location": "line 112",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "conditions.add(new Condition.Permission(User.class, getUserId(), baseClass));",
+                "Location": "line 122",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "conditions.add(new Condition.Permission(User.class, getUserId(), baseClass));",
+                "Location": "line 126",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "conditions.add(new Condition.Permission(User.class, userId, baseClass).excludeGroups());",
+                "Location": "line 129",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "new Condition.Permission(User.class, getUserId(), Device.class))));",
+                "Location": "line 201",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "throw new SecurityException(\"Sharing is disabled\");",
+                "Location": "line 233",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "throw new SecurityException(\"Temporary user\");",
+                "Location": "line 236",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "new Condition.Permission(User.class, user.getId(), Device.class))));",
+                "Location": "line 246",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "storage.addPermission(new Permission(User.class, share.getId(), Device.class, deviceId));",
+                "Location": "line 264",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            }
+        ]
+    },
+    {
+        "File Name": "NotificationResource.java",
+        "File Path": "src\\main\\java\\org\\traccar\\api\\resource\\NotificationResource.java",
+        "Matches": [
+            {
+                "Source Code": "new Condition.Permission(User.class, getUserId(), ManagedUser.class).excludeGroups()));",
+                "Location": "line 122",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "conditions.add(new Condition.Permission(",
+                "Location": "line 132",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            }
+        ]
+    },
+    {
+        "File Name": "PasswordResource.java",
+        "File Path": "src\\main\\java\\org\\traccar\\api\\resource\\PasswordResource.java",
+        "Matches": [
+            {
+                "Source Code": "@FormParam(\"token\") String token, @FormParam(\"password\") String password)",
+                "Location": "line 75",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            },
+            {
+                "Source Code": "long userId = tokenManager.verifyToken(token).getUserId();",
+                "Location": "line 78",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            }
+        ]
+    },
+    {
+        "File Name": "PermissionsResource.java",
+        "File Path": "src\\main\\java\\org\\traccar\\api\\resource\\PermissionsResource.java",
+        "Matches": [
+            {
+                "Source Code": "private void checkPermission(Permission permission) throws StorageException {",
+                "Location": "line 48",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "Permission permission = new Permission(entity);",
+                "Location": "line 71",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "Permission permission = new Permission(entity);",
+                "Location": "line 97",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            }
+        ]
+    },
+    {
+        "File Name": "SessionResource.java",
+        "File Path": "src\\main\\java\\org\\traccar\\api\\resource\\SessionResource.java",
+        "Matches": [
+            {
+                "Source Code": "public User get(@QueryParam(\"token\") String token) throws StorageException, IOException, GeneralSecurityException {",
+                "Location": "line 76",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            },
+            {
+                "Source Code": "if (token != null) {",
+                "Location": "line 78",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            },
+            {
+                "Source Code": "LoginResult loginResult = loginService.login(token);",
+                "Location": "line 79",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            },
+            {
+                "Source Code": "@Path(\"token\")",
+                "Location": "line 141",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            }
+        ]
+    },
+    {
+        "File Name": "UserResource.java",
+        "File Path": "src\\main\\java\\org\\traccar\\api\\resource\\UserResource.java",
+        "Matches": [
+            {
+                "Source Code": "conditions.add(new Condition.Permission(User.class, userId, ManagedUser.class).excludeGroups());",
+                "Location": "line 73",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "conditions.add(new Condition.Permission(User.class, getUserId(), ManagedUser.class).excludeGroups());",
+                "Location": "line 75",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "conditions.add(new Condition.Permission(User.class, Device.class, deviceId).excludeGroups());",
+                "Location": "line 79",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "new Condition.Permission(User.class, getUserId(), ManagedUser.class).excludeGroups()))",
+                "Location": "line 97",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "throw new SecurityException(\"Manager user limit reached\");",
+                "Location": "line 100",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "throw new SecurityException(\"Registration disabled\");",
+                "Location": "line 107",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "throw new SecurityException(\"One-time password key is required\");",
+                "Location": "line 111",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "storage.addPermission(new Permission(User.class, getUserId(), ManagedUser.class, entity.getId()));",
+                "Location": "line 125",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "throw new SecurityException(\"One-time password is disabled\");",
+                "Location": "line 146",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            }
+        ]
+    },
+    {
+        "File Name": "CodeRequiredException.java",
+        "File Path": "src\\main\\java\\org\\traccar\\api\\security\\CodeRequiredException.java",
+        "Matches": [
+            {
+                "Source Code": "public class CodeRequiredException extends SecurityException {",
+                "Location": "line 18",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            }
+        ]
+    },
+    {
+        "File Name": "LoginService.java",
+        "File Path": "src\\main\\java\\org\\traccar\\api\\security\\LoginService.java",
+        "Matches": [
+            {
+                "Source Code": "throw new SecurityException(\"Unsupported authorization scheme\");",
+                "Location": "line 73",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "public LoginResult login(String token) throws StorageException, GeneralSecurityException, IOException {",
+                "Location": "line 77",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            },
+            {
+                "Source Code": "if (serviceAccountToken != null && serviceAccountToken.equals(token)) {",
+                "Location": "line 78",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            },
+            {
+                "Source Code": "TokenManager.TokenData tokenData = tokenManager.verifyToken(token);",
+                "Location": "line 81",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            },
+            {
+                "Source Code": "private void checkUserEnabled(User user) throws SecurityException {",
+                "Location": "line 137",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "throw new SecurityException(\"Unknown account\");",
+                "Location": "line 139",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "private void checkUserCode(User user, Integer code) throws SecurityException {",
+                "Location": "line 144",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "throw new SecurityException(\"User authorization failed\");",
+                "Location": "line 152",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            }
+        ]
+    },
+    {
+        "File Name": "PermissionsService.java",
+        "File Path": "src\\main\\java\\org\\traccar\\api\\security\\PermissionsService.java",
+        "Matches": [
+            {
+                "Source Code": "public void checkAdmin(long userId) throws StorageException, SecurityException {",
+                "Location": "line 77",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "throw new SecurityException(\"Administrator access required\");",
+                "Location": "line 79",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "public void checkManager(long userId) throws StorageException, SecurityException {",
+                "Location": "line 83",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "throw new SecurityException(\"Manager access required\");",
+                "Location": "line 85",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "long userId, CheckRestrictionCallback callback) throws StorageException, SecurityException {",
+                "Location": "line 94",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "throw new SecurityException(\"Operation restricted\");",
+                "Location": "line 97",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "throws StorageException, SecurityException {",
+                "Location": "line 103",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "new Condition.Permission(User.class, userId, Device.class))).size();",
+                "Location": "line 114",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "throw new SecurityException(\"Write access denied\");",
+                "Location": "line 121",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "throws StorageException, SecurityException {",
+                "Location": "line 128",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "public void checkUser(long userId, long managedUserId) throws StorageException, SecurityException {",
+                "Location": "line 170",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "throw new SecurityException(\"User access denied\");",
+                "Location": "line 174",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "public void checkUserUpdate(long userId, User before, User after) throws StorageException, SecurityException {",
+                "Location": "line 179",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "Class<T> clazz, long userId, long objectId) throws StorageException, SecurityException {",
+                "Location": "line 212",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "new Condition.Permission(",
+                "Location": "line 218",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "throw new SecurityException(clazz.getSimpleName() + \" access denied\");",
+                "Location": "line 221",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            }
+        ]
+    },
+    {
+        "File Name": "SecurityRequestFilter.java",
+        "File Path": "src\\main\\java\\org\\traccar\\api\\security\\SecurityRequestFilter.java",
+        "Matches": [
+            {
+                "Source Code": "SecurityContext securityContext = null;",
+                "Location": "line 67",
+                "Keywords Found": "Access Control : Authentication : [SecurityContext]"
+            },
+            {
+                "Source Code": "} catch (SecurityException | StorageException e) {",
+                "Location": "line 102",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            }
+        ]
+    },
+    {
+        "File Name": "UserSecurityContext.java",
+        "File Path": "src\\main\\java\\org\\traccar\\api\\security\\UserSecurityContext.java",
+        "Matches": [
+            {
+                "Source Code": "public class UserSecurityContext implements SecurityContext {",
+                "Location": "line 21",
+                "Keywords Found": "Access Control : Authentication : [SecurityContext]"
+            }
+        ]
+    },
+    {
+        "File Name": "CryptoManager.java",
+        "File Path": "src\\main\\java\\org\\traccar\\api\\signature\\CryptoManager.java",
+        "Matches": [
+            {
+                "Source Code": "Signature signature = Signature.getInstance(\"SHA256withECDSA\");",
+                "Location": "line 54",
+                "Keywords Found": "Cryptography : Signature : [Signature]"
+            },
+            {
+                "Source Code": "Signature signature = Signature.getInstance(\"SHA256withECDSA\");",
+                "Location": "line 69",
+                "Keywords Found": "Cryptography : Signature : [Signature]"
+            },
+            {
+                "Source Code": "throw new SecurityException(\"Invalid signature\");",
+                "Location": "line 76",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "publicKey = KeyFactory.getInstance(\"EC\")",
+                "Location": "line 84",
+                "Keywords Found": "Cryptography : Key Management : [KeyFactory]"
+            },
+            {
+                "Source Code": "privateKey = KeyFactory.getInstance(\"EC\")",
+                "Location": "line 86",
+                "Keywords Found": "Cryptography : Key Management : [KeyFactory]"
+            },
+            {
+                "Source Code": "generator.initialize(new ECGenParameterSpec(\"secp256r1\"), new SecureRandom());",
+                "Location": "line 90",
+                "Keywords Found": "Secure Data Handling : Trusted Sources : [SecureRandom]"
+            },
+            {
+                "Source Code": "KeyPair pair = generator.generateKeyPair();",
+                "Location": "line 91",
+                "Keywords Found": "Cryptography : Key Management : [KeyPair]"
+            }
+        ]
+    },
+    {
+        "File Name": "TokenManager.java",
+        "File Path": "src\\main\\java\\org\\traccar\\api\\signature\\TokenManager.java",
+        "Matches": [
+            {
+                "Source Code": "public TokenData verifyToken(String token) throws IOException, GeneralSecurityException, StorageException {",
+                "Location": "line 76",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            },
+            {
+                "Source Code": "byte[] encoded = cryptoManager.verify(Base64.decodeBase64(token));",
+                "Location": "line 77",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            },
+            {
+                "Source Code": "throw new SecurityException(\"Token has expired\");",
+                "Location": "line 80",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            }
+        ]
+    },
+    {
+        "File Name": "BaseBroadcastService.java",
+        "File Path": "src\\main\\java\\org\\traccar\\broadcast\\BaseBroadcastService.java",
+        "Matches": [
+            {
+                "Source Code": "invalidateObject.setClazz(Permission.getKey(clazz));",
+                "Location": "line 76",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "invalidatePermission.setClazz1(Permission.getKey(clazz1));",
+                "Location": "line 88",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "invalidatePermission.setClazz2(Permission.getKey(clazz2));",
+                "Location": "line 90",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "Permission.getKeyClass(invalidateObject.getClazz()), invalidateObject.getId(),",
+                "Location": "line 113",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "Permission.getKeyClass(invalidatePermission.getClazz1()), invalidatePermission.getId1(),",
+                "Location": "line 121",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "Permission.getKeyClass(invalidatePermission.getClazz2()), invalidatePermission.getId2(),",
+                "Location": "line 122",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            }
+        ]
+    },
+    {
+        "File Name": "Keys.java",
+        "File Path": "src\\main\\java\\org\\traccar\\config\\Keys.java",
+        "Matches": [
+            {
+                "Source Code": "\"notificator.pushover.token\",",
+                "Location": "line 1220",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            }
+        ]
+    },
+    {
+        "File Name": "OpenIdProvider.java",
+        "File Path": "src\\main\\java\\org\\traccar\\database\\OpenIdProvider.java",
+        "Matches": [
+            {
+                "Source Code": "TokenResponse token = OIDCTokenResponseParser.parse(tokenResponse);",
+                "Location": "line 143",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            },
+            {
+                "Source Code": "if (!token.indicatesSuccess()) {",
+                "Location": "line 144",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            },
+            {
+                "Source Code": "return (OIDCTokenResponse) token.toSuccessResponse();",
+                "Location": "line 148",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            },
+            {
+                "Source Code": "private UserInfo getUserInfo(BearerAccessToken token) throws IOException, ParseException, GeneralSecurityException {",
+                "Location": "line 151",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            },
+            {
+                "Source Code": "HTTPResponse httpResponse = new UserInfoRequest(userInfoUrl, token)",
+                "Location": "line 152",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            }
+        ]
+    },
+    {
+        "File Name": "PositionForwarderUrl.java",
+        "File Path": "src\\main\\java\\org\\traccar\\forward\\PositionForwarderUrl.java",
+        "Matches": [
+            {
+                "Source Code": "s.append(Checksum.nmea(s.substring(1)));",
+                "Location": "line 150",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "PositionForwarderWialon.java",
+        "File Path": "src\\main\\java\\org\\traccar\\forward\\PositionForwarderWialon.java",
+        "Matches": [
+            {
+                "Source Code": "int checksum = Checksum.crc16(Checksum.CRC16_IBM, payloadBuffer);",
+                "Location": "line 106",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "UnwiredGeolocationProvider.java",
+        "File Path": "src\\main\\java\\org\\traccar\\geolocation\\UnwiredGeolocationProvider.java",
+        "Matches": [
+            {
+                "Source Code": "json.put(\"token\", key);",
+                "Location": "line 91",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            }
+        ]
+    },
+    {
+        "File Name": "Checksum.java",
+        "File Path": "src\\main\\java\\org\\traccar\\helper\\Checksum.java",
+        "Matches": [
+            {
+                "Source Code": "public final class Checksum {",
+                "Location": "line 22",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            },
+            {
+                "Source Code": "private Checksum() {",
+                "Location": "line 24",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "Hashing.java",
+        "File Path": "src\\main\\java\\org\\traccar\\helper\\Hashing.java",
+        "Matches": [
+            {
+                "Source Code": "throw new SecurityException(e);",
+                "Location": "line 66",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "private static final SecureRandom RANDOM = new SecureRandom();",
+                "Location": "line 70",
+                "Keywords Found": "Secure Data Handling : Trusted Sources : [SecureRandom]"
+            }
+        ]
+    },
+    {
+        "File Name": "Log.java",
+        "File Path": "src\\main\\java\\org\\traccar\\helper\\Log.java",
+        "Matches": [
+            {
+                "Source Code": "public synchronized void close() throws SecurityException {",
+                "Location": "line 108",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            }
+        ]
+    },
+    {
+        "File Name": "DeviceUtil.java",
+        "File Path": "src\\main\\java\\org\\traccar\\helper\\model\\DeviceUtil.java",
+        "Matches": [
+            {
+                "Source Code": "new Condition.Permission(User.class, userId, Device.class)));",
+                "Location": "line 49",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "new Condition.Permission(User.class, userId, Group.class)));",
+                "Location": "line 58",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            }
+        ]
+    },
+    {
+        "File Name": "PositionUtil.java",
+        "File Path": "src\\main\\java\\org\\traccar\\helper\\model\\PositionUtil.java",
+        "Matches": [
+            {
+                "Source Code": "new Condition.Permission(User.class, userId, Device.class)));",
+                "Location": "line 70",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            }
+        ]
+    },
+    {
+        "File Name": "Disableable.java",
+        "File Path": "src\\main\\java\\org\\traccar\\model\\Disableable.java",
+        "Matches": [
+            {
+                "Source Code": "default void checkDisabled() throws SecurityException {",
+                "Location": "line 30",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "throw new SecurityException(getClass().getSimpleName() + \" is disabled\");",
+                "Location": "line 32",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "throw new SecurityException(getClass().getSimpleName() + \" has expired\");",
+                "Location": "line 35",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            }
+        ]
+    },
+    {
+        "File Name": "Permission.java",
+        "File Path": "src\\main\\java\\org\\traccar\\model\\Permission.java",
+        "Matches": [
+            {
+                "Source Code": "public class Permission {",
+                "Location": "line 32",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "public Permission(LinkedHashMap<String, Long> data) {",
+                "Location": "line 53",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "public Permission(",
+                "Location": "line 64",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            }
+        ]
+    },
+    {
+        "File Name": "TextTemplateFormatter.java",
+        "File Path": "src\\main\\java\\org\\traccar\\notification\\TextTemplateFormatter.java",
+        "Matches": [
+            {
+                "Source Code": "velocityContext.put(\"token\", tokenManager.generateToken(user.getId()));",
+                "Location": "line 62",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            }
+        ]
+    },
+    {
+        "File Name": "NotificatorPushover.java",
+        "File Path": "src\\main\\java\\org\\traccar\\notificators\\NotificatorPushover.java",
+        "Matches": [
+            {
+                "Source Code": "private final String token;",
+                "Location": "line 37",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            },
+            {
+                "Source Code": "@JsonProperty(\"token\")",
+                "Location": "line 41",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            },
+            {
+                "Source Code": "private String token;",
+                "Location": "line 42",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            },
+            {
+                "Source Code": "token = config.getString(Keys.NOTIFICATOR_PUSHOVER_TOKEN);",
+                "Location": "line 58",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            },
+            {
+                "Source Code": "message.token = token;",
+                "Location": "line 66",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            }
+        ]
+    },
+    {
+        "File Name": "NotificatorTraccar.java",
+        "File Path": "src\\main\\java\\org\\traccar\\notificators\\NotificatorTraccar.java",
+        "Matches": [
+            {
+                "Source Code": "|| errorCode.equals(\"messaging/registration-token-not-registered\")) {",
+                "Location": "line 113",
+                "Keywords Found": "Access Control : Authentication : [token]"
+            }
+        ]
+    },
+    {
+        "File Name": "ApelProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\ApelProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "request.writeIntLE(Checksum.crc32(request.nioBuffer(0, 4)));",
+                "Location": "line 73",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            },
+            {
+                "Source Code": "request.writeIntLE(Checksum.crc32(request.nioBuffer(0, 10)));",
+                "Location": "line 86",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "AplicomProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\AplicomProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "return Checksum.luhn(imei / 10) == imei % 10;",
+                "Location": "line 49",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "ArnaviBinaryProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\ArnaviBinaryProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "response.writeByte(Checksum.modulo256(time.slice()));",
+                "Location": "line 68",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "At2000ProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\At2000ProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "private Cipher cipher;",
+                "Location": "line 52",
+                "Keywords Found": "Cryptography : Encryption : [Cipher]"
+            },
+            {
+                "Source Code": "SecretKeySpec keySpec = new SecretKeySpec(",
+                "Location": "line 87",
+                "Keywords Found": "Cryptography : Encryption : [SecretKeySpec]"
+            },
+            {
+                "Source Code": "DataConverter.parseHex(\"000102030405060708090a0b0c0d0e0f\"), \"AES\");",
+                "Location": "line 88",
+                "Keywords Found": "Cryptography : Encryption : [AES]"
+            },
+            {
+                "Source Code": "cipher = Cipher.getInstance(\"AES/CBC/NoPadding\");",
+                "Location": "line 90",
+                "Keywords Found": "Cryptography : Encryption : [AES, Cipher]"
+            },
+            {
+                "Source Code": "cipher.init(Cipher.DECRYPT_MODE, keySpec, ivSpec);",
+                "Location": "line 91",
+                "Keywords Found": "Cryptography : Encryption : [Cipher]"
+            }
+        ]
+    },
+    {
+        "File Name": "AutoTrackProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\AutoTrackProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "response.writeShort(Checksum.crc16(Checksum.CRC16_XMODEM, response.nioBuffer()));",
+                "Location": "line 87",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            },
+            {
+                "Source Code": "response.writeShort(Checksum.crc16(Checksum.CRC16_XMODEM, response.nioBuffer()));",
+                "Location": "line 122",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "BceProtocolEncoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\BceProtocolEncoder.java",
+        "Matches": [
+            {
+                "Source Code": "buf.writeByte(Checksum.sum(buf.nioBuffer()));",
+                "Location": "line 44",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "BlueProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\BlueProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "response.writeByte(Checksum.xor(response.nioBuffer(1, response.writerIndex() - 1)));",
+                "Location": "line 63",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "CastelProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\CastelProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "Checksum.crc16(Checksum.CRC16_X25, response.nioBuffer(0, response.writerIndex())));",
+                "Location": "line 218",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            },
+            {
+                "Source Code": "Checksum.crc16(Checksum.CRC16_X25, response.nioBuffer(0, response.writerIndex())));",
+                "Location": "line 240",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "CastelProtocolEncoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\CastelProtocolEncoder.java",
+        "Matches": [
+            {
+                "Source Code": "buf.writeShortLE(Checksum.crc16(Checksum.CRC16_X25, buf.nioBuffer()));",
+                "Location": "line 51",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "CityeasyProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\CityeasyProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "channel, remoteAddress, imei, imei + Checksum.luhn(Long.parseLong(imei)));",
+                "Location": "line 80",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "CityeasyProtocolEncoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\CityeasyProtocolEncoder.java",
+        "Matches": [
+            {
+                "Source Code": "buf.writeShort(Checksum.crc16(Checksum.CRC16_KERMIT, buf.nioBuffer()));",
+                "Location": "line 43",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "EgtsProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\EgtsProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "int recordChecksum = Checksum.crc16(Checksum.CRC16_CCITT_FALSE, record.nioBuffer());",
+                "Location": "line 100",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            },
+            {
+                "Source Code": "response.writeByte(Checksum.crc8(Checksum.CRC8_EGTS, response.nioBuffer()));",
+                "Location": "line 111",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "FifotrackProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\FifotrackProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "response += Checksum.sum(response) + \"\\r\\n\";",
+                "Location": "line 148",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "FifotrackProtocolEncoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\FifotrackProtocolEncoder.java",
+        "Matches": [
+            {
+                "Source Code": "result += Checksum.sum(result) + \"\\r\\n\";",
+                "Location": "line 33",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "FleetGuideProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\FleetGuideProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "response.writeShortLE(Checksum.crc16(",
+                "Location": "line 270",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            },
+            {
+                "Source Code": "Checksum.CRC16_CCITT_FALSE, response.nioBuffer(1, response.writerIndex() - 1)));",
+                "Location": "line 271",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "FreematicsProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\FreematicsProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "message += '*' + Checksum.sum(message);",
+                "Location": "line 63",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "GalileoProtocolEncoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\GalileoProtocolEncoder.java",
+        "Matches": [
+            {
+                "Source Code": "buf.writeShortLE(Checksum.crc16(Checksum.CRC16_MODBUS, buf.nioBuffer(0, buf.writerIndex())));",
+                "Location": "line 53",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "GatorProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\GatorProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "response.writeByte(Checksum.xor(response.nioBuffer(2, response.writerIndex())));",
+                "Location": "line 76",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "GatorProtocolEncoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\GatorProtocolEncoder.java",
+        "Matches": [
+            {
+                "Source Code": "int checksum = Checksum.xor(buf.nioBuffer());",
+                "Location": "line 63",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "GlobalSatProtocolEncoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\GlobalSatProtocolEncoder.java",
+        "Matches": [
+            {
+                "Source Code": "return formattedCommand + Checksum.nmea(formattedCommand) + '!';",
+                "Location": "line 44",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "GpsGateProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\GpsGateProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "message + Checksum.nmea(message.substring(1)) + \"\\r\\n\", remoteAddress));",
+                "Location": "line 73",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "GranitProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\GranitProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "int checksum = Checksum.xor(buffer.nioBuffer(0, length)) & 0xFF;",
+                "Location": "line 45",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "Gt06ProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\Gt06ProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "response.writeShort(Checksum.crc16(Checksum.CRC16_X25,",
+                "Location": "line 262",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "Gt06ProtocolEncoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\Gt06ProtocolEncoder.java",
+        "Matches": [
+            {
+                "Source Code": "buf.writeShort(Checksum.crc16(Checksum.CRC16_X25, buf.nioBuffer(2, buf.writerIndex() - 2)));",
+                "Location": "line 59",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "HuabaoProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\HuabaoProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "buf.writeByte(Checksum.xor(buf.nioBuffer(1, buf.readableBytes() - 1)));",
+                "Location": "line 99",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            },
+            {
+                "Source Code": "return String.valueOf(imei) + Checksum.luhn(imei);",
+                "Location": "line 196",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "KhdProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\KhdProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "response.writeByte(Checksum.xor(response.nioBuffer()));",
+                "Location": "line 129",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "KhdProtocolEncoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\KhdProtocolEncoder.java",
+        "Matches": [
+            {
+                "Source Code": "buf.writeByte(Checksum.xor(buf.nioBuffer()));",
+                "Location": "line 65",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "L100ProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\L100ProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "response += \"*\" + (char) Checksum.xor(response);",
+                "Location": "line 218",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "LaipacProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\LaipacProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "response += Checksum.nmea(response.substring(1)) + \"\\r\\n\";",
+                "Location": "line 142",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            },
+            {
+                "Source Code": "response += Checksum.nmea(response.substring(1)) + \"\\r\\n\";",
+                "Location": "line 153",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "LaipacProtocolEncoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\LaipacProtocolEncoder.java",
+        "Matches": [
+            {
+                "Source Code": "sentence += Checksum.nmea(sentence.substring(1)) + \"\\r\\n\";",
+                "Location": "line 32",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "MeiligaoProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\MeiligaoProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "return getDeviceSession(channel, remoteAddress, id, id + Checksum.luhn(Long.parseLong(id)));",
+                "Location": "line 184",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            },
+            {
+                "Source Code": "buf.writeShort(Checksum.crc16(Checksum.CRC16_CCITT_FALSE, buf.nioBuffer()));",
+                "Location": "line 204",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "MeiligaoProtocolEncoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\MeiligaoProtocolEncoder.java",
+        "Matches": [
+            {
+                "Source Code": "buf.writeShort(Checksum.crc16(Checksum.CRC16_CCITT_FALSE, buf.nioBuffer()));",
+                "Location": "line 53",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "MeitrackProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\MeitrackProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "command.append(Checksum.sum(command.toString()));",
+                "Location": "line 334",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            },
+            {
+                "Source Code": "response += Checksum.sum(response) + \"\\r\\n\";",
+                "Location": "line 503",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            },
+            {
+                "Source Code": "response += Checksum.sum(response) + \"\\r\\n\";",
+                "Location": "line 523",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "MeitrackProtocolEncoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\MeitrackProtocolEncoder.java",
+        "Matches": [
+            {
+                "Source Code": "result += Checksum.sum(result) + \"\\r\\n\";",
+                "Location": "line 35",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "Minifinder2ProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\Minifinder2ProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "response.writeShortLE(Checksum.crc16(Checksum.CRC16_XMODEM, content.nioBuffer()));",
+                "Location": "line 95",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "Minifinder2ProtocolEncoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\Minifinder2ProtocolEncoder.java",
+        "Matches": [
+            {
+                "Source Code": "buf.writeShortLE(Checksum.crc16(Checksum.CRC16_XMODEM, content.nioBuffer()));",
+                "Location": "line 40",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "MxtProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\MxtProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "response.writeShortLE(Checksum.crc16(",
+                "Location": "line 50",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            },
+            {
+                "Source Code": "Checksum.CRC16_XMODEM, response.nioBuffer()));",
+                "Location": "line 51",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "NavigilProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\NavigilProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "header.writeShortLE(Checksum.crc16(Checksum.CRC16_CCITT_FALSE, data.nioBuffer()));",
+                "Location": "line 73",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "NavisProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\NavisProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "header.writeByte(Checksum.xor(data.nioBuffer()));",
+                "Location": "line 538",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            },
+            {
+                "Source Code": "header.writeByte(Checksum.xor(header.nioBuffer()));",
+                "Location": "line 539",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            },
+            {
+                "Source Code": "data.writeByte(Checksum.crc8(Checksum.CRC8_EGTS, data.nioBuffer()));",
+                "Location": "line 547",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "NavtelecomProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\NavtelecomProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "buf.writeByte(Checksum.xor(content.nioBuffer()));",
+                "Location": "line 116",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            },
+            {
+                "Source Code": "buf.writeByte(Checksum.xor(buf.nioBuffer()));",
+                "Location": "line 117",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            },
+            {
+                "Source Code": "response.writeByte(Checksum.crc8(Checksum.CRC8_EGTS, response.nioBuffer()));",
+                "Location": "line 437",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "NdtpV6ProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\NdtpV6ProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "response.writeShort(Checksum.crc16(Checksum.CRC16_MODBUS, content.nioBuffer()));",
+                "Location": "line 69",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "NiotProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\NiotProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "response.writeByte(Checksum.xor(response.nioBuffer(2, response.writerIndex())));",
+                "Location": "line 55",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "OmnicommProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\OmnicommProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "response.writeShortLE(Checksum.crc16(Checksum.CRC16_CCITT_FALSE,",
+                "Location": "line 74",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "PretraceProtocolEncoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\PretraceProtocolEncoder.java",
+        "Matches": [
+            {
+                "Source Code": "return String.format(\"(%s^%02X)\", content, Checksum.xor(content));",
+                "Location": "line 31",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "PstProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\PstProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "response.writeShort(Checksum.crc16(Checksum.CRC16_XMODEM, response.nioBuffer()));",
+                "Location": "line 71",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "PstProtocolEncoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\PstProtocolEncoder.java",
+        "Matches": [
+            {
+                "Source Code": "buf.writeShort(Checksum.crc16(Checksum.CRC16_XMODEM, buf.nioBuffer()));",
+                "Location": "line 44",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "R12wProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\R12wProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "sentence += String.format(\",%02x,\\r\\n\", Checksum.xor(sentence));",
+                "Location": "line 36",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "RuptelaProtocolEncoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\RuptelaProtocolEncoder.java",
+        "Matches": [
+            {
+                "Source Code": "buf.writeShort(Checksum.crc16(Checksum.CRC16_KERMIT, buf.nioBuffer(2, buf.writerIndex() - 2)));",
+                "Location": "line 41",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "SatsolProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\SatsolProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "response.setShortLE(0, Checksum.crc16(",
+                "Location": "line 96",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            },
+            {
+                "Source Code": "Checksum.CRC16_CCITT_FALSE, response.nioBuffer(2, response.readableBytes() - 2)));",
+                "Location": "line 97",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "SnapperProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\SnapperProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "response.writeByte(Checksum.sum(ByteBuffer.wrap(answer.getBytes(StandardCharsets.US_ASCII))));",
+                "Location": "line 74",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "StartekProtocolEncoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\StartekProtocolEncoder.java",
+        "Matches": [
+            {
+                "Source Code": "return sentence + Checksum.sum(sentence) + \"\\r\\n\";",
+                "Location": "line 36",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "TaipProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\TaipProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "int checksum = Checksum.xor(lantrix ? response : response + \"*\");",
+                "Location": "line 310",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "TeltonikaProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\TeltonikaProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "response.writeShort(Checksum.crc16(",
+                "Location": "line 110",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            },
+            {
+                "Source Code": "Checksum.CRC16_IBM, response.nioBuffer(8, response.readableBytes() - 10)));",
+                "Location": "line 111",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "TeltonikaProtocolEncoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\TeltonikaProtocolEncoder.java",
+        "Matches": [
+            {
+                "Source Code": "buf.writeInt(Checksum.crc16(Checksum.CRC16_IBM, buf.nioBuffer(8, buf.writerIndex() - 8)));",
+                "Location": "line 47",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "ThinkPowerProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\ThinkPowerProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "response.writeShort(Checksum.crc16(Checksum.CRC16_CCITT_FALSE, response.nioBuffer()));",
+                "Location": "line 59",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "TotemProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\TotemProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "response += String.format(\"%02X\", Checksum.xor(response)).toUpperCase();",
+                "Location": "line 562",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "TotemProtocolEncoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\TotemProtocolEncoder.java",
+        "Matches": [
+            {
+                "Source Code": "return String.format(\"%s%02X\", builtCommand, Checksum.xor(builtCommand));",
+                "Location": "line 62",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "TramigoProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\TramigoProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "response.setShortLE(3, Checksum.crc16(Checksum.CRC16_CCITT_FALSE, response.nioBuffer()));",
+                "Location": "line 156",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "UlbotechProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\UlbotechProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "response.writeShort(Checksum.crc16(Checksum.CRC16_XMODEM, response.nioBuffer(1, 4)));",
+                "Location": "line 312",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            },
+            {
+                "Source Code": "Checksum.crc16(Checksum.CRC16_XMODEM, buf.nioBuffer(1, buf.writerIndex() - 2))),",
+                "Location": "line 322",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "Xexun2ProtocolDecoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\Xexun2ProtocolDecoder.java",
+        "Matches": [
+            {
+                "Source Code": "if (checksum != Checksum.ip(buf.nioBuffer(buf.readerIndex(), payloadSize))) {",
+                "Location": "line 106",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "Xexun2ProtocolEncoder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\protocol\\Xexun2ProtocolEncoder.java",
+        "Matches": [
+            {
+                "Source Code": "buf.writeShort(Checksum.ip(message.nioBuffer()));",
+                "Location": "line 44",
+                "Keywords Found": "System State Protection : System State Validation : [Checksum]"
+            }
+        ]
+    },
+    {
+        "File Name": "DevicesReportProvider.java",
+        "File Path": "src\\main\\java\\org\\traccar\\reports\\DevicesReportProvider.java",
+        "Matches": [
+            {
+                "Source Code": "new Condition.Permission(User.class, userId, Device.class))).stream()",
+                "Location": "line 63",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            }
+        ]
+    },
+    {
+        "File Name": "ReportUtils.java",
+        "File Path": "src\\main\\java\\org\\traccar\\reports\\common\\ReportUtils.java",
+        "Matches": [
+            {
+                "Source Code": "long userId, Class<T> clazz, long objectId) throws StorageException, SecurityException {",
+                "Location": "line 88",
+                "Keywords Found": "Miscellaneous : Miscellaneous : [SecurityException]"
+            },
+            {
+                "Source Code": "new Condition.Permission(User.class, userId, clazz))));",
+                "Location": "line 93",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            }
+        ]
+    },
+    {
+        "File Name": "TaskExpirations.java",
+        "File Path": "src\\main\\java\\org\\traccar\\schedule\\TaskExpirations.java",
+        "Matches": [
+            {
+                "Source Code": "new Columns.All(), new Condition.Permission(User.class, Device.class, device.getId())));",
+                "Location": "line 84",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            }
+        ]
+    },
+    {
+        "File Name": "TaskReports.java",
+        "File Path": "src\\main\\java\\org\\traccar\\schedule\\TaskReports.java",
+        "Matches": [
+            {
+                "Source Code": "new Condition.Permission(Device.class, Report.class, report.getId())))",
+                "Location": "line 106",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "new Condition.Permission(Group.class, Report.class, report.getId())))",
+                "Location": "line 110",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "new Condition.Permission(User.class, Report.class, report.getId())));",
+                "Location": "line 114",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            }
+        ]
+    },
+    {
+        "File Name": "ConnectionManager.java",
+        "File Path": "src\\main\\java\\org\\traccar\\session\\ConnectionManager.java",
+        "Matches": [
+            {
+                "Source Code": "new Columns.Include(\"id\"), new Condition.Permission(User.class, userId, Device.class)));",
+                "Location": "line 381",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            }
+        ]
+    },
+    {
+        "File Name": "CacheManager.java",
+        "File Path": "src\\main\\java\\org\\traccar\\session\\cache\\CacheManager.java",
+        "Matches": [
+            {
+                "Source Code": "for (Permission permission : storage.getPermissions(User.class, Notification.class)) {",
+                "Location": "line 301",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "for (Permission permission : storage.getPermissions(User.class, object.getClass())) {",
+                "Location": "line 315",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "for (Permission permission : storage.getPermissions(object.getClass(), clazz)) {",
+                "Location": "line 323",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            }
+        ]
+    },
+    {
+        "File Name": "DatabaseStorage.java",
+        "File Path": "src\\main\\java\\org\\traccar\\storage\\DatabaseStorage.java",
+        "Matches": [
+            {
+                "Source Code": "public List<Permission> getPermissions(",
+                "Location": "line 138",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "query.append(Permission.getStorageName(ownerClass, propertyClass));",
+                "Location": "line 142",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "conditions.add(new Condition.Equals(Permission.getKey(ownerClass), ownerId));",
+                "Location": "line 145",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "conditions.add(new Condition.Equals(Permission.getKey(propertyClass), propertyId));",
+                "Location": "line 148",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "public void addPermission(Permission permission) throws StorageException {",
+                "Location": "line 164",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "public void removePermission(Permission permission) throws StorageException {",
+                "Location": "line 182",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "} else if (genericCondition instanceof Condition.Permission condition) {",
+                "Location": "line 219",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "results.put(Permission.getKey(condition.getOwnerClass()), condition.getOwnerId());",
+                "Location": "line 221",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "results.put(Permission.getKey(condition.getPropertyClass()), condition.getPropertyId());",
+                "Location": "line 223",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "} else if (genericCondition instanceof Condition.Permission condition) {",
+                "Location": "line 271",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "private String formatPermissionQuery(Condition.Permission condition) throws StorageException {",
+                "Location": "line 314",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "outputKey = Permission.getKey(condition.getPropertyClass());",
+                "Location": "line 320",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "conditionKey = Permission.getKey(condition.getOwnerClass());",
+                "Location": "line 321",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "outputKey = Permission.getKey(condition.getOwnerClass());",
+                "Location": "line 323",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "conditionKey = Permission.getKey(condition.getPropertyClass());",
+                "Location": "line 324",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "String storageName = Permission.getStorageName(condition.getOwnerClass(), condition.getPropertyClass());",
+                "Location": "line 327",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "groupStorageName = Permission.getStorageName(Group.class, condition.getPropertyClass());",
+                "Location": "line 343",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "groupStorageName = Permission.getStorageName(condition.getOwnerClass(), Group.class);",
+                "Location": "line 346",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            }
+        ]
+    },
+    {
+        "File Name": "MemoryStorage.java",
+        "File Path": "src\\main\\java\\org\\traccar\\storage\\MemoryStorage.java",
+        "Matches": [
+            {
+                "Source Code": "} else if (genericCondition instanceof Condition.Permission condition) {",
+                "Location": "line 92",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "public List<Permission> getPermissions(",
+                "Location": "line 167",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": ".map(pair -> new Permission(ownerClass, pair.first(), propertyClass, pair.second()))",
+                "Location": "line 173",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "public void addPermission(Permission permission) {",
+                "Location": "line 178",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "public void removePermission(Permission permission) {",
+                "Location": "line 184",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            }
+        ]
+    },
+    {
+        "File Name": "QueryBuilder.java",
+        "File Path": "src\\main\\java\\org\\traccar\\storage\\QueryBuilder.java",
+        "Matches": [
+            {
+                "Source Code": "private PreparedStatement statement;",
+                "Location": "line 55",
+                "Keywords Found": "Secure Data Handling : Data Sanitization : [PreparedStatement]"
+            },
+            {
+                "Source Code": "public List<Permission> executePermissionsQuery() throws SQLException {",
+                "Location": "line 484",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "List<Permission> result = new LinkedList<>();",
+                "Location": "line 485",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "result.add(new Permission(map));",
+                "Location": "line 497",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            }
+        ]
+    },
+    {
+        "File Name": "Storage.java",
+        "File Path": "src\\main\\java\\org\\traccar\\storage\\Storage.java",
+        "Matches": [
+            {
+                "Source Code": "public abstract List<Permission> getPermissions(",
+                "Location": "line 34",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "public abstract void addPermission(Permission permission) throws StorageException;",
+                "Location": "line 38",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "public abstract void removePermission(Permission permission) throws StorageException;",
+                "Location": "line 40",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "public List<Permission> getPermissions(",
+                "Location": "line 42",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            }
+        ]
+    },
+    {
+        "File Name": "Condition.java",
+        "File Path": "src\\main\\java\\org\\traccar\\storage\\query\\Condition.java",
+        "Matches": [
+            {
+                "Source Code": "class Permission implements Condition {",
+                "Location": "line 144",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "private Permission(",
+                "Location": "line 151",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "public Permission(Class<?> ownerClass, long ownerId, Class<?> propertyClass) {",
+                "Location": "line 160",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "public Permission(Class<?> ownerClass, Class<?> propertyClass, long propertyId) {",
+                "Location": "line 164",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "public Permission excludeGroups() {",
+                "Location": "line 168",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            },
+            {
+                "Source Code": "return new Permission(this.ownerClass, this.ownerId, this.propertyClass, this.propertyId, true);",
+                "Location": "line 169",
+                "Keywords Found": "Access Control : Authorization : [Permission]"
+            }
+        ]
+    },
+    {
+        "File Name": "ThrottlingFilter.java",
+        "File Path": "src\\main\\java\\org\\traccar\\web\\ThrottlingFilter.java",
+        "Matches": [
+            {
+                "Source Code": "HttpSession session = ((HttpServletRequest) request).getSession(false);",
+                "Location": "line 47",
+                "Keywords Found": "System State Protection : Session Management : [HttpSession]"
+            }
+        ]
+    }
+]

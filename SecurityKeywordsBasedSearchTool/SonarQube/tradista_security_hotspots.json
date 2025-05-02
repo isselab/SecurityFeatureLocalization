@@ -1,0 +1,1002 @@
+[
+    {
+        "projectName": "tradista",
+        "fileName": "FXVolatilitySurfaceSQL.java",
+        "filePath": "tradista-fx-persistence/src/main/java/org/eclipse/tradista/fx/fxoption/persistence/FXVolatilitySurfaceSQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "285 - 285",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "FXVolatilitySurfaceSQL.java",
+        "filePath": "tradista-fx-persistence/src/main/java/org/eclipse/tradista/fx/fxoption/persistence/FXVolatilitySurfaceSQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "354 - 354",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "FutureTradeSQL.java",
+        "filePath": "tradista-ir-persistence/src/main/java/org/eclipse/tradista/ir/future/persistence/FutureTradeSQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "198 - 198",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "SwaptionVolatilitySurfaceSQL.java",
+        "filePath": "tradista-ir-persistence/src/main/java/org/eclipse/tradista/ir/irswapoption/persistence/SwaptionVolatilitySurfaceSQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "231 - 231",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "SwaptionVolatilitySurfaceSQL.java",
+        "filePath": "tradista-ir-persistence/src/main/java/org/eclipse/tradista/ir/irswapoption/persistence/SwaptionVolatilitySurfaceSQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "295 - 295",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "DailyPnlSQL.java",
+        "filePath": "tradista-persistence/src/main/java/org/eclipse/tradista/core/dailypnl/persistence/DailyPnlSQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "190 - 190",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "CashInventorySQL.java",
+        "filePath": "tradista-persistence/src/main/java/org/eclipse/tradista/core/inventory/persistence/CashInventorySQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "189 - 189",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "CashInventorySQL.java",
+        "filePath": "tradista-persistence/src/main/java/org/eclipse/tradista/core/inventory/persistence/CashInventorySQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "227 - 227",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "CashInventorySQL.java",
+        "filePath": "tradista-persistence/src/main/java/org/eclipse/tradista/core/inventory/persistence/CashInventorySQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "279 - 279",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "CashInventorySQL.java",
+        "filePath": "tradista-persistence/src/main/java/org/eclipse/tradista/core/inventory/persistence/CashInventorySQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "397 - 397",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "ProductInventorySQL.java",
+        "filePath": "tradista-persistence/src/main/java/org/eclipse/tradista/core/inventory/persistence/ProductInventorySQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "194 - 194",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "ProductInventorySQL.java",
+        "filePath": "tradista-persistence/src/main/java/org/eclipse/tradista/core/inventory/persistence/ProductInventorySQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "232 - 232",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "ProductInventorySQL.java",
+        "filePath": "tradista-persistence/src/main/java/org/eclipse/tradista/core/inventory/persistence/ProductInventorySQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "284 - 284",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "ProductInventorySQL.java",
+        "filePath": "tradista-persistence/src/main/java/org/eclipse/tradista/core/inventory/persistence/ProductInventorySQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "324 - 324",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "ProductInventorySQL.java",
+        "filePath": "tradista-persistence/src/main/java/org/eclipse/tradista/core/inventory/persistence/ProductInventorySQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "442 - 442",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "LegalEntitySQL.java",
+        "filePath": "tradista-persistence/src/main/java/org/eclipse/tradista/core/legalentity/persistence/LegalEntitySQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "174 - 174",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "LegalEntitySQL.java",
+        "filePath": "tradista-persistence/src/main/java/org/eclipse/tradista/core/legalentity/persistence/LegalEntitySQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "199 - 199",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "LegalEntitySQL.java",
+        "filePath": "tradista-persistence/src/main/java/org/eclipse/tradista/core/legalentity/persistence/LegalEntitySQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "220 - 220",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "FXCurveSQL.java",
+        "filePath": "tradista-persistence/src/main/java/org/eclipse/tradista/core/marketdata/persistence/FXCurveSQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "166 - 166",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "FXCurveSQL.java",
+        "filePath": "tradista-persistence/src/main/java/org/eclipse/tradista/core/marketdata/persistence/FXCurveSQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "191 - 191",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "InterestRateCurveSQL.java",
+        "filePath": "tradista-persistence/src/main/java/org/eclipse/tradista/core/marketdata/persistence/InterestRateCurveSQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "187 - 187",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "InterestRateCurveSQL.java",
+        "filePath": "tradista-persistence/src/main/java/org/eclipse/tradista/core/marketdata/persistence/InterestRateCurveSQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "213 - 213",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "QuoteSQL.java",
+        "filePath": "tradista-persistence/src/main/java/org/eclipse/tradista/core/marketdata/persistence/QuoteSQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "414 - 414",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "QuoteSQL.java",
+        "filePath": "tradista-persistence/src/main/java/org/eclipse/tradista/core/marketdata/persistence/QuoteSQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "466 - 466",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "PositionCalculationErrorSQL.java",
+        "filePath": "tradista-persistence/src/main/java/org/eclipse/tradista/core/position/persistence/PositionCalculationErrorSQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "312 - 312",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "TradeSQL.java",
+        "filePath": "tradista-persistence/src/main/java/org/eclipse/tradista/core/trade/persistence/TradeSQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "278 - 278",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "FixingErrorSQL.java",
+        "filePath": "tradista-persistence/src/main/java/org/eclipse/tradista/core/transfer/persistence/FixingErrorSQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "222 - 222",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "TransferSQL.java",
+        "filePath": "tradista-persistence/src/main/java/org/eclipse/tradista/core/transfer/persistence/TransferSQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "685 - 685",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "BondSQL.java",
+        "filePath": "tradista-security-persistence/src/main/java/org/eclipse/tradista/security/bond/persistence/BondSQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "198 - 198",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "BondSQL.java",
+        "filePath": "tradista-security-persistence/src/main/java/org/eclipse/tradista/security/bond/persistence/BondSQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "357 - 357",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "BondTradeSQL.java",
+        "filePath": "tradista-security-persistence/src/main/java/org/eclipse/tradista/security/bond/persistence/BondTradeSQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "162 - 162",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "EquitySQL.java",
+        "filePath": "tradista-security-persistence/src/main/java/org/eclipse/tradista/security/equity/persistence/EquitySQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "182 - 182",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "EquityTradeSQL.java",
+        "filePath": "tradista-security-persistence/src/main/java/org/eclipse/tradista/security/equity/persistence/EquityTradeSQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "185 - 185",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "EquityOptionSQL.java",
+        "filePath": "tradista-security-persistence/src/main/java/org/eclipse/tradista/security/equityoption/persistence/EquityOptionSQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "139 - 139",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "EquityOptionTradeSQL.java",
+        "filePath": "tradista-security-persistence/src/main/java/org/eclipse/tradista/security/equityoption/persistence/EquityOptionTradeSQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "269 - 269",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "EquityOptionVolatilitySurfaceSQL.java",
+        "filePath": "tradista-security-persistence/src/main/java/org/eclipse/tradista/security/equityoption/persistence/EquityOptionVolatilitySurfaceSQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "258 - 258",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "EquityOptionVolatilitySurfaceSQL.java",
+        "filePath": "tradista-security-persistence/src/main/java/org/eclipse/tradista/security/equityoption/persistence/EquityOptionVolatilitySurfaceSQL.java",
+        "Security Category": "sql-injection",
+        "Description": "Formatting SQL queries is security-sensitive",
+        "Location": "325 - 325",
+        "Severity": "HIGH",
+        "Best Practices": "Recommended Secure Coding Practices\nUse\nparameterized queries, prepared\nstatements, or stored procedures\nand bind variables to SQL query parameters.\nConsider using ORM frameworks if there is a need to have an abstract layer to access data.\nCompliant Solution\npublic User getUser(Connection con, String user) throws SQLException {\nStatement stmt1 = null;\nPreparedStatement pstmt = null;\nString query = \"select FNAME, LNAME, SSN \" +\n\"from USERS where UNAME=?\"\ntry {\nstmt1 = con.createStatement();\nResultSet rs1 = stmt1.executeQuery(\"GETDATE()\");\npstmt = con.prepareStatement(query);\npstmt.setString(1, user);  // Good; PreparedStatements escape their inputs.\nResultSet rs2 = pstmt.executeQuery();\n//...\n}\n}\npublic User getUserHibernate(org.hibernate.Session session, String data) {\norg.hibernate.Query query =  session.createQuery(\"FROM students where fname = ?\");\nquery = query.setParameter(0,data);  // Good; Parameter binding escapes all input\norg.hibernate.Query query2 =  session.createQuery(\"FROM students where fname = \" + data); // Sensitive\n// ...\nSee\nOWASP -\nTop 10 2021 Category A3 - Injection\nOWASP -\nTop 10 2017 Category A1 - Injection\nCWE -\nCWE-89 - Improper Neutralization of Special Elements used in an SQL Command\nCWE -\nCWE-564 - SQL Injection: Hibernate\nCWE -\nCWE-20 - Improper Input Validation\nCWE -\nCWE-943 - Improper Neutralization of Special Elements in Data Query Logic\nCERT, IDS00-J.\n- Prevent SQL injection\nDerived from FindSecBugs rules\nPotential SQL/JPQL Injection\n(JPA)\n,\nPotential SQL/JDOQL Injection (JDO)\n,\nPotential SQL/HQL Injection (Hibernate)"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "EquityPricerServiceBean.java",
+        "filePath": "tradista-security-ejb/src/main/java/org/eclipse/tradista/security/equity/service/EquityPricerServiceBean.java",
+        "Security Category": "weak-cryptography",
+        "Description": "Using pseudorandom number generators (PRNGs) is security-sensitive",
+        "Location": "129 - 129",
+        "Severity": "MEDIUM",
+        "Best Practices": "Recommended Secure Coding Practices\nUse a cryptographically strong random number generator (RNG) like \"java.security.SecureRandom\" in place of this PRNG.\nUse the generated random values only once.\nYou should not expose the generated random value. If you have to store it, make sure that the database or file is secure.\nCompliant Solution\nSecureRandom random = new SecureRandom(); // Compliant for security-sensitive use cases\nbyte bytes[] = new byte[20];\nrandom.nextBytes(bytes);\nSee\nOWASP -\nTop 10 2021 Category A2 - Cryptographic Failures\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nOWASP -\nMobile AppSec\nVerification Standard - Cryptography Requirements\nOWASP -\nMobile Top 10 2016 Category M5 -\nInsufficient Cryptography\nCWE -\nCWE-338 - Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)\nCWE -\nCWE-330 - Use of Insufficiently Random Values\nCWE -\nCWE-326 - Inadequate Encryption Strength\nCWE -\nCWE-1241 - Use of Predictable Algorithm in Random Number Generator\nCERT, MSC02-J.\n- Generate strong random numbers\nCERT, MSC30-C.\n- Do not use the rand() function for generating pseudorandom numbers\nCERT, MSC50-CPP.\n- Do not use std::rand() for generating pseudorandom numbers\nDerived from FindSecBugs rule\nPredictable Pseudo Random Number\nGenerator"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "AssetManagerAgentServiceBean.java",
+        "filePath": "tradista-ai-ejb/src/main/java/org/eclipse/tradista/ai/agent/service/AssetManagerAgentServiceBean.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "166 - 166",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "MandateExecutionServiceBean.java",
+        "filePath": "tradista-ai-ejb/src/main/java/org/eclipse/tradista/ai/agent/service/MandateExecutionServiceBean.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "53 - 53",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "FormulaServiceBean.java",
+        "filePath": "tradista-ai-ejb/src/main/java/org/eclipse/tradista/ai/reasoning/common/service/FormulaServiceBean.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "101 - 101",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "FormulaServiceBean.java",
+        "filePath": "tradista-ai-ejb/src/main/java/org/eclipse/tradista/ai/reasoning/common/service/FormulaServiceBean.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "108 - 108",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "FormulaServiceBean.java",
+        "filePath": "tradista-ai-ejb/src/main/java/org/eclipse/tradista/ai/reasoning/common/service/FormulaServiceBean.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "150 - 150",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "FormulaServiceBean.java",
+        "filePath": "tradista-ai-ejb/src/main/java/org/eclipse/tradista/ai/reasoning/common/service/FormulaServiceBean.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "159 - 159",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "AssetManagerAgentSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/agent/persistence/AssetManagerAgentSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "73 - 73",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "AssetManagerAgentSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/agent/persistence/AssetManagerAgentSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "102 - 102",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "AssetManagerAgentSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/agent/persistence/AssetManagerAgentSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "131 - 131",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "MandateSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/agent/persistence/MandateSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "129 - 129",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "MandateSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/agent/persistence/MandateSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "197 - 197",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "MandateSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/agent/persistence/MandateSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "261 - 261",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "FormulaSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/common/persistence/FormulaSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "62 - 62",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "FormulaSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/common/persistence/FormulaSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "85 - 85",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "FormulaSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/common/persistence/FormulaSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "114 - 114",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "FolFormulaSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/fol/persistence/FolFormulaSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "62 - 62",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "FolFormulaSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/fol/persistence/FolFormulaSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "85 - 85",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "FolFormulaSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/fol/persistence/FolFormulaSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "114 - 114",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "ConstantSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/prm/persistence/ConstantSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "68 - 68",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "ConstantSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/prm/persistence/ConstantSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "91 - 91",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "ConstantSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/prm/persistence/ConstantSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "111 - 111",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "FunctionCallSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/prm/persistence/FunctionCallSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "89 - 89",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "FunctionCallSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/prm/persistence/FunctionCallSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "111 - 111",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "FunctionCallSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/prm/persistence/FunctionCallSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "153 - 153",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "FunctionSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/prm/persistence/FunctionSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "87 - 87",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "FunctionSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/prm/persistence/FunctionSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "124 - 124",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "FunctionSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/prm/persistence/FunctionSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "161 - 161",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "VariableSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/prm/persistence/VariableSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "68 - 68",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "ComplexProbabilityDistributionSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/prm/probability/persistence/ComplexProbabilityDistributionSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "73 - 73",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "ComplexProbabilityDistributionSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/prm/probability/persistence/ComplexProbabilityDistributionSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "98 - 98",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "ComplexProbabilityDistributionSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/prm/probability/persistence/ComplexProbabilityDistributionSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "116 - 116",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "IfExpressionSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/prm/probability/persistence/IfExpressionSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "84 - 84",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "IfExpressionSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/prm/probability/persistence/IfExpressionSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "111 - 111",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "NormalProbabilityDistributionSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/prm/probability/persistence/NormalProbabilityDistributionSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "69 - 69",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "NormalProbabilityDistributionSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/prm/probability/persistence/NormalProbabilityDistributionSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "91 - 91",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "NormalProbabilityDistributionSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/prm/probability/persistence/NormalProbabilityDistributionSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "114 - 114",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "PredicateSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/prm/probability/persistence/PredicateSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "70 - 70",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "PredicateSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/prm/probability/persistence/PredicateSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "90 - 90",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "PredicateSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/prm/probability/persistence/PredicateSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "125 - 125",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "ProbabilityDistributionSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/prm/probability/persistence/ProbabilityDistributionSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "88 - 88",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "ProbabilityLawSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/prm/probability/persistence/ProbabilityLawSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "69 - 69",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "ProbabilityLawSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/prm/probability/persistence/ProbabilityLawSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "90 - 90",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "ProbabilityLawSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/prm/probability/persistence/ProbabilityLawSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "112 - 112",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "ProbabilityLawSQL.java",
+        "filePath": "tradista-ai-persistence/src/main/java/org/eclipse/tradista/ai/reasoning/prm/probability/persistence/ProbabilityLawSQL.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "133 - 133",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "BloombergBPipeProvider.java",
+        "filePath": "tradista-bloomberg/src/main/java/org/eclipse/tradista/core/marketdata/bloombergapi/BloombergBPipeProvider.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "95 - 95",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "BloombergProvider.java",
+        "filePath": "tradista-bloomberg/src/main/java/org/eclipse/tradista/core/marketdata/bloombergapi/BloombergProvider.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "60 - 60",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "BloombergProvider.java",
+        "filePath": "tradista-bloomberg/src/main/java/org/eclipse/tradista/core/marketdata/bloombergapi/BloombergProvider.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "87 - 87",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "BloombergProvider.java",
+        "filePath": "tradista-bloomberg/src/main/java/org/eclipse/tradista/core/marketdata/bloombergapi/BloombergProvider.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "135 - 135",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "BloombergServerAPIProvider.java",
+        "filePath": "tradista-bloomberg/src/main/java/org/eclipse/tradista/core/marketdata/bloombergapi/BloombergServerAPIProvider.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "93 - 93",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "BloombergRequestPreparator.java",
+        "filePath": "tradista-bloomberg/src/main/java/org/eclipse/tradista/core/marketdata/bloombergapi/requestpreparator/BloombergRequestPreparator.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "39 - 39",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "JobExecutionHistoryTriggerListener.java",
+        "filePath": "tradista-business/src/main/java/org/eclipse/tradista/core/batch/triggerlistener/JobExecutionHistoryTriggerListener.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "50 - 50",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "JobExecutionHistoryTriggerListener.java",
+        "filePath": "tradista-business/src/main/java/org/eclipse/tradista/core/batch/triggerlistener/JobExecutionHistoryTriggerListener.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "75 - 75",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "Bootstrap.java",
+        "filePath": "tradista-business/src/main/java/org/eclipse/tradista/core/marketdata/generationalgorithm/Bootstrap.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "119 - 119",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "MainEntry.java",
+        "filePath": "tradista-client/src/main/java/org/eclipse/tradista/core/common/ui/view/MainEntry.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "202 - 202",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "MainEntry.java",
+        "filePath": "tradista-client/src/main/java/org/eclipse/tradista/core/common/ui/view/MainEntry.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "457 - 457",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "MainEntry.java",
+        "filePath": "tradista-client/src/main/java/org/eclipse/tradista/core/common/ui/view/MainEntry.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "477 - 477",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "FXTester.java",
+        "filePath": "tradista-client/src/test/java/FXTester.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "28 - 28",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "TradistaServiceLocator.java",
+        "filePath": "tradista-common/src/main/java/org/eclipse/tradista/core/common/servicelocator/TradistaServiceLocator.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "257 - 257",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "TradistaServiceLocator.java",
+        "filePath": "tradista-common/src/main/java/org/eclipse/tradista/core/common/servicelocator/TradistaServiceLocator.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "647 - 647",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "TradistaServiceLocator.java",
+        "filePath": "tradista-common/src/main/java/org/eclipse/tradista/core/common/servicelocator/TradistaServiceLocator.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "659 - 659",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "SecurityUtil.java",
+        "filePath": "tradista-common/src/main/java/org/eclipse/tradista/core/common/util/SecurityUtil.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "67 - 67",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    },
+    {
+        "projectName": "tradista",
+        "fileName": "SecurityUtil.java",
+        "filePath": "tradista-common/src/main/java/org/eclipse/tradista/core/common/util/SecurityUtil.java",
+        "Security Category": "insecure-conf",
+        "Description": "Delivering code in production with debug features activated is security-sensitive",
+        "Location": "88 - 88",
+        "Severity": "LOW",
+        "Best Practices": "Recommended Secure Coding Practices\nDo not enable debugging features on production servers or applications distributed to end users.\nCompliant Solution\nLoggers should be used (instead of\nprintStackTrace\n) to print throwables:\ntry {\n/* ... */\n} catch(Exception e) {\nLOGGER.log(\"context\", e);\n}\nEnableWebSecurity\nannotation for SpringFramework with\ndebug\nto\nfalse\ndisables debugging support:\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n@Configuration\n@EnableWebSecurity(debug = false)\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n// ...\n}\nWebView.setWebContentsDebuggingEnabled(false)\nfor Android disables debugging support:\nimport android.webkit.WebView;\nWebView.setWebContentsDebuggingEnabled(false);\nWebView.getFactory().getStatics().setWebContentsDebuggingEnabled(false);\nSee\nOWASP -\nTop 10 2021 Category A5 - Security Misconfiguration\nOWASP -\nTop 10 2017 Category A3 - Sensitive Data\nExposure\nCWE -\nCWE-489 - Active Debug Code\nCWE -\nCWE-215 - Information Exposure Through Debug Information"
+    }
+]
