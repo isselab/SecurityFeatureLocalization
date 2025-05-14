@@ -46,6 +46,9 @@ public abstract class JavaProject {
         if (GradleProject.isValidProject(projectPath))
             return new GradleProject(projectPath);
 
+        if (AntProject.isValidProject(projectPath))
+            return new AntProject(projectPath);
+
         throw new Exception("project must include a pom.xml or build.gradle file");
     }
 
