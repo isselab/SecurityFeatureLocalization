@@ -1,0 +1,26 @@
+Security_Features
+      Access_Control
+            Authentication
+            Authorization
+      Cryptography
+            Encryption
+            Key_Management
+            Signature
+            Hashing
+            Steganography
+      Security_Monitoring
+            Logging
+            Automated_Response
+            History_Maintenance
+      Secure_Data_Handling
+            Data_Validation
+            Data_Sanitization
+            Retention_Control
+            Secure_Storage
+            Trusted_Sources
+      System_State_Protection
+            Resource_Management
+            System_State_Validation
+            Session_Management
+            State_Synchronization
+            Miscellaneous
