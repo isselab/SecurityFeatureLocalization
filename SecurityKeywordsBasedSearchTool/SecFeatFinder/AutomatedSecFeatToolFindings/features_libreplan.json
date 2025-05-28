@@ -3932,14 +3932,14 @@
               "line": 198,
               "api": "java.security.MessageDigest.getInstance",
               "features": [
-                "CryptographicHashing"
+                "Cryptographic_Hashing"
               ]
             },
             {
               "line": 199,
               "api": "java.security.MessageDigest.digest",
               "features": [
-                "CryptographicHashing"
+                "Cryptographic_Hashing"
               ]
             }
           ],
@@ -10945,14 +10945,14 @@
               "line": 198,
               "api": "java.security.MessageDigest.getInstance",
               "features": [
-                "CryptographicHashing"
+                "Cryptographic_Hashing"
               ]
             },
             {
               "line": 199,
               "api": "java.security.MessageDigest.digest",
               "features": [
-                "CryptographicHashing"
+                "Cryptographic_Hashing"
               ]
             }
           ],
@@ -17958,14 +17958,14 @@
               "line": 198,
               "api": "java.security.MessageDigest.getInstance",
               "features": [
-                "CryptographicHashing"
+                "Cryptographic_Hashing"
               ]
             },
             {
               "line": 199,
               "api": "java.security.MessageDigest.digest",
               "features": [
-                "CryptographicHashing"
+                "Cryptographic_Hashing"
               ]
             }
           ],

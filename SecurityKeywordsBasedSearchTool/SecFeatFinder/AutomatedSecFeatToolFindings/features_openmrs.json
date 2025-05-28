@@ -3462,21 +3462,21 @@
               "line": 101,
               "api": "java.security.MessageDigest.getInstance",
               "features": [
-                "CryptographicHashing"
+                "Cryptographic_Hashing"
               ]
             },
             {
               "line": 109,
               "api": "java.security.MessageDigest.digest",
               "features": [
-                "CryptographicHashing"
+                "Cryptographic_Hashing"
               ]
             },
             {
               "line": 339,
               "api": "java.security.Key.getEncoded",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             }
           ],
@@ -7519,21 +7519,21 @@
               "line": 101,
               "api": "java.security.MessageDigest.getInstance",
               "features": [
-                "CryptographicHashing"
+                "Cryptographic_Hashing"
               ]
             },
             {
               "line": 109,
               "api": "java.security.MessageDigest.digest",
               "features": [
-                "CryptographicHashing"
+                "Cryptographic_Hashing"
               ]
             },
             {
               "line": 339,
               "api": "java.security.Key.getEncoded",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             }
           ],
@@ -11576,21 +11576,21 @@
               "line": 101,
               "api": "java.security.MessageDigest.getInstance",
               "features": [
-                "CryptographicHashing"
+                "Cryptographic_Hashing"
               ]
             },
             {
               "line": 109,
               "api": "java.security.MessageDigest.digest",
               "features": [
-                "CryptographicHashing"
+                "Cryptographic_Hashing"
               ]
             },
             {
               "line": 339,
               "api": "java.security.Key.getEncoded",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             }
           ],

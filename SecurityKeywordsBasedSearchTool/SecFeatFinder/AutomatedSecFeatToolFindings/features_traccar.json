@@ -248,63 +248,63 @@
               "line": 83,
               "api": "java.security.KeyFactory.generatePublic",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             },
             {
               "line": 83,
               "api": "java.security.KeyFactory.getInstance",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             },
             {
               "line": 84,
               "api": "java.security.spec.X509EncodedKeySpec",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             },
             {
               "line": 85,
               "api": "java.security.KeyFactory.generatePrivate",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             },
             {
               "line": 85,
               "api": "java.security.KeyFactory.getInstance",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             },
             {
               "line": 86,
               "api": "java.security.spec.PKCS8EncodedKeySpec",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             },
             {
               "line": 88,
               "api": "java.security.KeyPairGenerator.getInstance",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             },
             {
               "line": 89,
               "api": "java.security.KeyPairGenerator.initialize",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             },
             {
               "line": 89,
               "api": "java.security.spec.ECGenParameterSpec",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             },
             {
@@ -318,35 +318,35 @@
               "line": 90,
               "api": "java.security.KeyPairGenerator.generateKeyPair",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             },
             {
               "line": 92,
               "api": "java.security.KeyPair.getPublic",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             },
             {
               "line": 93,
               "api": "java.security.KeyPair.getPrivate",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             },
             {
               "line": 96,
               "api": "java.security.Key.getEncoded",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             },
             {
               "line": 97,
               "api": "java.security.Key.getEncoded",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             }
           ],
@@ -1044,7 +1044,7 @@
               "line": 63,
               "api": "java.security.Key.getEncoded",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             },
             {

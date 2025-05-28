@@ -887,14 +887,14 @@
               "line": 570,
               "api": "java.security.Key.getEncoded",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             },
             {
               "line": 570,
               "api": "java.security.KeyPair.getPublic",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             },
             {
@@ -915,7 +915,7 @@
               "line": 610,
               "api": "java.security.KeyPair",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             },
             {
@@ -929,14 +929,14 @@
               "line": 630,
               "api": "java.security.Key.getEncoded",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             },
             {
               "line": 630,
               "api": "java.security.KeyPair.getPrivate",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             },
             {
@@ -978,14 +978,14 @@
               "line": 650,
               "api": "java.security.Key.getEncoded",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             },
             {
               "line": 650,
               "api": "java.security.KeyPair.getPublic",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             },
             {
@@ -1180,56 +1180,56 @@
               "line": 47,
               "api": "java.security.MessageDigest.getInstance",
               "features": [
-                "CryptographicHashing"
+                "Cryptographic_Hashing"
               ]
             },
             {
               "line": 52,
               "api": "java.security.MessageDigest.update",
               "features": [
-                "CryptographicHashing"
+                "Cryptographic_Hashing"
               ]
             },
             {
               "line": 58,
               "api": "java.security.MessageDigest.update",
               "features": [
-                "CryptographicHashing"
+                "Cryptographic_Hashing"
               ]
             },
             {
               "line": 64,
               "api": "java.security.MessageDigest.update",
               "features": [
-                "CryptographicHashing"
+                "Cryptographic_Hashing"
               ]
             },
             {
               "line": 70,
               "api": "java.security.MessageDigest.reset",
               "features": [
-                "CryptographicHashing"
+                "Cryptographic_Hashing"
               ]
             },
             {
               "line": 89,
               "api": "java.security.MessageDigest.digest",
               "features": [
-                "CryptographicHashing"
+                "Cryptographic_Hashing"
               ]
             },
             {
               "line": 95,
               "api": "java.security.MessageDigest.getAlgorithm",
               "features": [
-                "CryptographicHashing"
+                "Cryptographic_Hashing"
               ]
             },
             {
               "line": 99,
               "api": "java.security.MessageDigest.getAlgorithm",
               "features": [
-                "CryptographicHashing"
+                "Cryptographic_Hashing"
               ]
             }
           ],
@@ -1287,14 +1287,14 @@
               "line": 246,
               "api": "java.security.MessageDigest.getInstance",
               "features": [
-                "CryptographicHashing"
+                "Cryptographic_Hashing"
               ]
             },
             {
               "line": 247,
               "api": "java.security.MessageDigest.digest",
               "features": [
-                "CryptographicHashing"
+                "Cryptographic_Hashing"
               ]
             }
           ],
@@ -1387,14 +1387,14 @@
               "line": 81,
               "api": "java.security.KeyStore.getInstance",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             },
             {
               "line": 83,
               "api": "java.security.KeyStore.load",
               "features": [
-                "KeyGeneration"
+                "Key_Generation"
               ]
             }
           ],
@@ -1441,28 +1441,28 @@
               "line": 126,
               "api": "java.security.MessageDigest.getInstance",
               "features": [
-                "CryptographicHashing"
+                "Cryptographic_Hashing"
               ]
             },
             {
               "line": 130,
               "api": "java.security.MessageDigest.update",
               "features": [
-                "CryptographicHashing"
+                "Cryptographic_Hashing"
               ]
             },
             {
               "line": 131,
               "api": "java.security.MessageDigest.update",
               "features": [
-                "CryptographicHashing"
+                "Cryptographic_Hashing"
               ]
             },
             {
               "line": 132,
               "api": "java.security.MessageDigest.digest",
               "features": [
-                "CryptographicHashing"
+                "Cryptographic_Hashing"
               ]
             }
           ],
