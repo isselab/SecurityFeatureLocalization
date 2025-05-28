@@ -1,29 +1,12 @@
 import os
 import json
 import re
-import subprocess
-import tempfile
-import time
 from collections import Counter, defaultdict
 
-
-def clone_repository(repo_link):
-    """Clone the repository into a 'repos' directory with the project name."""
-    # Extract project name from the repo URL
-    project_name = os.path.basename(repo_link).replace(".git", "")
-    repos_dir = os.path.join(os.getcwd(), "repos")
-    project_dir = os.path.join(repos_dir, project_name)
-    # Create the 'repos' directory if it doesn't exist
-    os.makedirs(repos_dir, exist_ok=True)
-    if os.path.exists(project_dir):
-        print(f"Repository '{project_name}' already exists in 'repos'.")
-    else:
-        try:
-            subprocess.run(["git", "clone", repo_link, project_dir], check=True)
-            print(f"Cloned '{project_name}' into 'repos'.")
-        except subprocess.CalledProcessError as e:
-            raise RuntimeError(f"Failed to clone repository: {e}")
-    return project_dir, project_name
+from SecurityKeywordsBasedSearchTool.SecFeatFinder.Feature import Feature
+from SecurityKeywordsBasedSearchTool.SecFeatFinder.FeatureModel import add_to_fm, create_feature_model_file, \
+    read_feature_model
+from SecurityKeywordsBasedSearchTool.SecFeatFinder.GitClient import clone_repository
 
 
 def flatten_keywords(keyword_dict):
@@ -34,15 +17,21 @@ def flatten_keywords(keyword_dict):
             for subcategory, keywords in subcategories.items():
                 for keyword in keywords:
                     flattened.append((category, subcategory, keyword))
-        elif isinstance(subcategories, list):  # For keywords directly under a category
+        elif isinstance(subcategories, list):
+            # For keywords directly under a category
             for keyword in subcategories:
                 flattened.append((category, "Miscellaneous", keyword))
     return flattened
 
 
-def process_feature_annotations(features_file, repo_dir, library_features):
-    with open(features_file, "r") as file:
-        data = json.load(file)
+def process_feature_annotations(features_file, repo_dir, flattened_keywords, taxonomy, fm):
+    if os.path.exists(features_file):
+        with open(features_file, "r") as file:
+            data = json.load(file)
+    else:
+        data = {}
+
+    library_features = set()
 
     for source in data.get('sources', []):
         for feature in source.get('files', []):
@@ -63,9 +52,10 @@ def process_feature_annotations(features_file, repo_dir, library_features):
 
                 if feature_names and line_index < len(lines):
                     for feature_name in feature_names:
-                        tag = f"{feature_name}_{method_name}_L"
+                        tag = f"API_{feature_name}_{method_name}"
                         line_annotations[line_index].add(tag)
                         library_features.add(tag)
+                        add_to_fm(fm, taxonomy, feature_name, tag)
 
             # Apply annotations to lines
             for line_index, tags in line_annotations.items():
@@ -82,17 +72,29 @@ def process_feature_annotations(features_file, repo_dir, library_features):
 
             with open(file_path, "w", encoding="utf-8") as f:
                 f.writelines(lines)
+    return library_features
 
 
-def search_keywords_in_file(file_path, flattened_keywords, repo_dir, pos_counter, pos_list, keyword_counter,
-                            hans_exclusion_counter):
-    """Search for keywords in a given file and return matches, excluding comments, test-related code, and HAnS-annotated code."""
+def get_subtree(flattened_keywords, feature_name):
+    """Search in the flattened keywords for the given feature name and return the result."""
+    for category, subcategory, keyword in flattened_keywords:
+        if feature_name.lower() in keyword.lower():
+            return category, subcategory, keyword
+    return feature_name
+
+
+def search_keywords_in_file(file_path, flattened_keywords, repo_dir,
+                            pos_counter, pos_list, keyword_counter,
+                            hans_exclusion_counter, fm):
+    """
+    Search for keywords in a given file and return matches,
+    excluding comments, test-related code, and HAnS-annotated code.
+    """
     matches = {}
     short_path = os.path.relpath(file_path, repo_dir)
     if "src\\" in short_path:
         short_path = short_path[short_path.index("src\\"):]
     updated_lines = []  # Store updated lines with added comments
-    added_positions = set()  # Track lines where a position has been added
     hans_lines_seen = set()  # Store unique Hans line patterns
 
     in_multiline_comment = False
@@ -190,15 +192,15 @@ def search_keywords_in_file(file_path, flattened_keywords, repo_dir, pos_counter
                         keyword_counter[(key.split(" : ")[0], key.split(" : ")[1], keyword)] += 1
 
                 # Add begin and end comments only once for the line
-                if line_number not in added_positions:
-                    comment_start = f"// &begin[Pos{pos_counter[0]}]\n"
-                    updated_lines.append(comment_start)
-                    updated_lines.append(line)  # Add the line with the match
-                    comment_end = f"// &end[Pos{pos_counter[0]}]\n"
-                    updated_lines.append(comment_end)
-                    pos_list.append(f"Pos{pos_counter[0]}")
-                    pos_counter[0] += 1
-                    added_positions.add(line_number)
+                features, fm = determine_feature(pos_counter, matches, line_number, fm)
+
+                comment_start = "// &begin["+features+"]\n"
+                updated_lines.append(comment_start)
+                updated_lines.append(line)  # Add the line with the match
+                comment_end = "// &end["+features+"]\n"
+                updated_lines.append(comment_end)
+                pos_list.append(f"Pos{pos_counter[0]}")
+
             else:
                 updated_lines.append(line)
 
@@ -217,26 +219,63 @@ def search_keywords_in_file(file_path, flattened_keywords, repo_dir, pos_counter
     return os.path.basename(file_path), short_path, list(matches.values())
 
 
-def search_codebase(temp_dir, flattened_keywords, hans_exclusion_counter):
-    """Search the entire codebase for security keywords and group matches by file."""
+def determine_feature(pos_counter, matches, line_number, fm):
+    features = ''
+    for match in list(matches[line_number]["Keywords Found"].keys()):
+        if len(features) > 0:
+            features += ', '
+        path = match.split(' : ')
+        length = len(path)
+        feature = 'KeywordMatch_' + str(pos_counter[0]) + '_' + path[length - 1]
+        pos_counter[0] += 1
+        features += feature
+
+        current = fm
+        i = 0
+        while i < length:
+            name = path[i]
+            found = False
+            for sub in current.sub_features:
+                if name == sub.name:
+                    current = sub
+                    found = True
+                    break
+            if not found:
+                current = Feature(name, current)
+            i += 1
+        Feature(feature, current)
+    return features, fm
+
+
+def search_codebase(temp_dir, flattened_keywords, hans_exclusion_counter, fm):
+    """
+    Search the entire codebase for security keywords and group matches by file.
+    """
     results = []
-    pos_counter = [1]  # Counter for the global position numbers
+
+    # Counter for the global position numbers, use array to pass the value
+    pos_counter = [1]
+
     pos_list = []  # List to store all PosX values
-    keyword_counter = Counter()  # Counter to track keyword occurrences, including category and subcategory
+
+    # Counter to track keyword occurrences, including category and subcategory
+    keyword_counter = Counter()
+
+    # Walk through the directory and process each Java file
     for root, _, files in os.walk(temp_dir):
         for file in files:
-            if file.endswith(".java") and "test" not in file.lower():
+            if file.endswith(".java"):
                 file_path = os.path.join(root, file)
-                file_name, short_path, matches = search_keywords_in_file(
-                    file_path, flattened_keywords, temp_dir, pos_counter, pos_list, keyword_counter,
-                    hans_exclusion_counter
-                )
-                if matches:
-                    results.append({
-                        "File Name": file_name,
-                        "File Path": short_path,
-                        "Matches": matches
-                    })
+                if "test" not in file_path.lower():
+                    file_name, short_path, matches = search_keywords_in_file(
+                        file_path, flattened_keywords, temp_dir, pos_counter,
+                        pos_list, keyword_counter, hans_exclusion_counter, fm)
+                    if matches:
+                        results.append({
+                            "File Name": file_name,
+                            "File Path": short_path,
+                            "Matches": matches
+                        })
     return results, pos_list, keyword_counter
 
 
@@ -246,22 +285,6 @@ def save_results_to_json(repo_name, results):
     with open(output_file, "w") as file:
         json.dump(results, file, indent=4)
     print(f"Results saved to {output_file}")
-
-
-def create_feature_model_file(repo_dir, custom_features, library_features):
-    feature_model_path = os.path.join(repo_dir, ".feature-model")
-    with open(feature_model_path, "w") as file:
-        if library_features:
-            file.write("Security_Features_Library_Tool\n")
-            for feat in library_features:
-                file.write(f"    {feat}\n")
-
-        if custom_features:
-            file.write("Security_Features_Custom\n")
-            for pos in custom_features:
-                file.write(f"    {pos}\n")
-
-    print(f".feature-model file created at: {feature_model_path}")
 
 
 def print_top_keywords(keyword_counter, total_matches):
@@ -277,30 +300,35 @@ def main():
     repo_url = input("Enter the repository URL: ")
     keyword_file = "SecList.json"
     features_file = "features.json"
+    taxonomy_file = "taxonomy.feature_model"
+
+    taxonomy = read_feature_model(taxonomy_file)
 
     # Clone the repository
     project_dir, repo_name = clone_repository(repo_url)
-
-    # Process library annotations first
-    library_features = set()
-    process_feature_annotations(features_file, project_dir, library_features)
 
     # Load keywords
     with open(keyword_file, "r") as file:
         keyword_dict = json.load(file)
     flattened_keywords = flatten_keywords(keyword_dict)
 
+    # int fm
+    fm = Feature(taxonomy.name, None)
+
+    # Process library annotations first
+    library_features = process_feature_annotations(features_file, project_dir, flattened_keywords, taxonomy, fm)
+
     # Initialize the exclusion counter ONCE here
     hans_exclusion_counter = [0]
 
     # Search for keywords in the codebase
-    results, custom_features, keyword_counter = search_codebase(project_dir, flattened_keywords, hans_exclusion_counter)
+    results, custom_features, keyword_counter = search_codebase(project_dir, flattened_keywords, hans_exclusion_counter, fm)
 
     # Save the results to a JSON file
     save_results_to_json(repo_name, results)
 
     # Create the .feature-model file
-    create_feature_model_file(project_dir, custom_features, library_features)
+    create_feature_model_file(project_dir, custom_features, library_features, fm)
 
     # Count the number of unique security feature locations**
     total_security_features = len(custom_features)  # Count unique PosX entries

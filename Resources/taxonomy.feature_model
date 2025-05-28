@@ -1,5 +1,5 @@
 Security_Features
-    Access_Control
+	Access_Control
 		Authentication
 			Credentials
 			One_Time_Password
@@ -38,7 +38,7 @@ Security_Features
 			Message_Authentication
 			Digital_Watermarking
 		Steganography
-    Security_Monitoring
+	Security_Monitoring
 		Logging
 		Automated_Response
 		History_Maintenance
