@@ -1,5 +1,5 @@
 {
-    "Access Control": {
+    "Access_Control": {
       "Authentication": [
         "PasswordEncoder",
         "Credential",
@@ -52,7 +52,7 @@
         "decrypt",
         "Mac"
       ],
-      "Key Management": [
+      "Key_Management": [
         "keyStore",
         "keyPair",
         "keyFactory",
@@ -92,7 +92,7 @@
         "Base64."
       ]
     },
-    "Security Monitoring": {
+    "Security_Monitoring": {
       "Logging": [
         "login_success",
         "login_failure",
@@ -101,57 +101,57 @@
         "audit_log_entry",
         "compliance_check"
       ],
-      "Automated Response": [
+      "Automated_Response": [
         "ResponseHandler",
         "AlertService"
       ],
-      "History Maintenance": [
+      "History_Maintenance": [
         "AuditTrail",
         "TransactionLogger"
       ]
     },
-    "Secure Data Handling": {
-      "Data Validation": [
+    "Secure_Data_Handling": {
+      "Data_Validation": [
         "validate(",
         "Whitelist",
         "Blacklist",
         "AntiSamy",
         "Commons Validator"
       ],
-      "Data Sanitization": [
+      "Data_Sanitization": [
         "StringEscapeUtils",
         "HTMLSanitizer",
         "sanitize",
         "unescape",
         "escape"
       ],
-      "Retention Control": [
+      "Retention_Control": [
         "DataRetentionPolicy",
         "RetentionManager"
       ],
-      "Secure Storage": [
+      "Secure_Storage": [
         "EncryptedFileSystem",
         "SecureStore",
         "KeyVault"
       ],
-      "Trusted Sources": [
+      "Trusted_Sources": [
         "SecureRandom",
         "TimeSync",
         "setSalt"
       ]
     },
-    "System State Protection": {
-      "Resource Management": [
+    "System_State_Protection": {
+      "Resource_Management": [
         "Semaphore",
         "ThreadPool",
         "ResourceAllocator"
       ],
-      "System State Validation": [
+      "System_State_Validation": [
         "StateVerifier",
         "Checksum",
         "HashValidator"
       ],
-      "Session Management": [
+      "Session_Management": [
         "SessionToken",
         "SessionManager",
         "CSRFProtection",
@@ -159,7 +159,7 @@
         "getSession(",
         "openSession("
       ],
-      "State Synchronization": [
+      "State_Synchronization": [
         "Synchronized",
         "ReentrantLock",
         "createLocalLock",
