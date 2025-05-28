@@ -9,6 +9,34 @@
       "categories": [],
       "children": [
         {
+          "namespace": "lang",
+          "categories": [],
+          "children": [
+            {
+              "namespace": "SecurityManager",
+              "categories": ["Authorization"],
+              "children": []
+            }
+          ]
+        },
+         {
+          "namespace": "nio",
+          "categories": [],
+          "children": [
+             {
+          "namespace": "file",
+          "categories": [],
+          "children": [
+            {
+              "namespace": "AccessDeniedException",
+              "categories": ["Authorization"],
+              "children": []
+            }
+          ]
+        }
+          ]
+        },
+        {
           "namespace": "net",
           "categories": [],
           "children": [
@@ -445,6 +473,7 @@
                   "namespace": "SSLSessionContext",
                   "categories": ["Certification", "Encryption"],
                   "children": []
+                },
                 },
                 {
                   "namespace": "SSLSocket",

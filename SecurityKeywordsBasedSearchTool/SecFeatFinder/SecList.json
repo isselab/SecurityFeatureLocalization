@@ -1,105 +1,86 @@
 {
     "Access_Control": {
       "Authentication": [
-        "PasswordEncoder",
+        "Authentication",
+        "Password",
         "Credential",
         "OTP",
-        "X509Certificate",
+        "X509",
         "MFA",
         "SSO",
         "OAuth",
         "JWT",
-        "getToken()",
-        "getCSRFToken",
+        "Token",
         "Cookie",
-        "setCookieValue",
         "Keycloak",
-        "IdP",
-        "SecurityContext",
-        "getAuthentication",
-        "setPassword",
-        "generateSecurePassword"
+        "IdP"
       ],
       "Authorization": [
+        "authoriz*",
         "AccessManager",
-        "getRole",
-        "setRole",
-        "getPrivilege",
+        "Role",
+        "Privilege",
         "Permission",
-        "getACL",
+        "ACL",
         "RBAC",
         "ABAC",
         "MAC",
         "DAC",
-        "AuthenticationManager",
-        "SecurityManager",
-        "PermissionEvaluator",
         "TimeRestrictedAccess"
       ]
     },
     "Cryptography": {
       "Encryption": [
+        "Encryption",
+        "encrypt",
+        "decrypt",
         "Cipher",
         "KeyGenerator",
         "SecretKeySpec",
         "AES",
         "RSA",
         "Blowfish",
-        "StreamCipher",
-        "BlockCipher",
-        "HybridEncryption",
-        "encrypt",
-        "decrypt",
-        "Mac"
+        "Mac",
+        "SecureChannel",
+        "TLS",
+        "SSL"
       ],
       "Key_Management": [
         "keyStore",
         "keyPair",
         "keyFactory",
         "keyAgreement",
-        "keyRevocation",
-        "Certificate",
+        "revo(ke|cation)",
+        "Cert(ificate)?",
         "TrustManager",
         "generateKeyPair"
       ],
       "Signature": [
-        "Signature",
-        "Signer",
+        "[Ss]ign",
         "PKCS12",
-        "DigitalSignature",
-        "CertificateFactory",
-        "sign(",
-        "verify(",
-        "initSign",
-        "initVerify"
+        "verify"
       ],
       "Hashing": [
-        "MessageDigest",
-        "DigestInputStream",
-        "SHA-256",
-        "SHA-512",
+        "SHA",
         "MD5",
-        "hash(",
-        "digest("
+        "hash",
+        "digest"
       ],
       "Steganography": [
         "ImageProcessor",
         "Stego",
-        "encode(",
-        "decode(",
         "pad(",
-        "Base64(",
-        "Base64."
+        "[Bb]ase64"
       ]
     },
     "Security_Monitoring": {
       "Logging": [
-        "login_success",
-        "login_failure",
-        "unauthorized_access",
-        "privilege_escalation",
-        "audit_log_entry",
-        "compliance_check"
+        "login*success",
+        "login*failure",
+        "unauthorized*access",
+        "privilege*escalation",
+        "audit*log*entry",
+        "compliance*check"
       ],
       "Automated_Response": [
         "ResponseHandler",
@@ -119,8 +100,6 @@
         "Commons Validator"
       ],
       "Data_Sanitization": [
-        "StringEscapeUtils",
-        "HTMLSanitizer",
         "sanitize",
         "unescape",
         "escape"
@@ -135,9 +114,9 @@
         "KeyVault"
       ],
       "Trusted_Sources": [
-        "SecureRandom",
+        "Secure*Random",
         "TimeSync",
-        "setSalt"
+        "salt"
       ]
     },
     "System_State_Protection": {
@@ -152,12 +131,9 @@
         "HashValidator"
       ],
       "Session_Management": [
-        "SessionToken",
-        "SessionManager",
-        "CSRFProtection",
-        "SessionTimeout",
-        "getSession(",
-        "openSession("
+        "Session",
+        "CSRF",
+        "Timeout"
       ],
       "State_Synchronization": [
         "Synchronized",
@@ -168,10 +144,7 @@
     },
     "Miscellaneous": [
       "SecurityPolicy",
-      "SecureChannel",
-      "TLSContext",
-      "SSLContext",
-      "AccessDeniedException"
+      "[Ss]ecurity"
     ]
   }
   
