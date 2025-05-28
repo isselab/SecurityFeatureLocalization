@@ -131,17 +131,17 @@
             },
             {
               "namespace": "DigestInputStream",
-              "categories": ["CryptographicHashing"],
+              "categories": ["Cryptographic_Hashing"],
               "children": []
             },
             {
               "namespace": "DigestOutputStream",
-              "categories": ["CryptographicHashing"],
+              "categories": ["Cryptographic_Hashing"],
               "children": []
             },
             {
               "namespace": "DrbgParameters",
-              "categories": ["KeyGeneration"],
+              "categories": ["Key_Generation"],
               "children": []
             },
             {
@@ -151,37 +151,37 @@
             },
             {
               "namespace": "Key",
-              "categories": ["KeyGeneration"],
+              "categories": ["Key_Generation"],
               "children": []
             },
             {
               "namespace": "KeyFactory",
-              "categories": ["KeyGeneration"],
+              "categories": ["Key_Generation"],
               "children": []
             },
             {
               "namespace": "KeyFactorySpi",
-              "categories": ["KeyGeneration"],
+              "categories": ["Key_Generation"],
               "children": []
             },
             {
               "namespace": "KeyManagementException",
-              "categories": ["KeyGeneration"],
+              "categories": ["Key_Generation"],
               "children": []
             },
             {
               "namespace": "KeyPair",
-              "categories": ["KeyGeneration"],
+              "categories": ["Key_Generation"],
               "children": []
             },
             {
               "namespace": "KeyPairGenerator",
-              "categories": ["KeyGeneration"],
+              "categories": ["Key_Generation"],
               "children": []
             },
             {
               "namespace": "KeyPairGeneratorSpi",
-              "categories": ["KeyGeneration"],
+              "categories": ["Key_Generation"],
               "children": []
             },
             {
@@ -196,22 +196,22 @@
             },
             {
               "namespace": "MessageDigest",
-              "categories": ["CryptographicHashing"],
+              "categories": ["Cryptographic_Hashing"],
               "children": []
             },
             {
               "namespace": "MessageDigestSpi",
-              "categories": ["CryptographicHashing"],
+              "categories": ["Cryptographic_Hashing"],
               "children": []
             },
             {
               "namespace": "PrivateKey",
-              "categories": ["KeyGeneration"],
+              "categories": ["Key_Generation"],
               "children": []
             },
             {
               "namespace": "PublicKey",
-              "categories": ["KeyGeneration"],
+              "categories": ["Key_Generation"],
               "children": []
             },
             {
@@ -251,12 +251,12 @@
             },
             {
               "namespace": "interfaces",
-              "categories": ["KeyGeneration"],
+              "categories": ["Key_Generation"],
               "children": []
             },
             {
               "namespace": "spec",
-              "categories": ["KeyGeneration"],
+              "categories": ["Key_Generation"],
               "children": []
             }
           ]
@@ -313,22 +313,22 @@
             },
             {
               "namespace": "KeyAgreement",
-              "categories": ["KeyGeneration"],
+              "categories": ["Key_Generation"],
               "children": []
             },
             {
               "namespace": "KeyAgreementSpi",
-              "categories": ["KeyGeneration"],
+              "categories": ["Key_Generation"],
               "children": []
             },
             {
               "namespace": "KeyGenerator",
-              "categories": ["KeyGeneration"],
+              "categories": ["Key_Generation"],
               "children": []
             },
             {
               "namespace": "KeyGeneratorSpi",
-              "categories": ["KeyGeneration"],
+              "categories": ["Key_Generation"],
               "children": []
             },
             {
@@ -348,27 +348,27 @@
             },
             {
               "namespace": "SecretKey",
-              "categories": ["KeyGeneration"],
+              "categories": ["Key_Generation"],
               "children": []
             },
             {
               "namespace": "SecretKeyFactory",
-              "categories": ["KeyGeneration"],
+              "categories": ["Key_Generation"],
               "children": []
             },
             {
               "namespace": "SecretKeyFactorySpi",
-              "categories": ["KeyGeneration"],
+              "categories": ["Key_Generation"],
               "children": []
             },
             {
               "namespace": "interfaces",
-              "categories": ["KeyGeneration"],
+              "categories": ["Key_Generation"],
               "children": []
             },
             {
               "namespace": "spec",
-              "categories": ["KeyGeneration"],
+              "categories": ["Key_Generation"],
               "children": []
             }
           ]
@@ -408,7 +408,7 @@
                 },
                 {
                   "namespace": "ManagerFactoryParameters",
-                  "categories": ["KeyGeneration"],
+                  "categories": ["Key_Generation"],
                   "children": []
                 },
                 {
@@ -458,12 +458,12 @@
                 },
                 {
                   "namespace": "X509ExtendedKeyManager",
-                  "categories": ["KeyGeneration"],
+                  "categories": ["Key_Generation"],
                   "children": []
                 },
                 {
                   "namespace": "X509KeyManager",
-                  "categories": ["KeyGeneration"],
+                  "categories": ["Key_Generation"],
                   "children": []
                 }
               ]

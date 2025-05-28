@@ -63,7 +63,7 @@
                 },
                 {
                   "namespace": "GM",
-                  "categories": ["AsymmetricKeyCryptography"],
+                  "categories": ["ASymmetric_Key_Cryptography"],
                   "children": []
                 },
                 {
@@ -73,7 +73,7 @@
                 },
                 {
                   "namespace": "IES",
-                  "categories": ["AsymmetricKeyCryptography"],
+                  "categories": ["ASymmetric_Key_Cryptography"],
                   "children": []
                 },
                 {
@@ -83,12 +83,12 @@
                 },
                 {
                   "namespace": "NTRU",
-                  "categories": ["AsymmetricKeyCryptography"],
+                  "categories": ["ASymmetric_Key_Cryptography"],
                   "children": []
                 },
                 {
                   "namespace": "RSA",
-                  "categories": ["AsymmetricKeyCryptography"],
+                  "categories": ["ASymmetric_Key_Cryptography"],
                   "children": []
                 },
                 {
@@ -143,17 +143,17 @@
                 },
                 {
                   "namespace": "gost",
-                  "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
                   "children": []
                 },
                 {
                   "namespace": "ies",
-                  "categories": ["AsymmetricKeyCryptography"],
+                  "categories": ["ASymmetric_Key_Cryptography"],
                   "children": []
                 },
                 {
                   "namespace": "rsa",
-                  "categories": ["AsymmetricKeyCryptography", "BlockCiphers"],
+                  "categories": ["ASymmetric_Key_Cryptography", "Block_Ciphers"],
                   "children": []
                 },
                 {
@@ -175,7 +175,7 @@
             },
             {
               "namespace": "digest",
-              "categories": ["CryptographicHashing"],
+              "categories": ["Cryptographic_Hashing"],
               "children": []
             },
             {
@@ -194,222 +194,222 @@
               "children": [
                 {
                   "namespace": "AES",
-                  "categories": ["AES", "BlockCiphers"],
+                  "categories": ["AES", "Block_Ciphers"],
                   "children": []
                 },
                 {
                   "namespace": "ARC4",
-                  "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
                   "children": []
                 },
                 {
                   "namespace": "ARIA",
-                  "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
                   "children": []
                 },
                 {
                   "namespace": "Blowfish",
-                  "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
                   "children": []
                 },
                 {
                   "namespace": "Camellia",
-                  "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
                   "children": []
                 },
                 {
                   "namespace": "CAST5",
-                  "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
                   "children": []
                 },
                 {
                   "namespace": "CAST6",
-                  "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
                   "children": []
                 },
                 {
                   "namespace": "ChaCha",
-                  "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
                   "children": []
                 },
                 {
                   "namespace": "DES",
-                  "categories": ["DES", "BlockCiphers"],
+                  "categories": ["DES", "Block_Ciphers"],
                   "children": []
                 },
                 {
                   "namespace": "DESede",
-                  "categories": ["3DES", "BlockCiphers"],
+                  "categories": ["3DES", "Block_Ciphers"],
                   "children": []
                 },
                 {
                   "namespace": "DSTU7624",
-                  "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
                   "children": []
                 },
                 {
                   "namespace": "Grain128",
-                  "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
                   "children": []
                 },
                 {
                   "namespace": "Grainv1",
-                  "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
                   "children": []
                 },
                 {
                   "namespace": "HC128",
-                  "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
                   "children": []
                 },
                 {
                   "namespace": "HC256",
-                  "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
                   "children": []
                 },
                 {
                   "namespace": "IDEA",
-                  "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
                   "children": []
                 },
                 {
                   "namespace": "Noekeon",
-                  "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
                   "children": []
                 },
                 {
                   "namespace": "OpenSSLPBKDF",
-                  "categories": ["KeyGeneration"],
+                  "categories": ["Key_Generation"],
                   "children": []
                 },
                 {
                   "namespace": "PBEPBKDF1",
-                  "categories": ["KeyGeneration"],
+                  "categories": ["Key_Generation"],
                   "children": []
                 },
                 {
                   "namespace": "PBEPBKDF2",
-                  "categories": ["KeyGeneration"],
+                  "categories": ["Key_Generation"],
                   "children": []
                 },
                 {
                   "namespace": "PBEPKCS12",
-                  "categories": ["KeyGeneration"],
+                  "categories": ["Key_Generation"],
                   "children": []
                 },
                 {
                   "namespace": "Poly1305",
-                  "categories": ["CryptographicHashing"],
+                  "categories": ["Cryptographic_Hashing"],
                   "children": []
                 },
                 {
                   "namespace": "RC2",
-                  "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
                   "children": []
                 },
                 {
                   "namespace": "RC5",
-                  "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
                   "children": []
                 },
                 {
                   "namespace": "RC6",
-                  "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
                   "children": []
                 },
                 {
                   "namespace": "Rijndael",
-                  "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
                   "children": []
                 },
                 {
                   "namespace": "Salsa20",
-                  "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
                   "children": []
                 },
                 {
                   "namespace": "SCRYPT",
-                  "categories": ["SymmetricKeyCryptography", "KeyGeneration"],
+                  "categories": ["Symmetric_Key_Cryptography", "Key_Generation"],
                   "children": []
                 },
                 {
                   "namespace": "SEED",
-                  "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
                   "children": []
                 },
                 {
                   "namespace": "Serpent",
-                  "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
                   "children": []
                 },
                 {
                   "namespace": "Shacal2",
-                  "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
                   "children": []
                 },
                 {
                   "namespace": "SipHash",
-                  "categories": ["CryptographicHashing"],
+                  "categories": ["Cryptographic_Hashing"],
                   "children": []
                 },
                 {
                   "namespace": "SipHash128",
-                  "categories": ["CryptographicHashing"],
+                  "categories": ["Cryptographic_Hashing"],
                   "children": []
                 },
                 {
                   "namespace": "Skipjack",
-                  "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
                   "children": []
                 },
                 {
                   "namespace": "SM4",
-                  "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
                   "children": []
                 },
                 {
                   "namespace": "TEA",
-                  "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
                   "children": []
                 },
                 {
                   "namespace": "Threefish",
-                  "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
                   "children": []
                 },
                 {
                   "namespace": "TLSKDF",
-                  "categories": ["SymmetricKeyCryptography"],
+                  "categories": ["Symmetric_Key_Cryptography"],
                   "children": []
                 },
                 {
                   "namespace": "Twofish",
-                  "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
                   "children": []
                 },
                 {
                   "namespace": "VMPC",
-                  "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
                   "children": []
                 },
                 {
                   "namespace": "VMPCKSA3",
-                  "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
                   "children": []
                 },
                 {
                   "namespace": "XSalsa20",
-                  "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
                   "children": []
                 },
                 {
                   "namespace": "XTEA",
-                  "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
                   "children": []
                 },
                 {
                   "namespace": "Zuc",
-                  "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+                  "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
                   "children": []
                 }
               ]
@@ -424,12 +424,12 @@
       "children": [
         {
           "namespace": "AsymmetricBlockCipher",
-          "categories": ["AsymmetricKeyCryptography", "BlockCiphers"],
+          "categories": ["ASymmetric_Key_Cryptography", "Block_Ciphers"],
           "children": []
         },
         {
           "namespace": "AsymmetricCipherKeyPairGenerator",
-          "categories": ["KeyGeneration"],
+          "categories": ["Key_Generation"],
           "children": []
         },
         {
@@ -444,7 +444,7 @@
         },
         {
           "namespace": "EncapsulatedSecretGenerator",
-          "categories": ["KeyGeneration"],
+          "categories": ["Key_Generation"],
           "children": []
         },
         {
@@ -459,7 +459,7 @@
         },
         {
           "namespace": "MultiBlockCipher",
-          "categories": ["BlockCiphers"],
+          "categories": ["Block_Ciphers"],
           "children": []
         },
         {
@@ -489,27 +489,27 @@
         },
         {
           "namespace": "BufferedAsymmetricBlockCipher",
-          "categories": ["AsymmetricKeyCryptography"],
+          "categories": ["ASymmetric_Key_Cryptography"],
           "children": []
         },
         {
           "namespace": "BufferedBlockCipher",
-          "categories": ["BlockCiphers"],
+          "categories": ["Block_Ciphers"],
           "children": []
         },
         {
           "namespace": "CipherKeyGenerator",
-          "categories": ["KeyGeneration"],
+          "categories": ["Key_Generation"],
           "children": []
         },
         {
           "namespace": "DefaultBufferedBlockCipher",
-          "categories": ["BlockCiphers"],
+          "categories": ["Block_Ciphers"],
           "children": []
         },
         {
           "namespace": "DefaultMultiBlockCipher",
-          "categories": ["BlockCiphers"],
+          "categories": ["Block_Ciphers"],
           "children": []
         },
         {
@@ -518,13 +518,13 @@
           "children": []
         },
         {
-          "namespace": "KeyGenerationParameters",
-          "categories": ["KeyGeneration"],
+          "namespace": "Key_GenerationParameters",
+          "categories": ["Key_Generation"],
           "children": []
         },
         {
           "namespace": "StreamBlockCipher",
-          "categories": ["StreamCiphers", "BlockCiphers"],
+          "categories": ["StreamCiphers", "Block_Ciphers"],
           "children": []
         },
         {
@@ -533,92 +533,92 @@
           "children": [
             {
               "namespace": "AESEngine",
-              "categories": ["AES", "BlockCiphers"],
+              "categories": ["AES", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "AESFastEngine",
-              "categories": ["AES", "BlockCiphers"],
+              "categories": ["AES", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "AESLightEngine",
-              "categories": ["AES", "BlockCiphers"],
+              "categories": ["AES", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "AESWrapEngine",
-              "categories": ["AES", "BlockCiphers"],
+              "categories": ["AES", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "AESWrapPadEngine",
-              "categories": ["AES", "BlockCiphers"],
+              "categories": ["AES", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "ARIAEngine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "ARIAWrapEngine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "ARIAWrapPadEngine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "AsconEngine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "BlowfishEngine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "CamelliaEngine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "CamelliaLightEngine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "CamelliaWrapEngine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "CAST5Engine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "CAST6Engine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "ChaCha7539Engine",
-              "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
               "children": []
             },
             {
               "namespace": "ChaChaEngine",
-              "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
               "children": []
             },
             {
               "namespace": "CramerShoupCiphertext",
-              "categories": ["AsymmetricKeyCryptography"],
+              "categories": ["ASymmetric_Key_Cryptography"],
               "children": []
             },
             {
@@ -628,27 +628,27 @@
             },
             {
               "namespace": "DESedeEngine",
-              "categories": ["3DES", "BlockCiphers"],
+              "categories": ["3DES", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "DESedeWrapEngine",
-              "categories": ["3DES", "BlockCiphers"],
+              "categories": ["3DES", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "DESEngine",
-              "categories": ["DES", "BlockCiphers"],
+              "categories": ["DES", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "DSTU7624Engine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "DSTU7624WrapEngine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
@@ -658,254 +658,254 @@
             },
             {
               "namespace": "EthereumIESEngine",
-              "categories": ["AsymmetricKeyCryptography"],
+              "categories": ["ASymmetric_Key_Cryptography"],
               "children": []
             },
             {
               "namespace": "GOST28147Engine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "GOST28147WrapEngine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "GOST3412_2015Engine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "Grain128AEADEngine",
-              "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
               "children": []
             },
             {
               "namespace": "Grain128Engine",
-              "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
               "children": []
             },
             {
               "namespace": "Grainv1Engine",
-              "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
               "children": []
             },
             {
               "namespace": "HC128Engine",
-              "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
               "children": []
             },
             {
               "namespace": "HC256Engine",
-              "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
               "children": []
             },
             {
               "namespace": "IDEAEngine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "IESEngine",
-              "categories": ["AsymmetricKeyCryptography"],
+              "categories": ["ASymmetric_Key_Cryptography"],
               "children": []
             },
             {
               "namespace": "ISAACEngine",
-              "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
               "children": []
             },
             {
               "namespace": "LEAEngine",
-              "categories": ["BlockCiphers"],
+              "categories": ["Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "NaccacheSternEngine",
-              "categories": ["AsymmetricKeyCryptography"],
+              "categories": ["ASymmetric_Key_Cryptography"],
               "children": []
             },
             {
               "namespace": "NoekeonEngine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "OldIESEngine",
-              "categories": ["AsymmetricKeyCryptography"],
+              "categories": ["ASymmetric_Key_Cryptography"],
               "children": []
             },
             {
               "namespace": "PhotonBeetleEngine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "RC2Engine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "RC2WrapEngine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "RC4Engine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "RC532Engine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "RC564Engine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "RC6Engine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "RijndaelEngine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "RSABlindedEngine",
-              "categories": ["AsymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["ASymmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "RSABlindingEngine",
-              "categories": ["AsymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["ASymmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "RSAEngine",
-              "categories": ["AsymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["ASymmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "Salsa20Engine",
-              "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
               "children": []
             },
             {
               "namespace": "SEEDEngine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "SEEDWrapEngine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "SerpentEngine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "SerpentEngineBase",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "Shacal2Engine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "SkipjackEngine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "SM2Engine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "SM4Engine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "TEAEngine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "ThreefishEngine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "TnepresEngine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "TwofishEngine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "VMPCEngine",
-              "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
               "children": []
             },
             {
               "namespace": "VMPCKSA3Engine",
-              "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
               "children": []
             },
             {
               "namespace": "XoodyakEngine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "XSalsa20Engine",
-              "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
               "children": []
             },
             {
               "namespace": "XTEAEngine",
-              "categories": ["SymmetricKeyCryptography", "BlockCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "Block_Ciphers"],
               "children": []
             },
             {
               "namespace": "Zuc128CoreEngine",
-              "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
               "children": []
             },
             {
               "namespace": "Zuc128Engine",
-              "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
               "children": []
             },
             {
               "namespace": "Zuc256CoreEngine",
-              "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
               "children": []
             },
             {
               "namespace": "Zuc256Engine",
-              "categories": ["SymmetricKeyCryptography", "StreamCiphers"],
+              "categories": ["Symmetric_Key_Cryptography", "StreamCiphers"],
               "children": []
             }
           ]
         },
         {
           "namespace": "generators",
-          "categories": ["KeyGeneration"],
+          "categories": ["Key_Generation"],
           "children": []
         },
         {

@@ -84,7 +84,7 @@
       "children": [
         {
           "namespace": "hash",
-          "categories": ["CryptographicHashing"],
+          "categories": ["Cryptographic_Hashing"],
           "children": [
             {
               "namespace": "Sha256Hash",

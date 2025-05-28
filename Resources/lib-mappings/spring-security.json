@@ -284,7 +284,7 @@
           "children": [
             {
               "namespace": "userdetails",
-              "categories": ["SessionManagement"],
+              "categories": ["Session_Management"],
               "children": []
             }
           ]
@@ -319,7 +319,7 @@
     },
     {
       "namespace": "context",
-      "categories": ["SessionManagement"],
+      "categories": ["Session_Management"],
       "children": []
     },
     {
@@ -355,12 +355,12 @@
         },
         {
           "namespace": "context",
-          "categories": ["SessionManagement"],
+          "categories": ["Session_Management"],
           "children": []
         },
         {
           "namespace": "session",
-          "categories": ["SessionManagement"],
+          "categories": ["Session_Management"],
           "children": []
         },
         {
@@ -369,14 +369,14 @@
           "children": [
             {
               "namespace": "Sha512DigestUtils",
-              "categories": ["CryptographicHashing"],
+              "categories": ["Cryptographic_Hashing"],
               "children": []
             }
           ]
         },
         {
           "namespace": "userdetails",
-          "categories": ["SessionManagement"],
+          "categories": ["Session_Management"],
           "children": []
         }
       ]
@@ -387,12 +387,12 @@
       "children": [
         {
           "namespace": "argon2",
-          "categories": ["CryptographicHashing"],
+          "categories": ["Cryptographic_Hashing"],
           "children": []
         },
         {
           "namespace": "bcrypt",
-          "categories": ["CryptographicHashing"],
+          "categories": ["Cryptographic_Hashing"],
           "children": []
         },
         {
@@ -407,17 +407,17 @@
         },
         {
           "namespace": "keygen",
-          "categories": ["KeyGeneration"],
+          "categories": ["Key_Generation"],
           "children": []
         },
         {
           "namespace": "password",
-          "categories": ["CryptographicHashing"],
+          "categories": ["Cryptographic_Hashing"],
           "children": []
         },
         {
           "namespace": "scrypt",
-          "categories": ["CryptographicHashing"],
+          "categories": ["Cryptographic_Hashing"],
           "children": []
         },
         {
@@ -723,7 +723,7 @@
         },
         {
           "namespace": "context",
-          "categories": ["SessionManagement"],
+          "categories": ["Session_Management"],
           "children": []
         },
         {
@@ -767,7 +767,7 @@
         },
         {
           "namespace": "savedrequest",
-          "categories": ["Authentication", "SessionManagement"],
+          "categories": ["Authentication", "Session_Management"],
           "children": []
         },
         {
@@ -794,7 +794,7 @@
         },
         {
           "namespace": "session",
-          "categories": ["SessionManagement"],
+          "categories": ["Session_Management"],
           "children": []
         }
       ]
