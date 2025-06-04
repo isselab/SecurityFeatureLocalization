@@ -2,8 +2,8 @@ package io.github.david0x03.mappings;
 
 import com.google.gson.Gson;
 import io.github.david0x03.Utils;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.File;
 import java.io.IOException;
