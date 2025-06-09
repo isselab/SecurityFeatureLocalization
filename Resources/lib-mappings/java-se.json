@@ -474,7 +474,6 @@
                   "categories": ["Certification", "Encryption"],
                   "children": []
                 },
-                },
                 {
                   "namespace": "SSLSocket",
                   "categories": ["Certification", "Encryption"],
