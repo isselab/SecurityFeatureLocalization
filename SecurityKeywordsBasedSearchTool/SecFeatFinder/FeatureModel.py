@@ -1,6 +1,6 @@
 import os
 
-from SecurityKeywordsBasedSearchTool.SecFeatFinder.Feature import Feature
+from Feature import Feature
 
 
 def add_to_fm(fm, taxonomy, feature_name, tag):
@@ -35,6 +35,11 @@ def create_feature_model_file(repo_dir, custom_features, library_features, fm):
 
 
 def read_feature_model(file):
+    # This function reads a feature mode from a file
+    if not os.path.exists(file):
+        print(f"Keywords file not found at { os.path.abspath(file)}.")
+        return None
+
     with open(file, "r") as f:
         depths = {-1: 0}
         stack = []

@@ -1,12 +1,13 @@
 import os
+import sys
 import json
 import re
 from collections import Counter, defaultdict
 
-from SecurityKeywordsBasedSearchTool.SecFeatFinder.Feature import Feature
-from SecurityKeywordsBasedSearchTool.SecFeatFinder.FeatureModel import add_to_fm, create_feature_model_file, \
+from Feature import Feature
+from FeatureModel import add_to_fm, create_feature_model_file, \
     read_feature_model
-from SecurityKeywordsBasedSearchTool.SecFeatFinder.GitClient import clone_repository
+from GitClient import clone_repository
 
 
 def flatten_keywords(keyword_dict):
@@ -29,7 +30,8 @@ def process_feature_annotations(features_file, repo_dir, flattened_keywords, tax
         with open(features_file, "r") as file:
             data = json.load(file)
     else:
-        data = {}
+        print(f"Features file not found at { os.path.abspath(features_file)}.")
+        sys.exit(1)
 
     library_features = set()
 
@@ -298,19 +300,26 @@ def print_top_keywords(keyword_counter, total_matches):
 
 def main():
     repo_url = input("Enter the repository URL: ")
-    keyword_file = "SecList.json"
-    features_file = "features.json"
-    taxonomy_file = "taxonomy.feature_model"
+    keyword_file = "SecFeatFinder/git@github.com:apache/tomcat.gitSecList.json"
+    features_file = "../Resources/features.json"
+    taxonomy_file = "../Resources/taxonomy.feature_model"
 
     taxonomy = read_feature_model(taxonomy_file)
+    if taxonomy is None:
+        print("Could not load taxonomy")
+        sys.exit(0)
 
     # Clone the repository
     project_dir, repo_name = clone_repository(repo_url)
 
     # Load keywords
-    with open(keyword_file, "r") as file:
-        keyword_dict = json.load(file)
-    flattened_keywords = flatten_keywords(keyword_dict)
+    if os.path.exists(keyword_file):
+        with open(keyword_file, "r") as file:
+            keyword_dict = json.load(file)
+        flattened_keywords = flatten_keywords(keyword_dict)
+    else:
+        print(f"Keywords file not found at { os.path.abspath(keyword_file)}.")
+        sys.exit(1)
 
     # int fm
     fm = Feature(taxonomy.name, None)
