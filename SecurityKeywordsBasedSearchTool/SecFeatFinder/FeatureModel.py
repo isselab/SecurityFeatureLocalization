@@ -5,7 +5,9 @@ from Feature import Feature
 
 def add_to_fm(fm, taxonomy, feature_name, tag):
     taxo_feature = taxonomy.dfs(feature_name)
-
+    if taxo_feature is None:
+        print(f"Feature '{feature_name}' not found in taxonomy.")
+        return None
     feature = taxo_feature
     parents = [feature]
     while feature.parent is not None:

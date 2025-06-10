@@ -57,7 +57,8 @@ def process_feature_annotations(features_file, repo_dir, flattened_keywords, tax
                         tag = f"API_{feature_name}_{method_name}"
                         line_annotations[line_index].add(tag)
                         library_features.add(tag)
-                        add_to_fm(fm, taxonomy, feature_name, tag)
+                        if add_to_fm(fm, taxonomy, feature_name, tag) is None:
+                            print(f"Feature '{feature_name}' not found in taxonomy, skipped for now.")
 
             # Apply annotations to lines
             for line_index, tags in line_annotations.items():
@@ -300,8 +301,7 @@ def print_top_keywords(keyword_counter, total_matches):
 
 def main():
     repo_url = input("Enter the repository URL: ")
-    keyword_file = "SecFeatFinder/git@github.com:apache/tomcat.gitSecList.json"
-    features_file = "../Resources/features.json"
+    keyword_file = "SecFeatFinder/SecList.json"
     taxonomy_file = "../Resources/taxonomy.feature_model"
 
     taxonomy = read_feature_model(taxonomy_file)
@@ -325,7 +325,7 @@ def main():
     fm = Feature(taxonomy.name, None)
 
     # Process library annotations first
-    library_features = process_feature_annotations(features_file, project_dir, flattened_keywords, taxonomy, fm)
+    library_features = process_feature_annotations(project_dir+"/result/features.json", project_dir, flattened_keywords, taxonomy, fm)
 
     # Initialize the exclusion counter ONCE here
     hans_exclusion_counter = [0]

@@ -10,12 +10,12 @@
       "children": [
         {
           "namespace": "HttpSession",
-          "categories": ["SessionManagement"],
+          "categories": ["Session_Management"],
           "children": []
         },
         {
           "namespace": "HttpServletRequest",
-          "categories": ["SessionManagement"],
+          "categories": ["Session_Management"],
           "children": []
         }
       ]

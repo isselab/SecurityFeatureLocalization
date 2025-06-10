@@ -10,7 +10,7 @@
       "children": [
         {
           "namespace": "SecretKeySpec",
-          "categories": ["KeyManagement"],
+          "categories": ["Key_Management"],
           "children": []
         }
       ]

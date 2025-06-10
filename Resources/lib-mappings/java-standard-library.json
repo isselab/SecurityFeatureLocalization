@@ -6,12 +6,12 @@
   "children": [
     {
       "namespace": "URLEncoder",
-      "categories": ["DataSanitization"],
+      "categories": ["Data_Sanitization"],
       "children": []
     },
     {
       "namespace": "URLDecoder",
-      "categories": ["DataSanitization"],
+      "categories": ["Data_Sanitization"],
       "children": []
     }
   ],
@@ -28,7 +28,7 @@
           "children": [
             {
               "namespace": "ReentrantLock",
-              "categories": ["StateSynchronization"],
+              "categories": ["State_Synchronization"],
               "children": []
             }
           ]
@@ -38,11 +38,6 @@
     {
       "namespace": "Base64",
       "categories": ["Steganography"],
-      "children": []
-    },
-    {
-      "namespace": "Objects",
-      "categories": ["Hashing"],
       "children": []
     }
   ]
