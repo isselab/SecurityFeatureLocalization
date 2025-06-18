@@ -1,8 +1,8 @@
 {
     "Access_Control": {
       "Authentication": [
-        "Authentication",
-        "Password",
+        "[Aa]uthenticat*",
+        "[Pp]assword",
         "Credential",
         "OTP",
         "X509",
@@ -16,7 +16,7 @@
         "IdP"
       ],
       "Authorization": [
-        "authoriz*",
+        "[Aa]uthoriz*",
         "AccessManager",
         "Role",
         "Privilege",
@@ -68,8 +68,7 @@
       ],
       "Steganography": [
         "ImageProcessor",
-        "Stego",
-        "pad(",
+        "[Ss]tego",
         "[Bb]ase64"
       ]
     },
@@ -93,11 +92,11 @@
     },
     "Secure_Data_Handling": {
       "Data_Validation": [
-        "validate(",
+        "validate",
         "Whitelist",
         "Blacklist",
         "AntiSamy",
-        "Commons Validator"
+        "CommonsValidator"
       ],
       "Data_Sanitization": [
         "sanitize",

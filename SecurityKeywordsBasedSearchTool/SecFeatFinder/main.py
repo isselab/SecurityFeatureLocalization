@@ -35,7 +35,6 @@ def process_feature_annotations(features_file, repo_dir, flattened_keywords, tax
 
     library_features = set()
 
-    api_id = 1  # Initialize API ID for tagging
     for source in data.get('sources', []):
         for feature in source.get('files', []):
             file_path = os.path.join(repo_dir, feature.get('path', ''))
@@ -55,8 +54,7 @@ def process_feature_annotations(features_file, repo_dir, flattened_keywords, tax
 
                 if feature_names and line_index < len(lines):
                     for feature_name in feature_names:
-                        tag = f"API_{api_id}_{feature_name}_{method_name}"
-                        api_id += 1
+                        tag = f"APIMatch|{feature_name}|{method_name}"
                         line_annotations[line_index].add(tag)
                         library_features.add(tag)
                         if add_to_fm(fm, taxonomy, feature_name, tag) is None:
@@ -174,7 +172,7 @@ def search_keywords_in_file(file_path, flattened_keywords, repo_dir,
             # Search only non-comment, non-test, non-HAnS-annotated lines
             keywords_found = {}
             for category, subcategory, keyword in flattened_keywords:
-                if re.search(rf"\b{re.escape(keyword)}\b", cleaned_line):
+                if re.search(rf"\b{keyword}\b", cleaned_line, re.IGNORECASE):
                     key = f"{category} : {subcategory}"
                     if key not in keywords_found:
                         keywords_found[key] = []
@@ -226,14 +224,23 @@ def search_keywords_in_file(file_path, flattened_keywords, repo_dir,
 
 def determine_feature(pos_counter, matches, line_number, fm):
     features = ''
-    for match in list(matches[line_number]["Keywords Found"].keys()):
+    for match in list(matches[line_number]["Keywords Found"].items()):
         if len(features) > 0:
             features += ', '
-        path = match.split(' : ')
+        path = match[0].split(' : ')
         length = len(path)
-        feature = 'KeywordMatch_' + str(pos_counter[0]) + '_' + path[length - 1]
-        pos_counter[0] += 1
-        features += feature
+        value = (
+            match[1][0]
+            .replace('[', '')
+            .replace(']', '')
+            .replace('(', '')
+            .replace(')', '')
+            .replace('*', '')
+            .replace('?', '')
+        )
+
+        feature_name = f'KeywordMatch|{path[length - 1]}|{value}'
+        features += feature_name
 
         current = fm
         i = 0
@@ -248,7 +255,14 @@ def determine_feature(pos_counter, matches, line_number, fm):
             if not found:
                 current = Feature(name, current)
             i += 1
-        Feature(feature, current)
+
+        exists = False
+        for f in current.sub_features:
+            if f.name == feature_name:
+                exists = True
+                break
+        if not exists:
+            Feature(feature_name, current)
     return features, fm
 
 

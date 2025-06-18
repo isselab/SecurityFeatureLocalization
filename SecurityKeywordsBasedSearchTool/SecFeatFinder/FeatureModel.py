@@ -24,6 +24,9 @@ def add_to_fm(fm, taxonomy, feature_name, tag):
                     break
             if not exists:
                 fm = Feature(feature.name, fm)
+        for feature in fm.sub_features:
+            if feature.name == tag:
+                return feature
         return Feature(tag, fm)
 
 
