@@ -35,6 +35,7 @@ def process_feature_annotations(features_file, repo_dir, flattened_keywords, tax
 
     library_features = set()
 
+    api_id = 1  # Initialize API ID for tagging
     for source in data.get('sources', []):
         for feature in source.get('files', []):
             file_path = os.path.join(repo_dir, feature.get('path', ''))
@@ -54,7 +55,8 @@ def process_feature_annotations(features_file, repo_dir, flattened_keywords, tax
 
                 if feature_names and line_index < len(lines):
                     for feature_name in feature_names:
-                        tag = f"API_{feature_name}_{method_name}"
+                        tag = f"API_{api_id}_{feature_name}_{method_name}"
+                        api_id += 1
                         line_annotations[line_index].add(tag)
                         library_features.add(tag)
                         if add_to_fm(fm, taxonomy, feature_name, tag) is None:
