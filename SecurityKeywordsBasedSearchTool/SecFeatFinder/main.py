@@ -183,12 +183,12 @@ def search_keywords_in_file(file_path, flattened_keywords, repo_dir,
 
             # Search only non-comment, non-test, non-HAnS-annotated lines
             keywords_found = {}
-            for category, subcategory, keyword in flattened_keywords:
-                if re.search(rf"\b{keyword}\b", cleaned_line, re.IGNORECASE):
+            for category, subcategory, keyword_regex in flattened_keywords:
+                if re.search(keyword_regex, cleaned_line, re.IGNORECASE):
                     key = f"{category} : {subcategory}"
                     if key not in keywords_found:
                         keywords_found[key] = []
-                    keywords_found[key].append(keyword)
+                    keywords_found[key].append(keyword_regex)
 
             if keywords_found:
                 if line_number not in matches:
@@ -202,9 +202,9 @@ def search_keywords_in_file(file_path, flattened_keywords, repo_dir,
                     if key not in matches[line_number]["Keywords Found"]:
                         matches[line_number]["Keywords Found"][key] = []
                     matches[line_number]["Keywords Found"][key].extend(keywords)
-                    for keyword in keywords:
+                    for keyword_regex in keywords:
                         # Increment the counter with the correct category, subcategory, and keyword
-                        keyword_counter[(key.split(" : ")[0], key.split(" : ")[1], keyword)] += 1
+                        keyword_counter[(key.split(" : ")[0], key.split(" : ")[1], keyword_regex)] += 1
 
                 # Add begin and end comments only once for the line
                 features, fm = determine_feature(pos_counter, matches, line_number, fm)
