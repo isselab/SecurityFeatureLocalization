@@ -25,7 +25,7 @@ def flatten_keywords(keyword_dict):
     return flattened
 
 
-def process_feature_annotations(features_file, repo_dir, flattened_keywords, taxonomy, fm):
+def add_api_feature_annotations(features_file, repo_dir, flattened_keywords, taxonomy, fm):
     if os.path.exists(features_file):
         with open(features_file, "r") as file:
             data = json.load(file)
@@ -34,48 +34,64 @@ def process_feature_annotations(features_file, repo_dir, flattened_keywords, tax
         sys.exit(1)
 
     library_features = set()
+    line_annotations = defaultdict(dict)
 
     for source in data.get('sources', []):
-        for feature in source.get('files', []):
-            file_path = os.path.join(repo_dir, feature.get('path', ''))
-            if not os.path.exists(file_path) or not feature.get('apiCalls'):
+        for file_reference in source.get('files', []):
+            file_path = os.path.join(repo_dir, file_reference.get('path', ''))
+            if not os.path.exists(file_path) or not file_reference.get('apiCalls'):
                 continue
-
-            with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
-                lines = f.readlines()
-
             # Collect annotations per line
-            line_annotations = defaultdict(set)
 
-            for api_call in feature['apiCalls']:
+            for api_call in file_reference['apiCalls']:
                 line_index = api_call.get('line', 0)
                 feature_names = api_call.get('features', [])
                 method_name = api_call.get('api', '').split('.')[-1]
 
-                if feature_names and line_index < len(lines):
-                    for feature_name in feature_names:
-                        tag = f"APIMatch|{feature_name}|{method_name}"
-                        line_annotations[line_index].add(tag)
-                        library_features.add(tag)
-                        if add_to_fm(fm, taxonomy, feature_name, tag) is None:
-                            print(f"Feature '{feature_name}' not found in taxonomy, skipped for now.")
+                for feature_name in feature_names:
+                    tag = f"APIMatch|{feature_name}|{method_name}"
 
-            # Apply annotations to lines
-            for line_index, tags in line_annotations.items():
-                annotation = ""
-                if len(tags) == 1:
-                    tag = next(iter(tags))
-                    annotation = f"// &line[{tag}]"
-                else:
-                    tags_str = ", ".join(sorted(tags))
-                    annotation = f"// &line[{tags_str}]"
+                    line_dict = line_annotations.get(file_path)
+                    if line_dict is None:
+                        line_dict = defaultdict(set)
+                        line_annotations[file_path] = line_dict
 
-                if annotation not in lines[line_index]:
-                    lines[line_index] = lines[line_index].rstrip() + f" {annotation}\n"
+                    feature_list = line_dict.get(line_index)
+                    if feature_list is None:
+                        feature_list = set()
+                        line_dict[line_index] = feature_list
 
-            with open(file_path, "w", encoding="utf-8") as f:
-                f.writelines(lines)
+                    feature_list.add(tag)
+                    library_features.add(tag)
+                    if add_to_fm(fm, taxonomy, feature_name, tag) is None:
+                        print(f"Feature '{feature_name}' not found in taxonomy, skipped for now.")
+
+    for file_path, values in line_annotations.items():
+        with open(file_path, "r", encoding="utf-8", errors="ignore") as file:
+            lines = file.readlines()
+
+        # Apply annotations to lines
+        for line_index, tags in values.items():
+            if line_index >= len(lines):
+                print(f"Warning: Line index {line_index} exceeds the number of lines in {file_path}. Skipping adding annotation for: {tags}.")
+                continue
+            new_line = createLineAnnotation(lines[line_index].rstrip(), tags)
+            lines[line_index] = new_line
+
+        write(file_path, lines)
     return library_features
+
+
+def createLineAnnotation(line, tags):
+    annotation = ""
+    if len(tags) == 1:
+        tag = next(iter(tags))
+        annotation = f"// &line[{tag}]"
+    else:
+        tags_str = ", ".join(sorted(tags))
+        annotation = f"// &line[{tags_str}]"
+
+    return line.rstrip() + f" {annotation}\n"
 
 
 def get_subtree(flattened_keywords, feature_name):
@@ -97,7 +113,6 @@ def search_keywords_in_file(file_path, flattened_keywords, repo_dir,
     short_path = os.path.relpath(file_path, repo_dir)
     if "src\\" in short_path:
         short_path = short_path[short_path.index("src\\"):]
-    updated_lines = []  # Store updated lines with added comments
     hans_lines_seen = set()  # Store unique Hans line patterns
 
     in_multiline_comment = False
@@ -114,12 +129,13 @@ def search_keywords_in_file(file_path, flattened_keywords, repo_dir,
     multi_line_comment_end_pattern = re.compile(r"\*/")  # Match */ (end of multi-line comment)
 
     with open(file_path, "r", encoding="utf-8", errors="ignore") as file:
-        for line_number, line in enumerate(file, start=1):
+        lines = file.readlines()
+        line_number = 0
+        for line in lines:
             stripped_line = line.strip()
 
             # Skip import statements
             if "import" in stripped_line:
-                updated_lines.append(line)
                 continue
 
             # Skip lines that are individually annotated with HAnS
@@ -129,14 +145,12 @@ def search_keywords_in_file(file_path, flattened_keywords, repo_dir,
                     if match not in hans_lines_seen:  # Count only if not seen before
                         hans_exclusion_counter[0] += 1
                         hans_lines_seen.add(match)
-                updated_lines.append(line)
                 continue
 
             # Handle multi-line comments
             if multi_line_comment_start_pattern.search(stripped_line):
                 in_multiline_comment = True
             if in_multiline_comment:
-                updated_lines.append(line)
                 if multi_line_comment_end_pattern.search(stripped_line):
                     in_multiline_comment = False
                 continue
@@ -153,17 +167,15 @@ def search_keywords_in_file(file_path, flattened_keywords, repo_dir,
                 in_hans_annotated_block = True
             if hans_end_pattern.search(stripped_line):
                 in_hans_annotated_block = False
-                updated_lines.append(line)  # Preserve the closing annotation
+                # Preserve the closing annotation
                 continue
 
             # Skip lines inside test contexts or inside a HAnS-annotated block
             if in_testing_context or in_hans_annotated_block:
-                updated_lines.append(line)
                 continue
 
             # Skip single-line comments
             if single_line_comment_pattern.search(stripped_line):
-                updated_lines.append(line)
                 continue
 
             # Remove all string literals from the line before searching for keywords
@@ -197,15 +209,10 @@ def search_keywords_in_file(file_path, flattened_keywords, repo_dir,
                 # Add begin and end comments only once for the line
                 features, fm = determine_feature(pos_counter, matches, line_number, fm)
 
-                comment_start = "// &begin["+features+"]\n"
-                updated_lines.append(comment_start)
-                updated_lines.append(line)  # Add the line with the match
-                comment_end = "// &end["+features+"]\n"
-                updated_lines.append(comment_end)
+                lines[line_number] = createLineAnnotation(line, features)
                 pos_list.append(f"Pos{pos_counter[0]}")
 
-            else:
-                updated_lines.append(line)
+            line_number += 1
 
     # Consolidate the "Keywords Found" for each line
     for match in matches.values():
@@ -216,14 +223,18 @@ def search_keywords_in_file(file_path, flattened_keywords, repo_dir,
         match["Keywords Found"] = ", ".join(consolidated_keywords)
 
     # Save updated file with comments
-    with open(file_path, "w", encoding="utf-8") as file:
-        file.writelines(updated_lines)
+    if len(matches.values()) > 0: 
+        write(file_path, lines)
 
     return os.path.basename(file_path), short_path, list(matches.values())
 
+def write(file_path, lines):
+    with open(file_path, "w", encoding="utf-8") as file:
+        file.writelines(lines)
+
 
 def determine_feature(pos_counter, matches, line_number, fm):
-    features = ''
+    features = []
     for match in list(matches[line_number]["Keywords Found"].items()):
         if len(features) > 0:
             features += ', '
@@ -240,7 +251,7 @@ def determine_feature(pos_counter, matches, line_number, fm):
         )
 
         feature_name = f'KeywordMatch|{path[length - 1]}|{value}'
-        features += feature_name
+        features.append(feature_name)
 
         current = fm
         i = 0
@@ -341,7 +352,7 @@ def main():
     fm = Feature(taxonomy.name, None)
 
     # Process library annotations first
-    library_features = process_feature_annotations(project_dir+"/result/features.json", project_dir, flattened_keywords, taxonomy, fm)
+    library_features = add_api_feature_annotations(project_dir+"/result/features.json", project_dir, flattened_keywords, taxonomy, fm)
 
     # Initialize the exclusion counter ONCE here
     hans_exclusion_counter = [0]
