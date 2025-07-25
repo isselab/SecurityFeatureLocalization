@@ -197,7 +197,7 @@ def search_keywords_in_file(file_path, flattened_keywords, repo_dir,
                 for key, keywords in keywords_found.items():
                     if key not in matches[line_number]["Keywords Found"]:
                         matches[line_number]["Keywords Found"][key] = []
-                    matches[line_number]["Keywords Found"][key].append(keywords)
+                    matches[line_number]["Keywords Found"][key].extend(keywords)
                     for keyword_regex in keywords:
                         # Increment the counter with the correct category, subcategory, and keyword
                         keyword_counter[(key.split(" : ")[0], key.split(" : ")[1], keyword_regex)] += 1
