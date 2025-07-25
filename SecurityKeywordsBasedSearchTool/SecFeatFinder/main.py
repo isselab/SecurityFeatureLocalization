@@ -328,7 +328,7 @@ def print_top_keywords(keyword_counter, total_matches):
 
 def main():
     repo_url = input("Enter the repository URL: ")
-    keyword_file = "SecFeatFinder/SecList.json"
+    keyword_file = "SecList.json"
     taxonomy_file = "../Resources/taxonomy.feature_model"
 
     taxonomy = read_feature_model(taxonomy_file)

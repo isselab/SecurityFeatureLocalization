@@ -1,8 +1,8 @@
 {
     "Access_Control": {
       "Authentication": [
-        "[Aa]uthenticat*",
-        "[Pp]assword",
+        "Authenticat.*",
+        "Password",
         "Credential",
         "OTP",
         "X509",
@@ -10,33 +10,34 @@
         "SSO",
         "OAuth",
         "JWT",
-        "Token",
         "Cookie",
         "Keycloak",
         "IdP"
       ],
       "Authorization": [
-        "[Aa]uthoriz*",
+        "Authoriz.*",
         "AccessManager",
         "Role",
         "Privilege",
-        "Permission",
+        "Perm",
         "ACL",
         "RBAC",
         "ABAC",
         "MAC",
         "DAC",
-        "TimeRestrictedAccess"
+        "TimeRestrictedAccess",
+		"decision",
+		"allow",
+		"deny"
       ]
     },
     "Cryptography": {
       "Encryption": [
-        "Encryption",
         "encrypt",
         "decrypt",
         "Cipher",
         "KeyGenerator",
-        "SecretKeySpec",
+        "Secret",
         "AES",
         "RSA",
         "Blowfish",
@@ -56,7 +57,7 @@
         "generateKeyPair"
       ],
       "Signature": [
-        "[Ss]ign",
+        "Sign",
         "PKCS12",
         "verify"
       ],
@@ -68,18 +69,18 @@
       ],
       "Steganography": [
         "ImageProcessor",
-        "[Ss]tego",
-        "[Bb]ase64"
+        "Stego",
+        "Base64"
       ]
     },
     "Security_Monitoring": {
       "Logging": [
-        "login*success",
-        "login*failure",
-        "unauthorized*access",
-        "privilege*escalation",
-        "audit*log*entry",
-        "compliance*check"
+        "login.?success",
+        "login.?failure",
+        "unauthorized.?access",
+        "privilege.?escalation",
+        "audit*log.?entry",
+        "compliance.?check"
       ],
       "Automated_Response": [
         "ResponseHandler",
@@ -113,37 +114,30 @@
         "KeyVault"
       ],
       "Trusted_Sources": [
-        "Secure*Random",
+        "Secure.?Random",
         "TimeSync",
         "salt"
       ]
     },
     "System_State_Protection": {
       "Resource_Management": [
-        "Semaphore",
         "ThreadPool",
         "ResourceAllocator"
       ],
       "System_State_Validation": [
         "StateVerifier",
         "Checksum",
+		"crc",
         "HashValidator"
       ],
       "Session_Management": [
         "Session",
-        "CSRF",
-        "Timeout"
-      ],
-      "State_Synchronization": [
-        "Synchronized",
-        "ReentrantLock",
-        "createLocalLock",
-        "AtomicReference"
+        "CSRF"
       ]
     },
     "Miscellaneous": [
       "SecurityPolicy",
-      "[Ss]ecurity"
+      "Security"
     ]
   }
   
