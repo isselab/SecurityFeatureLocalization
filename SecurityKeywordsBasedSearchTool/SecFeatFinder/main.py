@@ -135,6 +135,7 @@ def search_keywords_in_file(file_path, flattened_keywords, repo_dir,
 
             # Skip import statements
             if "import" in stripped_line:
+                line_number += 1
                 continue
 
             # Skip lines that are individually annotated with HAnS
@@ -144,6 +145,7 @@ def search_keywords_in_file(file_path, flattened_keywords, repo_dir,
                     if match not in hans_lines_seen:  # Count only if not seen before
                         hans_exclusion_counter[0] += 1
                         hans_lines_seen.add(match)
+                line_number += 1
                 continue
 
             # Handle multi-line comments
@@ -152,6 +154,7 @@ def search_keywords_in_file(file_path, flattened_keywords, repo_dir,
             if in_multiline_comment:
                 if multi_line_comment_end_pattern.search(stripped_line):
                     in_multiline_comment = False
+                line_number += 1
                 continue
 
             # Detect if inside a test class or function
@@ -167,24 +170,27 @@ def search_keywords_in_file(file_path, flattened_keywords, repo_dir,
             if hans_end_pattern.search(stripped_line):
                 in_hans_annotated_block = False
                 # Preserve the closing annotation
+                line_number += 1
                 continue
 
             # Skip lines inside test contexts or inside a HAnS-annotated block
             if in_testing_context or in_hans_annotated_block:
+                line_number += 1
                 continue
 
             # Skip single-line comments
             if single_line_comment_pattern.search(stripped_line):
+                line_number += 1
                 continue
 
             # Search only non-comment, non-test, non-HAnS-annotated lines
             keywords_found = {}
             for category, subcategory, keyword_regex in flattened_keywords:
                 if re.search(keyword_regex, stripped_line, re.IGNORECASE):
-                    key = f"{category} : {subcategory}"
-                    if key not in keywords_found:
-                        keywords_found[key] = []
-                    keywords_found[key].append(keyword_regex)
+                    fm_feature = f"{category} : {subcategory}"
+                    if fm_feature not in keywords_found:
+                        keywords_found[fm_feature] = []
+                    keywords_found[fm_feature].append(keyword_regex)
 
             if keywords_found:
                 if line_number not in matches:
@@ -194,13 +200,13 @@ def search_keywords_in_file(file_path, flattened_keywords, repo_dir,
                         "Keywords Found": {}
                     }
                 # Merge all found keywords for the same category and subcategory
-                for key, keywords in keywords_found.items():
-                    if key not in matches[line_number]["Keywords Found"]:
-                        matches[line_number]["Keywords Found"][key] = []
-                    matches[line_number]["Keywords Found"][key].extend(keywords)
+                for fm_feature, keywords in keywords_found.items():
+                    if fm_feature not in matches[line_number]["Keywords Found"]:
+                        matches[line_number]["Keywords Found"][fm_feature] = []
+                    matches[line_number]["Keywords Found"][fm_feature].extend(keywords)
                     for keyword_regex in keywords:
                         # Increment the counter with the correct category, subcategory, and keyword
-                        keyword_counter[(key.split(" : ")[0], key.split(" : ")[1], keyword_regex)] += 1
+                        keyword_counter[(fm_feature.split(" : ")[0], fm_feature.split(" : ")[1], keyword_regex)] += 1
 
                 # Add begin and end comments only once for the line
                 features, fm = determine_feature(pos_counter, matches, line_number, fm)
@@ -213,13 +219,13 @@ def search_keywords_in_file(file_path, flattened_keywords, repo_dir,
     # Consolidate the "Keywords Found" for each line
     for match in matches.values():
         consolidated_keywords = []
-        for key, keywords in match["Keywords Found"].items():
+        for fm_feature, keywords in match["Keywords Found"].items():
             unique_keywords = set(keywords)
-            consolidated_keywords.append(f"{key} : [{', '.join(unique_keywords)}]")
+            consolidated_keywords.append(f"{fm_feature} : [{', '.join(unique_keywords)}]")
         match["Keywords Found"] = ", ".join(consolidated_keywords)
 
     # Save updated file with comments
-    if len(matches.values()) > 0: 
+    if len(matches.values()) > 0:
         write(file_path, lines)
 
     return os.path.basename(file_path), short_path, list(matches.values())
@@ -230,50 +236,48 @@ def write(file_path, lines):
         file.writelines(lines)
 
 
-def sanitize_for_hans(name):
-    return (
-            name
-            .replace('[', '')
-            .replace(']', '')
-            .replace('(', '')
-            .replace(')', '')
-            .replace('*', '')
-            .replace('?', '')
-            .replace('.', '')
-        )
-
-
 def determine_feature(pos_counter, matches, line_number, fm):
     features = []
     for match in list(matches[line_number]["Keywords Found"].items()):
         path = match[0].split(' : ')
         length = len(path)
-        value = sanitize_for_hans(match[1][0])
+        for keyword in match[1]:
+            value = (
+                keyword
+                .replace('[', '')
+                .replace(']', '')
+                .replace('(', '')
+                .replace(')', '')
+                .replace('*', '')
+                .replace('?', '')
+                .replace('.', '')
+            )
+            feature_name = f'KeywordMatch|{path[length - 1]}|{value}'
+            features.append(feature_name)
 
-        feature_name = f'KeywordMatch|{path[length - 1]}|{value}'
-        features.append(feature_name)
+            current = fm
+            # Search for the taxonomy feature in the feature model
+            i = 0
+            while i < length:
+                name = path[i]
+                found = False
+                for sub in current.sub_features:
+                    if name == sub.name:
+                        current = sub
+                        found = True
+                        break
+                if not found:
+                    current = Feature(name, current)
+                i += 1
 
-        current = fm
-        i = 0
-        while i < length:
-            name = path[i]
-            found = False
-            for sub in current.sub_features:
-                if name == sub.name:
-                    current = sub
-                    found = True
+            # Add the feature for the keyword to the feature model if it doesn't exist
+            exists = False
+            for f in current.sub_features:
+                if f.name == feature_name:
+                    exists = True
                     break
-            if not found:
-                current = Feature(name, current)
-            i += 1
-
-        exists = False
-        for f in current.sub_features:
-            if f.name == feature_name:
-                exists = True
-                break
-        if not exists:
-            Feature(feature_name, current)
+            if not exists:
+                Feature(feature_name, current)
     return features, fm
 
 
@@ -329,7 +333,7 @@ def print_top_keywords(keyword_counter, total_matches):
 def main():
     repo_url = input("Enter the repository URL: ")
     keyword_file = "SecList.json"
-    taxonomy_file = "../Resources/taxonomy.feature_model"
+    taxonomy_file = "../../Resources/taxonomy.feature_model"
 
     taxonomy = read_feature_model(taxonomy_file)
     if taxonomy is None:
