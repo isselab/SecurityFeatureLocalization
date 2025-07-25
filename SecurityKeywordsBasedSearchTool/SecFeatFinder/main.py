@@ -123,7 +123,6 @@ def search_keywords_in_file(file_path, flattened_keywords, repo_dir,
     hans_end_pattern = re.compile(r"//\s*&end\[(.*?)\]")  # Match // &end[FeatureName]
     hans_line_pattern = re.compile(r"&line\[[^\]]+\]")  # Match inline annotations
 
-    string_literal_pattern = re.compile(r'".*?"')  # Match anything inside "..."
     single_line_comment_pattern = re.compile(r"//.*")  # Match anything after //
     multi_line_comment_start_pattern = re.compile(r"/\*")  # Match /* (start of multi-line comment)
     multi_line_comment_end_pattern = re.compile(r"\*/")  # Match */ (end of multi-line comment)
@@ -178,13 +177,10 @@ def search_keywords_in_file(file_path, flattened_keywords, repo_dir,
             if single_line_comment_pattern.search(stripped_line):
                 continue
 
-            # Remove all string literals from the line before searching for keywords
-            cleaned_line = string_literal_pattern.sub("", stripped_line)
-
             # Search only non-comment, non-test, non-HAnS-annotated lines
             keywords_found = {}
             for category, subcategory, keyword_regex in flattened_keywords:
-                if re.search(keyword_regex, cleaned_line, re.IGNORECASE):
+                if re.search(keyword_regex, stripped_line, re.IGNORECASE):
                     key = f"{category} : {subcategory}"
                     if key not in keywords_found:
                         keywords_found[key] = []
@@ -201,7 +197,7 @@ def search_keywords_in_file(file_path, flattened_keywords, repo_dir,
                 for key, keywords in keywords_found.items():
                     if key not in matches[line_number]["Keywords Found"]:
                         matches[line_number]["Keywords Found"][key] = []
-                    matches[line_number]["Keywords Found"][key].extend(keywords)
+                    matches[line_number]["Keywords Found"][key].append(keywords)
                     for keyword_regex in keywords:
                         # Increment the counter with the correct category, subcategory, and keyword
                         keyword_counter[(key.split(" : ")[0], key.split(" : ")[1], keyword_regex)] += 1
@@ -228,27 +224,31 @@ def search_keywords_in_file(file_path, flattened_keywords, repo_dir,
 
     return os.path.basename(file_path), short_path, list(matches.values())
 
+
 def write(file_path, lines):
     with open(file_path, "w", encoding="utf-8") as file:
         file.writelines(lines)
 
 
-def determine_feature(pos_counter, matches, line_number, fm):
-    features = []
-    for match in list(matches[line_number]["Keywords Found"].items()):
-        if len(features) > 0:
-            features += ', '
-        path = match[0].split(' : ')
-        length = len(path)
-        value = (
-            match[1][0]
+def sanitize_for_hans(name):
+    return (
+            name
             .replace('[', '')
             .replace(']', '')
             .replace('(', '')
             .replace(')', '')
             .replace('*', '')
             .replace('?', '')
+            .replace('.', '')
         )
+
+
+def determine_feature(pos_counter, matches, line_number, fm):
+    features = []
+    for match in list(matches[line_number]["Keywords Found"].items()):
+        path = match[0].split(' : ')
+        length = len(path)
+        value = sanitize_for_hans(match[1][0])
 
         feature_name = f'KeywordMatch|{path[length - 1]}|{value}'
         features.append(feature_name)
